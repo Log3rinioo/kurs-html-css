@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularze kontakt - Piotr Winiarczyk 3K</title>
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/kontakt.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav>
+        <a href="index.html"><h1>Generator memów</h1></a>
+        <ul>
+            <a href="index.html"><li>Strona główna</li></a>
+            <a href="index.html#templates"><li>Szablony</li></a>
+            <a href="kontakt.html"><li>Kontakt</li></a>
+            <a href="login.html" class="login"><li>Zaloguj się</li></a>
+            <a class="logged">
+                <li></li>
+                <div class="dropdown">
+                    <span>Wyloguj się <i class="fa-solid fa-arrow-right-from-bracket"></i></span>
+                </div>
+            </a>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="left">
+            <h1>Kontakt</h1>
+            <div class="text">
+                <h3><i class="fa-solid fa-location-dot fa-lg"></i> <a href="https://goo.gl/maps/AExmSjv9pVUHmthA9" target="_blank"> ul. Kasprzaka 19/21, 01-211 Warszawa</a></h3>
+                <h3><i class="fa-solid fa-phone fa-lg"></i> <a href="tel:+48123456789">+48 123 456 789</a></h3>
+                <h3><i class="fa-solid fa-envelope fa-lg"></i> <a href="mailto:example@gmail.com" target="_blank"> example@gmail.com</a></h3>
+            </div>
+        </section>
+        <section id="right">
+            <form action="">
+                <div id="nameContainer">
+                    <input type="text" name="name" id="name" autocomplete="cc-name" required>
+                    <label for="name">Imię i nazwisko</label>
+                </div>
+                <div id="emailContainer">
+                    <input type="email" name="email" id="email" autocomplete="email" required>
+                    <label for="email">Adres email</label>
+                </div>
+                <div id="messageContainer">
+                    <textarea name="message" id="message" required></textarea>
+                    <label for="message">Wiadomość</label>
+                </div>
+                <div id="button">
+                    <button><i class="fa-solid fa-paper-plane fa-lg"></i> Wyślij</button>
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

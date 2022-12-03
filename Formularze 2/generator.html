@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generator memów - Piotr Winiarczyk 3K</title>
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/generator.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav>
+        <a href="index.html"><h1>Generator memów</h1></a>
+        <ul>
+            <a href="index.html"><li>Strona główna</li></a>
+            <a href="index.html#templates"><li>Szablony</li></a>
+            <a href="kontakt.html"><li>Kontakt</li></a>
+            <a href="login.html" class="login"><li>Zaloguj się</li></a>
+            <a class="logged">
+                <li></li>
+                <div class="dropdown">
+                    <span>Wyloguj się <i class="fa-solid fa-arrow-right-from-bracket"></i></span>
+                </div>
+            </a>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="left">
+            <h2></h2>
+            <form>
+                <input type="submit" value="Pokaż">
+                <button onclick="save()" type="submit">Zapisz</button>
+            </form>
+        </div>
+        <div class="right">
+            <div class="meme">
+                <img>
+            </div>
+        </div>
+
+        <dialog class="modal" id="modal">
+            <h4>Aby zapisać obraz kliknij na niego prawym przyciskiem myszy, a następnie Zapisz obraz jako.</h4>
+            <button class="closeModal"><i class="fa-solid fa-xmark fa-2xl"></i></button>
+        </dialog>
+    </main>
+
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+    <script src="js/templates.js"></script>
+    <script src="js/generator.js"></script>
+</body>
+</html>

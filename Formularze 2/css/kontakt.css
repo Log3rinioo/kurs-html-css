@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+
+* {
+    font-family: 'Nunito', sans-serif;
+}
+
+body {
+    margin: 0;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    background: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+}
+
+main {
+    height: 65vh;
+    width: 65vw;
+    border-radius: 25px;
+    background-color: #ffffff60;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+}
+
+#left {
+    background: linear-gradient(45deg, rgb(36, 51, 66), rgba(36, 51, 66, 0.81));
+    color: white;
+    text-align: center;
+    border-radius: 25px 0 0 25px;
+    position: inherit;
+    width: 50%;
+    height: 100%;
+}
+
+#left h1 {
+    margin: 15% 0 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+#left div.text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+#right {
+    position: inherit;
+    width: 50%;
+    height: 100%;
+    transform: translateX(100%);
+}
+
+#right form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: inherit;
+    height: 72.5%;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+form div {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+form div label {
+    position: absolute;
+    top: 50%;
+    left: calc(8px + 15%);
+    transform: translateY(-50%);
+    cursor: text;
+    transition: transform 250ms;
+}
+
+form div input, form div textarea {
+    height: 30px;
+    width: 70%;
+    resize: vertical;
+    max-height: calc(100% - 14px);
+    border: 1px solid rgb(61, 61, 61);
+    border-radius: 5px;
+    min-height: 25px;
+    padding: 6px;
+}
+
+#right form div textarea {
+    height: 120px;
+}
+
+#messageContainer {
+    position: relative;
+    max-height: 50%;
+}
+
+#messageContainer label {
+    top: 5px;
+    transform: none;
+}
+
+form div input:focus + label, form div input:valid + label {
+    transform: translateY(-200%);
+}
+
+#right form div textarea:focus + label, #right form div textarea:valid + label {
+    transform: translateY(-125%);
+}
+
+#button {
+    height: 40px;
+}
+
+button {
+    height: 40px;
+    width: calc(70% + 14px);
+    padding: 2px;
+    border: 1px solid #2e6da4;
+    background-color: #43a5fa;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    transition: transform 500ms;
+    position: absolute;
+}
+
+#button button:hover {
+    transform: rotateX(180deg);
+}

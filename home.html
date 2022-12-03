@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strona główna | Piotr Winiarczyk 3K</title>
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/home.css">
+    <!-- <link rel="stylesheet" href="css/notification.css"> -->
+    <script src="https://kit.fontawesome.com/5b03ae42a6.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="Strona glowna/favicon.ico">
+</head>
+<body>
+    <div id="content">
+        <div id="navWrapper">
+            <header class="flex justify-center align-center column white">
+                <h2>Kurs HTML i CSS</h2>
+                <h3>Piotr Winiarczyk 3K</h3>
+            </header>
+            
+            <nav>
+                <ul>
+                    <li class="subheader">
+                        <span class="uppercase">Kurs tworzenia stron</span>
+                    </li>
+                    <li class="navbar">
+                        <i class="fa-solid fa-house"></i>
+                        <span>Strona główna</span>
+                    </li>
+                    <li class="navbar">
+                        <i class="fa-solid fa-code"></i>
+                        <span>Kurs HTML</span>
+                    </li>
+                    <li class="navbar">
+                        <i class="fa-brands fa-css3-alt"></i>
+                        <span>Kurs CSS</span>
+                    </li>
+
+                    <li class="subheader margin-top">
+                        <span class="uppercase">Przykładowe strony</span>
+                    </li>
+                    <li class="navbar">
+                        <i class="fa-regular fa-file-lines"></i>
+                        <span>Sprawdzian</span>
+                    </li>
+                    <li class="navbar">
+                        <i class="fa-solid fa-palette"></i>
+                        <span>Tabela z kolorami</span>
+                    </li>
+                    <li class="navbar">
+                        <i class="fa-solid fa-list"></i>
+                        <span>Listy</span>
+                    </li>
+                    <li class="navbar">
+                        <i class="fa-solid fa-table-cells-large"></i>
+                        <span>Tabele, listy, łącza</span>
+                    </li>
+                    <li class="navbar expand">
+                        <i class="fa-brands fa-wpforms"></i>
+                        <span>Formularze</span>
+                        <button type="button" class="expand">
+                            <i class="fa-solid fa-angle-down"></i>
+                        </button>
+                    </li>
+                    <div class="expand hidden">
+                        <ul>
+                            <li class="navbar">
+                                <span>Ankieta</span>
+                            </li>
+                            <li class="navbar">
+                                <span>Generator memów</span>
+                            </li>
+                        </ul>
+                        
+                    </div>
+                    <li class="navbar">
+                        <i class="fa-solid fa-photo-film"></i>
+                        <span>Multimedia</span>
+                    </li>
+
+                    <li class="subheader margin-top">
+                        <span class="uppercase">
+                            Inne
+                        </span>
+                    </li>
+                    <li class="navbar">
+                        <i class="fa-regular fa-circle-question"></i>
+                        <span>Ciekawostki</span>
+                    </li>
+                    <li class="navbar">
+                        <i class="fa-solid fa-up-right-from-square"></i>
+                        <span>Linki</span>
+                    </li>
+                    <li class="navbar">
+                        <i class="fa-solid fa-address-book"></i>
+                        <span>Kontakt</span>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div id="resizer"></div>
+        <div id="mainWrapper">
+
+            <div id="topWrapper" class="flex">
+                <div id="topLeft" class="flex align-center">
+                    <div class="icon fullscreen" title="Pełny ekran">
+                        <i class="fa-solid fa-expand fa-lg"></i>
+                    </div>
+                    <div class="icon popup" title="Otwórz w nowym oknie">
+                        <i class="fa-solid fa-up-right-from-square"></i>
+                    </div>
+                </div>
+                <div id="topRight" class="flex align-center">
+                    <div class="icon colorMode" title="Przełącz motyw strony">
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider">
+
+                            </span>
+                        </label>
+                    </div>
+                    
+                    <div class="icon search" title="Wyszukaj">
+                        <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+                    </div>
+                    
+                </div>
+                <div id="searchBar" class="hide">
+                    <input type="text" name="search" id="search" placeholder="Wyszukaj" autocomplete="off">
+                    <div class="icon close">
+                        <i class="fa-solid fa-xmark fa-xl"></i>
+                    </div>
+                </div>
+
+                
+            </div>
+
+            <div id="searchList">
+                <ul>
+                    
+                </ul>
+            </div>
+
+            <main>
+                <iframe src="Strona glowna/index.html" frameborder="0" title="Strona internetowa"></iframe>
+            </main>
+        </div>
+    </div>
+
+    <!-- <div class="notifyWrapper">
+        <div class="notification hide">
+            <h5>Moje prace</h5>
+            <span>Aby dowiedzieć się więcej na temat moich prac najedź kursorem na wybrane zdjęcie. Jeżeli chcesz zobaczyć pełną wersję pracy, kliknij w&nbsp;obrazek.</span>
+        </div>
+        <div class="notification hide">
+            2
+        </div>
+    </div> -->
+
+    <script src="js/home.js"></script>
+    <script src="js/resizer.js"></script>
+    <!-- <script src="js/notification.js"></script> -->
+</body>
+</html>

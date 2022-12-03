@@ -1,0 +1,663 @@
+:root[color-mode="light"] {
+    --main-background: white;
+    --level-background: #eaf0f3;
+    --text: #000;
+    --light-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    --label-background: rgb(229, 232, 239);
+    --label-text: rgba(54, 66, 131, 0.9);
+    --label-effect: rgb(42, 53, 109);
+    --progress: #eee;
+    --progress-inside: lime;
+    --back-header: #555;
+    --table-even: #ebf3f9;
+    --table-header: #428bca;
+    --codeWrapper: #292929;
+}
+
+:root[color-mode="dark"] {
+    --text: #ffffffde;
+    --background: #121212;
+    --light-shadow: 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 2px 1px -1px rgb(0 0 0 / 12%), 0px 1px 3px 0px rgb(0 0 0 / 20%);
+    --strong-shadow: 0 -2px 10px rgba(0, 0, 0, 1);
+    --main-background: #161616;
+    --level-background: rgba(255, 255, 255, 0.03);
+    --label-background: rgba(255, 255, 255, 0.05);
+    --label-text: rgba(255, 255, 255, 0.60);
+    --label-effect: #ffffffde;
+    --progress: transparent;
+    --progress-inside: #00c800;
+    --back-header: rgba(255, 255, 255, 0.6);
+    --table-even: #202020;
+    --table-header: #265A88;
+    --codeWrapper: rgba(255, 255, 255, 0.05);
+}
+
+body {
+    background-color: var(--background);
+    overflow: hidden auto;
+}
+
+main {
+    background-color: var(--main-background);
+    width: max(60vw, 568px);
+    margin: 10vh auto;
+    min-height: 100vh;
+    box-shadow: var(--light-shadow);
+    min-width: 600px;
+}
+
+#title {
+    text-align: center;
+    font-size: 2rem;
+    display: block;
+    padding-top: 40px;
+}
+
+div#levels {
+    width: 100%;
+    padding-top: 20px;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+div#levels div:not(.icon, .right) {
+    background-color: var(--level-background);
+    width: 230px;
+    padding: 10px;
+    height: 80px;
+    position: relative;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 20px;
+    box-shadow: var(--light-shadow);
+}
+
+#title, #levels, section {
+    color: var(--text);
+}
+
+div.right {
+    display: flex;
+    justify-content: flex-end;
+}
+
+div#levels div h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+div#levels div h4 {
+    margin: 7px 0 0;
+    font-size: 14px;
+}
+
+div#levels div.icon i {
+    position: absolute;
+    right: 10px;
+    bottom: 20px;
+}
+
+div#levels svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+}
+
+.fa-circle-play {
+    color: var(--text);
+}
+
+a {
+    color: var(--text);
+}
+
+span.green {
+    color: green;
+}
+
+div#tasks {
+    position: relative;
+}
+
+div.progressWrapper {
+    position: sticky;
+    width: 100%;
+    height: 12px;
+    top: 0;
+    left: 0;
+    background-color: var(--progress);
+    z-index: 9;
+}
+
+div#progress {
+    position: inherit;
+    height: 100%;
+    width: 0%;
+    background-color: var(--progress-inside);
+}
+
+div#tasks div.back {
+    padding: 48px 0 0 16px;
+    color: var(--back-header);
+    max-width: 22vw;
+    cursor: pointer;
+}
+
+div#tasks div.back h3 {
+    margin: 0 0 0 8px;
+}
+
+div#tasks div.top h2 {
+    position: absolute;
+    top: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    font-size: 2rem;
+    color: var(--text);
+}
+
+i.close {
+    position: absolute;
+    top: 72px;
+    right: 24px;
+    cursor: pointer;
+    color: var(--text);
+}
+
+span.completed.congrats {
+    text-align: center;
+    margin-inline: 5%;
+}
+
+
+#level1 {
+    padding-top: 80px;
+}
+
+section {
+    margin-inline: 48px;
+    padding-bottom: 80px;
+}
+
+section h3 {
+    margin-block: 22px 10px;
+    font-size: 22px;
+}
+
+section h3:not(:nth-of-type(1)) {
+    margin-top: 40px;
+}
+
+section ul {
+    padding-left: 36px;
+}
+
+img {
+    max-width: 100%;
+}
+
+code {
+    font-family: monospace;
+    font-size: 15px;
+}
+
+div.quizVisible {
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+}
+
+div.quizVisible h3 {
+    font-size: 2.25rem;
+}
+
+div.question {
+    margin-bottom: 16px;
+    font-size: 1.1rem;
+    width: 100%;
+    
+}
+
+div.question div:not(.check, .checkInside) {
+    height: 44px;
+    margin-bottom: 12px;
+    position: relative;
+}
+
+div.question span {
+    text-align: center;
+    font-size: 1.3rem;
+    display: block;
+    margin-bottom: 10px;
+}
+
+div.question input[type=radio] {
+    visibility: hidden;
+    position: absolute;
+}
+
+div.question label {
+    padding-left: 44px;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    cursor: pointer;
+    color: var(--label-text);
+    background-color: var(--label-background);
+    border-radius: 16px;
+    box-shadow: var(--light-shadow);
+}
+
+div.question div.check {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 8px;
+    border: 4px solid rgba(76,90, 158, 0.8);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+div.check div.checkInside {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 14px;
+    height: 14px;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
+
+div.question input[type=radio]:checked ~ label {
+    color: rgb(44, 109, 64);
+    background-color: rgb(148, 214, 163);
+}
+
+div.question input[type=radio]:checked ~ div.check {
+    border-color: rgb(44, 109, 64);
+}
+
+div.question input[type=radio]:checked ~ div.check div.checkInside {
+    background-color: rgb(44, 109, 64);
+}
+
+div.question input[type=radio]:not(:checked) ~ label:hover {
+    color: var(--label-effect);
+}
+
+div.question input[type=radio]:not(:checked) ~ label:hover ~ div.check {
+    border-color: rgb(76,90, 158);
+}
+
+div.question div i {
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    transform: translateY(-50%);
+}
+
+i.correct {
+    color: green;
+}
+
+i.incorrect {
+    color: red;
+}
+
+div.buttons {
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 0;
+    transition: height .3s;
+    overflow: hidden;
+}
+
+div.buttons.visible {
+    height: 50px;
+}
+
+div.buttons button {
+    background-color: rgb(41, 74, 245);
+    border: none;
+    font-size: 1.25rem;
+    cursor: pointer;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 12px;
+}
+
+div.completed {
+    height: 0;
+    transition: height .3s;
+    overflow: hidden;
+    width: 100%;
+    background-color: #294af5;
+    color: white;
+    margin-bottom: 16px;
+    border-radius: 12px;
+    font-size: 16px;
+}
+
+div.completed.visible {
+    height: 75px;
+}
+
+div.completed span.congrats {
+    font-weight: 700;
+    line-height: 1.6;
+    text-transform: uppercase;
+    font-size: 18px;
+    animation: bouncy 4.5s infinite linear;
+    position: relative;
+}
+
+@keyframes bouncy {
+    0% { top: 0em }
+    40% { top: 0em }
+    43% { top: -0.9em }
+    46% { top: 0em }
+    48% { top: -0.4em }
+    50% { top: 0em }
+    100% { top: 0em; }
+}
+
+div.completed button {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    padding: 0;
+    font-size: inherit;
+    font-family: inherit;
+    margin-left: 16px;
+    width: 13rem;
+    height: auto;
+    animation: bouncy 5s infinite linear;
+}
+   
+div.completed button .circle {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 3rem;
+    height: 3rem;
+    background: #282936;
+    border-radius: 1.625rem;
+}
+   
+div.completed button .circle .icon {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: #294af5;
+}
+   
+div.completed button .circle .icon.arrow {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    left: 0.625rem;
+    width: 1.125rem;
+    height: 0.125rem;
+    background: none;
+}
+   
+div.completed button .circle .icon.arrow::before {
+    position: absolute;
+    content: "";
+    top: -0.29rem;
+    right: 0.0625rem;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-top: 0.125rem solid white;
+    border-right: 0.125rem solid white;
+    transform: rotate(45deg);
+}
+   
+div.completed button .button-text {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.75rem 0;
+    margin: 0 0 0 1.85rem;
+    color: #cbd1f1; 
+    font-weight: 700;
+    line-height: 1.6;
+    text-align: center;
+    text-transform: uppercase;
+}
+   
+div.completed button:hover .circle {
+    width: 100%;
+}
+   
+div.completed button:hover .circle .icon.arrow {
+    background: white;
+    transform: translate(1rem, 0);
+}
+   
+div.completed button:hover .button-text {
+    color: white;
+}
+
+#level2 img {
+    width: 100%;
+}
+
+div.codeWrapper {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--codeWrapper);
+    box-shadow: var(--light-shadow);
+    color: white;
+    border-radius: 14px;
+    overflow: hidden;
+    padding: 16px;
+}
+
+div.code.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 16px;
+}
+
+div.code {
+    margin-bottom: 16px;
+}
+
+div.code span {
+    width: 100%;
+    height: 100%;
+    display: block;
+    max-height: 500px;
+    overflow: hidden auto;
+}
+
+div.codeWrapper button {
+    padding-block: 6px;
+    cursor: pointer;
+}
+
+div.code iframe {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+}
+
+div.code.image {
+    height: 30vw;
+}
+
+#level11 h3, #level3 h3 {
+    margin-top: 20px;
+}
+
+#level11 h3::before, #level3 h3::before {
+    display: block; 
+    content: " "; 
+    margin-top: -20px; 
+    height: 20px; 
+    visibility: hidden; 
+    pointer-events: none;
+}
+
+div.codeWrapper button {
+    position: relative;
+    padding: 1em 1.8em;
+    outline: none;
+    border: 1px solid #303030;
+    background: #212121;
+    color: #ae00ff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 15px;
+    overflow: hidden;
+    transition: 0.2s;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+   
+div.codeWrapper button:hover {
+    box-shadow: 0 0 10px #ae00ff, 0 0 25px #001eff, 0 0 50px #ae00ff;
+    transition-delay: 0.6s;
+}
+   
+div.codeWrapper button span {
+    position: absolute;
+}
+   
+div.codeWrapper button span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #ae00ff);
+}
+   
+div.codeWrapper button:hover span:nth-child(1) {
+    left: 100%;
+    transition: 0.7s;
+}
+   
+div.codeWrapper button span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #001eff);
+}
+   
+div.codeWrapper button:hover span:nth-child(3) {
+    right: 100%;
+    transition: 0.7s;
+    transition-delay: 0.35s;
+}
+   
+div.codeWrapper button span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #ae00ff);
+}
+   
+div.codeWrapper button:hover span:nth-child(2) {
+    top: 100%;
+    transition: 0.7s;
+    transition-delay: 0.17s;
+}
+   
+div.codeWrapper button span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #001eff);
+}
+   
+div.codeWrapper button:hover span:nth-child(4) {
+    bottom: 100%;
+    transition: 0.7s;
+    transition-delay: 0.52s;
+}
+   
+div.codeWrapper button:active {
+    background: #ae00af;
+    background: linear-gradient(to top right, #ae00af, #001eff);
+    color: #bfbfbf;
+    box-shadow: 0 0 8px #ae00ff, 0 0 8px #001eff, 0 0 8px #ae00ff;
+    transition: 0.1s;
+}
+   
+div.codeWrapper button:active span:nth-child(1) span:nth-child(2) span:nth-child(2) span:nth-child(2) {
+    transition: none;
+    transition-delay: none;
+}
+
+#level5 table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#level5 th, #level5 td, #level4 td {
+    border: 1px solid var(--text);
+}
+
+#level5 thead tr {
+    background-color: var(--table-header);
+    color: white;
+}
+
+#level5 tbody tr:nth-child(2n) {
+    background-color: var(--table-even);
+}
+
+#level5 table tr td:nth-of-type(4n+1) {
+    text-align: center;
+}
+
+#level1 h4 {
+    margin-bottom: 0;
+    font-size: 18px;
+}
+
+#level1 h4 + p {
+    margin-top: 8px;
+}
+
+div.code span a {
+    color: white;
+}
+
+#level4 table {
+    border-collapse: collapse;
+    text-align: center;
+    margin: 0 auto;
+    min-width: 300px;
+    min-height: 150px;
+}
+
+#level4 li div.codeWrapper, #level6 li div.codeWrapper, #level8 ul div.codeWrapper {
+    margin-block: 16px;
+}
+
+iframe {
+    margin: 0 auto;
+    display: block;
+}

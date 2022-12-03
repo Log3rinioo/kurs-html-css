@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularze rejestracja - Piotr Winiarczyk 3K</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/signup.css">
+</head>
+<body>
+    <form action="index.html" method="post">
+        <h1>REJESTRACJA</h1>
+
+        <section class="login">
+            <div class="username">
+                <i class="fa-solid fa-user fa-lg"></i>
+                <input type="text" name="username" autocomplete="username" placeholder="Nazwa użytkownika" required>
+                <div class="lightning"></div>
+            </div>
+            <div class="email">
+                <i class="fa-solid fa-envelope fa-lg"></i>
+                <input type="email" name="email" autocomplete="email" placeholder="Adres e-mail" required>
+                <div class="lightning"></div>
+            </div>
+            <div class="password">
+                <i class="fa-solid fa-lock fa-lg"></i>
+                <input type="password" name="password" autocomplete="current-password" placeholder="Hasło" required>
+                <div class="lightning"></div>
+            </div>
+            <div class="repeatPassword">
+                <i class="fa-solid fa-lock fa-lg"></i>
+                <input type="password" name="password" autocomplete="current-password" placeholder="Powtórz hasło" required>
+                <div class="lightning"></div>
+            </div>
+            
+            <input type="submit" value="Zarejestruj się">
+        </section>
+
+        <a href="login.html">Masz już konto? 
+            <span>Zaloguj się <i class="fa-solid fa-arrow-right-long fa-xs"></i></span>
+        </a>
+    </form>
+    
+    <script src="js/signup.js"></script>
+</body>
+</html>

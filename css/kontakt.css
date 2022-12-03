@@ -1,0 +1,67 @@
+:root[color-mode="light"] {
+    --background: linear-gradient(90deg, #fff6d7, #ffffff);
+}
+
+:root[color-mode="dark"] {
+    --background: linear-gradient(90deg, #121212, #2b2b2b);
+}
+
+body {
+    overflow: hidden auto;
+    min-height: 100vh;
+    background: var(--background);
+}
+
+main {
+    height: 80vh;
+    width: 90vw;
+    border-radius: 25px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    display: flex;
+    flex-direction: row;
+}
+
+#left {
+    background: linear-gradient(45deg, rgb(36, 51, 66), rgba(36, 51, 66, 0.81));
+    color: white;
+    border-radius: 25px 0 0 25px;
+    width: 50%;
+    min-width: 30%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+#left ul {
+    padding-left: 35px;
+    font-size: 1.25rem;
+}
+
+#right {
+    flex: 1;
+    height: 100%;
+    min-width: 30%;
+}
+
+iframe {
+    height: 100%;
+    width: 100%;
+}
+
+* {
+    color: whitesmoke;
+}
+
+#resizer {
+    width: 3px;
+    background-color: #9299a0;
+    height: 100%;
+    cursor: ew-resize;
+}

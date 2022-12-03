@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Łódź - Piotr Winiarczyk 3K</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" type="image/x-icon" href="../Foto/favicon.jpg">
+    <script src="../script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="parallax">
+        <h1>Łódź</h1>
+    </div>
+    
+    <main>
+        <h2 style="font-weight: normal;"><b>Łódź</b> — miasto na prawach powiatu w środkowej Polsce. Zostało założone przed 1332 rokiem, a prawa miejskie uzyskało w 1423 r. Kiedyś miasto cieszyło się statusem najważniejszego ośrodka włókienniczego i filmowego w kraju. Dziś Łódź jest postrzegana przede wszystkim jako jeden z głównych polskich ośrodków akademickich. Pod względem wysokości zabudowy, Łódź nie może równać się z Warszawą. Najwyższy budynek miasta - wieżowiec biurowy na ulicy Piotrkowskiej - mierzy 80 m. Do 2023 roku w centrum miasta (u zbiegu ulic Piotrkowskiej i Piłsudskiego) - ma powstać obiekt, który przejmie ten tytuł. Luksusowy, 32-kondygnacyjny hotel ma mierzyć 110 metrów. W mieście działa jedno lotnisko - Port Lotniczy Łódź im. Władysława Reymonta. </h2>
+
+        <table class="podstrony-tabela">
+            <tr>
+                <th colspan="2">Łódź</th>
+            </tr>
+            <tr>
+                <td>Województwo</td>
+                <td>łódzkie</td>
+            </tr>
+            <tr>
+                <td>Data założenia</td>
+                <td>przed 1332</td>
+            </tr>
+            <tr>
+                <td>Prawa miejskie</td>
+                <td>29 lipca 1423 r.</td>
+            </tr>
+            <tr>
+                <td>Prezydent</td>
+                <td>Hanna Zdanowska</td>
+            </tr>
+            <tr>
+                <td>Liczba mieszkańców (01.01.2021 r.)</td>
+                <td>672.185</td>
+            </tr>
+            <tr>
+                <td>Gęstość zaludnienia</td>
+                <td>2278 os./km²</td>
+            </tr>
+            <tr>
+                <td>Powierzchnia</td>
+                <td>293,25 km²</td>
+            </tr>
+            <tr>
+                <td>Strefa numeracyjna</td>
+                <td>42</td>
+            </tr>
+        </table>
+
+        <div class="gallery">
+            <div class="gallery-one" style="background-image: url('../Foto/podstrony/lodz.jpg')"><div class="overlay"><span>Łódź z lotu ptaka</span></div></div>
+            <div class="gallery-two" style="background-image: url('../Foto/miasta/lodz.jpg');"><div class="overlay"><span>Łódź z lotu ptaka</span></div></div>
+            <div class="gallery-three"style="background-image: url('../Foto/podstrony/lodz2.jpg');"><div class="overlay"><span>Centrum Handlowe Manufaktura</span></div></div>
+        </div>
+        
+        <div class="sources">
+            <hr><h3>Źródła</h3>
+            <ul>
+                <li><a href="https://pl.wikipedia.org/wiki/%C5%81%C3%B3d%C5%BA" target="_blank">Wikipedia</a></li>
+                <li><a href="https://inzynieria.com/budownictwo/rankingi/57433,najwieksze-miasta-w-polsce-ranking" target="_blank">Inżynieria.com</a></li>
+                <li><a href="https://www.national-geographic.pl/artykul/najwieksze-miasta-w-polsce-gdzie-mieszka-najwiecej-ludzi" target="_blank">National Geographic</a></li>
+            </ul>
+        </div>
+    </main>
+
+    <footer>
+        <span style="text-align: left;">&copy; 2021 Piotr Winiarczyk 3K</span>
+    </footer>
+
+    <button onclick="topFunction()" id="top">^</button>
+
+    <div class="loader-wrapper center">
+        <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+    
+    <script>
+        history.scrollRestoration = "manual";
+    
+        $(window).on('beforeunload', function(){
+            $(window).scrollTop(0);
+        });
+    
+        $(window).on("load",function(){
+            $(".loader-wrapper").fadeOut("slow");
+        });
+    
+    
+    //Skrypt pochodzi ze strony https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
+    //Get the button:
+    mybutton = document.getElementById("top");
+    
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+        if (document.body.scrollTop > 250 || document.documentElement.scrollTop > 250) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+    }
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: 'smooth'
+        });
+    }
+    </script>
+</body>
+</html>

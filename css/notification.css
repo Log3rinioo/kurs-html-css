@@ -1,0 +1,54 @@
+div.notifyWrapper {
+    position: fixed;
+    right: 40px;
+    bottom: 15px;
+    width: 350px;
+}
+
+div.notification {
+    margin-top: 10px;
+    position: relative;
+    /* height: 100px; */
+    background-color: white;
+    border: 1px solid #999;
+    border-radius: 5px;
+    transition: opacity .3s;
+    opacity: 1;
+}
+
+div.notification h5 {
+    margin: 0;
+    padding: 8px;
+    font-size: 14px;
+    color: #444;
+    border-bottom: 1px solid #00000033;
+}
+
+div.notification span {
+    color: #000;
+    font-size: 14px;
+    padding: 8px;
+    display: block;
+}
+
+button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    border: 0;
+    color: #777;
+    cursor: pointer;
+    font-size: 14px;
+    width: 25px;
+    height: 25px;
+    padding: 0;
+    background-color: transparent;
+}
+
+button:hover {
+    color: #000;
+}
+
+div.notification.close {
+    opacity: 0;
+}

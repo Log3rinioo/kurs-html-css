@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Szczecin - Piotr Winiarczyk 3K</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" type="image/x-icon" href="../Foto/favicon.jpg">
+    <script src="../script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="parallax">
+        <h1>Szczecin</h1>
+    </div>
+    
+    <main>
+        <h2 style="font-weight: normal;"><b>Szczecin</b> — miasto na prawach powiatu, stolica i największe miasto województwa zachodniopomorskiego, położone na Pobrzeżu Szczecińskim, nad Odrą i jeziorem Dąbie. Powstał na przełomie VII/VIII wieku, a prawa miejsce otrzymał w 1243 r. Szczecin jest podzielony na 4 dzielnice i 37 osiedli. Miasto może pochwalić się jedynym w Polsce zwodzonym mostem kolejowym. Obiekt zawieszony nad Odrą Wschodnią mierzy 262 m długości. W Szczecinie działa port morski oraz lotnisko — Port Lotniczy Szczecin-Goleniów im NSZZ Solidarność.</h2>
+
+        <table class="podstrony-tabela">
+            <tr>
+                <th colspan="2">Szczecin</th>
+            </tr>
+            <tr>
+                <td>Województwo</td>
+                <td>zachodniopomorskie</td>
+            </tr>
+            <tr>
+                <td>Data założenia</td>
+                <td>przełom VII/VIII w.</td>
+            </tr>
+            <tr>
+                <td>Prawa miejskie</td>
+                <td>3 kwietnia 1243 r.</td>
+            </tr>
+            <tr>
+                <td>Prezydent</td>
+                <td>Piotr Krzystek</td>
+            </tr>
+            <tr>
+                <td>Liczba mieszkańców (01.01.2021 r.)</td>
+                <td>398.255</td>
+            </tr>
+            <tr>
+                <td>Gęstość zaludnienia</td>
+                <td>1319,2 os./km²</td>
+            </tr>
+            <tr>
+                <td>Powierzchnia</td>
+                <td>300,55 km²</td>
+            </tr>
+            <tr>
+                <td>Strefa numeracyjna</td>
+                <td>91</td>
+            </tr>
+        </table>
+
+        <div class="gallery">
+            <div class="gallery-one" style="background-image: url('../Foto/podstrony/szczecin.jpg')"><div class="overlay"><span>Szczecin z lotu ptaka</span></div></div>
+            <div class="gallery-two" style="background-image: url('../Foto/podstrony/szczecin2.jpg');"><div class="overlay"><span>Zamek Książąt Pomorskich</span></div></div>
+            <div class="gallery-three"style="background-image: url('../Foto/podstrony/szczecin3.jpg');"><div class="overlay"><span>Port morski</span></div></div>
+        </div>
+        
+        <div class="sources">
+            <hr><h3>Źródła</h3>
+            <ul>
+                <li><a href="https://pl.wikipedia.org/wiki/Szczecin" target="_blank">Wikipedia</a></li>
+                <li><a href="https://inzynieria.com/budownictwo/rankingi/57433,najwieksze-miasta-w-polsce-ranking" target="_blank">Inżynieria.com</a></li>
+                <li><a href="https://www.national-geographic.pl/artykul/najwieksze-miasta-w-polsce-gdzie-mieszka-najwiecej-ludzi" target="_blank">National Geographic</a></li>
+            </ul>
+        </div>
+    </main>
+
+    <footer>
+        <span style="text-align: left;">&copy; 2021 Piotr Winiarczyk 3K</span>
+    </footer>
+
+    <button onclick="topFunction()" id="top">^</button>
+
+    <div class="loader-wrapper center">
+        <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+    
+    <script>
+        history.scrollRestoration = "manual";
+    
+        $(window).on('beforeunload', function(){
+            $(window).scrollTop(0);
+        });
+    
+        $(window).on("load",function(){
+            $(".loader-wrapper").fadeOut("slow");
+        });
+    
+    
+    //Skrypt pochodzi ze strony https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
+    //Get the button:
+    mybutton = document.getElementById("top");
+    
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+        if (document.body.scrollTop > 250 || document.documentElement.scrollTop > 250) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+    }
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: 'smooth'
+        });
+    }
+    </script>
+</body>
+</html>

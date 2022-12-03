@@ -1,0 +1,2457 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kurs CSS | Piotr Winiarczyk 3K</title>
+    <script src="https://kit.fontawesome.com/5b03ae42a6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/general.css">
+    <link rel="stylesheet" href="../css/kurs.css">
+</head>
+<body>
+    <main>
+        <span id="title">Mini kurs CSS</span>
+        <div id="levels">
+            <div>
+                <h3>Lekcja 1</h3>
+                <h4>Czym jest CSS?</h4>
+                <div class="icon">
+                    <i class="fa-regular fa-circle-play fa-xl"></i>
+                </div>
+            </div>
+            <svg><line stroke="black"/></svg>
+            <div class="right">
+                <div>
+                    <h3>Lekcja 2</h3>
+                    <h4>Wstawianie stylów</h4>
+                    <div class="icon">
+                        <i class="fa-regular fa-circle-play fa-xl"></i>
+                    </div>
+                </div>
+            </div>
+            <svg><line stroke="black"/></svg>
+            <div>
+                <h3>Lekcja 3</h3>
+                <h4>Selektory</h4>
+                <div class="icon">
+                    <i class="fa-regular fa-circle-play fa-xl"></i>
+                </div>
+            </div>
+            <svg><line stroke="black"/></svg>
+            <div class="right">
+                <div>
+                    <h3>Lekcja 4</h3>
+                    <h4>Czcionki</h4>
+                    <div class="icon">
+                        <i class="fa-regular fa-circle-play fa-xl"></i>
+                    </div>
+                </div>
+            </div>
+            <svg><line stroke="black"/></svg>
+            <div>
+                <h3>Lekcja 5</h3>
+                <h4>Tekst</h4>
+                <div class="icon">
+                    <i class="fa-regular fa-circle-play fa-xl"></i>
+                </div>
+            </div>
+            <svg><line stroke="black"/></svg>
+            <div class="right">
+                <div>
+                    <h3>Lekcja 6</h3>
+                    <h4>Marginesy</h4>
+                    <div class="icon">
+                        <i class="fa-regular fa-circle-play fa-xl"></i>
+                    </div>
+                </div>
+            </div>
+            <svg><line stroke="black"/></svg>
+            <div>
+                <h3>Lekcja 7</h3>
+                <h4>Obramowania</h4>
+                <div class="icon">
+                    <i class="fa-regular fa-circle-play fa-xl"></i>
+                </div>
+            </div>
+            <svg><line stroke="black"/></svg>
+            <div class="right">
+                <div>
+                    <h3>Lekcja 8</h3>
+                    <h4>Kursory</h4>
+                    <div class="icon">
+                        <i class="fa-regular fa-circle-play fa-xl"></i>
+                    </div>
+                </div>
+            </div>
+            <svg><line stroke="black"/></svg>
+            <div>
+                <h3>Lekcja 9</h3>
+                <h4>Box Model</h4>
+                <div class="icon">
+                    <i class="fa-regular fa-circle-play fa-xl"></i>
+                </div>
+            </div>
+        </div>
+
+        <div id="tasks" class="hide">
+            <div class="progressWrapper">
+                <div id="progress"></div>
+            </div>
+            <div class="top">
+                <div class="back flex align-center" title="Powrót do poprzedniego rozdziału">
+                    <i class="fa-solid fa-angles-left"></i>
+                    <h3></h3>
+                </div>
+                <h2></h2>
+                <i class="close fa-solid fa-xmark fa-xl" title="Zamknij"></i>
+            </div>
+
+            <section id="level1" class="hide">
+                <h3>Czym jest CSS?</h3>
+                <p><b>CSS</b> (ang. <b>C</b>ascading <b>S</b>tyle <b>S</b>heets) jest językiem służącym do formatowania wyglądu elementów HTML, które po wyświetleniu w oknie przeglądarki internetowej tworzą wygląd strony internetowej. Tłumacząc na język polski, CSS oznacza kaskadowe arkusze stylów.</p>
+                <p>- <b>Kaskadowanie</b> odnosi się do sposobu, w jaki CSS stosuje jeden styl na drugim.
+                <br>- <b>Arkusze stylów</b> kontrolują wygląd i działanie dokumentów internetowych.</p>
+                <p>Języki CSS i HTML współpracują ze sobą, dlatego aby zrozumieć język CSS musisz mieć podstawową wiedzę na temat języka HTML.</p>
+                <p>Głównym zadaniem arkusza stylów jest uproszczenie formatowania strony, zmniejszenie ilości kodu na stronie. Zamiast wielokrotnie wpisywać właściwości przy każdym znaczniku, definiuje się je tylko raz w CSS i odwołuje się do nich za pomocą identyfikatora ID lub klasy. Arkusze stylów zapisujemy jako pliki o rozszerzeniu .css.</p>
+
+                <h3>Wersje języka CSS</h3>
+                <h4>CSS 1</h4>
+                <p>Specyfikacja CSS1 została opublikowana pod koniec 1996. Kilka miesięcy później pojawiła się przeglądarka Internet Explorer 3 zapewniająca podstawową obsługę CSS1. Była to ważna cecha, która w czasach dominacji Netscape Navigatora, pozwalała przeglądarce Microsoftu wysunąć się na prowadzenie. Obsługa CSS1 była na tyle dobra, że można było porzucić niestandardowy znacznik <code>&lt;font&gt;</code> i rozpocząć eksperymentowanie z marginesami i innymi elementami układu strony. Powszechnie uważano, że sam CSS jest wadliwy, w efekcie powszechne uznanie CSS1 za standard, bardzo się opóźniło. Z dzisiejszej perspektywy jest to język dość prosty, a zarazem dający projektantowi wiele możliwości. Pozwala przede wszystkim dokładnie rozmieścić poszczególne elementy strony oraz stosować warstwy.</p>
+                
+                <h4>CSS 2</h4>
+                <p>W CSS 2 rozwiniętym do poziomu 2.1 wprowadzone zostały nowe selektory i właściwości. W nowej wersji właściwościami stylu objęto strukturę dokumentu, oddzielając styl prezentacji dokumentów od ich zawartości. CSS 2.1 upraszcza autorskie opracowanie w sieci i konserwację strony. Teoretycznie stało się możliwe wybranie np. elementu HTML, który jest bezpośrednio pod innym elementem (jest dzieckiem danego elementu). CSS 2.1 obsługuje specyficzne medialne arkusze stylu tak, że autorzy mogą dostosować prezentację swoich dokumentów do wizualnych przeglądarek, urządzeń słuchowych, drukarek, urządzeń Braille'a, urządzeń ręcznych itd. CSS 2.1 wspomaga ustawienie (pozycjonowanie) treści, obsługuje ściągalne czcionki, wspiera układ graficzny tabeli, internalizację, automatyczne liczniki, numerację i niektóre właściwości dotyczące interfejsu użytkownika.</p>
+
+                <h4>CSS 3</h4>
+                <p>Inaczej niż CSS 2, który jest jedną wielką specyfikacją definiującą różne właściwości, CSS 3 podzielony jest na niezależne dokumenty zwane modułami. Każdy moduł zawiera nowe możliwości i rozszerza elementy zdefiniowane w CSS 2, tak, żeby zachowywały kompatybilność z wersjami wcześniejszymi. Prace nad trzecim poziomem CSS rozpoczęły się krótko po oficjalnej publikacji specyfikacji CSS 2. Najwcześniejsza robocza wersja CSS 3 pojawiła się w czerwcu 1999 roku. W wyniku podziału na moduły poszczególne elementy CSS 3 mają różny status czy poziom stabilności, ale dzięki podziałowi mogą być opublikowane jako obowiązujące niezależnie od etapu pracy nad pozostałymi elementami. Dodano także nowe znaczniki i właściwości.</p>
+
+                <h4>CSS 4</h4>
+                <p>CSS 4 nie istnieje już jako jedna specyfikacja. Odkąd CSS 3 został podzielony na moduły, każdy z nich rozwija się niezależnie. Większość z nich jest na poziomie 3, który bazuje na wcześniejszym CSS 2.1. Kilka z nich osiągnęło poziom 4 np. własności grafiki (image values), tła i obramowania (backgrounds & borders) czy selektory, które oparto na sprawdzonych modułach poziomu 3. Jednym z modułów, którzy doczekał się rozwoju w CSS 4 jest CSS Font Module (Level 4). Jedną z najważniejszych nowości w czwartej wersji tego modułu jest dodanie parametru font-display pozwalającego na kontrolowanie sposobu, w jaki przeglądarka internetowa wyświetla czcionki w zależności od tego, czy zostały pobrane i są gotowe do użytku. Są też całkiem nowe elementy, nad którymi dopiero rozpoczęto prace oznaczone jako poziom 1 np. flexbox, który jest swego rodzaju „dynamiczną” tabelą (we wrześniu 2012 oznaczony symbolem CR).</p>
+
+                <h3>Zalety i ograniczenia</h3>
+                <p>Największą zaletą CSS jest umożliwienie rozdzielenia warstwy prezentacji od warstwy danych. Dzięki temu możliwe jest definiowanie wielu stylów dla tych samych danych, a sam dokument HTML jest bardziej przejrzysty i łatwiejszy do utrzymania i dalszego rozwinięcia. Dodatkowo, w przypadku potrzeby wprowadzenia zmian w definicji stylu wykorzystanego dla elementu występującego wielokrotnie, w dokumencie HTML w pliku CSS zmiany są wprowadzane raz, a zmiana jest adaptowana przez wszystkie elementy. Skutkuje to oszczędnością czasu i pracy. Z drugiej jednak strony, podczas gdy poziome rozmieszczenie jest relatywnie łatwe do wykonania, pionowe rozmieszczenie jest często mało intuicyjne. Proste czynności, takie jak centrowanie elementu pionowo, często wymagają skomplikowanych operacji. Oprócz tego CSS uniemożliwia definiowanie nowych zakresów bez względu na aktualną pozycję. Również kierunkowanie stylu dla określonej części tekstu (oprócz <code>:first-letter</code>, czyli pierwszej litery tekstu) jest zawiłym zadaniem.</p>
+
+                <h3>Właściwości</h3>
+                <p>Właściwości CSS możemy podzielić na kilka grup kategorii. Każda z tych grup jest odpowiedzialna za zmianę konkretnych cech wyglądu elementu HTML, na przykład:</p>
+                <ul>
+                    <li>Tekst - właściwości odpowiedzialne za formatowanie cech wyglądu tekstu w danym elemencie HTML, np. <code>text-align: center;</code> wyśrodkuje tekst w elemencie.</li>
+                    <li>Czcionka - właściwości odpowiedzialne za formatowanie wyglądu czcionki tekstu w danym elemencie HTML, np. <code>font-size: 12px;</code> zmieni rozmiar wyświetlanej czcionki tekstu.</li>
+                    <li>Rozmiary - właściwości odpowiedzialne za formatowanie szerokości i wysokości w danym elemencie HTML, np. <code>width: 200px;</code> sprawi że szerokość elementu HTML będzie wynosić 200 pikseli.</li>
+                    <li>Tło - właściwości odpowiedzialne za formatowanie cech wyglądu tła w danym elemencie HTML, np. <code>background-color: lightblue;</code> zmieni kolor tła elementu HTML na jasnoniebieski.</li>
+                    <li>Marginesy - właściwości odpowiedzialne za formatowanie wartości marginesów wewnętrznych i zewnętrznych w danym elemencie HTML, np. <code>margin: 10px;</code> sprawi że wszystkie marginesy zewnętrzne elementu HTML będą wynosić 10 pikseli.</li>
+                    <li>Obramowanie - właściwości odpowiedzialne za formatowanie cech wyglądu obramowania w danym elemencie HTML, np. <code>border-top-style: solid;</code> doda do elementu HTML górne obramowanie, którego stylem będzie styl solid, czyli ciągła pojedyncza linia.</li>
+                </ul>
+
+                <h3>Składnia arkuszy</h3>
+                <p>Arkusz stylów składa się z reguł określających styl dla wybranych elementów dokumentu (HTML, SVG i innych). Reguła składa się z selektora oraz deklaracji. Selektor określa grupę elementów (rzadziej pojedynczy element), którego ma dotyczyć deklaracja. Deklaracja określa formatowanie i składa się z nazwy jednej z właściwości i jej wartości napisanej po dwukropku. Deklaracja musi być otoczona nawiasami klamrowymi, przykładowo: </p>
+                <code>selektor {<br>&nbsp;&nbsp;&nbsp;&nbsp;właściwość: wartość;<br>}</code>
+
+                <p>Dodatkowo możliwe jest grupowanie zarówno selektorów, jak i deklaracji. Zgrupowane selektory rozdziela się przecinkami, a deklaracje średnikami:</p>
+                <code>selektor1, selektor2 {<br>&nbsp;&nbsp;&nbsp;&nbsp;właściwość1: wartość1;<br>&nbsp;&nbsp;&nbsp;&nbsp;właściwość2: wartość2;<br>}</code>
+
+                <p>Dozwolone jest stosowanie średnika po wszystkich deklaracjach, nie jest jednak dozwolone stosowanie przecinka po ostatnim selektorze. Ponadto niektóre wartości mogą być zgrupowane i podane w ramach jednej deklaracji. W takim wypadku składnia zależy od definicji składni zbiorczej właściwości. Poniżej podana jest przykładowa reguła dla języka HTML, w której przypisujemy wszystkim akapitom niebieski kolor tekstu:</p>
+                <code>p {<br>&nbsp;&nbsp;&nbsp;&nbsp;color: blue;<br>}</code>
+
+                <p>Selektorem jest tutaj p, właściwością color, a wartością blue.<br>Selektory zawarte w pierwszej specyfikacji CSS zapewniają możliwość opisania docelowej grupy elementów przez:</p>
+                <ul>
+                    <li>nazwę elementu (np. „h1”)</li>
+                    <li>klasę elementu (np. „.elementy_menu”), także w połączeniu z nazwą elementu (np. „img.wyrownane_do_prawej”)</li>
+                    <li>id elementu (np. „#menu”)</li>
+                    <li>przodków danego elementu (np. „div#menu a” zostanie zastosowane do linków zawartych w elemencie div o id „menu”)</li>
+                    <li>stan linków określany przez pseudoklasy (:visited, :link, :active)</li>
+                    <li>inne pseudoklasy typograficzne (:first-line: first-letter)</li>
+                </ul>    
+
+                <div class="quizVisible flex align-center justify-center">
+                    <h3>Quiz</h3>
+                    <div class="completed flex align-center justify-center">
+                        <span class="congrats"><i class="fa-regular fa-circle-check"></i> Brawo!</span>
+                        <button type="button">
+                            <span class="circle" aria-hidden="true">
+                            <span class="icon arrow"></span>
+                            </span>
+                            <span class="button-text">Przejdź dalej</span>
+                        </button>
+                    </div>
+                    <div class="buttons flex visible">
+                        <button type="reset"><i class="fa-solid fa-trash"></i> Wyczyść</button>
+                        <button type="submit">Sprawdź <i class="fa-solid fa-arrow-right-long"></i></button>
+                    </div>
+                </div>
+
+                <div class="quiz hide" questions="2">
+                    <div class="question">
+                        <span>Co oznacza kaskadowanie?</span>
+                        <input type="radio" name="kaskadowanie" id="kaskadowanieCorrect">
+                        <label for="kaskadowanieCorrect">Sposób, w jaki CSS stosuje jeden styl na drugim.</label>
+                        <input type="radio" name="kaskadowanie" id="kaskadowanie">
+                        <label for="kaskadowanie">Kontrolowanie wyglądu i działania dokumentów internetowych.</label>
+                        <input type="radio" name="kaskadowanie" id="kaskadowanie2">
+                        <label for="kaskadowanie2">Zmniejszenie ilości kodu na stronie.</label>
+                    </div>
+                    <div class="question">
+                        <span>Czy CSS jest językiem programowania?</span>
+                        <input type="radio" name="programowania" id="programowaniaCorrect">
+                        <label for="programowaniaCorrect">Nie</label>
+                        <input type="radio" name="programowania" id="programowania">
+                        <label for="programowania">Tak</label>
+                    </div>
+                </div>
+
+                <p>Źródła: </p>
+                <ul>
+                    <li><a href="https://pl.wikipedia.org/wiki/Kaskadowe_arkusze_styl%C3%B3w" target="_blank">Wikipedia</a></li>
+                    <li><a href="https://c.tenor.com/epNMHGvRyHcAAAAd/gigachad-chad.gif" target="_blank">Dawid Balikowski</a></li>
+                    <li><a href="https://www.kurshtml.edu.pl/css/wstep,index.html">Kurs HTML i CSS</a></li>
+                </ul>
+            </section>
+
+            <section id="level2" class="hide">
+                <h3>Style lokalne</h3>
+                <p>Style lokalne (ang. inline – w linii) to jeden ze sposobów na wstawianie arkusza stylów. W ten sposób możemy do pojedynczego elementu wstawić niepowtarzalny styl. Aby użyć stylu lokalnego, należy dodać atrybut style do odpowiedniego znacznika. Poniższy przykład pokazuje, jak utworzyć akapit z szarym tłem i białym tekstem:</p>
+                <div class="codeWrapper">
+                    <div class="code">
+                        <span contenteditable>
+                            &lt;!DOCTYPE html&gt;<br>
+                            &lt;html lang="pl"&gt;<br>
+                            &lt;head&gt;<br>
+                            &lt;meta charset="UTF-8"&gt;<br>
+                            &lt;title&gt;Wpisz tytuł&lt;/title&gt;<br>
+                            &lt;/head&gt;<br>
+                            &lt;body&gt;<br>
+                            &lt;p style="color: white; background-color: grey;"&gt;Oto akapit z szarym tłem i białym tekstem.&lt;/p&gt;<br>
+                            &lt;/body&gt;<br>
+                            &lt;/html&gt;
+                        </span>
+                    </div>
+                </div>
+
+                <h3>Wewnętrzne arkusze stylów</h3>
+                <p>Style wewnętrzne (ang. embedded/internal) są zdefiniowane w elemencie <code>&lt;style&gt;</code> wewnątrz sekcji <code>&lt;head&gt;</code> strony HTML. Na przykład poniższy kod stylizuje wszystkie akapity:</p>
+                <div class="codeWrapper">
+                    <div class="code">
+                        <span contenteditable>
+                            &lt;!DOCTYPE html&gt;<br>
+                            &lt;html lang="pl"&gt;<br>
+                            &lt;head&gt;<br>
+                            &lt;meta charset="UTF-8"&gt;<br>
+                            &lt;title&gt;Wpisz tytuł&lt;/title&gt;<br>
+                            &lt;style&gt;<br>
+                            p {<br>
+                            color: white;<br>
+                            background-color: gray;<br>
+                            }<br>
+                            &lt;/style&gt;<br>
+                            &lt;/head&gt;<br>
+                            &lt;body&gt;<br>
+                            &lt;p&gt;Oto akapit z szarym tłem i białym tekstem.&lt;/p&gt;<br>
+                            &lt;p&gt;Oto drugi akapit z szarym tłem i białym tekstem.&lt;/p&gt;<br>
+                            &lt;/body&gt;<br>
+                            &lt;/html&gt;
+                        </span>
+                    </div>
+                </div>
+
+                <h3>Zewnętrzne arkusze stylów</h3>
+                <p>Dzięki tej metodzie wszystkie reguły stylizacji są zawarte w jednym pliku tekstowym, który jest zapisywany z rozszerzeniem .css. Ten plik CSS jest następnie przywoływany w kodzie HTML za pomocą tagu <link>. Element <link> wchodzi do sekcji head. Oto przykład:</p>
+                <div class="codeWrapper">
+                    <div class="code">
+                        <span>
+                            &lt;!DOCTYPE html&gt;<br>
+                            &lt;html lang="pl"&gt;<br>
+                            &lt;head&gt;<br>
+                            &lt;meta charset="UTF-8"&gt;<br>
+                            &lt;title&gt;Wpisz tytuł&lt;/title&gt;<br>
+                            &lt;link rel="stylesheet" href="<a href="przyklad1.css" target="_blank">przyklad1.css</a>"&gt;<br>
+                            &lt;/head&gt;<br>
+                            &lt;body&gt;<br>
+                            &lt;p&gt;Oto akapit z szarym tłem i białym tekstem.&lt;/p&gt;<br>
+                            &lt;p&gt;Oto drugi akapit z szarym tłem i białym tekstem.&lt;/p&gt;<br>
+                            &lt;/body&gt;<br>
+                            &lt;/html&gt;
+                        </span>
+                    </div>
+                </div>
+
+                <div class="quizVisible flex align-center justify-center">
+                    <h3>Quiz</h3>
+                    <div class="completed flex align-center justify-center">
+                        <span class="congrats"><i class="fa-regular fa-circle-check"></i> Brawo!</span>
+                        <button type="button">
+                            <span class="circle" aria-hidden="true">
+                            <span class="icon arrow"></span>
+                            </span>
+                            <span class="button-text">Przejdź dalej</span>
+                        </button>
+                    </div>
+                    <div class="buttons flex visible">
+                        <button type="reset"><i class="fa-solid fa-trash"></i> Wyczyść</button>
+                        <button type="submit">Sprawdź <i class="fa-solid fa-arrow-right-long"></i></button>
+                    </div>
+                </div>
+
+                <div class="quiz hide" questions="2">
+                    <div class="question">
+                        <span>Który atrybut umożliwia wstawienie stylu lokalnego?</span>
+                        <input type="radio" name="inline" id="inlineCorrect">
+                        <label for="inlineCorrect">style</label>
+                        <input type="radio" name="inline" id="inline">
+                        <label for="inline">class</label>
+                        <input type="radio" name="inline" id="inline2">
+                        <label for="inline2">id</label>
+                    </div>
+                    <div class="question">
+                        <span>Gdzie należy zadeklarować znacznik <code>&lt;style&gt;</code></span>
+                        <input type="radio" name="style" id="styleCorrect">
+                        <label for="styleCorrect"><code>&lt;head&gt;</code></label>
+                        <input type="radio" name="style" id="style">
+                        <label for="style"><code>&lt;body&gt;</code></label>
+                        <input type="radio" name="style" id="style2">
+                        <label for="style2">w zewnętrznym pliku</label>
+                    </div>
+                </div>
+            </section>
+
+            <section id="level3" class="hide">
+                <h3>Czym jest selektor?</h3>
+                <p>W CSS selektor (ang. selecor) to część stylu, która poprzedza otwierający nawias klamrowy. Określa on do jakiego elementu odnosi się dana reguła. Selektorami mogą być praktycznie wszystkie tagi HTML takie jak: <code>h1</code>, <code>h2</code>, <code>ol</code>, <code>ul</code>, <code>li</code>, <code>p</code>, <code>span</code>, itd.</p>
+
+                <h3>Lista najważniejszycj selektorów:</h3>
+                <ol>
+                    <li><a href="#star">*</a></li>
+                    <li><a href="#id">#</a></li>
+                    <li><a href="#dot">.</a></li>
+                    <li><a href="#x">Tego samego typu</a></li>
+                    <li><a href="#xy">Selektor potomka</a></li>
+                    <li><a href="#link">:link oraz :visited</a></li>
+                    <li><a href="#plus">+</a></li>
+                    <li><a href="#tylda">~</a></li>
+                    <li><a href="#gt">&gt;</a></li>
+                    <li><a href="#attr">Atrybut elementu</a></li>
+                    <li><a href="#checked">:checked</a></li>
+                    <li><a href="#hover">:hover</a></li>
+                    <li><a href="#pseudoelem">::pseudoelement</a></li>
+                    <li><a href="#nthchild">:nth-child()</a></li>
+                    <li><a href="#nthlastchild">:nth-last-child()</a></li>
+                    <li><a href="#nthoftype">:nth-of-type()</a></li>
+                    <li><a href="#nthlastoftype">:nth-last-of-type()</a></li>
+                    <li><a href="#firstchild">:first-child</a></li>
+                    <li><a href="#lastchild">:last-child</a></li>
+                </ol>
+
+                <h3 id="star">Selektor: *</h3>
+                <p>Symbol gwiazdki obierze za cel każdy element znajdujący się na stronie. Wielu deweloperów używa tego triku by wyzerować <code>margin</code> i <code>padding</code>.</p>
+                <div class="codeWrapper">
+                    <div class="code">
+                        <span contenteditable>
+                            &lt;!DOCTYPE html&gt;<br>
+                            &lt;html lang="pl"&gt;<br>
+                            &lt;head&gt;<br>
+                            &lt;meta charset="UTF-8"&gt;<br>
+                            &lt;title&gt;Wpisz tytuł&lt;/title&gt;<br>
+                            &lt;style&gt;<br>
+                            * {<br>
+                            color: green;<br>
+                            margin: 0;<br>
+                            }<br>
+                            &lt;/style&gt;<br>
+                            &lt;/head&gt;<br>
+                            &lt;body&gt;<br>
+                            &lt;p&gt;Oto akapit.&lt;/p&gt;<br>
+                            &lt;h2&gt;Oto nagłówek drugiego poziomu.&lt;/h2&gt;<br>
+                            &lt;/body&gt;<br>
+                            &lt;/html&gt;
+                        </span>
+                    </div>
+                </div>
+
+                <p>Selektor <code>*</code> może być również używany z selektorami dziecka (ang. child selector):</p>
+                <div class="codeWrapper">
+                    <div class="code">
+                        <span contenteditable>
+                            &lt;!DOCTYPE html&gt;<br>
+                            &lt;html lang="pl"&gt;<br>
+                            &lt;head&gt;<br>
+                            &lt;meta charset="UTF-8"&gt;<br>
+                            &lt;title&gt;Wpisz tytuł&lt;/title&gt;<br>
+                            &lt;style&gt;<br>
+                            nav * {<br>
+                            color: green;<br>
+                            margin: 0;<br>
+                            }<br>
+                            &lt;/style&gt;<br>
+                            &lt;/head&gt;<br>
+                            &lt;body&gt;<br>
+                            &lt;nav&gt;<br>
+                            &lt;p&gt;Oto akapit w pasku nawigacyjnym.&lt;/p&gt;<br>
+                            &lt;/nav&gt;<br>
+                            &lt;h2&gt;Oto nagłówek drugiego poziomu.&lt;/h2&gt;<br>
+                            &lt;/body&gt;<br>
+                            &lt;/html&gt;
+                        </span>
+                    </div>
+                </div>
+
+                <h3 id="id">Selektor: #</h3>
+                <p>Symbol '#' (hash) pozwala nam wybrać cel na podstawie identyfikatora. Selektory <code>id</code> są niezmienne i jednorazowe. Identyfikator może wystąpić tylko raz w hierarchii drzewa dokumentu, czyli w pojedynczym dokumencie nie mogą się znaleźć dwa elementy z takimi samymi identyfikatorami!</p>
+                <div class="codeWrapper">
+                    <div class="code">
+                        <span contenteditable>
+                            &lt;!DOCTYPE html&gt;<br>
+                            &lt;html lang="pl"&gt;<br>
+                            &lt;head&gt;<br>
+                            &lt;meta charset="UTF-8"&gt;<br>
+                            &lt;title&gt;Wpisz tytuł&lt;/title&gt;<br>
+                            &lt;style&gt;<br>
+                            #tekst {<br>
+                            color: green;<br>
+                            margin: 0;<br>
+                            }<br>
+                            &lt;/style&gt;<br>
+                            &lt;/head&gt;<br>
+                            &lt;body&gt;<br>
+                            &lt;p&gt;Oto akapit.&lt;/p&gt;<br>
+                            &lt;h2&gt;Oto nagłówek drugiego poziomu.&lt;/h2&gt;<br>
+                            &lt;p id="tekst"&gt;Oto drugi akapit.&lt;/p&gt;<br>
+                            &lt;p&gt;Oto trzeci akapit.&lt;/p&gt;<br>
+                            &lt;/body&gt;<br>
+                            &lt;/html&gt;
+                        </span>
+                    </div>
+                </div>
+
+                <h3 id="dot">Selektor: .</h3>
+                <p>Jest to selektor klasy (ang. class). Różnica między nim a id jest taka, że klasą możesz wybrać wiele elementów. Użyj class jeśli chcesz nadać styl grupie elementów.</p>
+                <div class="codeWrapper">
+                    <div class="code">
+                        <span contenteditable>
+                            &lt;!DOCTYPE html&gt;<br>
+                            &lt;html lang="pl"&gt;<br>
+                            &lt;head&gt;<br>
+                            &lt;meta charset="UTF-8"&gt;<br>
+                            &lt;title&gt;Wpisz tytuł&lt;/title&gt;<br>
+                            &lt;style&gt;<br>
+                            .tekst {<br>
+                            color: green;<br>
+                            margin: 0;<br>
+                            }<br>
+                            &lt;/style&gt;<br>
+                            &lt;/head&gt;<br>
+                            &lt;body&gt;<br>
+                            &lt;p&gt;Oto akapit.&lt;/p&gt;<br>
+                            &lt;h2 class="tekst"&gt;Oto nagłówek drugiego poziomu.&lt;/h2&gt;<br>
+                            &lt;p class="tekst"&gt;Oto drugi akapit.&lt;/p&gt;<br>
+                            &lt;p&gt;Oto trzeci akapit.&lt;/p&gt;<br>
+                            &lt;/body&gt;<br>
+                            &lt;/html&gt;
+                        </span>
+                    </div>
+                </div>
+
+                <h3 id="x">Selektor tego samego typu</h3>
+                <p>Jeśli chcesz zaznaczyć wszystkie elementy tego samego typu bez używania id lub class użyj selektora typu.</p>
+                <div class="codeWrapper">
+                    <div class="code">
+                        <span contenteditable>
+                            &lt;!DOCTYPE html&gt;<br>
+                            &lt;html lang="pl"&gt;<br>
+                            &lt;head&gt;<br>
+                            &lt;meta charset="UTF-8"&gt;<br>
+                            &lt;title&gt;Wpisz tytuł&lt;/title&gt;<br>
+                            &lt;style&gt;<br>
+                            p {<br>
+                            color: green;<br>
+                            margin: 0;<br>
+                            }<br>
+                            &lt;/style&gt;<br>
+                            &lt;/head&gt;<br>
+                            &lt;body&gt;<br>
+                            &lt;p&gt;Oto akapit.&lt;/p&gt;<br>
+                            &lt;h2 class="tekst"&gt;Oto nagłówek drugiego poziomu.&lt;/h2&gt;<br>
+                            &lt;p&gt;Oto drugi akapit.&lt;/p&gt;<br>
+                            &lt;p id="akapit"&gt;Oto trzeci akapit.&lt;/p&gt;<br>
+                            &lt;/body&gt;<br>
+                            &lt;/html&gt;
+                        </span>
+                    </div>
+                </div>
+
+                <h3 id="xy">Selektor potomka</h3>
+                <p>Jednym z najpopularniejszych selektorów jest selektor potomka. Jeśli musisz lepiej sprecyzować cel, używasz właśnie tego. Na przykład, jeśli zamiast zaznaczać wszystkie linki, chcesz wybrać tylko te, które znajdują się w nagłówku drugiego poziomu</p>
+                <div class="codeWrapper">
+                    <div class="code">
+                        <span contenteditable>
+                            &lt;!DOCTYPE html&gt;<br>
+                            &lt;html lang="pl"&gt;<br>
+                            &lt;head&gt;<br>
+                            &lt;meta charset="UTF-8"&gt;<br>
+                            &lt;title&gt;Wpisz tytuł&lt;/title&gt;<br>
+                            &lt;style&gt;<br>
+                            h2 a {<br>
+                            color: green;<br>
+                            margin: 0;<br>
+                            }<br>
+                            &lt;/style&gt;<br>
+                            &lt;/head&gt;<br>
+                            &lt;body&gt;<br>
+                            &lt;p&gt;Oto akapit.&lt;/p&gt;<br>
+                            &lt;h2 class="tekst"&gt;Oto nagłówek drugiego poziomu, a w nim &lt;a href=""&gt;link&lt;/a&gt;.&lt;/h2&gt;<br>
+                            &lt;a href=""&gt;Oto link&lt;/a&gt;<br>
+                            &lt;p&gt;Oto drugi akapit.&lt;/p&gt;<br>
+                            &lt;p id="akapit"&gt;Oto trzeci akapit.&lt;/p&gt;<br>
+                            &lt;/body&gt;<br>
+                            &lt;/html&gt;
+                        </span>
+                    </div>
+                </div>
+
+                <h3 id="link">Selektor: :link oraz :visited</h3>
+                <p>Pseudo-klasy :link używamy, by zaznaczyć wszystkie linki które jeszcze nie były kliknięte.</p>
+                <p>Pseudo-klasy :visited używamy, by zaznaczyć wszystkie kliknięte lub odwiedzone linki.</p>
+                <div class="codeWrapper">
+                    <div class="code">
+                        <span contenteditable>
+                            &lt;!DOCTYPE html&gt;<br>
+                            &lt;html lang="pl"&gt;<br>
+                            &lt;head&gt;<br>
+                            &lt;meta charset="UTF-8"&gt;<br>
+                            &lt;title&gt;Wpisz tytuł&lt;/title&gt;<br>
+                            &lt;style&gt;<br>
+                            .colored:link {<br>
+                            color: green;<br>
+                            }<br><br>
+                            .colored:visited {<br>
+                            color: red;<br>
+                            }<br>
+                            &lt;/style&gt;<br>
+                            &lt;/head&gt;<br>
+                            &lt;body&gt;<br>
+                            &lt;a href="https://pl.wikipedia.org"&gt;Oto domyślny link&lt;/a&gt;&lt;br /&gt;<br>
+                            &lt;a href="https://pl.wikipedia.org" class="colored"&gt;Oto drugi link&lt;/a&gt;&lt;br /&gt;<br>
+                            &lt;a href="https://pl.wikipedia.org" class="colored"&gt;Oto trzeci link&lt;/a&gt;&lt;br /&gt;<br>
+                            &lt;/body&gt;<br>
+                            &lt;/html&gt;
+                        </span>
+                    </div>
+                </div>
+
+                <h3 id="plus">Selektor: +</h3>
+                <p>Ten selektor odwołuje się do sąsiedniego selektora. Wybierze tylko ten element, który występuje bezpośrednio po wcześniej wymienionym elemencie. W tym przypadku, tylko pierwszy paragraf, po każdym nagłówku drugiego poziomu będzie miał czerwony tekst.</p>
+                <div class="codeWrapper">
+                    <div class="code">
+                        <span contenteditable>
+                            &lt;!DOCTYPE html&gt;<br>
+                            &lt;html lang="pl"&gt;<br>
+                            &lt;head&gt;<br>
+                            &lt;meta charset="UTF-8"&gt;<br>
+                            &lt;title&gt;Wpisz tytuł&lt;/title&gt;<br>
+                            &lt;style&gt;<br>
+                            h2 + p {<br>
+                            color: red;<br>
+                            }<br>
+                            &lt;/style&gt;<br>
+                            &lt;/head&gt;<br>
+                            &lt;body&gt;<br>
+                            &lt;p&gt;Oto akapit.&lt;/p&gt;<br>
+                            &lt;h2&gt;Oto nagłówek drugiego poziomu.&lt;/h2&gt;<br>
+                            &lt;p&gt;Oto akapit zaraz po nagłówku.&lt;/p&gt;<br>
+                            &lt;p id="akapit"&gt;Oto trzeci akapit.&lt;/p&gt;<br>
+                            &lt;/body&gt;<br>
+                            &lt;/html&gt;
+                        </span>
+                    </div>
+                </div>
+   
+                <h3 id="tylda">Selektor: ~</h3>
+                <p>Selektor ten umożliwia nadanie określonych atrybutów wszystkim braciom - tym, których typ w deklaracji został podany jako drugi (czyli brat2). Zwykły tekst znajdujący się pomiędzy braćmi nie ma wpływu na działanie selektora, tzn. jest ignorowany. W odróżnieniu jednak od podstawowego selektora braci, w tym przypadku pomiędzy braćmi mogą się znajdować również elementy innego typu - zostaną pominięte.</p>
+                <div class="codeWrapper">
+                    <div class="code">
+                        <span contenteditable>
+                            &lt;!DOCTYPE html&gt;<br>
+                            &lt;html lang="pl"&gt;<br>
+                            &lt;head&gt;<br>
+                            &lt;meta charset="UTF-8"&gt;<br>
+                            &lt;title&gt;Wpisz tytuł&lt;/title&gt;<br>
+                            &lt;style&gt;<br>
+                            h2 ~ p {<br>
+                            color: red;<br>
+                            }<br>
+                            &lt;/style&gt;<br>
+                            &lt;/head&gt;<br>
+                            &lt;body&gt;<br>
+                            &lt;p&gt;Oto akapit.&lt;/p&gt;<br>
+                            &lt;h2&gt;Oto nagłówek drugiego poziomu.&lt;/h2&gt;<br>
+                            &lt;p&gt;Oto akapit zaraz po nagłówku.&lt;/p&gt;<br>
+                            &lt;span&gt;Oto zwykły tekst pomiędzy akapitami.&lt;/span&gt;<br>
+                            &lt;p id="akapit"&gt;Oto kolejny akapit po nagłówku.&lt;/p&gt;<br>
+                            &lt;/body&gt;<br>
+                            &lt;/html&gt;
+                        </span>
+                    </div>
+                </div>
+
+                <h3 id="gt">Selektor: &gt;</h3>
+                <p>Różnica pomiędzy selektorem X Y, a X > Y jest taka, że ten drugi wybiera tylko bezpośrednie dzieci. Na przykład:</p>
+                <div class="codeWrapper">
+                    <div class="code">
+                        <span contenteditable>
+                            &lt;!DOCTYPE html&gt;<br>
+                            &lt;html lang="pl"&gt;<br>
+                            &lt;head&gt;<br>
+                            &lt;meta charset="UTF-8"&gt;<br>
+                            &lt;title&gt;Wpisz tytuł&lt;/title&gt;<br>
+                            &lt;style&gt;<br>
+                            div > p {<br>
+                                background-color: yellow;<br>
+                            }<br>
+                            &lt;/style&gt;<br>
+                            &lt;/head&gt;<br>
+                            &lt;body&gt;<br>
+                            &lt;div&gt;<br>
+                                &lt;h2&gt;Oto zwykły nagłówek drugiego poziomu&lt;/h2&gt;<br>
+                                &lt;p&gt;Oto akapit, na który zostanie nałożony styl.&lt;/p&gt;<br>
+                            &lt;/div&gt;<br>
+                            &lt;div&gt;<br>
+                                &lt;span&gt;Oto zwykły tekst, a w nim &lt;p&gt;zwykły akapit.&lt;/p&gt;&lt;/span&gt;<br>
+                            &lt;/div&gt;<br>
+                            &lt;p>Oto zwykły akapit&lt;/p&gt;<br>
+                            &lt;/body&gt;<br>
+                            &lt;/html&gt;
+                        </span>
+                    </div>
+                </div>
+
+                <h3 id="attr">Selektor atrybutu elementu</h3>
+                <p>Odwołując się do tak zwanego selektora atrybutu, w przykładzie poniżej, wybierze on tylko element z atrybutem type o wartości password.</p>
+                <div class="codeWrapper">
+                    <div class="code">
+                        <span contenteditable>
+                            &lt;!DOCTYPE html&gt;<br>
+                            &lt;html lang="pl"&gt;<br>
+                            &lt;head&gt;<br>
+                            &lt;meta charset="UTF-8"&gt;<br>
+                            &lt;title&gt;Wpisz tytuł&lt;/title&gt;<br>
+                            &lt;style&gt;<br>
+                            input[type=password] { <br>
+                                border-color: red;<br>
+                            } <br>
+                            &lt;/style&gt;<br>
+                            &lt;/head&gt;<br>
+                            &lt;body&gt;<br>
+                            &lt;label for="tel"&gt;Number telefonu&lt;/label&gt;<br>
+                            &lt;input type="number" id="tel"&gt;&lt;br /&gt;<br>
+                            &lt;label for="pas"&gt;Hasło&lt;/label&gt;<br>
+                            &lt;input type="password" id="pas"&gt;<br>
+                            &lt;/body&gt;<br>
+                            &lt;/html&gt;
+                        </span>
+                    </div>
+                </div>
+
+                <h3 id="checked">Selektor :checked</h3>
+                <p>Ta pseudo-klasa obierze za cel tylko sprawdzone elementy - jak przycisk radio lub checkbox.</p>
+                <div class="codeWrapper">
+                    <div class="code">
+                        <span contenteditable>
+                            &lt;!DOCTYPE html&gt;<br>
+                            &lt;html lang="pl"&gt;<br>
+                            &lt;head&gt;<br>
+                            &lt;meta charset="UTF-8"&gt;<br>
+                            &lt;title&gt;Wpisz tytuł&lt;/title&gt;<br>
+                            &lt;style&gt;<br>
+                            input[type=checkbox]:checked + label { <br>
+                                color: lime;<br>
+                            } <br>
+                            &lt;/style&gt;<br>
+                            &lt;/head&gt;<br>
+                            &lt;body&gt;<br>
+                            &lt;input type="checkbox" id="remember"&gt;<br>
+                            &lt;label for="remember"&gt;Zapamiętaj mnie&lt;/label&gt;<br>
+                            &lt;/body&gt;<br>
+                            &lt;/html&gt;
+                        </span>
+                    </div>
+                </div>
+
+                <h3 id="hover">Selektor: :hover</h3>
+                <p>Jest to pseudo-klasa akcji użytkownika, która działa na zasadzie najechania kursorem na dany element. W poniższym przykładzie po najechaniu kursorem na element p, jego kolor zmieni się na czerwony, a kursor zmieni wygląd.</p>
+                <div class="codeWrapper">
+                    <div class="code">
+                        <span contenteditable>
+                            &lt;!DOCTYPE html&gt;<br>
+                            &lt;html lang="pl"&gt;<br>
+                            &lt;head&gt;<br>
+                            &lt;meta charset="UTF-8"&gt;<br>
+                            &lt;title&gt;Wpisz tytuł&lt;/title&gt;<br>
+                            &lt;style&gt;<br>
+                            p:hover { <br>
+                                color: red;<br>
+                                cursor: pointer;<br>
+                            } <br>
+                            &lt;/style&gt;<br>
+                            &lt;/head&gt;<br>
+                            &lt;body&gt;<br>
+                            &lt;p&gt;Oto zwykły akapit&lt;/p&gt;<br>
+                            &lt;/body&gt;<br>
+                            &lt;/html&gt;
+                        </span>
+                    </div>
+                </div>
+
+                <h3 id="pseudoelem">Selektor ::pseudoelement</h3>
+                <p>Możemy użyć pseudo-elementu (poprzedzonego ::) by wystylizować elementy takie jak pierwsza linia czy pierwsza litera. Zapamiętaj, że muszą one być dodane do elementów blokowych, by zadziałały.</p>
+                <div class="codeWrapper">
+                    <div class="code">
+                        <span contenteditable>
+                            &lt;!DOCTYPE html&gt;<br>
+                            &lt;html lang="pl"&gt;<br>
+                            &lt;head&gt;<br>
+                            &lt;meta charset="UTF-8"&gt;<br>
+                            &lt;title&gt;Wpisz tytuł&lt;/title&gt;<br>
+                            &lt;style&gt;<br>
+                            p.first::first-letter { <br>
+                                font-size: 32px;<br>
+                                background-color: yellow;<br>
+                            } <br>
+                            p.second::first-line { <br>
+                                font-size: 24px;<br>
+                                background-color: yellow;<br>
+                            } <br>
+                            &lt;/style&gt;<br>
+                            &lt;/head&gt;<br>
+                            &lt;body&gt;<br>
+                            &lt;p class="first"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean pretium euismod augue id dictum. Ut varius leo sed velit finibus pellentesque.&lt;/p&gt;<br>
+                            &lt;p class="second"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean pretium euismod augue id dictum. Ut varius leo sed velit finibus pellentesque.&lt;/p&gt;<br>
+                            &lt;/body&gt;<br>
+                            &lt;/html&gt;
+                        </span>
+                    </div>
+                </div>
+
+                <h3 id="nthchild">Selektor: :nth-child()</h3>
+                <p>Wybiera każdy określony element (tu: <p>) który jest kolejnym (tu: drugim) dzieckiem swoich rodziców</p>
+                <div class="codeWrapper">
+                    <div class="code">
+                        <span contenteditable>
+                            &lt;!DOCTYPE html&gt;<br>
+                            &lt;html lang="pl"&gt;<br>
+                            &lt;head&gt;<br>
+                            &lt;meta charset="UTF-8"&gt;<br>
+                            &lt;title&gt;Wpisz tytuł&lt;/title&gt;<br>
+                            &lt;style&gt;<br>
+                            p:nth-child(2n) /* parzyste dzieci */ { <br>
+                                color: red;<br>
+                            } <br>
+                            p:nth-child(3) /* trzecie dziecko */ { <br>
+                                color: green;<br>
+                            } <br>
+                            &lt;/style&gt;<br>
+                            &lt;/head&gt;<br>
+                            &lt;body&gt;<br>
+                            &lt;div&gt;<br>
+                            &lt;h1&gt;Oto zwykły nagłówek&lt;/h1&gt;<br>
+                            &lt;p&gt;Oto zwykły akapit&lt;/p&gt;<br>
+                            &lt;p&gt;Oto zwykły akapit&lt;/p&gt;<br>
+                            &lt;p&gt;Oto zwykły akapit&lt;/p&gt;<br>
+                            &lt;p&gt;Oto zwykły akapit&lt;/p&gt;<br>
+                            &lt;p&gt;Oto zwykły akapit&lt;/p&gt;<br>
+                            &lt;/div&gt;<br>
+                            &lt;/body&gt;<br>
+                            &lt;/html&gt;
+                        </span>
+                    </div>
+                </div>
+
+                <h3 id="nthlastchild">Selektor: :nth-last-child()</h3>
+                <p>Działa tak samo jak selektor <code>:nth-child()</code>, ale wybiera od końca.</p>
+                <div class="codeWrapper">
+                    <div class="code">
+                        <span contenteditable>
+                            &lt;!DOCTYPE html&gt;<br>
+                            &lt;html lang="pl"&gt;<br>
+                            &lt;head&gt;<br>
+                            &lt;meta charset="UTF-8"&gt;<br>
+                            &lt;title&gt;Wpisz tytuł&lt;/title&gt;<br>
+                            &lt;style&gt;<br>
+                            p:nth-last-child(2) /* przedostatnie dziecko */ { <br>
+                                color: green;<br>
+                            } <br>
+                            &lt;/style&gt;<br>
+                            &lt;/head&gt;<br>
+                            &lt;body&gt;<br>
+                            &lt;div&gt;<br>
+                            &lt;h1&gt;Oto zwykły nagłówek&lt;/h1&gt;<br>
+                            &lt;p&gt;Oto zwykły akapit&lt;/p&gt;<br>
+                            &lt;p&gt;Oto zwykły akapit&lt;/p&gt;<br>
+                            &lt;p&gt;Oto zwykły akapit&lt;/p&gt;<br>
+                            &lt;p&gt;Oto zwykły akapit&lt;/p&gt;<br>
+                            &lt;p&gt;Oto zwykły akapit&lt;/p&gt;<br>
+                            &lt;/div&gt;<br>
+                            &lt;/body&gt;<br>
+                            &lt;/html&gt;
+                        </span>
+                    </div>
+                </div>
+
+                <h3 id="nthoftype">Selektor: :nth-of-type()</h3>
+                <p>Działa podobnie do selektora <code>:nth-child()</code>, ale wybiera elementy zgodnie z typem, zamiast dziecka.</p>
+                <div class="codeWrapper">
+                    <div class="code">
+                        <span contenteditable>
+                            &lt;!DOCTYPE html&gt;<br>
+                            &lt;html lang="pl"&gt;<br>
+                            &lt;head&gt;<br>
+                            &lt;meta charset="UTF-8"&gt;<br>
+                            &lt;title&gt;Wpisz tytuł&lt;/title&gt;<br>
+                            &lt;style&gt;<br>
+                            p:nth-of-type(2n) /* parzyste akapity */ { <br>
+                                color: red;<br>
+                            } <br>
+                            p:nth-of-type(3) /* trzeci akapit */ { <br>
+                                color: green;<br>
+                            } <br>
+                            &lt;/style&gt;<br>
+                            &lt;/head&gt;<br>
+                            &lt;body&gt;<br>
+                            &lt;div&gt;<br>
+                            &lt;h1&gt;Oto zwykły nagłówek&lt;/h1&gt;<br>
+                            &lt;p&gt;Oto zwykły akapit&lt;/p&gt;<br>
+                            &lt;p&gt;Oto zwykły akapit&lt;/p&gt;<br>
+                            &lt;p&gt;Oto zwykły akapit&lt;/p&gt;<br>
+                            &lt;p&gt;Oto zwykły akapit&lt;/p&gt;<br>
+                            &lt;p&gt;Oto zwykły akapit&lt;/p&gt;<br>
+                            &lt;/div&gt;<br>
+                            &lt;/body&gt;<br>
+                            &lt;/html&gt;
+                        </span>
+                    </div>
+                </div>
+
+                <h3 id="nthlastoftype">Selektor: :nth-last-of-type()</h3>
+                <p>Możemy również użyć nth-last-of-type by zacząć od końca i dążyć do wybranego elementu.</p>
+                <div class="codeWrapper">
+                    <div class="code">
+                        <span contenteditable>
+                            &lt;!DOCTYPE html&gt;<br>
+                            &lt;html lang="pl"&gt;<br>
+                            &lt;head&gt;<br>
+                            &lt;meta charset="UTF-8"&gt;<br>
+                            &lt;title&gt;Wpisz tytuł&lt;/title&gt;<br>
+                            &lt;style&gt;<br>
+                            p:nth-last-of-type(2) /* przedostatni akapit */ { <br>
+                                color: green;<br>
+                            } <br>
+                            &lt;/style&gt;<br>
+                            &lt;/head&gt;<br>
+                            &lt;body&gt;<br>
+                            &lt;div&gt;<br>
+                            &lt;h1&gt;Oto zwykły nagłówek&lt;/h1&gt;<br>
+                            &lt;p&gt;Oto zwykły akapit&lt;/p&gt;<br>
+                            &lt;p&gt;Oto zwykły akapit&lt;/p&gt;<br>
+                            &lt;p&gt;Oto zwykły akapit&lt;/p&gt;<br>
+                            &lt;p&gt;Oto zwykły akapit&lt;/p&gt;<br>
+                            &lt;p&gt;Oto zwykły akapit&lt;/p&gt;<br>
+                            &lt;/div&gt;<br>
+                            &lt;/body&gt;<br>
+                            &lt;/html&gt;
+                        </span>
+                    </div>
+                </div>
+
+                <h3 id="firstchild">Selektor: :first-child</h3>
+                <p>Ta pseudo-klasa pozwala nam wybrać wyłącznie pierwsze dziecko elementu.</p>
+                <div class="codeWrapper">
+                    <div class="code">
+                        <span contenteditable>
+                            &lt;!DOCTYPE html&gt;<br>
+                            &lt;html lang="pl"&gt;<br>
+                            &lt;head&gt;<br>
+                            &lt;meta charset="UTF-8"&gt;<br>
+                            &lt;title&gt;Wpisz tytuł&lt;/title&gt;<br>
+                            &lt;style&gt;<br>
+                            p:first-child /* pierwsze dziecko (w tym przypadku to h1, a style działają tylko na p) */ { <br>
+                                color: green;<br>
+                            } <br>
+                            &lt;/style&gt;<br>
+                            &lt;/head&gt;<br>
+                            &lt;body&gt;<br>
+                            &lt;div&gt;<br>
+                            &lt;h1&gt;Oto zwykły nagłówek&lt;/h1&gt;<br>
+                            &lt;p&gt;Oto zwykły akapit&lt;/p&gt;<br>
+                            &lt;p&gt;Oto zwykły akapit&lt;/p&gt;<br>
+                            &lt;p&gt;Oto zwykły akapit&lt;/p&gt;<br>
+                            &lt;p&gt;Oto zwykły akapit&lt;/p&gt;<br>
+                            &lt;p&gt;Oto zwykły akapit&lt;/p&gt;<br>
+                            &lt;/div&gt;<br>
+                            &lt;/body&gt;<br>
+                            &lt;/html&gt;
+                        </span>
+                    </div>
+                </div>
+
+                <h3 id="lastchild">Selektor: :last-child</h3>
+                <p>Ta pseudo-klasa pozwala nam wybrać wyłącznie ostatnie dziecko elementu.</p>
+                <div class="codeWrapper">
+                    <div class="code">
+                        <span contenteditable>
+                            &lt;!DOCTYPE html&gt;<br>
+                            &lt;html lang="pl"&gt;<br>
+                            &lt;head&gt;<br>
+                            &lt;meta charset="UTF-8"&gt;<br>
+                            &lt;title&gt;Wpisz tytuł&lt;/title&gt;<br>
+                            &lt;style&gt;<br>
+                            p:last-child /* ostatnie dziecko */ { <br>
+                                color: green;<br>
+                            } <br>
+                            &lt;/style&gt;<br>
+                            &lt;/head&gt;<br>
+                            &lt;body&gt;<br>
+                            &lt;div&gt;<br>
+                            &lt;h1&gt;Oto zwykły nagłówek&lt;/h1&gt;<br>
+                            &lt;p&gt;Oto zwykły akapit&lt;/p&gt;<br>
+                            &lt;p&gt;Oto zwykły akapit&lt;/p&gt;<br>
+                            &lt;p&gt;Oto zwykły akapit&lt;/p&gt;<br>
+                            &lt;p&gt;Oto zwykły akapit&lt;/p&gt;<br>
+                            &lt;p&gt;Oto zwykły akapit&lt;/p&gt;<br>
+                            &lt;/div&gt;<br>
+                            &lt;/body&gt;<br>
+                            &lt;/html&gt;
+                        </span>
+                    </div>
+                </div>
+
+                <div class="quizVisible flex align-center justify-center">
+                    <h3>Quiz</h3>
+                    <div class="completed flex align-center justify-center">
+                        <span class="congrats"><i class="fa-regular fa-circle-check"></i> Brawo!</span>
+                        <button type="button">
+                            <span class="circle" aria-hidden="true">
+                            <span class="icon arrow"></span>
+                            </span>
+                            <span class="button-text">Przejdź dalej</span>
+                        </button>
+                    </div>
+                    <div class="buttons flex visible">
+                        <button type="reset"><i class="fa-solid fa-trash"></i> Wyczyść</button>
+                        <button type="submit">Sprawdź <i class="fa-solid fa-arrow-right-long"></i></button>
+                    </div>
+                </div>
+
+                <div class="quiz hide" questions="2">
+                    <div class="question">
+                        <span>Jak poprawnie wybrać wszystkie akapity o klasie "tekst"?</span>
+                        <input type="radio" name="selektor" id="selektorCorrect">
+                        <label for="selektorCorrect"><code>p.tekst</code></label>
+                        <input type="radio" name="selektor" id="selektor">
+                        <label for="selektor"><code>span.tekst</code></label>
+                        <input type="radio" name="selektor" id="selektor2">
+                        <label for="selektor2"><code>span#tekst</code></label>
+                        <input type="radio" name="selektor" id="selektor3">
+                        <label for="selektor3"><code>p#tekst</code></label>
+                    </div>
+                    <div class="question">
+                        <span>Jak poprawnie wybrać akapity występujące zaraz po nagłówku drugiego poziomu?</span>
+                        <input type="radio" name="selektor2" id="selektor2Correct">
+                        <label for="selektor2Correct">h2 + p</label>
+                        <input type="radio" name="selektor2" id="selektor21">
+                        <label for="selektor21">h1 + p</label>
+                        <input type="radio" name="selektor2" id="selektor22">
+                        <label for="selektor22">p + h2</label>
+                        <input type="radio" name="selektor2" id="selektor23">
+                        <label for="selektor23">p + h1</label>
+                    </div>
+                </div>
+            </section>
+
+            <section id="level4" class="hide">
+                <h3>Wielkość czcionki</h3>
+                <p>Aby zmienić wielkość czcionki używamy stylu:</p>
+                <code>selektor { font-size: rozmiar; }</code>
+                <p>Jako rozmiar należy podać konkretną wartość czcionki. Możliwe jest tutaj kilka sposobów:</p>
+                <ol>
+                    <li>
+                        Imienne wartości absolutne:
+                        <ul>
+                            <li>xx-small - najmniejsza</li>
+                            <li>x-small - bardzo mała</li>
+                            <li>small - mała</li>
+                            <li>medium - średnia</li>
+                            <li>large - duża</li>
+                            <li>x-large - bardzo duża</li>
+                            <li>xx-large - największa</li>
+                        </ul>
+                        <div class="codeWrapper">
+                            <div class="code">
+                                <span contenteditable>
+                                    &lt;!DOCTYPE html&gt;<br>
+                                    &lt;html lang="pl"&gt;<br>
+                                    &lt;head&gt;<br>
+                                    &lt;meta charset="UTF-8"&gt;<br>
+                                    &lt;title&gt;Wpisz tytuł&lt;/title&gt;<br>
+                                    &lt;/head&gt;<br>
+                                    &lt;body&gt;<br>
+                                    &lt;p style="font-size: xx-small;"&gt;Rozmiar xx-small&lt;/p&gt;<br>
+                                    &lt;p style="font-size: x-small;"&gt;Rozmiar x-small&lt;/p&gt;<br>
+                                    &lt;p style="font-size: small;"&gt;Rozmiar small&lt;/p&gt;<br>
+                                    &lt;p style="font-size: medium;"&gt;Rozmiar mediumt&lt;/p&gt;<br>
+                                    &lt;p style="font-size: large;"&gt;Rozmiar large&lt;/p&gt;<br>
+                                    &lt;p style="font-size: x-large;"&gt;Rozmiar x-large&lt;/p&gt;<br>
+                                    &lt;p style="font-size: xx-large;"&gt;Rozmiar xx-large&lt;/p&gt;<br>
+                                    &lt;/body&gt;<br>
+                                    &lt;/html&gt;
+                                </span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        Wartości względne:
+                        <ul>
+                            <li>smaller - mniejsza od bieżącej</li>
+                            <li>larger - większa od bieżącej</li>
+                        </ul>
+                        <div class="codeWrapper">
+                            <div class="code">
+                                <span contenteditable>
+                                    &lt;!DOCTYPE html&gt;<br>
+                                    &lt;html lang="pl"&gt;<br>
+                                    &lt;head&gt;<br>
+                                    &lt;meta charset="UTF-8"&gt;<br>
+                                    &lt;title&gt;Wpisz tytuł&lt;/title&gt;<br>
+                                    &lt;/head&gt;<br>
+                                    &lt;body&gt;<br>
+                                    &lt;p style="font-size: smaller;"&gt;Rozmiar smaller&lt;/p&gt;<br>
+                                    &lt;p&gt;Rozmiar domyślny&lt;/p&gt;<br>
+                                    &lt;p style="font-size: larger;"&gt;Rozmiar larger&lt;/p&gt;<br>
+                                    &lt;/body&gt;<br>
+                                    &lt;/html&gt;
+                                </span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        Procent wielkości bieżącej:
+                        <div class="codeWrapper">
+                            <div class="code">
+                                <span contenteditable>
+                                    &lt;!DOCTYPE html&gt;<br>
+                                    &lt;html lang="pl"&gt;<br>
+                                    &lt;head&gt;<br>
+                                    &lt;meta charset="UTF-8"&gt;<br>
+                                    &lt;title&gt;Wpisz tytuł&lt;/title&gt;<br>
+                                    &lt;/head&gt;<br>
+                                    &lt;body&gt;<br>
+                                    &lt;p style="font-size: 75%;"&gt;Rozmiar 75%&lt;/p&gt;<br>
+                                    &lt;p&gt;Rozmiar domyślny&lt;/p&gt;<br>
+                                    &lt;p style="font-size: 150%;"&gt;Rozmiar 150%&lt;/p&gt;<br>
+                                    &lt;/body&gt;<br>
+                                    &lt;/html&gt;
+                                </span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        Jednostki długości:
+                        <p>Jednostka "em" jest w tym przypadku miarą względną i odnosi się do rozmiaru czcionki zdefiniowanej dla elementu rodzica, czyli: 1em = 100% = 16px.</p>
+                        <table>
+                            <tr>
+                                <td>1em</td>
+                                <td>12pt</td>
+                                <td>16px</td>
+                                <td>100%</td>
+                            </tr>
+                            <tr>
+                                <td>2em</td>
+                                <td>24pt</td>
+                                <td>32px</td>
+                                <td>200%</td>
+                            </tr>
+                            <tr>
+                                <td>3.5em</td>
+                                <td>42pt</td>
+                                <td>56px</td>
+                                <td>350%</td>
+                            </tr>
+                            <tr>
+                                <td>...</td>
+                                <td>...</td>
+                                <td>...</td>
+                                <td>...</td>
+                            </tr>
+                        </table>
+                        <div class="codeWrapper">
+                            <div class="code">
+                                <span contenteditable>
+                                    &lt;!DOCTYPE html&gt;<br>
+                                    &lt;html lang="pl"&gt;<br>
+                                    &lt;head&gt;<br>
+                                    &lt;meta charset="UTF-8"&gt;<br>
+                                    &lt;title&gt;Wpisz tytuł&lt;/title&gt;<br>
+                                    &lt;/head&gt;<br>
+                                    &lt;body&gt;<br>
+                                    &lt;p style="font-size: 32px;"&gt;Rozmiar 32px&lt;/p&gt;<br>
+                                    &lt;p style="font-size: 24pt;"&gt;Rozmiar 24pt&lt;/p&gt;<br>
+                                    &lt;p style="font-size: 1.5em;"&gt;Rozmiar 1em&lt;/p&gt;<br>
+                                    &lt;/body&gt;<br>
+                                    &lt;/html&gt;
+                                </span>
+                            </div>
+                        </div>
+                    </li>
+                </ol>
+
+                <h3>Rodzaj czcionki</h3>
+                <p>Aby zmienić rodzaj czcionki używamy stylu:</p>
+                <code>selektor { font-family: rodzaj, rodzaj1, rodzaj2 ...; }</code>
+                <p>Jako "rodzaj, rodzaj1, rodzaj2 ..." należy podać rodzaje czcionek. Podanie kilku rodzajów spowoduje, że jeśli użytkownik nie będzie posiadał pierwszego, to zostanie wybrany następny w kolejności (można oczywiście podać tylko jeden rodzaj). Jeżeli nazwa czcionki składa się z kilku wyrazów, należy ją objąć w znaki apostrofu (np. 'Times New Roman', 'Courier New').</p>
+                <div class="codeWrapper">
+                    <div class="code">
+                        <span contenteditable>
+                            &lt;!DOCTYPE html&gt;<br>
+                            &lt;html lang="pl"&gt;<br>
+                            &lt;head&gt;<br>
+                            &lt;meta charset="UTF-8"&gt;<br>
+                            &lt;title&gt;Wpisz tytuł&lt;/title&gt;<br>
+                            &lt;/head&gt;<br>
+                            &lt;body&gt;<br>
+                            &lt;p style="font-family: Arial;"&gt;To jest czcionka Arial&lt;/p&gt;<br>
+                            &lt;p style="font-family: Verdana;"&gt;To jest czcionka Verdana&lt;/p&gt;<br>
+                            &lt;p style="font-family: 'Comic Sans MS';"&gt;To jest czcionka Comic Sans&lt;/p&gt;<br>
+                            &lt;/body&gt;<br>
+                            &lt;/html&gt;
+                        </span>
+                    </div>
+                </div>
+
+                <h3>Styl czcionki</h3>
+                <p>Aby zmienić styl czcionki używamy stylu:</p>
+                <code>selektor { font-style: styl; }</code>
+                <p>Jako "styl" należy wpisać:</p>
+                <ul>
+                    <li>normal - czcionka normalna (podstawowa)</li>
+                    <li>italic - czcionka pochylona (jeżeli niedostępna, automatycznie wybierany jest styl oblique)</li>
+                    <li>oblique - również czcionka pochylona (podobna jak poprzednio)</li>
+                </ul>
+                <div class="codeWrapper">
+                    <div class="code">
+                        <span contenteditable>
+                            &lt;!DOCTYPE html&gt;<br>
+                            &lt;html lang="pl"&gt;<br>
+                            &lt;head&gt;<br>
+                            &lt;meta charset="UTF-8"&gt;<br>
+                            &lt;title&gt;Wpisz tytuł&lt;/title&gt;<br>
+                            &lt;/head&gt;<br>
+                            &lt;body&gt;<br>
+                            &lt;p style="font-style: normal;"&gt;To jest styl normal&lt;/p&gt;<br>
+                            &lt;p style="font-style: italic;"&gt;To jest styl italic&lt;/p&gt;<br>
+                            &lt;p style="font-style: oblique;"&gt;To jest styl oblique&lt;/p&gt;<br>
+                            &lt;/body&gt;<br>
+                            &lt;/html&gt;
+                        </span>
+                    </div>
+                </div>
+
+                <h3>Waga czcionki</h3>
+                <p>Aby zmienić wagę czionki używamy stylu:</p>
+                <code>selektor { font-weight: waga; }</code>
+                <p>Jako waga należy wpisać:</p>
+                <ol>
+                    <li>
+                        Wartości absolutne:
+                        <ul>
+                            <li>normal - czcionka normalna (podstawowa)</li>
+                            <li>bold - czcionka pogrubiona</li>
+                            <li>100, 200, 300, 400 (odpowiednik "normal"), 500, 600, 700 (odpowiednik "bold"), 800, 900 - każdy następny numer wskazuje wagę czcionki przynajmniej tak samo wytłuszczonej jak dla poprzedniej wartości w sekwencji</li>
+                        </ul>
+                        <div class="codeWrapper">
+                            <div class="code">
+                                <span contenteditable>
+                                    &lt;!DOCTYPE html&gt;<br>
+                                    &lt;html lang="pl"&gt;<br>
+                                    &lt;head&gt;<br>
+                                    &lt;meta charset="UTF-8"&gt;<br>
+                                    &lt;title&gt;Wpisz tytuł&lt;/title&gt;<br>
+                                    &lt;/head&gt;<br>
+                                    &lt;body&gt;<br>
+                                    &lt;p style="font-weight: 100;"&gt;To jest waga 100&lt;/p&gt;<br>
+                                    &lt;p style="font-weight: 200;"&gt;To jest waga 200&lt;/p&gt;<br>
+                                    &lt;p style="font-weight: 300;"&gt;To jest waga 300&lt;/p&gt;<br>
+                                    &lt;p style="font-weight: 400;"&gt;To jest waga 400 (normal)&lt;/p&gt;<br>
+                                    &lt;p style="font-weight: 500;"&gt;To jest waga 500&lt;/p&gt;<br>
+                                    &lt;p style="font-weight: 600;"&gt;To jest waga 600&lt;/p&gt;<br>
+                                    &lt;p style="font-weight: 700;"&gt;To jest waga 700 (bold)&lt;/p&gt;<br>
+                                    &lt;p style="font-weight: 800;"&gt;To jest waga 800&lt;/p&gt;<br>
+                                    &lt;p style="font-weight: 900;"&gt;To jest waga 900&lt;/p&gt;<br>
+                                    &lt;/body&gt;<br>
+                                    &lt;/html&gt;
+                                </span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        Wartości względne:
+                        <ul>
+                            <li>lighter - czcionka mniej wytłuszczona od odziedziczonej lub przypisanej do znacznika (np. typowo znaczniki <code>&lt;b&gt;</code> oraz <code>&lt;strong&gt;</code> mają przypisaną domyślną wagę "bold")</li>
+                            <li>bolder - czcionka bardziej wytłuszczona</li>
+                            <div class="codeWrapper">
+                                <div class="code">
+                                    <span contenteditable>
+                                        &lt;!DOCTYPE html&gt;<br>
+                                        &lt;html lang="pl"&gt;<br>
+                                        &lt;head&gt;<br>
+                                        &lt;meta charset="UTF-8"&gt;<br>
+                                        &lt;title&gt;Wpisz tytuł&lt;/title&gt;<br>
+                                        &lt;/head&gt;<br>
+                                        &lt;body&gt;<br>
+                                        &lt;p style="font-weight: 200;"&gt;<br>
+                                        &lt;span style="font-weight: lighter;"&gt;To jest waga lighter w stosunku do wartości "200"&lt;/span&gt;<br>
+                                        &lt;/p&gt;<br>
+                                        &lt;b style="font-weight: lighter;"&gt;To jest waga lighter dla znacznika &amp;lt;b&amp;gt;&lt;/b&gt;<br>
+                                        &lt;p style="font-weight: 800;"&gt;<br>
+                                        &lt;span style="font-weight: bolder;"&gt;To jest waga bolder w stosunku do wartości "800"&lt;/span&gt;<br>
+                                        &lt;/p&gt;<br>
+                                        &lt;b style="font-weight: bolder;"&gt;To jest waga bolder dla znacznika &amp;lt;b&amp;gt;&lt;/b&gt;<br>
+                                        &lt;/body&gt;<br>
+                                        &lt;/html&gt;
+                                    </span>
+                                </div>
+                            </div>
+                        </ul>
+                    </li>
+                </ol>
+
+                <div class="quizVisible flex align-center justify-center">
+                    <h3>Quiz</h3>
+                    <div class="completed flex align-center justify-center">
+                        <span class="congrats"><i class="fa-regular fa-circle-check"></i> Brawo!</span>
+                        <button type="button">
+                            <span class="circle" aria-hidden="true">
+                            <span class="icon arrow"></span>
+                            </span>
+                            <span class="button-text">Przejdź dalej</span>
+                        </button>
+                    </div>
+                    <div class="buttons flex visible">
+                        <button type="reset"><i class="fa-solid fa-trash"></i> Wyczyść</button>
+                        <button type="submit">Sprawdź <i class="fa-solid fa-arrow-right-long"></i></button>
+                    </div>
+                </div>
+
+                <div class="quiz hide" questions="2">
+                    <div class="question">
+                        <span>Jak poprawnie zmienić rozmiar czcionki dla każdego akapitu?</span>
+                        <input type="radio" name="fontsize" id="fontsizeCorrect">
+                        <label for="fontsizeCorrect"><code>p { font-size: 20px; }</code></label>
+                        <input type="radio" name="fontsize" id="fontsize">
+                        <label for="fontsize"><code>p { font-weight: 20px; }</code></label>
+                        <input type="radio" name="fontsize" id="fontsize2">
+                        <label for="fontsize2"><code>p { font-style: 20px; }</code></label>
+                    </div>
+                    <div class="question">
+                        <span>Jak poprawnie ustawić czionkę Arial dla każdego akapitu?</span>
+                        <input type="radio" name="fontfamily" id="fontfamilyCorrect">
+                        <label for="fontfamilyCorrect"><code>p { font-family: Arial; }</code></label>
+                        <input type="radio" name="fontfamily" id="fontfamily">
+                        <label for="fontfamily"><code>p { font: Arial; }</code></label>
+                        <input type="radio" name="fontfamily" id="fontfamily2">
+                        <label for="fontfamily2"><code>p { font-style: Arial; }</code></label>
+                    </div>
+                </div>
+            </section>
+
+            <section id="level5" class="hide">
+                <h3>Kolor tekstu</h3>
+                <p>Aby zmienić kolor tekstu używamy stylu:</p>
+                <code>selektor { color: kolor; }</code>
+                <p>Jako kolor należy podać <a href="https://www.kurshtml.edu.pl/css/kolory.html" target="_blank">definicję koloru.</a></p>
+                <div class="codeWrapper">
+                    <div class="code">
+                        <span contenteditable>
+                            &lt;!DOCTYPE html&gt;<br>
+                            &lt;html lang="pl"&gt;<br>
+                            &lt;head&gt;<br>
+                            &lt;meta charset="UTF-8"&gt;<br>
+                            &lt;title&gt;Wpisz tytuł&lt;/title&gt;<br>
+                            &lt;style&gt;<br>
+                            p {<br>
+                            color: green;<br>
+                            }<br>
+                            &lt;/style&gt;<br>
+                            &lt;/head&gt;<br>
+                            &lt;body&gt;<br>
+                            &lt;p&gt;Oto zielony akapit&lt;/p&gt;<br>
+                            &lt;/body&gt;<br>
+                            &lt;/html&gt;
+                        </span>
+                    </div>
+                </div>
+
+                <h3>Dekoracja tekstu</h3>
+                <p>Aby udekorować tekst używamy stylu:</p>
+                <code>selektor { text-decoration: dekoracja; }</code>
+                <p>Jako dekorację należy podać:</p>
+                <ul>
+                    <li>none - bez zmian</li>
+                    <li>underline - podkreślenie</li>
+                    <li>line-through - przekreślenie</li>
+                    <li>overline - nadkreślenie</li>
+                    <li>blink - migotanie tekstu (nieobsługiwane w nowych przeglądarkach)</li>
+                </ul>
+                <p>Efekty te można łączyć ze sobą wpisując jedną dekorację za drugą, lecz zazwyczaj się tego nie używa.</p>
+                <div class="codeWrapper">
+                    <div class="code">
+                        <span contenteditable>
+                            &lt;!DOCTYPE html&gt;<br>
+                            &lt;html lang="pl"&gt;<br>
+                            &lt;head&gt;<br>
+                            &lt;meta charset="UTF-8"&gt;<br>
+                            &lt;title&gt;Wpisz tytuł&lt;/title&gt;<br>
+                            &lt;/head&gt;<br>
+                            &lt;body&gt;<br>
+                            &lt;p style="text-decoration: none;"&gt;Oto dekoracja none&lt;/p&gt;<br>
+                            &lt;p style="text-decoration: underline;"&gt;Oto dekoracja underline&lt;/p&gt;<br>
+                            &lt;p style="text-decoration: line-through;"&gt;Oto dekoracja line-through&lt;/p&gt;<br>
+                            &lt;p style="text-decoration: overline;"&gt;Oto dekoracja overline&lt;/p&gt;<br>
+                            &lt;p style="text-decoration: blink;"&gt;Oto dekoracja blink (tylko starsze przeglądarki)&lt;/p&gt;<br>
+                            &lt;p style="text-decoration: underline line-through overline;"&gt;Oto tekst podkreślony, przekreślony i nadkreślony&lt;/p&gt;<br>
+                            &lt;/body&gt;<br>
+                            &lt;/html&gt;
+                        </span>
+                    </div>
+                </div>
+
+                <h3>Transformacja tekstu</h3>
+                <p>Aby przekształcić zwykły tekst na pisany w całości dużymi albo małymi literami używamy stylu:</p>
+                <code>selektor { text-transform: transformacja; }</code>
+                <p>Jako transformację należy podać:</p>
+                <ul>
+                    <li>none - bez zmian</li>
+                    <li>capitalize - zamiana pierwszych liter wszystkich wyrazów na wielkie</li>
+                    <li>uppercase - zamiana wszystkich liter na wielkie</li>
+                    <li>lowercase - zamiana wszystkich liter na małe</li>
+                </ul>
+                <div class="codeWrapper">
+                    <div class="code">
+                        <span contenteditable>
+                            &lt;!DOCTYPE html&gt;<br>
+                            &lt;html lang="pl"&gt;<br>
+                            &lt;head&gt;<br>
+                            &lt;meta charset="UTF-8"&gt;<br>
+                            &lt;title&gt;Wpisz tytuł&lt;/title&gt;<br>
+                            &lt;/head&gt;<br>
+                            &lt;body&gt;<br>
+                            &lt;p style="text-transform: none;"&gt;To jest akapit z transformacją tekstu none&lt;/p&gt;<br>
+                            &lt;p style="text-transform: capitalize;"&gt;To jest akapit z transformacją tekstu capitalize&lt;/p&gt;<br>
+                            &lt;p style="text-transform: uppercase;"&gt;To jest akapit z transformacją tekstu uppercase&lt;/p&gt;<br>
+                            &lt;p style="text-transform: lowercase;"&gt;To jest akapit z transformacją tekstu lowercase&lt;/p&gt;<br>
+                            &lt;/body&gt;<br>
+                            &lt;/html&gt;
+                        </span>
+                    </div>
+                </div>
+
+                <h3>Wyrównanie tekstu</h3>
+                <p>Aby ustawić tekst po lewej, po prawej lub na środku (wyśrodkowanie, centrowanie) używamy stylu:</p>
+                <code>selektor { text-align: wyrównanie; }</code>
+                <p>Jako wyrównanie należy podać:</p>
+                <ul>
+                    <li>left - wyrównanie tekstu do lewego marginesu (domyślnie)</li>
+                    <li>right - wyrównanie do prawego marginesu</li>
+                    <li>center - do środka (wyśrodkowanie)</li>
+                    <li>justify - do obu marginesów jednocześnie (justowanie)</li>
+                </ul>
+                <div class="codeWrapper">
+                    <div class="code">
+                        <span contenteditable>
+                            &lt;!DOCTYPE html&gt;<br>
+                            &lt;html lang="pl"&gt;<br>
+                            &lt;head&gt;<br>
+                            &lt;meta charset="UTF-8"&gt;<br>
+                            &lt;title&gt;Wpisz tytuł&lt;/title&gt;<br>
+                            &lt;/head&gt;<br>
+                            &lt;body&gt;<br>
+                            &lt;p style="text-align: left;"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus consectetur, tellus at consequat ornare, diam ligula consectetur ligula, vitae blandit nulla nisi ut sem.&lt;/p&gt;<br>
+                            &lt;p style="text-align: right;"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus consectetur, tellus at consequat ornare, diam ligula consectetur ligula, vitae blandit nulla nisi ut sem.&lt;/p&gt;<br>
+                            &lt;p style="text-align: center;"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus consectetur, tellus at consequat ornare, diam ligula consectetur ligula, vitae blandit nulla nisi ut sem.&lt;/p&gt;<br>
+                            &lt;p style="text-align: justify;"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus consectetur, tellus at consequat ornare, diam ligula consectetur ligula, vitae blandit nulla nisi ut sem.&lt;/p&gt;<br>
+                            &lt;/body&gt;<br>
+                            &lt;/html&gt;
+                        </span>
+                    </div>
+                </div>
+
+                <h3>Odstępy między znakami</h3>
+                <p>Aby rozstrzelić lub ścieśnić tekst poprzez zwiększenie odległości między literami używamy stylu:</p>
+                <code>selektor { letter-spacing: odstęp; }</code>
+                <p>Jako "odstęp" należy podać konkretną wielkość odstępu między poszczególnymi literami używając jednostek długości opisanych przy rozmiarze czcionki. Wpisanie "normal" przywróci wartość domyślną.</p>          
+                To jest akapit, w którym odstępy między literami wynoszą 3mm
+                <div class="codeWrapper">
+                    <div class="code">
+                        <span contenteditable>
+                            &lt;!DOCTYPE html&gt;<br>
+                            &lt;html lang="pl"&gt;<br>
+                            &lt;head&gt;<br>
+                            &lt;meta charset="UTF-8"&gt;<br>
+                            &lt;title&gt;Wpisz tytuł&lt;/title&gt;<br>
+                            &lt;/head&gt;<br>
+                            &lt;body&gt;<br>
+                            &lt;p style="letter-spacing: 3mm;"&gt;To jest akapit, w którym odstępy między literami wynoszą 3mm&lt;/p&gt;<br>
+                            &lt;p style="letter-spacing: 4px"&gt;To jest akapit, w którym odstępy między literami wynoszą 4px&lt;/p&gt;<br>
+                            &lt;p style="letter-spacing: -2px;"&gt;To jest akapit, w którym odstępy między literami wynoszą -2px&lt;/p&gt;<br>
+                            &lt;/body&gt;<br>
+                            &lt;/html&gt;
+                        </span>
+                    </div>
+                </div>
+
+                <h3>Kolor tła</h3>
+                <p>Aby zmienić kolor tła dowolnego elementu używamy stylu:</p>
+                <code>selektor { background-color: kolor; }</code>
+                <p>Jako "kolor" należy podać <a href="https://www.kurshtml.edu.pl/css/kolory.html" target="_blank">definicję koloru.</a>. Wpisanie "transparent" ustali tło przezroczyste.</p>
+                <div class="codeWrapper">
+                    <div class="code">
+                        <span contenteditable>
+                            &lt;!DOCTYPE html&gt;<br>
+                            &lt;html lang="pl"&gt;<br>
+                            &lt;head&gt;<br>
+                            &lt;meta charset="UTF-8"&gt;<br>
+                            &lt;title&gt;Wpisz tytuł&lt;/title&gt;<br>
+                            &lt;/head&gt;<br>
+                            &lt;body&gt;<br>
+                            &lt;p style="background-color: red;"&gt;Tło koloru czerwonego (red)&lt;/p&gt;<br>
+                            &lt;p style="background-color: yellow;"&gt;Tło koloru żółtego (yellow)&lt;/p&gt;<br>
+                            &lt;p style="background-color: #D08AFF;"&gt;Tło koloru #D08AFF&lt;/p&gt;<br>
+                            &lt;/body&gt;<br>
+                            &lt;/html&gt;
+                        </span>
+                    </div>
+                </div>
+
+                <h3>Tło obrazkowe</h3>
+                <p>Aby ustawić tło graficzne (obrazek, zdjęcie) pod dowolnym elementem używamy stylu:</p>
+                <code>selektor { background-image: url(ścieżka dostępu do obrazka) }</code>
+                <p>Jako "ścieżka dostępu do obrazka" należy podać miejsce, gdzie znajduje się obrazek, który chcemy wstawić jako tło. Wpisanie "none" usunie obrazek. Polecenie pozwala wstawić dowolny obrazek jako tło pod elementem. Pamiętaj jednak, żeby obrazek w tle nie był zbyt jaskrawy. Spowoduje to tylko zaciemnienie zawartości strony i utrudni czytanie.</p>
+                <div class="codeWrapper">
+                    <div class="code">
+                        <span contenteditable>
+                            &lt;!DOCTYPE html&gt;<br>
+                            &lt;html lang="pl"&gt;<br>
+                            &lt;head&gt;<br>
+                            &lt;meta charset="UTF-8"&gt;<br>
+                            &lt;title&gt;Wpisz tytuł&lt;/title&gt;<br>
+                            &lt;/head&gt;<br>
+                            &lt;body&gt;<br>
+                            &lt;p style="background-image: url('../Formularze 2/favicon.ico');"&gt;Oto zwykły akapit&lt;/p&gt;<br>
+                            &lt;/body&gt;<br>
+                            &lt;/html&gt;
+                        </span>
+                    </div>
+                </div>
+
+                <h3>Rozmiary tła</h3>
+                <p>Aby przeskalować obrazek wstawiony w tle używamy stylu:</p>
+                <code>selektor { background-size: rozmiary }</code>
+                <p>Jako "rozmiary" należy wpisać:</p>
+                <ul>
+                    <li>contain - skaluje obrazek, zachowując proporcje, tak aby w całości zmieścił się w tle</li>
+                    <li>cover - skaluje obrazek, zachowując proporcje, tak aby pokrył cały obszar tła (część grafiki może być niewidoczna)</li>
+                    <li>auto - zachowanie domyślne</li>
+                    <li>długość - obrazek zostanie przeskalowany do podanego wymiaru</li>
+                    <li>wartość procentową - obrazek zostanie przeskalowany względem obszaru pozycjonowania tła</li>
+                </ul>
+                <p>Podanie dwóch z powyższych wartości (np. "150px 100px") pozwala określić osobno szerokość i wysokość obrazka (skalowanie bez zachowania proporcji - rozciąganie grafiki). Aby przeskalować do wysokości, zachowując jego proporcje, jako szerokość należy podać wartość "auto" (np. "auto 100px").</p>
+                <div class="codeWrapper">
+                    <div class="code">
+                        <span contenteditable>
+                            &lt;!DOCTYPE html&gt;<br>
+                            &lt;html lang="pl"&gt;<br>
+                            &lt;head&gt;<br>
+                            &lt;meta charset="UTF-8"&gt;<br>
+                            &lt;title&gt;Wpisz tytuł&lt;/title&gt;<br>
+                            &lt;/head&gt;<br>
+                            &lt;body&gt;<br>
+                            &lt;p style="background-image: url('../Formularze 2/favicon.ico'); background-size: contain;"&gt;Oto zwykły akapit&lt;/p&gt;<br>
+                            &lt;/body&gt;<br>
+                            &lt;/html&gt;
+                        </span>
+                    </div>
+                </div>
+
+                <h3>Powtarzanie tła</h3>
+                <p>Aby zapobiec powielaniu grafiki wstawionej w tle albo powielić ją tylko w jednym kierunku używamy stylu:</p>
+                <code>selektor { background-repeat: powtarzanie }</code>
+                <p>Jako "powtarzanie" należy wpisać:</p>
+                <ul>
+                    <li>repeat - powtarzanie tła w obu kierunkach (domyślnie)</li>
+                    <li>repeat-x - powtarzanie tła tylko w kierunku poziomym</li>
+                    <li>repeat-y - powtarzanie tła tylko w kierunku pionowym</li>
+                    <li>no-repeat - brak powtarzania tła (zostanie wyświetlone jako pojedynczy obrazek)</li>
+                    <li>space - przestrzeń pomiędzy obrazkami w tle zostanie dobrana w taki sposób, aby żadna grafika nie była przycięta (CSS 3 - MSIE 9, Opera)</li>
+                    <li>round - wymiary obrazka w tle zostaną dopasowane w taki sposób, aby żadna grafika nie była przycięta (CSS 3 - MSIE 9, Opera)</li>
+                </ul>
+                <div class="codeWrapper">
+                    <div class="code">
+                        <span contenteditable>
+                            &lt;!DOCTYPE html&gt;<br>
+                            &lt;html lang="pl"&gt;<br>
+                            &lt;head&gt;<br>
+                            &lt;meta charset="UTF-8"&gt;<br>
+                            &lt;title&gt;Wpisz tytuł&lt;/title&gt;<br>
+                            &lt;/head&gt;<br>
+                            &lt;body&gt;<br>
+                            &lt;p style="background-image: url('../Formularze 2/favicon.ico'); background-size: contain; background-repeat: no-repeat;"&gt;Oto zwykły akapit&lt;/p&gt;<br>
+                            &lt;/body&gt;<br>
+                            &lt;/html&gt;
+                        </span>
+                    </div>
+                </div>
+
+                <h3>Pozycja tła</h3>
+                <p>Aby ustawić obrazek (grafikę, zdjęcie) w tle w określonej pozycji używamy stylu:</p>
+                <code>selektor { background-position: pozycja }</code>
+                <p>Jako "pozycja" należy wpisać:</p>
+                <ul>
+                    <li>center - obrazek na środku (w centrum)</li>
+                    <li>left - obrazek po lewej</li>
+                    <li>right - po prawej</li>
+                    <li>top - na górze</li>
+                    <li>bottom - na dole</li>
+                    <li>jednostka długości - odległość od lewej krawędzi</li>
+                    <li>left top - lewy-górny róg</li>
+                    <li>left bottom - lewy-dolny róg</li>
+                    <li>right top - prawy-górny róg</li>
+                    <li>right bottom - prawy-dolny róg</li>
+                    <li>dwie jednostki długości, z których pierwsza oznacza odległość od lewej krawędzi, a druga - od górnej</li>
+                </ul>
+                <div class="codeWrapper">
+                    <div class="code">
+                        <span contenteditable>
+                            &lt;!DOCTYPE html&gt;<br>
+                            &lt;html lang="pl"&gt;<br>
+                            &lt;head&gt;<br>
+                            &lt;meta charset="UTF-8"&gt;<br>
+                            &lt;title&gt;Wpisz tytuł&lt;/title&gt;<br>
+                            &lt;/head&gt;<br>
+                            &lt;body&gt;<br>
+                            &lt;p style="background-image: url('../Formularze 2/favicon.ico'); background-size: contain; background-repeat: no-repeat; background-position: center;"&gt;Oto zwykły akapit&lt;/p&gt;<br>
+                            &lt;/body&gt;<br>
+                            &lt;/html&gt;
+                        </span>
+                    </div>
+                </div>
+
+                <div class="quizVisible flex align-center justify-center">
+                    <h3>Quiz</h3>
+                    <div class="completed flex align-center justify-center">
+                        <span class="congrats"><i class="fa-regular fa-circle-check"></i> Brawo!</span>
+                        <button type="button">
+                            <span class="circle" aria-hidden="true">
+                            <span class="icon arrow"></span>
+                            </span>
+                            <span class="button-text">Przejdź dalej</span>
+                        </button>
+                    </div>
+                    <div class="buttons flex visible">
+                        <button type="reset"><i class="fa-solid fa-trash"></i> Wyczyść</button>
+                        <button type="submit">Sprawdź <i class="fa-solid fa-arrow-right-long"></i></button>
+                    </div>
+                </div>
+
+                <div class="quiz hide" questions="2">
+                    <div class="question">
+                        <span>Jak poprawnie wyjustować tekst?</span>
+                        <input type="radio" name="justify" id="justifyCorrect">
+                        <label for="justifyCorrect">span { text-align: justify; }</label>
+                        <input type="radio" name="justify" id="justify">
+                        <label for="justify">span { text-align: center; }</label>
+                        <input type="radio" name="justify" id="justify2">
+                        <label for="justify2">span { text-align: left; }</label>
+                        <input type="radio" name="justify" id="justify3">
+                        <label for="justify3">span { text-align: right; }</label>
+                    </div>
+                    <div class="question">
+                        <span>Czy styl <code>span { color: green; } ustawi zielony kolor dla każdego akapitu?</code></span>
+                        <input type="radio" name="color" id="colorCorrect">
+                        <label for="colorCorrect">Nie</label>
+                        <input type="radio" name="color" id="color">
+                        <label for="color">Tak</label>
+                    </div>
+                </div>
+            </section>
+
+            <section id="level6" class="hide">
+                <h3>Górny margines</h3>
+                <p>Aby ustawić górny margines dowolnego elementu używamy stylu:</p>
+                <code>selektor { margin-top: rozmiar }</code>
+                <p>Jako "rozmiar" należy podać konkretną wartość w <a href="https://www.kurshtml.edu.pl/css/dlugosc,jednostki.html" target="_blank"> jednostkach długości</a>. Wpisanie auto ustali wartość automatyczną.</p>
+                <div class="codeWrapper">
+                    <div class="code">
+                        <span contenteditable>
+                            &lt;!DOCTYPE html&gt;<br>
+                            &lt;html lang="pl"&gt;<br>
+                            &lt;head&gt;<br>
+                            &lt;meta charset="UTF-8"&gt;<br>
+                            &lt;title&gt;Wpisz tytuł&lt;/title&gt;<br>
+                            &lt;/head&gt;<br>
+                            &lt;body&gt;<br>
+                            &lt;p&gt;Oto zwykły akapit&lt;/p&gt;<br>
+                            &lt;p style="margin-top: 50px;"&gt;Oto akapit z marginesem górnym&lt;/p&gt;<br>
+                            &lt;p&gt;Oto zwykły akapit&lt;/p&gt;<br>
+                            &lt;/body&gt;<br>
+                            &lt;/html&gt;
+                        </span>
+                    </div>
+                </div>
+
+                <h3>Dolny margines</h3>
+                <p>Aby ustawić dolny margines dowolnego elementu używamy stylu:</p>
+                <code>selektor { margin-bottom: rozmiar }</code>
+                <p>Jako "rozmiar" należy podać konkretną wartość w <a href="https://www.kurshtml.edu.pl/css/dlugosc,jednostki.html" target="_blank"> jednostkach długości</a>. Wpisanie auto ustali wartość automatyczną.</p>
+                <div class="codeWrapper">
+                    <div class="code">
+                        <span contenteditable>
+                            &lt;!DOCTYPE html&gt;<br>
+                            &lt;html lang="pl"&gt;<br>
+                            &lt;head&gt;<br>
+                            &lt;meta charset="UTF-8"&gt;<br>
+                            &lt;title&gt;Wpisz tytuł&lt;/title&gt;<br>
+                            &lt;/head&gt;<br>
+                            &lt;body&gt;<br>
+                            &lt;p&gt;Oto zwykły akapit&lt;/p&gt;<br>
+                            &lt;p style="margin-bottom: 30px;"&gt;Oto akapit z marginesem dolnym&lt;/p&gt;<br>
+                            &lt;p&gt;Oto zwykły akapit&lt;/p&gt;<br>
+                            &lt;/body&gt;<br>
+                            &lt;/html&gt;
+                        </span>
+                    </div>
+                </div>
+
+                <h3>Lewy margines</h3>
+                <p>Aby ustawić lewy margines dowolnego elementu używamy stylu:</p>
+                <code>selektor { margin-left: rozmiar }</code>
+                <p>Jako "rozmiar" należy podać konkretną wartość w <a href="https://www.kurshtml.edu.pl/css/dlugosc,jednostki.html" target="_blank"> jednostkach długości</a>. Wpisanie auto ustali wartość automatyczną.</p>
+                <div class="codeWrapper">
+                    <div class="code">
+                        <span contenteditable>
+                            &lt;!DOCTYPE html&gt;<br>
+                            &lt;html lang="pl"&gt;<br>
+                            &lt;head&gt;<br>
+                            &lt;meta charset="UTF-8"&gt;<br>
+                            &lt;title&gt;Wpisz tytuł&lt;/title&gt;<br>
+                            &lt;/head&gt;<br>
+                            &lt;body&gt;<br>
+                            &lt;p&gt;Oto zwykły akapit&lt;/p&gt;<br>
+                            &lt;p style="margin-left: 30px;"&gt;Oto akapit z lewym marginesem&lt;/p&gt;<br>
+                            &lt;p&gt;Oto zwykły akapit&lt;/p&gt;<br>
+                            &lt;/body&gt;<br>
+                            &lt;/html&gt;
+                        </span>
+                    </div>
+                </div>
+
+                <h3>Prawy margines</h3>
+                <p>Aby ustawić prawy margines dowolnego elementu używamy stylu:</p>
+                <code>selektor { margin-right: rozmiar }</code>
+                <p>Jako "rozmiar" należy podać konkretną wartość w <a href="https://www.kurshtml.edu.pl/css/dlugosc,jednostki.html" target="_blank"> jednostkach długości</a>. Wpisanie auto ustali wartość automatyczną.</p>
+                <div class="codeWrapper">
+                    <div class="code">
+                        <span contenteditable>
+                            &lt;!DOCTYPE html&gt;<br>
+                            &lt;html lang="pl"&gt;<br>
+                            &lt;head&gt;<br>
+                            &lt;meta charset="UTF-8"&gt;<br>
+                            &lt;title&gt;Wpisz tytuł&lt;/title&gt;<br>
+                            &lt;style&gt;<br>
+                            p { <br>
+                                text-align: center;<br>
+                            } <br>
+                            &lt;/style&gt;<br>
+                            &lt;/head&gt;<br>
+                            &lt;body&gt;<br>
+                            &lt;p&gt;Oto zwykły akapit&lt;/p&gt;<br>
+                            &lt;p style="margin-right: 25%;"&gt;Oto akapit z prawym marginesem&lt;/p&gt;<br>
+                            &lt;p&gt;Oto zwykły akapit&lt;/p&gt;<br>
+                            &lt;/body&gt;<br>
+                            &lt;/html&gt;
+                        </span>
+                    </div>
+                </div>
+
+                <h3>Zapis skrócony marginesów</h3>
+                <p>Aby ustawić jednocześnie wszystkie marginesy dla dowolnego elementu używamy stylu:</p>
+                <code>selektor { margin: wartości atrybutów }</code>
+                <p>Jako "wartości atrybutów" należy podać:</p>
+                <ol>
+                    <li>
+                        Jedną wartość - wtedy wszystkie marginesy będą jednakowe.
+                        <div class="codeWrapper">
+                            <div class="code">
+                                <span contenteditable>
+                                    &lt;!DOCTYPE html&gt;<br>
+                                    &lt;html lang="pl"&gt;<br>
+                                    &lt;head&gt;<br>
+                                    &lt;meta charset="UTF-8"&gt;<br>
+                                    &lt;title&gt;Wpisz tytuł&lt;/title&gt;<br>
+                                    &lt;/head&gt;<br>
+                                    &lt;body&gt;<br>
+                                    &lt;p style="margin: 2cm;"&gt;Oto akapit, który ma wszystkie marginesy równe 2cm&lt;/p&gt;<br>
+                                    &lt;/body&gt;<br>
+                                    &lt;/html&gt;
+                                </span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        Dwie wartości - z których pierwsza oznacza górny i dolny margines, natomiast druga - lewy i prawy.
+                        <div class="codeWrapper">
+                            <div class="code">
+                                <span contenteditable>
+                                    &lt;!DOCTYPE html&gt;<br>
+                                    &lt;html lang="pl"&gt;<br>
+                                    &lt;head&gt;<br>
+                                    &lt;meta charset="UTF-8"&gt;<br>
+                                    &lt;title&gt;Wpisz tytuł&lt;/title&gt;<br>
+                                    &lt;/head&gt;<br>
+                                    &lt;body&gt;<br>
+                                    &lt;p style="margin: 2cm 1cm;"&gt;Oto akapit, który ma górny i dolny margines równy 2cm, a lewy i prawy 1cm&lt;/p&gt;<br>
+                                    &lt;/body&gt;<br>
+                                    &lt;/html&gt;
+                                </span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        Trzy wartości - z których pierwsza oznacza górny margines, druga - jednocześnie lewy i prawy, a ostatnia - dolny.
+                        <div class="codeWrapper">
+                            <div class="code">
+                                <span contenteditable>
+                                    &lt;!DOCTYPE html&gt;<br>
+                                    &lt;html lang="pl"&gt;<br>
+                                    &lt;head&gt;<br>
+                                    &lt;meta charset="UTF-8"&gt;<br>
+                                    &lt;title&gt;Wpisz tytuł&lt;/title&gt;<br>
+                                    &lt;/head&gt;<br>
+                                    &lt;body&gt;<br>
+                                    &lt;p style="margin: 2cm 1cm 3cm;"&gt;Oto akapit, który ma górny margines równy 2cm, lewy i prawy 1cm, a dolny 3cm&lt;/p&gt;<br>
+                                    &lt;/body&gt;<br>
+                                    &lt;/html&gt;
+                                </span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        Cztery wartości - które oznaczają kolejno marginesy: górny, prawy, dolny, lewy.
+                        <div class="codeWrapper">
+                            <div class="code">
+                                <span contenteditable>
+                                    &lt;!DOCTYPE html&gt;<br>
+                                    &lt;html lang="pl"&gt;<br>
+                                    &lt;head&gt;<br>
+                                    &lt;meta charset="UTF-8"&gt;<br>
+                                    &lt;title&gt;Wpisz tytuł&lt;/title&gt;<br>
+                                    &lt;/head&gt;<br>
+                                    &lt;body&gt;<br>
+                                    &lt;p style="margin: 2cm .5cm 3cm 1cm;"&gt;Oto akapit, który ma następujące marginesy: górny 2cm, prawy 5mm, dolny 3cm, lewy 1cm&lt;/p&gt;<br>
+                                    &lt;/body&gt;<br>
+                                    &lt;/html&gt;
+                                </span>
+                            </div>
+                        </div>
+                    </li>
+                </ol>
+
+                <div class="quizVisible flex align-center justify-center">
+                    <h3>Quiz</h3>
+                    <div class="completed flex align-center justify-center">
+                        <span class="congrats"><i class="fa-regular fa-circle-check"></i> Brawo!</span>
+                        <button type="button">
+                            <span class="circle" aria-hidden="true">
+                            <span class="icon arrow"></span>
+                            </span>
+                            <span class="button-text">Przejdź dalej</span>
+                        </button>
+                    </div>
+                    <div class="buttons flex visible">
+                        <button type="reset"><i class="fa-solid fa-trash"></i> Wyczyść</button>
+                        <button type="submit">Sprawdź <i class="fa-solid fa-arrow-right-long"></i></button>
+                    </div>
+                </div>
+
+                <div class="quiz hide" questions="2">
+                    <div class="question">
+                        <span>Jak ustawić tylko górny margines na 16px?</span>
+                        <input type="radio" name="margin" id="marginCorrect">
+                        <label for="marginCorrect"><code>.klasa { margin: 16px 0 0 0; }</code></label>
+                        <input type="radio" name="margin" id="margin">
+                        <label for="margin"><code>.klasa { margin: 16px; }</code></label>
+                        <input type="radio" name="margin" id="margin2">
+                        <label for="margin2"><code>.klasa { margin: 16px 0; }</code></label>
+                    </div>
+                    <div class="question">
+                        <span>Który styl służy do zmiany lewego marginesu?</span>
+                        <input type="radio" name="margin2" id="margin2Correct">
+                        <label for="margin2Correct"><code>.klasa { margin-left: 10px; }</code></label>
+                        <input type="radio" name="margin2" id="margin21">
+                        <label for="margin21"><code>.klasa { margin-right: 10px; }</code></label>
+                        <input type="radio" name="margin2" id="margin22">
+                        <label for="margin22"><code>.klasa { margin-top: 10px; }</code></label>
+                        <input type="radio" name="margin2" id="margin23">
+                        <label for="margin23"><code>.klasa { margin-bottom: 10px; }</code></label>
+                    </div>
+                </div>
+            </section>
+
+            <section id="level7" class="hide">
+                <h3>Styl obramowania</h3>
+                <p>Aby dodać styl obramowania do dowolnego elementu używamy jednego ze styli:</p>
+                <ol>
+                    <li>
+                        <code>selektor { border-top-style: styl }</code>
+                        <p>Aby edytować styl górnego obramowania.</p>
+                    </li>
+                    <li>
+                        <code>selektor { border-bottom-style: styl }</code>
+                        <p>Aby edytować styl dolnego obramowania.</p>
+                    </li>
+                    <li>
+                        <code>selektor { border-left-style: styl }</code>
+                        <p>Aby edytować styl lewego obramowania.</p>
+                    </li>
+                    <li>
+                        <code>selektor { border-right-style: styl }</code>
+                        <p>Aby edytować styl prawego obramowania.</p>
+                    </li>
+                </ol>
+                <p>Jako styl należy wpisać:</p>
+                <ul>
+                    <li>none - brak obramowania</li>
+                    <li>hidden - ukryte obramowanie</li>
+                    <li>dashed - linia kreskowa</li>
+                    <li>dotted - linia kropkowa</li>
+                    <li>solid - linia ciągła</li>
+                    <li>double - linia ciągła podwójna</li>
+                    <li>groove - "rowek"</li>
+                    <li>ridge - "grzbiet"</li>
+                    <li>inset - "ramka"</li>
+                    <li>outset - "przycisk"</li>
+                </ul>
+                <div class="codeWrapper">
+                    <div class="code">
+                        <span contenteditable>
+                            &lt;!DOCTYPE html&gt;<br>
+                            &lt;html lang="pl"&gt;<br>
+                            &lt;head&gt;<br>
+                            &lt;meta charset="UTF-8"&gt;<br>
+                            &lt;title&gt;Wpisz tytuł&lt;/title&gt;<br>
+                            &lt;style&gt;<br>
+                            p { <br>
+                                margin-bottom: 30px;<br>
+                            } <br>
+                            &lt;/style&gt;<br>
+                            &lt;/head&gt;<br>
+                            &lt;body&gt;<br>
+                            &lt;p style="border-top-style: none;"&gt;Oto akapit, który ma ustawiony brak górnego obramowania&lt;/p&gt;<br>
+                            &lt;p style="border-top-style: hidden;"&gt;Oto akapit, który ma ustawione ukryte górne obramowanie&lt;/p&gt;<br>
+                            &lt;p style="border-top-style: dashed;"&gt;Oto akapit, którego górnym obramowaniem jest linia kreskowa&lt;/p&gt;<br>
+                            &lt;p style="border-top-style: dotted;"&gt;Oto akapit, którego górnym obramowaniem jest linia kropkowa&lt;/p&gt;<br>
+                            &lt;p style="border-top-style: solid;"&gt;Oto akapit, którego górnym obramowaniem jest linia ciągła&lt;/p&gt;<br>
+                            &lt;p style="border-top-style: double;"&gt;Oto akapit, którego górnym obramowaniem jest linia ciągła podwójna&lt;/p&gt;<br>
+                            &lt;p style="border-top-style: groove;"&gt;Oto akapit, którego górnym obramowaniem jest "rowek"&lt;/p&gt;<br>
+                            &lt;p style="border-top-style: ridge;"&gt;Oto akapit, którego górnym obramowaniem jest "grzbiet"&lt;/p&gt;<br>
+                            &lt;p style="border-top-style: inset;"&gt;Oto akapit, którego górnym obramowaniem jest "ramka"&lt;/p&gt;<br>
+                            &lt;p style="border-top-style: outset;"&gt;Oto akapit, którego górnym obramowaniem jest "przycisk"&lt;/p&gt;<br>
+                            &lt;p style="border-style: solid;"&gt;Oto akapit, którego obramowaniem wzdłuż wszystkich krawędzi jest "linia ciągła"&lt;/p&gt;<br>
+                            &lt;/body&gt;<br>
+                            &lt;/html&gt;
+                        </span>
+                    </div>
+                </div>
+                <p>Aby ustawić ten atrybut dla większej ilości krawędzi jednocześnie, możemy postąpić podobnie jak przy marginesach.</p>
+
+                <h3>Szerokość obramowania</h3>
+                <p>Aby ustawić szerokość (grubość) obramowania używamy styli:</p>
+                <ol>
+                    <li>
+                        <code>selektor { border-top-width: szerokość }</code>
+                        <p>Aby edytować szerokość górnego obramowania</p>
+                    </li>
+                    <li>
+                        <code>selektor { border-bottom-width: szerokość }</code>
+                        <p>Aby edytować szerokość dolnego obramowania</p>
+                    </li>
+                    <li>
+                        <code>selektor { border-left-width: szerokość }</code>
+                        <p>Aby edytować szerokość lewego obramowania</p>
+                    </li>
+                    <li>
+                        <code>selektor { border-right-width: szerokość }</code>
+                        <p>Aby edytować szerokość prawego obramowania</p>
+                    </li>
+                </ol>
+                <p>Gdzie jako szerokość należy podać:</p>
+                <ul>
+                    <li>thin - cienkie obramowanie</li>
+                    <li>medium - średnie obramowanie</li>
+                    <li>thick - grube obramowanie</li>
+                    <li>konkretną wartość w jednostkach długości</li>
+                </ul>
+                <div class="codeWrapper">
+                    <div class="code">
+                        <span contenteditable>
+                            &lt;!DOCTYPE html&gt;<br>
+                            &lt;html lang="pl"&gt;<br>
+                            &lt;head&gt;<br>
+                            &lt;meta charset="UTF-8"&gt;<br>
+                            &lt;title&gt;Wpisz tytuł&lt;/title&gt;<br>
+                            &lt;/head&gt;<br>
+                            &lt;body&gt;<br>
+                            &lt;p style="border-bottom-width: 10px; border-bottom-style: dashed;"&gt;Oto akapit, którego dolne obramowanie to linia kreskowa o szerokości 10 px&lt;/p&gt;<br>
+                            &lt;/body&gt;<br>
+                            &lt;/html&gt;
+                        </span>
+                    </div>
+                </div>
+                <p>Aby ustawić ten atrybut dla większej ilości krawędzi jednocześnie, możemy postąpić podobnie jak przy marginesach.</p>
+
+                <h3>Kolor obramowania</h3>
+                <p>Aby ustawić kolor obramowania używamy styli:</p>
+                <ol>
+                    <li>
+                        <code>selektor { border-top-color: kolor }</code>
+                        <p>Aby ustawić kolor górnego obramowania</p>
+                    </li>
+                    <li>
+                        <code>selektor { border-bottom-color: kolor }</code>
+                        <p>Aby ustawić kolor dolnego obramowania</p>
+                    </li>
+                    <li>
+                        <code>selektor { border-left-color: kolor }</code>
+                        <p>Aby ustawić kolor lewego obramowania</p>
+                    </li>
+                    <li>
+                        <code>selektor { border-right-color: kolor }</code>
+                        <p>Aby ustawić kolor prawego obramowania</p>
+                    </li>
+                </ol>
+                <div class="codeWrapper">
+                    <div class="code">
+                        <span contenteditable>
+                            &lt;!DOCTYPE html&gt;<br>
+                            &lt;html lang="pl"&gt;<br>
+                            &lt;head&gt;<br>
+                            &lt;meta charset="UTF-8"&gt;<br>
+                            &lt;title&gt;Wpisz tytuł&lt;/title&gt;<br>
+                            &lt;/head&gt;<br>
+                            &lt;body&gt;<br>
+                            &lt;p style="border-bottom-color: red; border-bottom-style: solid;"&gt;Oto akapit, którego dolne obramowanie to linia ciągła w kolorze czerwonym&lt;/p&gt;<br>
+                            &lt;/body&gt;<br>
+                            &lt;/html&gt;
+                        </span>
+                    </div>
+                </div>
+                <p>Aby ustawić ten atrybut dla większej ilości krawędzi jednocześnie, możemy postąpić podobnie jak przy marginesach.</p>
+
+                <h3>Atrybuty mieszane obramowania</h3>
+                <p>Aby najszybciej ustawić szerokość (grubość), styl i kolor obramowania używamy styli:</p>
+                <ol>
+                    <li>
+                        <code>selektor { border-top: wartości atrybutów }</code>
+                        <p>Dla górnego obramowania</p>
+                    </li>
+                    <li>
+                        <code>selektor { border-bottom: wartości atrybutów }</code>
+                        <p>Dla dolnego obramowania</p>
+                    </li>
+                    <li>
+                        <code>selektor { border-left: wartości atrybutów }</code>
+                        <p>Dla lewego obramowania</p>
+                    </li>
+                    <li>
+                        <code>selektor { border-right: wartości atrybutów }</code>
+                        <p>Dla prawego obramowania</p>
+                    </li>
+                    <li>
+                        <code>selektor { border: wartości atrybutów }</code>
+                        <p>Dla całego obramowania</p>
+                    </li>
+                </ol>
+                <p>Jako "wartości atrybutów" należy wpisać kolejne wartości szerokości, stylu i koloru obramowania (rozddzielone spacjami).</p>
+                <p>Dzięki temu zamiast wpisywać <code>border-width: medium; border-style: solid; border-color: blue</code> wystarczy że wpiszemy <code>border: medium solid blue</code>.</p>
+                <div class="codeWrapper">
+                    <div class="code">
+                        <span contenteditable>
+                            &lt;!DOCTYPE html&gt;<br>
+                            &lt;html lang="pl"&gt;<br>
+                            &lt;head&gt;<br>
+                            &lt;meta charset="UTF-8"&gt;<br>
+                            &lt;title&gt;Wpisz tytuł&lt;/title&gt;<br>
+                            &lt;/head&gt;<br>
+                            &lt;body&gt;<br>
+                            &lt;p style="border: 5px dotted green;"&gt;Oto akapit, którego całe obramowanie to linia kropkowana w kolorze zielonym o szerokości 5px&lt;/p&gt;<br>
+                            &lt;/body&gt;<br>
+                            &lt;/html&gt;
+                        </span>
+                    </div>
+                </div>
+
+                <div class="quizVisible flex align-center justify-center">
+                    <h3>Quiz</h3>
+                    <div class="completed flex align-center justify-center">
+                        <span class="congrats"><i class="fa-regular fa-circle-check"></i> Brawo!</span>
+                        <button type="button">
+                            <span class="circle" aria-hidden="true">
+                            <span class="icon arrow"></span>
+                            </span>
+                            <span class="button-text">Przejdź dalej</span>
+                        </button>
+                    </div>
+                    <div class="buttons flex visible">
+                        <button type="reset"><i class="fa-solid fa-trash"></i> Wyczyść</button>
+                        <button type="submit">Sprawdź <i class="fa-solid fa-arrow-right-long"></i></button>
+                    </div>
+                </div>
+
+                <div class="quiz hide" questions="2">
+                    <div class="question">
+                        <span>Który z podanych styli obramowania to linia kreskowa?</span>
+                        <input type="radio" name="border" id="borderCorrect">
+                        <label for="borderCorrect"><code>dashed</code></label>
+                        <input type="radio" name="border" id="border">
+                        <label for="border"><code>dotted</code></label>
+                        <input type="radio" name="border" id="border2">
+                        <label for="border2"><code>solid</code></label>
+                        <input type="radio" name="border" id="border3">
+                        <label for="border3"><code>double</code></label>
+                    </div>
+                    <div class="question">
+                        <span>Czy styl <code>h2 { border: 2px double red; }</code> jest poprawny?</span>
+                        <input type="radio" name="border2" id="border2Correct">
+                        <label for="border2Correct">Tak</label>
+                        <input type="radio" name="border2" id="border4">
+                        <label for="border4">Nie</label>
+                    </div>
+                </div>
+            </section>
+
+            <section id="level8" class="hide">
+                <h3>Kształt kursora</h3>
+                <p>Aby zmienić kursor (wskaźnik) myszki używamy stylu:</p>
+                <code>selektor { cursor: rodzaj }</code>
+                <p>"Rodzaj" odpowiada za kształt, jaki przybierze wskaźnik myszki, po naprowadzeniu go na dany element.</p>
+                
+                <h3>Kursory ogólnego przeznaczenia</h3>
+                <ul>
+                    <li>auto - automatyczny wybór kształtu kursora (zależy od typu elementu, na który wskazujemy - tryb domyślny)</li>
+                    <li>default - kursor domyślny (strzałka)</li>
+                    <li>none - brak kursora</li>
+                    <div class="codeWrapper">
+                        <div class="code">
+                            <span contenteditable>
+                                &lt;!DOCTYPE html&gt;<br>
+                                &lt;html lang="pl"&gt;<br>
+                                &lt;head&gt;<br>
+                                &lt;meta charset="UTF-8"&gt;<br>
+                                &lt;title&gt;Wpisz tytuł&lt;/title&gt;<br>
+                                &lt;style&gt;<br>
+                                div { <br>
+                                    width: 80%;<br>
+                                    height: 50px;<br>
+                                    margin: 0 auto 30px;<br>
+                                    border: 2px solid black;<br>
+                                    background-color: #ddd;<br>
+                                } <br>
+                                p { <br>
+                                    text-align: center;<br>
+                                } <br>
+                                &lt;/style&gt;<br>
+                                &lt;/head&gt;<br>
+                                &lt;body&gt;<br>
+                                &lt;h1&gt;Najedź myszką na każdy z&amp;nbsp;prostokątów&lt;/h1&gt;<br>
+                                &lt;div style="cursor: auto;"&gt;<br>
+                                &lt;p&gt;Kursor: auto&lt;/p&gt;<br>
+                                &lt;/div&gt;<br>
+                                &lt;div style="cursor: default;"&gt;<br>
+                                &lt;p&gt;Kursor: default&lt;/p&gt;<br>
+                                &lt;/div&gt;<br>
+                                &lt;div style="cursor: none;"&gt;<br>
+                                &lt;p&gt;Kursor: none&lt;/p&gt;<br>
+                                &lt;/div&gt;<br>
+                                &lt;/body&gt;<br>
+                                &lt;/html&gt;
+                            </span>
+                        </div>
+                    </div>
+                </ul>
+
+                <h3>Odsyłacze i kursory statusu</h3>
+                <ul>
+                    <li>help - kursor pomocy</li>
+                    <li>pointer - wskaźnik</li>
+                    <li>progress - "postęp"</li>
+                    <li>wait - "poczekaj"</li>
+                    <div class="codeWrapper">
+                        <div class="code">
+                            <span contenteditable>
+                                &lt;!DOCTYPE html&gt;<br>
+                                &lt;html lang="pl"&gt;<br>
+                                &lt;head&gt;<br>
+                                &lt;meta charset="UTF-8"&gt;<br>
+                                &lt;title&gt;Wpisz tytuł&lt;/title&gt;<br>
+                                &lt;style&gt;<br>
+                                div { <br>
+                                    width: 80%;<br>
+                                    height: 50px;<br>
+                                    margin: 0 auto 30px;<br>
+                                    border: 2px solid black;<br>
+                                    background-color: #ddd;<br>
+                                } <br>
+                                p { <br>
+                                    text-align: center;<br>
+                                } <br>
+                                &lt;/style&gt;<br>
+                                &lt;/head&gt;<br>
+                                &lt;body&gt;<br>
+                                &lt;h1&gt;Najedź myszką na każdy z&amp;nbsp;prostokątów&lt;/h1&gt;<br>
+                                &lt;div style="cursor: help;"&gt;<br>
+                                &lt;p&gt;Kursor: help&lt;/p&gt;<br>
+                                &lt;/div&gt;<br>
+                                &lt;div style="cursor: pointer;"&gt;<br>
+                                &lt;p&gt;Kursor: pointer&lt;/p&gt;<br>
+                                &lt;/div&gt;<br>
+                                &lt;div style="cursor: progress;"&gt;<br>
+                                &lt;p&gt;Kursor: progress&lt;/p&gt;<br>
+                                &lt;/div&gt;<br>
+                                &lt;div style="cursor: wait;"&gt;<br>
+                                &lt;p&gt;Kursor: wait&lt;/p&gt;<br>
+                                &lt;/div&gt;<br>
+                                &lt;/body&gt;<br>
+                                &lt;/html&gt;
+                            </span>
+                        </div>
+                    </div>
+                </ul>
+
+                <h3>Kursory wyboru</h3>
+                <ul>
+                    <li>cell - wskazuje, że komórka (jak w arkuszu kalkulacyjnym) może być zaznaczona</li>
+                    <li>crosshair - krzyżyk</li>
+                    <li>text - kursor tekstowy</li>
+                    <li>vertical-text - pionowy kursor tekstowy</li>
+                    <div class="codeWrapper">
+                        <div class="code">
+                            <span contenteditable>
+                                &lt;!DOCTYPE html&gt;<br>
+                                &lt;html lang="pl"&gt;<br>
+                                &lt;head&gt;<br>
+                                &lt;meta charset="UTF-8"&gt;<br>
+                                &lt;title&gt;Wpisz tytuł&lt;/title&gt;<br>
+                                &lt;style&gt;<br>
+                                div { <br>
+                                    width: 80%;<br>
+                                    height: 50px;<br>
+                                    margin: 0 auto 30px;<br>
+                                    border: 2px solid black;<br>
+                                    background-color: #ddd;<br>
+                                } <br>
+                                p { <br>
+                                    text-align: center;<br>
+                                } <br>
+                                &lt;/style&gt;<br>
+                                &lt;/head&gt;<br>
+                                &lt;body&gt;<br>
+                                &lt;h1&gt;Najedź myszką na każdy z&amp;nbsp;prostokątów&lt;/h1&gt;<br>
+                                &lt;div style="cursor: cell;"&gt;<br>
+                                &lt;p&gt;Kursor: cell&lt;/p&gt;<br>
+                                &lt;/div&gt;<br>
+                                &lt;div style="cursor: crosshair;"&gt;<br>
+                                &lt;p&gt;Kursor: crosshair&lt;/p&gt;<br>
+                                &lt;/div&gt;<br>
+                                &lt;div style="cursor: text;"&gt;<br>
+                                &lt;p&gt;Kursor: text&lt;/p&gt;<br>
+                                &lt;/div&gt;<br>
+                                &lt;div style="cursor: vertical-text;"&gt;<br>
+                                &lt;p&gt;Kursor: vertical-text&lt;/p&gt;<br>
+                                &lt;/div&gt;<br>
+                                &lt;/body&gt;<br>
+                                &lt;/html&gt;
+                            </span>
+                        </div>
+                    </div>
+                </ul>
+
+                <h3>Kursory "przeciągnij i upuść"</h3>
+                <ul>
+                    <li>alias - skrót</li>
+                    <li>copy - kopia</li>
+                    <li>move - "przesuń"</li>
+                    <li>no-drop - wskazuje, że przeciągany element nie może zostać upuszczony w tej pozycji</li>
+                    <li>not-allowed - żądana akcja nie zostanie przeprowadzona</li>
+                    <div class="codeWrapper">
+                        <div class="code">
+                            <span contenteditable>
+                                &lt;!DOCTYPE html&gt;<br>
+                                &lt;html lang="pl"&gt;<br>
+                                &lt;head&gt;<br>
+                                &lt;meta charset="UTF-8"&gt;<br>
+                                &lt;title&gt;Wpisz tytuł&lt;/title&gt;<br>
+                                &lt;style&gt;<br>
+                                div { <br>
+                                    width: 80%;<br>
+                                    height: 50px;<br>
+                                    margin: 0 auto 30px;<br>
+                                    border: 2px solid black;<br>
+                                    background-color: #ddd;<br>
+                                } <br>
+                                p { <br>
+                                    text-align: center;<br>
+                                } <br>
+                                &lt;/style&gt;<br>
+                                &lt;/head&gt;<br>
+                                &lt;body&gt;<br>
+                                &lt;h1&gt;Najedź myszką na każdy z&amp;nbsp;prostokątów&lt;/h1&gt;<br>
+                                &lt;div style="cursor: alias;"&gt;<br>
+                                &lt;p&gt;Kursor: alias&lt;/p&gt;<br>
+                                &lt;/div&gt;<br>
+                                &lt;div style="cursor: copy;"&gt;<br>
+                                &lt;p&gt;Kursor: copy&lt;/p&gt;<br>
+                                &lt;/div&gt;<br>
+                                &lt;div style="cursor: move;"&gt;<br>
+                                &lt;p&gt;Kursor: move&lt;/p&gt;<br>
+                                &lt;/div&gt;<br>
+                                &lt;div style="cursor: no-drop;"&gt;<br>
+                                &lt;p&gt;Kursor: no-drop&lt;/p&gt;<br>
+                                &lt;/div&gt;<br>
+                                &lt;div style="cursor: not-allowed;"&gt;<br>
+                                &lt;p&gt;Kursor: not-allowed&lt;/p&gt;<br>
+                                &lt;/div&gt;<br>
+                                &lt;/body&gt;<br>
+                                &lt;/html&gt;
+                            </span>
+                        </div>
+                    </div>
+                </ul>
+
+                <h3>Kursory zmiany rozmiaru i przewijania</h3>
+                <ul>
+                    <li>n-resize - "północ" (north)</li>
+                    <li>ne-resize - "północny wschód" (north-east)</li>
+                    <li>e-resize - "wschód" (east)</li>
+                    <li>se-resize - "południowy wschód" (south-east)</li>
+                    <li>s-resize - "południe" (south)</li>
+                    <li>sw-resize - "południowy zachód" (south-west)</li>
+                    <li>w-resize - "zachód" (west)</li>
+                    <li>nw-resize - "północny zachód" (north-west)</li>
+                    <li>ns-resize - północ-południe (north-south)</li>
+                    <li>ew-resize - wschód-zachód (east-west)</li>
+                    <li>nesw-resize - północny wschód-południowy zachód (north-east south-west)</li>
+                    <li>nwse-resize - północny zachód-południowy wschód (north-west south-east)</li>
+                    <li>col-resize - pozioma zmiana szerokości kolumny</li>
+                    <li>row-resize - pionowa zmiana wysokości wiersza</li>
+                    <li>all-scroll - przewijanie w dowolnym kierunku</li>
+                    <div class="codeWrapper">
+                        <div class="code">
+                            <span contenteditable>
+                                &lt;!DOCTYPE html&gt;<br>
+                                &lt;html lang="pl"&gt;<br>
+                                &lt;head&gt;<br>
+                                &lt;meta charset="UTF-8"&gt;<br>
+                                &lt;title&gt;Wpisz tytuł&lt;/title&gt;<br>
+                                &lt;style&gt;<br>
+                                div { <br>
+                                    width: 80%;<br>
+                                    height: 50px;<br>
+                                    margin: 0 auto 30px;<br>
+                                    border: 2px solid black;<br>
+                                    background-color: #ddd;<br>
+                                } <br>
+                                p { <br>
+                                    text-align: center;<br>
+                                } <br>
+                                &lt;/style&gt;<br>
+                                &lt;/head&gt;<br>
+                                &lt;body&gt;<br>
+                                &lt;h1&gt;Najedź myszką na każdy z&amp;nbsp;prostokątów&lt;/h1&gt;<br>
+                                &lt;div style="cursor: n-resize;"&gt;<br>
+                                &lt;p&gt;Kursor: n-resize&lt;/p&gt;<br>
+                                &lt;/div&gt;<br>
+                                &lt;div style="cursor: ne-resize;"&gt;<br>
+                                &lt;p&gt;Kursor: ne-resize&lt;/p&gt;<br>
+                                &lt;/div&gt;<br>
+                                &lt;div style="cursor: e-resize;"&gt;<br>
+                                &lt;p&gt;Kursor: e-resize&lt;/p&gt;<br>
+                                &lt;/div&gt;<br>
+                                &lt;div style="cursor: se-resize;"&gt;<br>
+                                &lt;p&gt;Kursor: se-resize&lt;/p&gt;<br>
+                                &lt;/div&gt;<br>
+                                &lt;div style="cursor: s-resize;"&gt;<br>
+                                &lt;p&gt;Kursor: s-resize&lt;/p&gt;<br>
+                                &lt;/div&gt;<br>
+                                &lt;div style="cursor: sw-resize;"&gt;<br>
+                                &lt;p&gt;Kursor: sw-resize&lt;/p&gt;<br>
+                                &lt;/div&gt;<br>
+                                &lt;div style="cursor: w-resize;"&gt;<br>
+                                &lt;p&gt;Kursor: w-resize&lt;/p&gt;<br>
+                                &lt;/div&gt;<br>
+                                &lt;div style="cursor: nw-resize;"&gt;<br>
+                                &lt;p&gt;Kursor: nw-resize&lt;/p&gt;<br>
+                                &lt;/div&gt;<br>
+                                &lt;div style="cursor: ns-resize;"&gt;<br>
+                                &lt;p&gt;Kursor: ns-resize&lt;/p&gt;<br>
+                                &lt;/div&gt;<br>
+                                &lt;div style="cursor: ew-resize;"&gt;<br>
+                                &lt;p&gt;Kursor: ew-resize&lt;/p&gt;<br>
+                                &lt;/div&gt;<br>
+                                &lt;div style="cursor: nesw-resize;"&gt;<br>
+                                &lt;p&gt;Kursor: nesw-resize&lt;/p&gt;<br>
+                                &lt;/div&gt;<br>
+                                &lt;div style="cursor: nwse-resize;"&gt;<br>
+                                &lt;p&gt;Kursor: nwse-resize&lt;/p&gt;<br>
+                                &lt;/div&gt;<br>
+                                &lt;div style="cursor: col-resize;"&gt;<br>
+                                &lt;p&gt;Kursor: col-resize&lt;/p&gt;<br>
+                                &lt;/div&gt;<br>
+                                &lt;div style="cursor: row-resize;"&gt;<br>
+                                &lt;p&gt;Kursor: row-resize&lt;/p&gt;<br>
+                                &lt;/div&gt;<br>
+                                &lt;div style="cursor: all-scroll;"&gt;<br>
+                                &lt;p&gt;Kursor: all-scroll&lt;/p&gt;<br>
+                                &lt;/div&gt;<br>
+                                &lt;/body&gt;<br>
+                                &lt;/html&gt;
+                            </span>
+                        </div>
+                    </div>
+                </ul>
+
+                <div class="quizVisible flex align-center justify-center">
+                    <h3>Quiz</h3>
+                    <div class="completed flex align-center justify-center">
+                        <span class="congrats"><i class="fa-regular fa-circle-check"></i> Brawo!</span>
+                        <button type="button">
+                            <span class="circle" aria-hidden="true">
+                            <span class="icon arrow"></span>
+                            </span>
+                            <span class="button-text">Przejdź dalej</span>
+                        </button>
+                    </div>
+                    <div class="buttons flex visible">
+                        <button type="reset"><i class="fa-solid fa-trash"></i> Wyczyść</button>
+                        <button type="submit">Sprawdź <i class="fa-solid fa-arrow-right-long"></i></button>
+                    </div>
+                </div>
+
+                <div class="quiz hide" questions="2">
+                    <div class="question">
+                        <span>Który rodzaj kursora jest domyślny?</span>
+                        <input type="radio" name="defcursor" id="defcursorCorrect">
+                        <label for="defcursorCorrect">default</label>
+                        <input type="radio" name="defcursor" id="defcursor">
+                        <label for="defcursor">pointer</label>
+                        <input type="radio" name="defcursor" id="defcursor2">
+                        <label for="defcursor2">auto</label>
+                        <input type="radio" name="defcursor" id="defcursor3">
+                        <label for="defcursor3">none</label>
+                    </div>
+                    <div class="question">
+                        <span>Czy styl div { mouse: pointer } to poprawny sposób na zmianę wyglądu kursora?</span>
+                        <input type="radio" name="cursor" id="cursorCorrect">
+                        <label for="cursorCorrect">Nie</label>
+                        <input type="radio" name="cursor" id="cursor">
+                        <label for="cursor">Tak</label>
+                    </div>
+                </div>
+            </section>
+
+            <section id="level9" class="hide">
+                <h3>Czym jest box model?</h3>
+                <p>Wszystkie elementy HTML można traktować jak pola. W CSS termin model pudełkowy (ang. box model) jest używany, gdy mówi się o projekcie i układzie. Model pudełkowy CSS jest zasadniczo pudełkiem, które otacza każdy element HTML. Składa się z: marginesów, ramek, wypełnienia i rzeczywistej zawartości. Poniższy obraz ilustruje model pudełka:</p>
+                <img src="img/boxmodel.png" alt="Box model">
+
+                <h3>Poszczególne części pudełka</h3>
+                <p>Wewnątrz modelu pudełkowego można wyróżnić:</p>
+                <ul>
+                    <li>Content - Zawartość pola, w którym pojawia się tekst i obrazy</li>
+                    <li>Padding - Czyści obszar wokół zawartości. Wypełnienie jest przezroczyste</li>
+                    <li>Border - Obramowanie wokół wypełnienia i zawartości</li>
+                    <li>Margin - Czyści obszar poza granicą. Margines jest przezroczysty</li>
+                </ul>
+                <p>Model pudełkowy pozwala nam dodać obramowanie wokół elementów i zdefiniować przestrzeń między elementami. Przykładowo:</p>
+                <div class="codeWrapper">
+                    <div class="code">
+                        <span contenteditable>
+                            &lt;!DOCTYPE html&gt;<br>
+                            &lt;html lang="pl"&gt;<br>
+                            &lt;head&gt;<br>
+                            &lt;meta charset="UTF-8"&gt;<br>
+                            &lt;title&gt;Wpisz tytuł&lt;/title&gt;<br>
+                            &lt;style&gt;<br>
+                            div { <br>
+                                width: 70%;<br>
+                                padding: 30px;<br>
+                                margin: 30px auto;<br>
+                                border: 5px solid red;<br>
+                                background-color: #ccff82;<br>
+                            } <br>
+                            p { <br>
+                                text-align: center;<br>
+                            } <br>
+                            &lt;/style&gt;<br>
+                            &lt;/head&gt;<br>
+                            &lt;body&gt;<br>
+                            &lt;div&gt;<br>
+                            &lt;p&gt;Oto zwykły tekst wewnątrz elementu div&lt;/p&gt;<br>
+                            &lt;/div&gt;<br>
+                            &lt;/body&gt;<br>
+                            &lt;/html&gt;
+                        </span>
+                    </div>
+                </div>
+                <p>Klikając <a href="https://www.youtube.com/watch?v=ly0umuICvXg" target="_blank">tutaj</a> znajdziesz film, który pomoże ci zrozumieć pojęcie modelu pudełka.</p>
+
+                <h3>Czym jest <code>div</code>?</h3>
+                <p>Do budowy sekcji możemy użyć elementu blokowego <div>&lt;div&gt;</div> (ang. division – oddział, wydział, sekcja). Element ten nazywany jest również pudełkiem (ang. box), albo kontenerem (ang. container, contain – zawierać w sobie), z tego względu, że zawiera on w sobie inne elementy.</p>
+                <p>Poniżej znajdziesz materiał, który pomoże ci zrozumieć strukturę strony www opartej na divach, a także poznasz jej wady i zalety.</p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/2nWSCxIpHfc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                <div class="quizVisible flex align-center justify-center">
+                    <h3>Quiz</h3>
+                    <div class="completed flex align-center justify-center">
+                        <span class="congrats completed"><i class="fa-regular fa-circle-check"></i> Brawo! Udało Ci się ukończyć Mini Kurs CSS3!</span>
+                    </div>
+                    <div class="buttons flex visible">
+                        <button type="reset"><i class="fa-solid fa-trash"></i> Wyczyść</button>
+                        <button type="submit">Sprawdź <i class="fa-solid fa-arrow-right-long"></i></button>
+                    </div>
+                </div>
+
+                <div class="quiz hide" questions="2">
+                    <div class="question">
+                        <span>Padding jest pomiędzy...</span>
+                        <input type="radio" name="padding" id="paddingCorrect">
+                        <label for="paddingCorrect">tekstem a obramowaniem</label>
+                        <input type="radio" name="padding" id="padding">
+                        <label for="padding">tekstem a elementami zewnętrznymi</label>
+                        <input type="radio" name="padding" id="padding2">
+                        <label for="padding2">obramowaniem a elementami zewnętrznymi</label>
+                        <input type="radio" name="padding" id="padding3">
+                        <label for="padding3">różnymi wierszami tekstu</label>
+                    </div>
+                    <div class="question">
+                        <span>W modelu pudełkowym, która właściwość CSS jest najdalej na zewnątrz?</span>
+                        <input type="radio" name="box" id="boxCorrect">
+                        <label for="boxCorrect">margin</label>
+                        <input type="radio" name="box" id="box">
+                        <label for="box">border</label>
+                        <input type="radio" name="box" id="box2">
+                        <label for="box2">padding</label>
+                        <input type="radio" name="box" id="box3">
+                        <label for="box3">content</label>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script src="../js/theme.js"></script>
+    <script src="../js/kurs.js"></script>
+</body>
+</html>
