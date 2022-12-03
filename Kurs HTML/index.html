@@ -1,0 +1,2484 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kurs HTML | Piotr Winiarczyk 3K</title>
+    <script src="https://kit.fontawesome.com/5b03ae42a6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/general.css">
+    <link rel="stylesheet" href="../css/kurs.css">
+</head>
+<body>
+    <main>
+        <span id="title">Mini kurs HTML</span>
+        <div id="levels">
+            <div>
+                <h3>Lekcja 1</h3>
+                <h4>Czym jest HTML?</h4>
+                <div class="icon">
+                    <i class="fa-regular fa-circle-play fa-xl"></i>
+                </div>
+            </div>
+            <svg><line stroke="black"/></svg>
+            <div class="right">
+                <div>
+                    <h3>Lekcja 2</h3>
+                    <h4>Edytory tekstu</h4>
+                    <div class="icon">
+                        <i class="fa-regular fa-circle-play fa-xl"></i>
+                    </div>
+                </div>
+            </div>
+            <svg><line stroke="black"/></svg>
+            <div>
+                <h3>Lekcja 3</h3>
+                <h4>Struktura języka</h4>
+                <div class="icon">
+                    <i class="fa-regular fa-circle-play fa-xl"></i>
+                </div>
+            </div>
+            <svg><line stroke="black"/></svg>
+            <div class="right">
+                <div>
+                    <h3>Lekcja 4</h3>
+                    <h4>Formatowanie tekstu</h4>
+                    <div class="icon">
+                        <i class="fa-regular fa-circle-play fa-xl"></i>
+                    </div>
+                </div>
+            </div>
+            <svg><line stroke="black"/></svg>
+            <div>
+                <h3>Lekcja 5</h3>
+                <h4>Znaki specjalne</h4>
+                <div class="icon">
+                    <i class="fa-regular fa-circle-play fa-xl"></i>
+                </div>
+            </div>
+            <svg><line stroke="black"/></svg>
+            <div class="right">
+                <div>
+                    <h3>Lekcja 6</h3>
+                    <h4>Listy</h4>
+                    <div class="icon">
+                        <i class="fa-regular fa-circle-play fa-xl"></i>
+                    </div>
+                </div>
+            </div>
+            <svg><line stroke="black"/></svg>
+            <div>
+                <h3>Lekcja 7</h3>
+                <h4>Tabele</h4>
+                <div class="icon">
+                    <i class="fa-regular fa-circle-play fa-xl"></i>
+                </div>
+            </div>
+            <svg><line stroke="black"/></svg>
+            <div class="right">
+                <div>
+                    <h3>Lekcja 8</h3>
+                    <h4>Hiperłącza</h4>
+                    <div class="icon">
+                        <i class="fa-regular fa-circle-play fa-xl"></i>
+                    </div>
+                </div>
+            </div>
+            <svg><line stroke="black"/></svg>
+            <div>
+                <h3>Lekcja 9</h3>
+                <h4>Grafika</h4>
+                <div class="icon">
+                    <i class="fa-regular fa-circle-play fa-xl"></i>
+                </div>
+            </div>
+            <svg><line stroke="black"/></svg>
+            <div class="right">
+                <div>
+                    <h3>Lekcja 10</h3>
+                    <h4>Multimedia</h4>
+                    <div class="icon">
+                        <i class="fa-regular fa-circle-play fa-xl"></i>
+                    </div>
+                </div>
+            </div>
+            <svg><line stroke="black"/></svg>
+            <div>
+                <h3>Lekcja 11</h3>
+                <h4>Inputy</h4>
+                <div class="icon">
+                    <i class="fa-regular fa-circle-play fa-xl"></i>
+                </div>
+            </div>
+            <svg><line stroke="black"/></svg>
+            <div class="right">
+                <div>
+                    <h3>Lekcja 12</h3>
+                    <h4>Formularze</h4>
+                    <div class="icon">
+                        <i class="fa-regular fa-circle-play fa-xl"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="tasks" class="hide">
+            <div class="progressWrapper">
+                <div id="progress"></div>
+            </div>
+            <div class="top">
+                <div class="back flex align-center" title="Powrót do poprzedniego rozdziału">
+                    <i class="fa-solid fa-angles-left"></i>
+                    <h3></h3>
+                </div>
+                <h2></h2>
+                <i class="close fa-solid fa-xmark fa-xl" title="Zamknij"></i>
+            </div>
+    
+            <section id="level1" class="hide">
+                <h3>Czym jest HTML?</h3>
+                <p><b>HTML</b> (ang. <b>H</b>yper<b>t</b>ext <b>M</b>arkup <b>L</b>anguage) – hipertekstowy język znaczników. Jest to jeden z&nbsp;kilku języków używanych do tworzenia stron internetowych. Służy on do opisu strony, a&nbsp;nie jej wyglądu. W&nbsp;przeciwieństwie do języków programowania, które używają skryptów do wykonywania funkcji, język znaczników używa tagów (inaczej znaczników, czyli wyrażeń w&nbsp;ostrych nawiasach &lt;&gt;) do identyfikacji treści.</p>
+                
+                <h3>Historia języka HTML</h3>
+                <p>Początki języka HTML sięgają roku 1960, gdy IBM pracował nad systemem prezentowania i&nbsp;organizowania dużych ilości danych. Nazwano go wówczas <b>GML</b> (ang. <b>G</b>eneral <b>M</b>arkup <b>L</b>anguage) a&nbsp;po latach prac, w&nbsp;1978&nbsp;roku przekształcono na SGML (ang. <b>S</b>tandard <b>G</b>eneralized <b>M</b>arkup <b>L</b>anguage). SGML to tak zwany metajęzyk, czyli język na podstawie, którego tworzone są języki podrzędne (HTML jest właśnie takim językiem wywodzącym się z&nbsp;SGML).</p>
+                <p>Twórcą języka HTML jest Timothy Berners-Lee. Jego pierwsza wersja została opracowana w&nbsp;1989 roku. Tim w&nbsp;tym czasie był fizykiem oraz konsultantem do spraw oprogramowania pracującym w&nbsp;Europejskim Ośrodku Badań Jądrowych CERN (Conseil Européen pour la Recherche Nucléaire) koło Genewy. Pierwotnie język składał się z&nbsp;kilkunastu znaczników umożliwiających wyświetlenie tekstu wraz z&nbsp;odsyłaczami do innych tekstów (dodanie znacznika&nbsp;a). Rewolucyjność pomysłu polegała na tym, że użytkownik przeskakujący do innego tekstu nie musiał w&nbsp;ogóle wiedzieć, gdzie fizycznie znajduje się interesujący go tekst. HTML miał pozwalać autorom na opis struktury dokumentu, wyróżnianie nagłówków, paragrafów, przerw, list i&nbsp;tabel. Sposób prezentacji zależał od programu odczytującego dokument. Była to tzw. zerowa wersja HTML.</p>
+                <p>Oprócz tego, Tim Berners-Lee stworzył również pierwszą przeglądarkę WWW (o&nbsp;nazwie WorldWideWeb), pierwszy serwer WWW, koncepcję URL i&nbsp;protokół HTTP. Obecnie kieruje Konsorcjum W3 (które zajmuje się ustanawianiem standardów pisania i&nbsp;przesyłu stron WWW).</p>
+
+                <h3>Wersje języka HTML</h3>
+                <ul>
+                    <li>HTML 2 – listopad 1995</li>
+                    <li>HTML 3.0 – kwiecień 1995 r.</li>
+                    <li>HTML 3.2 – styczeń 1997 r.</li>
+                    <li>HTML 4.0 – styczeń 1997 r.</li>
+                    <li>HTML 4.0 (poprawiona wersja) – kwiecień 1998 r.</li>
+                    <li>HTML 4.01 – grudzień 1999 r.</li>
+                    <li>HTML 5 – październik 2014 r. </li>
+                </ul>
+
+                <h3>Zastosowanie</h3>
+                <p>Język HTML pozwala stworzyć opis strony internetowej, czyli nazwać jej poszczególne elementy. Dla przykładu weźmy artykuł w&nbsp;gazecie. Artykuł ten będzie posiadał zazwyczaj przynajmniej dwa elementy: nagłówek i&nbsp;paragraf. W&nbsp;języku HTML oddzielnie oznaczymy tekst nagłówka, a&nbsp;oddzielnie tekst paragrafu. Samo oznaczenie elementów nic szczególnego nam nie daje. Musimy je jeszcze sformatować przy użyciu języka styli CSS (o&nbsp;tym mowa w&nbsp;drugim kursie).</p>
+
+                <div class="quizVisible flex align-center justify-center">
+                    <h3>Quiz</h3>
+                    <div class="completed flex align-center justify-center">
+                        <span class="congrats"><i class="fa-regular fa-circle-check"></i> Brawo!</span>
+                        <button type="button">
+                            <span class="circle" aria-hidden="true">
+                            <span class="icon arrow"></span>
+                            </span>
+                            <span class="button-text">Przejdź dalej</span>
+                        </button>
+                    </div>
+                    <div class="buttons flex visible">
+                        <button type="reset"><i class="fa-solid fa-trash"></i> Wyczyść</button>
+                        <button type="submit">Sprawdź <i class="fa-solid fa-arrow-right-long"></i></button>
+                    </div>
+                </div>
+
+                <div class="quiz hide" questions="3">
+                    <div class="question">
+                        <span>Czy HTML to język programowania?</span>
+                        <input type="radio" name="programowania" id="programowaniaTak">
+                        <label for="programowaniaTak">Tak</label>
+                        <input type="radio" name="programowania" id="programowaniaCorrect">
+                        <label for="programowaniaCorrect">Nie</label>
+                    </div>
+                    <div class="question">
+                        <span>Jaka jest obecna wersja języka HTML?</span>
+                        <input type="radio" name="wersja" id="wersja6">
+                        <label for="wersja6">6</label>
+                        <input type="radio" name="wersja" id="wersja3">
+                        <label for="wersja3">3</label>
+                        <input type="radio" name="wersja" id="wersja4">
+                        <label for="wersja4">4</label>
+                        <input type="radio" name="wersja" id="wersjaCorrect">
+                        <label for="wersjaCorrect">5</label>
+                    </div>
+                    <div class="question">
+                        <span>Czego język HTML używa do identyfikacji treści?</span>
+                        <input type="radio" name="identyfikacja" id="identyfikacjaScripts">
+                        <label for="identyfikacjaScripts">skryptów</label>
+                        <input type="radio" name="identyfikacja" id="identyfikacjaCorrect">
+                        <label for="identyfikacjaCorrect">znaczników</label>
+                        <input type="radio" name="identyfikacja" id="identyfikacjaFunctions">
+                        <label for="identyfikacjaFunctions">funkcji</label>
+                        <input type="radio" name="identyfikacja" id="identyfikacjaCommands">
+                        <label for="identyfikacjaCommands">komend</label>
+                    </div>
+                    <div class="question">
+                        <span>Do czego służy język HTML?</span>
+                        <input type="radio" name="zastosowanie" id="zastosowanieCorrect">
+                        <label for="zastosowanieCorrect">do opisu strony</label>
+                        <input type="radio" name="zastosowanie" id="zastosowanieWyglad">
+                        <label for="zastosowanieWyglad">do wyglądu strony</label>
+                        <input type="radio" name="zastosowanie" id="zastosowanieFunk">
+                        <label for="zastosowanieFunk">do funkcjonalności strony</label>
+                    </div>
+                </div>
+            </section>
+
+            <section id="level2" class="hide">
+                <h3>Edytory tekstu</h3>
+                <p>Aby napisać stronę internetową potrzebujemy skorzystać z&nbsp;jakiegoś edytora tekstu. Dokument HTML jest zwykłym plikiem tekstowym, więc możemy go edytować nawet za pomocą najprostszego edytora tekstu – notatnika w&nbsp;systemie Windows. Metoda taka byłaby jednak dość uciążliwa, dlatego na rynku pojawiło się wiele wyspecjalizowanych edytorów, które ułatwiają konstruowanie dokumentu, wspomagając wprowadzanie poleceń. Poniżej znajdziesz listę niektórych edytorów HTML.</p>
+
+                <h3>Adobe Dreamweaver CC</h3>
+                <p>Adobe Dreamweaver CC to aplikacja IDE (Integrated Developement Environment), która obsługuje zarówno programowanie back-end, jak i&nbsp;front-end. Ponadto oprogramowanie zapewnia zestawy narzędzi do projektowania i&nbsp;tworzenia stron internetowych, które ułatwiają tworzenie witryn internetowych. Adobe Dreamweaver CC zawiera solidne narzędzie do edycji kodu, które obsługuje różne języki, takie jak HTML, CSS i&nbsp;JavaScript. Ponadto oprogramowanie pozwala użytkownikom wybierać między edytorem tekstowym i&nbsp;WYSIWYG (What You See Is What You Get) lub łączyć oba. Edytor tekstu ma wiele pomocnych funkcji, takich jak podświetlanie składni, uzupełnianie kodu i&nbsp;obsługa wielu języków. Co więcej, edytor wizualny jest wyposażony w&nbsp;funkcję przeciągania i&nbsp;upuszczania. Chociaż nie jest dostępna darmowa wersja, ten edytor stron internetowych oferuje siedmiodniowy okres próbny. Następnie, aby dalej korzystać z&nbsp;oprogramowania, dostępnych jest wiele planów płatności zaczynając od 24,59 € miesięcznie. Kilka ważniejszych funkcji to:</p>
+                <ul>
+                    <li>Szablony startowe – zapewniają podstawową strukturę strony internetowej, którą użytkownicy mogą dostosować do różnych stron, od blogów po portfolio.</li>
+                    <li>Responsywne projekty – układy płynnej siatki automatycznie dostosowują rozmiar elementów witryny do różnych rozmiarów ekranu na różnych urządzeniach.</li>
+                    <li>Obsługa Git – wydajnie zarządzaj kodem witryny i&nbsp;wykonuj wiele operacji Git, takich jak „push”, „pull” i&nbsp;„fetch” z&nbsp;pulpitu nawigacyjnego Dreamweaver.</li>
+                    <li>Dostęp do bibliotek Creative Cloud — zapewnia dostęp do zasobów z&nbsp;innych programów Adobe obsługujących biblioteki Creative Cloud, w&nbsp;tym Photoshop, Premiere Pro i&nbsp;After Effects.</li>
+                </ul>
+                <p>Program Adobe Dreamweaver CC jest dostępny dla systemów Windows i&nbsp;OS X.</p>
+                <img src="img/adobe-dreamweaver.jpg" alt="Screenshot z&nbsp;programu Adobe Dreamweaver CC">
+
+                <h3>Atom</h3>
+                <p>Atom to darmowy edytor kodu o&nbsp;otwartym kodzie źródłowym. Pozwala na dostosowanie interfejsu poprzez wybranie jednego z&nbsp;gotowych motywów lub stworzenie własnego. Chociaż Atom nie jest dostarczany z&nbsp;edytorem wizualnym, oferuje podgląd na żywo Twojej strony internetowej. Oprócz pisania kodu HTML Atom obsługuje wiele języków programowania, takich jak JavaScript, Node.js i&nbsp;CSS. Dodatkowo można doinstalować funkcję Teletype, która ułatwia współpracę przy projektach z&nbsp;innymi programistami. Inne funkcje Atomu obejmują:</p>
+                <ul>
+                    <li>Wbudowany menedżer pakietów</li>
+                    <li>Wiele okienek – umożliwia podział interfejsu na wiele okien, aby łatwo porównywać i&nbsp;pisać kod w&nbsp;różnych plikach.</li>
+                    <li>Podświetlanie składni – ułatwia wykrywanie błędów i&nbsp;identyfikację różnych typów kodu i&nbsp;języków kodowania.</li>
+                    <li>Inteligentne autouzupełnianie – pomaga użytkownikom szybciej tworzyć kod dzięki inteligentnym autosugestiom.</li>
+                </ul>
+                <img src="img/atom.gif" alt="Screenshot z&nbsp;programu Atom">
+
+                <h3>Brackets</h3>
+                <p>Brackets to edytor HTML typu open source. Jest bezpłatny i&nbsp;dobrze obsługiwany przez firmę Adobe i&nbsp;społeczność open source. Obsługuje języki HTML, CSS, LESS, SCSS i&nbsp;JavaScript, co czyni go idealnym do programowania front-end. Zawiera również funkcję podglądu na żywo, aby zaoszczędzić czas. Dostępna jest również walidacja kodu W3C, integracja z&nbsp;Git oraz dostępne bezpłatne rozszerzenia z&nbsp;wieloma innymi przydatnymi funkcjami. Brackets zapewniają profesjonalne doświadczenie i&nbsp;są łatwym w&nbsp;użyciu edytorem tekstu dla HTML. Dostępny jest na systemy Windows, OS X oraz Linux.</p>
+                <img src="img/brackets.jpg" alt="Screenshot z&nbsp;programu Brackets">
+
+                <h3>Notepad++</h3>
+                <p>Notepad++ to darmowy, otwartoźródłowy edytor tekstu. Program jest lekki i&nbsp;ma prosty interfejs użytkownika. Notepad++ jest dystrybuowany jako darmowe oprogramowanie, a&nbsp;jego repozytorium jest dostępne na GitHub. Ten edytor HTML przeznaczony jest wyłącznie na systemy Windows. Elastyczny interfejs użytkownika umożliwia użytkownikom wybór między układami dzielonymi lub pełnoekranowymi podczas kodowania. w&nbsp;układzie podzielonego ekranu użytkownicy mogą pracować jednocześnie nad dwoma różnymi dokumentami. Ten zaawansowany edytor tekstu obsługuje również wiele języków do tworzenia stron internetowych, od HTML i&nbsp;CSS po JavaScript i&nbsp;PHP. Inne najważniejsze funkcje Notepad ++ obejmują:</p>
+                <ul>
+                    <li>Potężne narzędzia do edycji kodu – jako edytor tekstu oparty na Scintilla, Notepad++ zapewnia dużą szybkość przetwarzania przy mniejszym rozmiarze programu.</li>
+                    <li>Integracje wtyczek – rozszerzaj funkcjonalność i&nbsp;dodawaj bardziej zaawansowane funkcje, tworząc nowe wtyczki lub instalując wtyczki firm trzecich z&nbsp;listy.</li>
+                    <li>Połączenie FTP – pomaga użytkownikom łączyć się bezpośrednio z&nbsp;plikami serwera i&nbsp;edytować je z&nbsp;pulpitu nawigacyjnego.</li>
+                    <li>Mapa dokumentu – wyświetla przegląd i&nbsp;sekcje dokumentu, ułatwiając użytkownikom nawigację w&nbsp;obrębie większego pliku.</li>
+                </ul>
+                <img src="img/notepadpp.png" alt="Screenshot z&nbsp;programu Notepad++">
+
+                <h3>Sublime Text</h3>
+                <p>Sublime Text to płatny edytor, ale można go pobrać za darmo na 30 dni. Wyróżnia się tym, że jego obsługa opiera się głównie na klawiaturze (skrótach klawiszowych). Oprócz tego wspiera funkcje jak: </p>
+                <ul>
+                    <li>Kolorowanie składni</li>
+                    <li>Praca na wielu kartach – możliwość przechodzenia między kolejnymi dokumentami nie wychodząc z&nbsp;programu</li>
+                    <li>Numerowanie kolejnych linii kodu</li>
+                    <li>Multi zaznaczanie – możemy pisać w&nbsp;kilku miejscach na raz</li>
+                    <li>Szybkie wyszukiwanie</li>
+                </ul>
+                <img src="img/sublime.jpg" alt="Screenshot z&nbsp;programu Sublime">
+
+                <h3>Visual Studio Code</h3>
+                <p>Visual Studio Code to darmowy edytor HTML typu open source firmy Microsoft, zbudowany na platformie Github Electron. Dzięki tej strukturze użytkownicy mogą tworzyć projekty przy użyciu HTML, CSS i&nbsp;JavaScript na wielu systemach operacyjnych. Visual Studio Code wspiera systemy Windows, Mac i&nbsp;Linux. Integruje się również z&nbsp;Microsoft Azure, co ułatwia wdrażanie kodu. Użytkownicy mogą tworzyć projekty i&nbsp;aplikacje lokalnie oraz publikować je na platformie Azure za pomocą jednego kliknięcia. Ten edytor kodu korzysta z&nbsp;funkcji IntelliSense, aby zapewnić różne typy automatycznego uzupełniania, w&nbsp;tym zmienne, pola i&nbsp;definicje funkcji. Ponadto użytkownicy mogą instalować rozszerzenia językowe, takie jak Python i&nbsp;Ruby, aby umożliwić IntelliSense współpracę z&nbsp;innymi językami programowania. Co więcej, jego przejrzysty i&nbsp;prosty interfejs ułatwia lokalizowanie różnych narzędzi do edycji HTML, otwieranie nowego pliku i&nbsp;wyszukiwanie dokumentów. Istnieje także możliwość uruchomienia VS Code w&nbsp;przeglądarce, klikając <a href="https://vscode.dev/" target="_blank">tutaj</a> Inne istotne cechy to:</p>
+                <ul>
+                    <li>Debugowanie – wbudowane narzędzie do debugowania jest dostępne na pulpicie nawigacyjnym, aby szybko edytować, kompilować lub debugować kod.</li>
+                    <li>Edytor WYSIWYG (ang. What You See Is What You Get) – po prostu zainstaluj rozszerzenie, aby zmienić domyślny edytor tekstu na edytor HTML WYSIWYG.</li>
+                    <li>Fragmenty kodu – zawiera wbudowane fragmenty obsługiwane przez technologię IntelliSense, co ułatwia wprowadzanie powtarzających się wzorców kodu.</li>
+                    <li>Użytkownicy mogą jednocześnie pracować nad różnymi projektami lub plikami z&nbsp;różnych folderów nadrzędnych.</li>
+                </ul>
+                <img src="img/vscode.jpg" alt="Visual Studio Code">
+
+                <div class="quizVisible flex align-center justify-center">
+                    <h3>Quiz</h3>
+                    <div class="completed flex align-center justify-center">
+                        <span class="congrats"><i class="fa-regular fa-circle-check"></i> Brawo!</span>
+                        <button type="button">
+                            <span class="circle" aria-hidden="true">
+                            <span class="icon arrow"></span>
+                            </span>
+                            <span class="button-text">Przejdź dalej</span>
+                        </button>
+                    </div>
+                    <div class="buttons flex visible">
+                        <button type="reset"><i class="fa-solid fa-trash"></i> Wyczyść</button>
+                        <button type="submit">Sprawdź <i class="fa-solid fa-arrow-right-long"></i></button>
+                    </div>
+                </div>
+
+                <div class="quiz hide" questions="2">
+                    <div class="question">
+                        <span>Czy stronę internetową możemy napisać w&nbsp;notatniku?</span>
+                        <input type="radio" name="notatnik" id="notatnikCorrect">
+                        <label for="notatnikCorrect">Tak</label>
+                        <input type="radio" name="notatnik" id="notatnik">
+                        <label for="notatnik">Nie</label>
+                    </div>
+                    <div class="question">
+                        <span>Który z&nbsp;wymienionych programów <u>nie napiszemy</u> strony internetowej?</span>
+                        <input type="radio" name="edytorhtml" id="edytorhtmlCorrect">
+                        <label for="edytorhtmlCorrect">Adobe Photoshop</label>
+                        <input type="radio" name="edytorhtml" id="edytorhtml">
+                        <label for="edytorhtml">VS Code</label>
+                        <input type="radio" name="edytorhtml" id="edytorhtml2">
+                        <label for="edytorhtml2">Atom</label>
+                        <input type="radio" name="edytorhtml" id="edytorhtml3">
+                        <label for="edytorhtml3">Adobe Dreamweaver CC</label>
+                    </div>
+                </div>
+            </section>
+
+            <section id="level3" class="hide">
+                <h3>Deklaracja</h3>
+                <p>Kod strony internetowej należy rozpocząć od deklaracji oznaczającej, że używamy języka HTML w&nbsp;wersji 5. Aby to uczynić, należy napisać na początku pliku <code>&lt;!DOCTYPE&nbsp;html&gt;</code>. w&nbsp;zależności od wersji, deklaracja ta może wyglądać nieco inaczej.</p>
+
+                <h3>&lt;html lang="pl"&gt;</h3>
+                <p>Chociaż na przestrzeni lat wydano różne wersje, podstawy HTML pozostają takie same. Struktura dokumentu HTML została porównana ze strukturą kanapki. Ponieważ kanapka ma dwie kromki chleba, dokument HTML zawiera otwierające i&nbsp;zamykające znaczniki HTML. Te znaczniki, podobnie jak chleb w&nbsp;kanapce, otaczają wszystko inne. Dodatkowo znacznik <code>&lt;html lang="pl"&gt;</code> może przyjąć atrybut <code>lang</code>, który informuje przeglądarkę o&nbsp;języku stosowanym na naszej stronie.</p>
+                
+                <h3>Komentarze</h3>
+                <p>Niezależnie czy tworzymy niewielką stronę firmową, czy też dużą aplikację internetową, w&nbsp;pewnym momencie nasz kod stanie się dość obszerny. Nawet mała strona internetowa może sięgać kilkuset linijek. Jak się w&nbsp;tym wszystkim połapać? Oczywiście będąc na bieżąco w&nbsp;kodzie, będziemy w&nbsp;stanie spamiętać gdzie co jest. Natomiast jak wrócimy do strony po pewnym czasie gwarantuje, że zaczniemy się głowić nad naszym własnym kodem i&nbsp;próbować rozwiązać co tam też napisaliśmy i&nbsp;po co? z&nbsp;pomocą przychodzą nam komentarze. Jest to ludzki element każdego kodu, niezależnie czy kodujemy w&nbsp;HTML i&nbsp;CSS, czy programujemy w&nbsp;PHP'ie. Komentarze występują w&nbsp;każdym języku programowania, głównym ich zadaniem jest pomoc człowiekowi rozszyfrować o&nbsp;czym piszemy i&nbsp;czego dana część kodu służy, szczególnie, gdy pracujemy w&nbsp;wieloosobowych zespołach nad jednym kodem. Każdy język programowania ma swoją składnię, w&nbsp;języku HTML komentarze zapisujemy pomiędzy znacznikami &lt;!– oraz –&gt;. Wszystko co zostanie zapisane pomiędzy tymi znacznikami zostanie pominięte przez przeglądarkę przy wyświetlaniu treści. Będą one jedynie widoczne dla osób przeglądających kod strony internetowej.</p>
+
+                <div class="codeWrapper">
+                    <div class="code">
+                        <span contenteditable>
+                            &lt;!DOCTYPE html&gt; &lt;!-- Deklaracja rodzaju dokumentu --&gt;<br>
+                            &lt;html lang="pl"&gt; &lt;!-- Deklaracja języka HTML i&nbsp;polskiego --&gt;<br><br>
+                            &lt;/html&gt; &lt;!-- Zakończenie dokumentu --&gt;
+                        </span>
+                    </div>
+                </div>
+
+                <h3>&lt;head&gt;</h3>
+                <p>Zaraz po otwierającym tagu <code>&lt;html lang="pl"&gt;</code> znajdziesz nagłówek dokumentu, który jest identyfikowany przez otwierające i&nbsp;zamykające tagi head. Nagłówek pliku HTML zawiera wszystkie niewizualne elementy, które pomagają w&nbsp;działaniu strony. Takich elementów może być wiele, lecz najczęściej używane są <code>&lt;meta charset="UTF-8"&gt;</code>, który informuje przeglądarkę, aby korzystała z&nbsp;kodowania UTF-8 (dzięki czemu możliwe jest rozpoznanie polskich znaków) oraz <code>&lt;title&gt;Tytuł&lt;/title&gt;</code>, który określa tytuł strony (przykładowo Kurs HTML | Piotr Winiarczyk 3K).</p>
+                <div class="codeWrapper">
+                    <div class="code">
+                        <span contenteditable>
+                            &lt;!DOCTYPE html&gt;<br>
+                            &lt;html lang="pl"&gt;<br>
+                            &lt;head&gt;<br>
+                            &lt;!-- Miejsce na ustawienia dokumentu HTML --&gt;<br>
+                            &lt;meta charset="UTF-8"&gt;<br>
+                            &lt;title&gt;Tytuł&lt;/title&gt;<br>
+                            &lt;/head&gt;<br>
+                            &lt;/html&gt;
+                        </span>
+                    </div>
+                </div>
+
+                <h3>&lt;body&gt;</h3>
+                <p>Tag <code>&lt;body&gt;</code> następuje po tagu <code>&lt;head&gt;</code>. Wszystkie elementy wizualno-strukturalne są zawarte w&nbsp;tagu <code>&lt;body&gt;</code>. Nagłówki, akapity, listy, cytaty, obrazy i&nbsp;linki to tylko kilka elementów, które mogą znajdować się w&nbsp;tagu <code>&lt;body&gt;</code>. Podstawowa struktura HTML:</p>
+                <div class="codeWrapper">
+                    <div class="code">
+                        <span contenteditable>
+                            &lt;!DOCTYPE html&gt;<br>
+                            &lt;html lang="pl"&gt;<br>
+                            &lt;head&gt;<br>
+                            &lt;meta charset="UTF-8"&gt;<br>
+                            &lt;title&gt;Wpisz tytuł&lt;/title&gt;<br>
+                            &lt;/head&gt;<br>
+                            &lt;body&gt;<br>
+                            &lt;!-- Miejsce na treść stony --&gt;<br>
+                            &lt;h1&gt;Wpisz imię i&nbsp;nazwisko&lt;/h1&gt;<br>
+                            &lt;/body&gt;<br>
+                            &lt;/html&gt;
+                        </span>
+                    </div>
+                </div>
+
+                <h3>Rozszerzenie pliku</h3>
+                <p>Aby przeglądarka mogła poprawnie otworzyć stronę internetową, należy nadać plikowi rozszerzenie .html (przykładowo strona.html).</p>
+
+                <div class="quizVisible flex align-center justify-center">
+                    <h3>Quiz</h3>
+                    <div class="completed flex align-center justify-center">
+                        <span class="congrats"><i class="fa-regular fa-circle-check"></i> Brawo!</span>
+                        <button type="button">
+                            <span class="circle" aria-hidden="true">
+                            <span class="icon arrow"></span>
+                            </span>
+                            <span class="button-text">Przejdź dalej</span>
+                        </button>
+                    </div>
+                    <div class="buttons flex visible">
+                        <button type="reset"><i class="fa-solid fa-trash"></i> Wyczyść</button>
+                        <button type="submit">Sprawdź <i class="fa-solid fa-arrow-right-long"></i></button>
+                    </div>
+                </div>
+
+                <div class="quiz hide" questions="3">
+                    <div class="question">
+                        <span>Do czego służy znacznik <code>&lt;html lang="pl"&gt;</code>?</span>
+                        <input type="radio" name="htmltag" id="htmltagCorrect">
+                        <label for="htmltagCorrect">Otacza treść strony internetowej i określa jej język</label>
+                        <input type="radio" name="htmltag" id="htmltag">
+                        <label for="htmltag">Pogrubia tekst</label>
+                        <input type="radio" name="htmltag" id="htmltag2">
+                        <label for="htmltag2">Zawiera wszystkie niewizualne elementy</label>
+                        <input type="radio" name="htmltag" id="htmltag3">
+                        <label for="htmltag3">Zawiera nagłówki</label>
+                    </div>
+                    <div class="question">
+                        <span>Do czego służy znacznik <code>&lt;head&gt;</code></span>
+                        <input type="radio" name="headtag" id="headtagCorrect">
+                        <label for="headtagCorrect">Zawiera wszystkie niewizualne elementy</label>
+                        <input type="radio" name="headtag" id="headtag">
+                        <label for="headtag">Zawiera wszystkie widoczne elementy</label>
+                        <input type="radio" name="headtag" id="headtag2">
+                        <label for="headtag2">Określa używaną wersję języka HTML</label>
+                    </div>
+                    <div class="question">
+                        <span>Jakie rozszerzenie powinna mieć strona internetowa?</span>
+                        <input type="radio" name="rozszerzenie" id="rozszerzenieCorrect">
+                        <label for="rozszerzenieCorrect">.html</label>
+                        <input type="radio" name="rozszerzenie" id="rozszerzenie">
+                        <label for="rozszerzenie">.js</label>
+                        <input type="radio" name="rozszerzenie" id="rozszerzenie2">
+                        <label for="rozszerzenie2">.css</label>
+                        <input type="radio" name="rozszerzenie" id="rozszerzenie3">
+                        <label for="rozszerzenie3">.py</label>
+                    </div>
+                </div>
+            </section>
+            <section id="level4" class="hide">
+                <h3>Nagłówki</h3>
+                <p>Język HTML zawiera sześć poziomów nagłówków, które są uszeregowane według ważności. Są to <code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code>, <code>&lt;h3&gt;</code>, <code>&lt;h4&gt;</code>, <code>&lt;h5&gt;</code>, i&nbsp;<code>&lt;h6&gt;</code>. Poniższy kod pokazuje różnice pomiędzy nimi:</p>
+                <div class="codeWrapper">
+                    <div class="code">
+                        <span contenteditable>
+                            &lt;!DOCTYPE html&gt;<br>
+                            &lt;html lang="pl"&gt;<br>
+                            &lt;head&gt;<br>
+                            &lt;meta charset="UTF-8"&gt;<br>
+                            &lt;title&gt;Wpisz tytuł&lt;/title&gt;<br>
+                            &lt;/head&gt;<br>
+                            &lt;body&gt;<br>
+                            &lt;h1&gt;Nagłówek 1&lt;/h1&gt;<br>
+                            &lt;h2&gt;Nagłówek 2&lt;/h2&gt;<br>
+                            &lt;h3&gt;Nagłówek 3&lt;/h3&gt;<br>
+                            &lt;h4&gt;Nagłówek 4&lt;/h4&gt;<br>
+                            &lt;h5&gt;Nagłówek 5&lt;/h5&gt;<br>
+                            &lt;h6&gt;Nagłówek 6&lt;/h6&gt;<br>
+                            &lt;/body&gt;<br>
+                            &lt;/html&gt;
+                        </span>
+                    </div>
+                </div>
+
+                <h3>Akapity</h3>
+                <p>Aby utworzyć akapit należy użyć otwierającego i&nbsp;zamykającego znacznika <code>&lt;p&gt;</code>, a&nbsp;pomiędzy nimi wstawić treść akapitu. Aby wymusić przejście do następnej linijki należy użyć znacznika <code>&lt;br /&gt;</code>.</p>
+                <div class="codeWrapper">
+                    <div class="code">
+                        <span contenteditable>
+                            &lt;!DOCTYPE html&gt;<br>
+                            &lt;html lang="pl"&gt;<br>
+                            &lt;head&gt;<br>
+                            &lt;meta charset="UTF-8"&gt;<br>
+                            &lt;title&gt;Wpisz tytuł&lt;/title&gt;<br>
+                            &lt;/head&gt;<br>
+                            &lt;body&gt;<br>
+                            &lt;p&gt;Oto akapit.&lt;/p&gt;<br>
+                            &lt;p&gt;Oto &lt;br /&gt;drugi akapit.&lt;/p&gt;<br>
+                            &lt;/body&gt;<br>
+                            &lt;/html&gt;
+                        </span>
+                    </div>
+                </div>
+
+                <h3>Formatowanie tekstu</h3>
+                <p>W języku HTML istnieje wiele elementów służących do określenia stylu tekstu. Są to:</p>
+                <div class="codeWrapper">
+                    <div class="code">
+                        <span contenteditable>
+                            &lt;!DOCTYPE html&gt;<br>
+                            &lt;html lang="pl"&gt;<br>
+                            &lt;head&gt;<br>
+                            &lt;meta charset="UTF-8"&gt;<br>
+                            &lt;title&gt;Wpisz tytuł&lt;/title&gt;<br>
+                            &lt;/head&gt;<br>
+                            &lt;body&gt;<br>
+                            &lt;p&gt;Zwykły tekst w&nbsp;akapicie (dodaje odstępy)&lt;/p&gt;<br>
+                            &lt;span&gt;Zwykły tekst poza akapitem&lt;/span&gt;&lt;br /&gt;<br>
+                            &lt;b&gt;Tekst pogrubiony&lt;/b&gt;&lt;br /&gt;<br>
+                            &lt;strong&gt;Tekst pogrubiony&lt;/strong&gt;&lt;br /&gt;<br>
+                            &lt;i&gt;Tekst pochylony&lt;/i&gt;&lt;br /&gt;<br>
+                            &lt;em&gt;Tekst pochylony&lt;/em&gt;&lt;br /&gt;<br>
+                            &lt;small&gt;Tekst pomniejszony&lt;/small&gt;&lt;br /&gt;<br>
+                            &lt;big&gt;Tekst powiększony&lt;/big&gt;&lt;br /&gt;<br>
+                            &lt;mark&gt;Tekst podświetlony&lt;/mark&gt;&lt;br /&gt;<br>
+                            Indeks &lt;sup&gt;górny&lt;/sup&gt;&lt;br /&gt;<br>
+                            Indeks &lt;sub&gt;dolny&lt;/sub&gt;&lt;br /&gt;<br>
+                            &lt;u&gt;Tekst podkreślony&lt;/u&gt;&lt;br /&gt;<br>
+                            &lt;ins&gt;Tekst podkreślony&lt;/ins&gt;&lt;br /&gt;<br>
+                            &lt;s&gt;Tekst przekreślony&lt;/s&gt;&lt;br /&gt;<br>
+                            &lt;del&gt;Tekst przekreślony&lt;/del&gt;&lt;br /&gt;<br>
+                            &lt;/body&gt;<br>
+                            &lt;/html&gt;
+                        </span>
+                    </div>
+                </div>
+
+                <h3>Wielkość tekstu</h3>
+                <p>Aby zmienić rozmiar tekstu, należy do znacznika dodać argument <code>style="font-size: x;"</code>, gdzie jako x podajemy rozmiar czcionki wraz z&nbsp;jednostką (np. 16px, 12 pt). Więcej na ten temat dowiesz się <a href="../Kurs CSS/index.html">tutaj</a>.</p>
+                <div class="codeWrapper">
+                    <div class="code">
+                        <span contenteditable>
+                            &lt;!DOCTYPE html&gt;<br>
+                            &lt;html lang="pl"&gt;<br>
+                            &lt;head&gt;<br>
+                            &lt;meta charset="UTF-8"&gt;<br>
+                            &lt;title&gt;Wpisz tytuł&lt;/title&gt;<br>
+                            &lt;/head&gt;<br>
+                            &lt;body&gt;<br>
+                            &lt;p&gt;Oto domyślny akapit.&lt;/p&gt;<br>
+                            &lt;p style="font-size: 26px;"&gt;Oto akapit o&nbsp;wielkości 26px.&lt;/p&gt;<br>
+                            &lt;/body&gt;<br>
+                            &lt;/html&gt;
+                        </span>
+                    </div>
+                </div>
+
+                <h3>Kolor tekstu</h3>
+                <p>Aby zmienić kolor tekstu, należy do znacznika dodać argument <code>style="color: x;"</code>, gdzie jako x podajemy kolor, które można zapisywać poprzez:.</p>
+                <ul>
+                    <li>nazwę w&nbsp;języku angielskim – <span class="green">green</span></li>
+                    <li>kod szesnastkowy – <span class="green">#008000</span></li>
+                    <li>kod RGB – <span class="green">rgb(0, 128, 0)</span></li>
+                    <li>kod HSL – <span class="green">hsl(120, 100%, 25%)</span></li>
+                    <li>kod HWB – <span class="green">hwb(120 0% 50%)</span></li>
+                </ul>
+                <p>Kolorów z&nbsp;nazwą w&nbsp;języku angielskim, których można użyć na stronie internetowej jest na ten moment 140, a&nbsp;ich pełną listę znajdziesz <a href="https://www.w3schools.com/cssref/css_colors.asp" target="_blank">tutaj</a>. Natomiast korzystając z&nbsp;innego sposobu zapisania koloru, możemy uzyskać około 16,7 miliona barw.</p>
+                <div class="codeWrapper">
+                    <div class="code">
+                        <span contenteditable>
+                            &lt;!DOCTYPE html&gt;<br>
+                            &lt;html lang="pl"&gt;<br>
+                            &lt;head&gt;<br>
+                            &lt;meta charset="UTF-8"&gt;<br>
+                            &lt;title&gt;Wpisz tytuł&lt;/title&gt;<br>
+                            &lt;/head&gt;<br>
+                            &lt;body&gt;<br>
+                            &lt;p&gt;Oto domyślny akapit.&lt;/p&gt;<br>
+                            &lt;p style="color: blue;"&gt;Oto niebieski akapit.&lt;/p&gt;<br>
+                            &lt;p style="font-size: 22px; color: blue;"&gt;Oto niebieski akapit o&nbsp;wielkości 22px.&lt;/p&gt;<br>
+                            &lt;/body&gt;<br>
+                            &lt;/html&gt;
+                        </span>
+                    </div>
+                </div>
+
+                <h3>Pozycjonowanie tekstu</h3>
+                <p>Mamy także możliwość, aby podobnie jak w&nbsp;programie Microsoft Word, pozycjonować tekst:</p>
+                <ul>
+                    <li>do lewej (domyślnie) – left</li>
+                    <li>do środka – center</li>
+                    <li>do prawej – right</li>
+                    <li>wyjustować – justify</li>
+                </ul>
+                <p>W tym celu do znacznika, który oznacza tekst (np. <code>&lt;span&gt;</code>) dodajemy atrybut <code>style="text-align: x";</code>, gdzie w&nbsp;miejsce x wstawiamy left, center, right lub justify.</p>
+                <div class="codeWrapper">
+                    <div class="code">
+                        <span contenteditable>
+                            &lt;!DOCTYPE html&gt;<br>
+                            &lt;html lang="pl"&gt;<br>
+                            &lt;head&gt;<br>
+                            &lt;meta charset="UTF-8"&gt;<br>
+                            &lt;title&gt;Wpisz tytuł&lt;/title&gt;<br>
+                            &lt;/head&gt;<br>
+                            &lt;body&gt;<br>
+                            &lt;h2&gt; Wyrównywanie do lewej &lt;/h2&gt;<br>
+                            &lt;p style="text-align: left;"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eget nisi quis diam dapibus porta. Aenean aliquet orci ligula, sit amet porta magna laoreet sed. Nam suscipit nulla turpis, id fringilla nulla suscipit eu. In vitae nunc quis quam vulputate egestas.&lt;/p&gt;<br><br>
+                            &lt;hr&gt;<br>
+                            &lt;h2&gt; Wyśrodkowanie &lt;/h2&gt;<br>
+                            &lt;p style="text-align: center;"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eget nisi quis diam dapibus porta. Aenean aliquet orci ligula, sit amet porta magna laoreet sed. Nam suscipit nulla turpis, id fringilla nulla suscipit eu. In vitae nunc quis quam vulputate egestas.&lt;/p&gt;<br><br>
+                            &lt;hr&gt;<br>
+                            &lt;h2&gt; Wyrównywanie do prawej &lt;/h2&gt;<br>
+                            &lt;p style="text-align: right;"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eget nisi quis diam dapibus porta. Aenean aliquet orci ligula, sit amet porta magna laoreet sed. Nam suscipit nulla turpis, id fringilla nulla suscipit eu. In vitae nunc quis quam vulputate egestas.&lt;/p&gt;<br><br>
+                            &lt;hr&gt;<br>
+                            &lt;h2&gt; Wyjustowanie &lt;/h2&gt;<br>
+                            &lt;p style="text-align: justify;"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eget nisi quis diam dapibus porta. Aenean aliquet orci ligula, sit amet porta magna laoreet sed. Nam suscipit nulla turpis, id fringilla nulla suscipit eu. In vitae nunc quis quam vulputate egestas.&lt;/p&gt;<br>
+                            &lt;/body&gt;<br>
+                            &lt;/html&gt;
+                        </span>
+                    </div>
+                </div>
+
+                <h3>Animowanie tekstu</h3>
+                <p>Do prostej animacji tekstu możemy użyć znacznika <code>&lt;marquee&gt;</code>. Umożliwia on przewijanie tekstu lub obrazu na stronie internetowej od lewej do prawej lub odwrotnie, od góry do dołu lub odwrotnie. Znacznik <code>&lt;marquee&gt;</code> wspiera dużo różnych atrybutów, wśród których są:</p>
+                <ul>
+                    <li>
+                        Typ animacji – <code>behavior</code>
+                        <ol type="a">
+                            <li><code>scroll</code> – tekst przesuwa się od prawej do lewej (domyślnie)</li>
+                            <li><code>alternate</code> – tekst przesuwa się od prawej do lewej, a&nbsp;następnie „odbija się” i&nbsp;powraca</li>
+                            <li><code>slide</code> – tekst przesunie się od prawej do lewej tylko raz, a&nbsp;później się zatrzyma i&nbsp;pozostanie nieruchomy</li>
+                        </ol>
+                    </li>
+                    <li>
+                        Kierunek animacji – <code>direction</code>
+                        <ol type="a">
+                            <li><code>left</code> – tekst będzie się przesuwał od prawej do lewej (jest to domyślne zachowanie)</li>
+                            <li><code>right</code> – tekst będzie się przesuwał od lewej do prawej</li>
+                            <li><code>up</code> – tekst będzie się przesuwał od dołu do góry</li>
+                            <li><code>down</code> – tekst będzie się przesuwał od góry do dołu</li>
+                        </ol>
+                    </li>
+                    <li>
+                        Ilość powtórzeń – <code>loop</code>
+                    </li>
+                </ul>
+                <div class="codeWrapper">
+                    <div class="code">
+                        <span contenteditable>
+                            &lt;!DOCTYPE html&gt;<br>
+                            &lt;html lang="pl"&gt;<br>
+                            &lt;head&gt;<br>
+                            &lt;meta charset="UTF-8"&gt;<br>
+                            &lt;title&gt;Wpisz tytuł&lt;/title&gt;<br>
+                            &lt;/head&gt;<br>
+                            &lt;body&gt;<br>
+                            &lt;marquee&gt;Tu wpisz tekst&lt;/marquee&gt;&lt;hr&gt;<br>
+                            &lt;marquee behavior="alternate" direction="right" loop="2"&gt;Tu wpisz tekst&lt;/marquee&gt;&lt;hr&gt;<br>
+                            &lt;marquee behavior="scroll" direction="up"&gt;Tu wpisz tekst&lt;/marquee&gt;&lt;hr&gt;<br>
+                            &lt;marquee behavior="alternate"&gt;Tu wpisz tekst&lt;/marquee&gt;<br>
+                            &lt;/body&gt;<br>
+                            &lt;/html&gt;
+                        </span>
+                    </div>
+                </div>
+
+                <h3>Tekst preformatowany</h3>
+                <p>Znacznik <code>&lt;pre&gt;</code> wprowadza tekst preformatowany, czyli napisany czcionką monotypiczną (o stałej szerokości znaku), który uwzględnia dodatkowe spacje, tabulację i&nbsp;znaki końca linii (nie trzeba stosować znaczników &lt;br /&gt;) oraz nie jest automatycznie zawijany. Dzięki niemu możesz np. wkleić na stronę WWW tekst, wprost ze zwykłego edytora, bez stosowania dodatkowych znaczników (niestety informacje dotyczące formatowania zostaną pominięte). Należy jednak przy tym pamiętać, aby tekst nie zawierał znaków: "&lt;" oraz "&gt;" (w zamian używaj: &amp;lt; i&nbsp;&amp;gt;).</p>
+                <div class="codeWrapper">
+                    <div class="code">
+                        <span contenteditable>
+                            &lt;!DOCTYPE html&gt;<br>
+                            &lt;html lang="pl"&gt;<br>
+                            &lt;head&gt;<br>
+                            &lt;meta charset="UTF-8"&gt;<br>
+                            &lt;title&gt;Wpisz tytuł&lt;/title&gt;<br>
+                            &lt;/head&gt;<br>
+                            &lt;body&gt;<br>
+                            &lt;pre&gt;
+<pre>Ten tekst jest preformatowny
+dlatego możemy używać
+    tabulatora,
+dodatkowych         spacji
+oraz znaków końca linii.</pre>
+                            &lt;/pre&gt;<br>
+                            &lt;/body&gt;<br>
+                            &lt;/html&gt;
+                        </span>
+                    </div>
+                </div>
+
+                <h3>Cytaty</h3>
+                <p>Do tworzenia cytatów używamy kilku znaczników. Pierwszy z&nbsp;nich to <code>&lt;cite&gt;</code> i&nbsp;służy do podpisania osoby, która wypowiedziała cytowany tekst. Natomiast do samego cytatu używamy znacznika <code>&lt;q&gt;</code>.</p>
+                <div class="codeWrapper">
+                    <div class="code">
+                        <span contenteditable>
+                            &lt;!DOCTYPE html&gt;<br>
+                            &lt;html lang="pl"&gt;<br>
+                            &lt;head&gt;<br>
+                            &lt;meta charset="UTF-8"&gt;<br>
+                            &lt;title&gt;Wpisz tytuł&lt;/title&gt;<br>
+                            &lt;/head&gt;<br>
+                            &lt;body&gt;<br>
+                            &lt;cite&gt;Grzegorz Floryda&lt;/cite&gt; powiedział: &lt;q&gt;Nie mogę oddychać.&lt;/q&gt;<br>
+                            &lt;/body&gt;<br>
+                            &lt;/html&gt;
+                        </span>
+                    </div>
+                </div>
+
+                <h3>Akronimy</h3>
+                <p>Do tworzenia znaczników możemy użyć znaczników: &lt;acronym&gt; oraz &lt;abbr&gt;. Dodatkowo musimy pamiętać o&nbsp;dwóch atrybutach:</p>
+                <ul>
+                    <li>lang – który określa z&nbsp;jakiego języka pochodzi akronim (np. en, pl)</li>
+                    <li>title – rozwinięcie akronimu</li>
+                </ul>
+                <div class="codeWrapper">
+                    <div class="code">
+                        <span contenteditable>
+                            &lt;!DOCTYPE html&gt;<br>
+                            &lt;html lang="pl"&gt;<br>
+                            &lt;head&gt;<br>
+                            &lt;meta charset="UTF-8"&gt;<br>
+                            &lt;title&gt;Wpisz tytuł&lt;/title&gt;<br>
+                            &lt;/head&gt;<br>
+                            &lt;body&gt;<br>
+                            Najludniejszym i&nbsp;najbogatszym oraz trzecim pod względem wielkości stanem &lt;abbr lang="en" title="United States of America"&gt;USA&lt;/abbr&gt; jest Kalifornia.&lt;br /&gt;<br>
+                            Leżąca na terenie stanu Dolina Śmierci (86 &lt;abbr title="metrów pod poziomem morza" lang="pl"&gt;m p.p.m.&lt;/abbr&gt;) jest najniższym punktem w&nbsp;&lt;abbr lang="en" title="United States of America"&gtUSA&lt/abbr&gt;.<br>
+                            &lt;/body&gt;<br>
+                            &lt;/html&gt;
+                        </span>
+                    </div>
+                </div>
+
+                <h3>Kierunek tekstu</h3>
+                <p>Aby ustawić kierunek tekstu możemy użyć tagu &lt;bdo&gt; oraz obowiązowo użyć atrybutu dir, którego wartość może wynosić:</p>
+                <ul>
+                    <li>ltr (left to right) – wyświetlanie tekstu od lewej do prawej (domyślnie)</li>
+                    <li>rtl (right to left) – wyświetlanie tekstu od prawej do lewej</li>
+                </ul>
+                <div class="codeWrapper">
+                    <div class="code">
+                        <span contenteditable>
+                            &lt;!DOCTYPE html&gt;<br>
+                            &lt;html lang="pl"&gt;<br>
+                            &lt;head&gt;<br>
+                            &lt;meta charset="UTF-8"&gt;<br>
+                            &lt;title&gt;Wpisz tytuł&lt;/title&gt;<br>
+                            &lt;/head&gt;<br>
+                            &lt;body&gt;<br>
+                            &lt;bdo dir="rtl"&gt;123456789&lt;/bdo&gt;&lt;br /&gt;<br>
+                            &lt;bdo dir="rtl"&gt;metraż&lt;/bdo&gt;&lt;br /&gt;<br>
+                            &lt;bdo dir="rtl"&gt;kos&lt;/bdo&gt;&lt;br /&gt;<br>
+                            &lt;bdo dir="rtl"&gt;metal&lt;/bdo&gt;&lt;br /&gt;<br>
+                            &lt;bdo dir="rtl"&gt;leż&lt;/bdo&gt;&lt;br /&gt;<br>
+                            &lt;bdo dir="rtl"&gt;traf&lt;/bdo&gt;<br>
+                            &lt;/body&gt;<br>
+                            &lt;/html&gt;
+                        </span>
+                    </div>
+                </div>
+
+                <p>Więcej sposobów na formatowanie tekstu poznasz w&nbsp;kursie CSS.</p>
+
+                <div class="quizVisible flex align-center justify-center">
+                    <h3>Quiz</h3>
+                    <div class="completed flex align-center justify-center">
+                        <span class="congrats"><i class="fa-regular fa-circle-check"></i> Brawo!</span>
+                        <button type="button">
+                            <span class="circle" aria-hidden="true">
+                            <span class="icon arrow"></span>
+                            </span>
+                            <span class="button-text">Przejdź dalej</span>
+                        </button>
+                    </div>
+                    <div class="buttons flex visible">
+                        <button type="reset"><i class="fa-solid fa-trash"></i> Wyczyść</button>
+                        <button type="submit">Sprawdź <i class="fa-solid fa-arrow-right-long"></i></button>
+                    </div>
+                </div>
+
+                <div class="quiz hide" questions="3">
+                    <div class="question">
+                        <span>Który znacznik oznacza nagłówek?</span>
+                        <input type="radio" name="naglowki" id="naglowkiCorrect">
+                        <label for="naglowkiCorrect"><code>&lt;h1&gt;</code></label>
+                        <input type="radio" name="naglowki" id="naglowki">
+                        <label for="naglowki"><code>&lt;heading&gt;</code></label>
+                        <input type="radio" name="naglowki" id="naglowki2">
+                        <label for="naglowki2"><code>&lt;p&gt;</code></label>
+                    </div>
+                    <div class="question">
+                        <span>Który znacznik pogrubia tekst?</span>
+                        <input type="radio" name="bold" id="boldCorrect">
+                        <label for="boldCorrect"><code>&lt;b&gt;</code></label>
+                        <input type="radio" name="bold" id="bold">
+                        <label for="bold"><code>&lt;u&gt;</code></label>
+                        <input type="radio" name="bold" id="bold2">
+                        <label for="bold2"><code>&lt;s&gt;</code></label>
+                    </div>
+                    <div class="question">
+                        <span>Który znacznik podkreśla tekst?</span>
+                        <input type="radio" name="underline" id="underlineCorrect">
+                        <label for="underlineCorrect"><code>&lt;u&gt;</code></label>
+                        <input type="radio" name="underline" id="underline">
+                        <label for="underline"><code>&lt;b&gt;</code></label>
+                        <input type="radio" name="underline" id="underline2">
+                        <label for="underline2"><code>&lt;s&gt;</code></label>
+                    </div>
+                    <div class="question">
+                        <span>Czy znacznik <code>&lt;q&gt;</code> służy do ustawiania kierunku tekstu?</span>
+                        <input type="radio" name="kierunek" id="kierunekCorrect">
+                        <label for="kierunekCorrect">Nie</label>
+                        <input type="radio" name="kierunek" id="kierunek">
+                        <label for="kierunek">Tak</label>
+                    </div>
+                </div>
+            </section>
+            <section id="level5" class="hide">
+                <p>W języku HTML mamy możliwość wprowadzenia znaków, które nie znajdują się na klawiaturze lub są zarezerwowane dla kodu HTML (np. znaki otwierające i&nbsp;zamykające tagi &lt;&gt;). Poniżej znajdziesz tabelę znaków specjalnych. Aby wstawić je na swoją stronę, musisz wpisać frazę podaną w&nbsp;kolumnie "Encja" lub "Kod HTML".</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Podgląd</th>
+                            <th>Unicode</th>
+                            <th>Encja</th>
+                            <th>Kod HTML</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>←</td><td>U+02190</td><td>&amp;larr;</td><td>&amp;#8592;</td></tr>
+                        <tr><td>↑</td><td>U+02191</td><td>&amp;uarr;</td><td>&amp;#8593;</td></tr>
+                        <tr><td>→</td><td>U+02192</td><td>&amp;rarr;</td><td>&amp;#8594;</td></tr>
+                        <tr><td>↓</td><td>U+02193</td><td>&amp;darr;</td><td>&amp;#8595;</td></tr>
+                        <tr><td>&#x2194;</td><td>U+02194</td><td>&amp;harr;</td><td>&amp;#8596;</td></tr>
+                        <tr><td>&#x2195;</td><td>U+02195</td><td>&amp;varr;</td><td>&amp;#8597;</td></tr>
+                        <tr><td>&#x2196;</td><td>U+02196</td><td>&amp;nwarr;</td><td>&amp;#8598;</td></tr>
+                        <tr><td>&#x2197;</td><td>U+02197</td><td>&amp;nearr;</td><td>&amp;#8599;</td></tr>
+                        <tr><td>&#x2198;</td><td>U+02198</td><td>&amp;searr;</td><td>&amp;#8600;</td></tr>
+                        <tr><td>&#x2199;</td><td>U+02199</td><td>&amp;swarr;</td><td>&amp;#8601;</td></tr>
+                        <tr><td>↚</td><td>U+0219A</td><td>&amp;nlarr;</td><td>&amp;#8602;</td></tr>
+                        <tr><td>↛</td><td>U+0219B</td><td>&amp;nrarr;</td><td>&amp;#8603;</td></tr>
+                        <tr><td>↜</td><td>U+0219C</td><td>&amp;larrw;</td><td>&amp;#8604;</td></tr>
+                        <tr><td>↝</td><td>U+0219D</td><td>&amp;rarrw;</td><td>&amp;#8605;</td></tr>
+                        <tr><td>↞</td><td>U+0219E</td><td>&amp;Larr;</td><td>&amp;#8606;</td></tr>
+                        <tr><td>↟</td><td>U+0219F</td><td>&amp;Uarr;</td><td>&amp;#8607;</td></tr>
+                        <tr><td>↠</td><td>U+021A0</td><td>&amp;Rarr;</td><td>&amp;#8608;</td></tr>
+                        <tr><td>↡</td><td>U+021A1</td><td>&amp;Darr;</td><td>&amp;#8609;</td></tr>
+                        <tr><td>↢</td><td>U+021A2</td><td>&amp;larrtl;</td><td>&amp;#8610;</td></tr>
+                        <tr><td>↣</td><td>U+021A3</td><td>&amp;rarrtl;</td><td>&amp;#8611;</td></tr>
+                        <tr><td>↤</td><td>U+021A4</td><td>&amp;mapstoleft;</td><td>&amp;#8612;</td></tr>
+                        <tr><td>↥</td><td>U+021A5</td><td>&amp;mapstoup;</td><td>&amp;#8613;</td></tr>
+                        <tr><td>↦</td><td>U+021A6</td><td>&amp;mapstoright;</td><td>&amp;#8614;</td></tr>
+                        <tr><td>↧</td><td>U+021A7</td><td>&amp;mapstodown;</td><td>&amp;#8615;</td></tr>
+                        <tr><td>↨</td><td>U+021A8</td><td>&nbsp;</td><td>&amp;#8616;</td></tr>
+                        <tr><td>&#x21a9;</td><td>U+021A9</td><td>&amp;larrhk;</td><td>&amp;#8617;</td></tr>
+                        <tr><td>&#x21aa;</td><td>U+021AA</td><td>&amp;rarrhk;</td><td>&amp;#8618;</td></tr>
+                        <tr><td>↫</td><td>U+021AB</td><td>&amp;larrlp;</td><td>&amp;#8619;</td></tr>
+                        <tr><td>↬</td><td>U+021AC</td><td>&amp;rarrlp;</td><td>&amp;#8620;</td></tr>
+                        <tr><td>↭</td><td>U+021AD</td><td>&amp;harrw;</td><td>&amp;#8621;</td></tr>
+                        <tr><td>↮</td><td>U+021AE</td><td>&amp;nharr;</td><td>&amp;#8622;</td></tr>
+                        <tr><td>↯</td><td>U+021AF</td><td>&nbsp;</td><td>&amp;#8623;</td></tr>
+                        <tr><td>↰</td><td>U+021B0</td><td>&amp;lsh;</td><td>&amp;#8624;</td></tr>
+                        <tr><td>↱</td><td>U+021B1</td><td>&amp;rsh;</td><td>&amp;#8625;</td></tr>
+                        <tr><td>↲</td><td>U+021B2</td><td>&amp;ldsh;</td><td>&amp;#8626;</td></tr>
+                        <tr><td>↳</td><td>U+021B3</td><td>&amp;rdsh;</td><td>&amp;#8627;</td></tr>
+                        <tr><td>↴</td><td>U+021B4</td><td>&nbsp;</td><td>&amp;#8628;</td></tr>
+                        <tr><td>↵</td><td>U+021B5</td><td>&amp;crarr;</td><td>&amp;#8629;</td></tr>
+                        <tr><td>↶</td><td>U+021B6</td><td>&amp;cularr;</td><td>&amp;#8630;</td></tr>
+                        <tr><td>↷</td><td>U+021B7</td><td>&amp;curarr;</td><td>&amp;#8631;</td></tr>
+                        <tr><td>↸</td><td>U+021B8</td><td>&nbsp;</td><td>&amp;#8632;</td></tr>
+                        <tr><td>↹</td><td>U+021B9</td><td>&nbsp;</td><td>&amp;#8633;</td></tr>
+                        <tr><td>↺</td><td>U+021BA</td><td>&amp;olarr;</td><td>&amp;#8634;</td></tr>
+                        <tr><td>↻</td><td>U+021BB</td><td>&amp;orarr;</td><td>&amp;#8635;</td></tr>
+                        <tr><td>↼</td><td>U+021BC</td><td>&amp;lharu;</td><td>&amp;#8636;</td></tr>
+                        <tr><td>↽</td><td>U+021BD</td><td>&amp;lhard;</td><td>&amp;#8637;</td></tr>
+                        <tr><td>↾</td><td>U+021BE</td><td>&amp;uharr;</td><td>&amp;#8638;</td></tr>
+                        <tr><td>↿</td><td>U+021BF</td><td>&amp;uharl;</td><td>&amp;#8639;</td></tr>
+                        <tr><td>⇀</td><td>U+021C0</td><td>&amp;rharu;</td><td>&amp;#8640;</td></tr>
+                        <tr><td>⇁</td><td>U+021C1</td><td>&amp;rhard;</td><td>&amp;#8641;</td></tr>
+                        <tr><td>⇂</td><td>U+021C2</td><td>&amp;dharr;</td><td>&amp;#8642;</td></tr>
+                        <tr><td>⇃</td><td>U+021C3</td><td>&amp;dharl;</td><td>&amp;#8643;</td></tr>
+                        <tr><td>⇄</td><td>U+021C4</td><td>&amp;rlarr;</td><td>&amp;#8644;</td></tr>
+                        <tr><td>⇅</td><td>U+021C5</td><td>&amp;udarr;</td><td>&amp;#8645;</td></tr>
+                        <tr><td>⇆</td><td>U+021C6</td><td>&amp;lrarr;</td><td>&amp;#8646;</td></tr>
+                        <tr><td>⇇</td><td>U+021C7</td><td>&amp;llarr;</td><td>&amp;#8647;</td></tr>
+                        <tr><td>⇈</td><td>U+021C8</td><td>&amp;uuarr;</td><td>&amp;#8648;</td></tr>
+                        <tr><td>⇉</td><td>U+021C9</td><td>&amp;rrarr;</td><td>&amp;#8649;</td></tr>
+                        <tr><td>⇊</td><td>U+021CA</td><td>&amp;ddarr;</td><td>&amp;#8650;</td></tr>
+                        <tr><td>⇋</td><td>U+021CB</td><td>&amp;lrhar;</td><td>&amp;#8651;</td></tr>
+                        <tr><td>⇌</td><td>U+021CC</td><td>&amp;rlhar;</td><td>&amp;#8652;</td></tr>
+                        <tr><td>⇍</td><td>U+021CD</td><td>&amp;nlArr;</td><td>&amp;#8653;</td></tr>
+                        <tr><td>⇎</td><td>U+021CE</td><td>&amp;nhArr;</td><td>&amp;#8654;</td></tr>
+                        <tr><td>⇏</td><td>U+021CF</td><td>&amp;nrArr;</td><td>&amp;#8655;</td></tr>
+                        <tr><td>⇐</td><td>U+021D0</td><td>&amp;lArr;</td><td>&amp;#8656;</td></tr>
+                        <tr><td>⇑</td><td>U+021D1</td><td>&amp;uArr;</td><td>&amp;#8657;</td></tr>
+                        <tr><td>⇒</td><td>U+021D2</td><td>&amp;rArr;</td><td>&amp;#8658;</td></tr>
+                        <tr><td>⇓</td><td>U+021D3</td><td>&amp;dArr;</td><td>&amp;#8659;</td></tr>
+                        <tr><td>⇔</td><td>U+021D4</td><td>&amp;hArr;</td><td>&amp;#8660;</td></tr>
+                    </tbody>
+                </table>
+
+                <p>Więcej znaków specjalnych znajdziesz <a href="https://www.whatsmyip.org/html-characters/" target="_blank">tutaj</a> oraz <a href="https://www.w3schools.com/charsets/ref_utf_punctuation.asp" target="_blank">tutaj</a>.</p>
+
+                <h3>Emotikony</h3>
+                <p>Emotikony (emoji) to specjalny rodzaj znaku przedstawiający piktogram graficzny. Mimo iż często wygląda jak ikona obrazkowa, to tak naprawdę można go wstawić w&nbsp;zasadzie wszędzie tam, gdzie wpisuje się zwykły tekst. Może to być np. okno rozmowy większości komunikatorów internetowych albo dodawania nowej wiadomości w&nbsp;zasadzie w&nbsp;dowolnym serwisie społecznościowym.</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Podgląd</th>
+                            <th>Kod HTML</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>&#9889;</td><td>&amp;#9889;</td></tr>
+                        <tr><td>&#128512;</td><td>&amp;#128512;</td></tr>
+                        <tr><td>&#128514;</td><td>&amp;#128514;</td></tr>
+                        <tr><td>&#128528;</td><td>&amp;#128528;</td></tr>
+                        <tr><td>&#129297;</td><td>&amp;#129297;</td></tr>
+                        <tr><td>&#128053;</td><td>&amp;#128053;</td></tr>
+                        <tr><td>&#128054;</td><td>&amp;#128054;</td></tr>
+                        <tr><td>&#9917;</td><td>&amp;#9918;</td></tr>
+                        <tr><td>&#9918;</td><td>&amp;#9918;</td></tr>
+                        <tr><td>&#129358;</td><td>&amp;#129358;</td></tr>
+                        <tr><td>&#127765;</td><td>&amp;#127765;</td></tr>
+                        <tr><td>&#127773;</td><td>&amp;#127773;</td></tr>
+                        <tr><td>&#127789;</td><td>&amp;#127789;</td></tr>
+                        <tr><td>&#127813;</td><td>&amp;#127813;</td></tr>
+                        <tr><td>&#127817;</td><td>&amp;#127817;</td></tr>
+                        <tr><td>&#127828;</td><td>&amp;#127828;</td></tr>
+                        <tr><td>&#127829;</td><td>&amp;#127829;</td></tr>
+                        <tr><td>&#127839;</td><td>&amp;#127839;</td></tr>
+                        <tr><td>&#127867;</td><td>&amp;#127867;</td></tr>
+                        <tr><td>&#127942;</td><td>&amp;#127942;</td></tr>
+                        <tr><td>&#128074;</td><td>&amp;#128074;</td></tr>
+                        <tr><td>&#128077;</td><td>&amp;#128077;</td></tr>
+                        <tr><td>&#128076;</td><td>&amp;#128076;</td></tr>
+                        <tr><td>&#128176;</td><td>&amp;#128176;</td></tr>
+                        <tr><td>&#128181;</td><td>&amp;#128181;</td></tr>
+                        <tr><td>&#128293;</td><td>&amp;#128293;</td></tr>
+                        <tr><td>&#128400;</td><td>&amp;#128400;</td></tr>
+                        <tr><td>&#128513;</td><td>&amp;#128513;</td></tr>
+                        <tr><td>&#128518;</td><td>&amp;#128518;</td></tr>
+                        <tr><td>&#128526;</td><td>&amp;#128526;</td></tr>
+                        <tr><td>&#128548;</td><td>&amp;#128548;</td></tr>
+                        <tr><td>&#128557;</td><td>&amp;#128557;</td></tr>
+                        <tr><td>&#128579;</td><td>&amp;#128579;</td></tr>
+                        <tr><td>&#129315;</td><td>&amp;#129315;</td></tr>
+                    </tbody>
+                </table>
+
+                <p>Więcej emotikonów wraz z&nbsp;ich kodami HTML znajdziesz <a href="https://www.w3schools.com/charsets/ref_emoji.asp" target="_blank">tutaj</a>.</p>
+
+                <div class="quizVisible flex align-center justify-center">
+                    <h3>Quiz</h3>
+                    <div class="completed flex align-center justify-center">
+                        <span class="congrats"><i class="fa-regular fa-circle-check"></i> Brawo!</span>
+                        <button type="button">
+                            <span class="circle" aria-hidden="true">
+                            <span class="icon arrow"></span>
+                            </span>
+                            <span class="button-text">Przejdź dalej</span>
+                        </button>
+                    </div>
+                    <div class="buttons flex visible">
+                        <button type="reset"><i class="fa-solid fa-trash"></i> Wyczyść</button>
+                        <button type="submit">Sprawdź <i class="fa-solid fa-arrow-right-long"></i></button>
+                    </div>
+                </div>
+
+                <div class="quiz hide" questions="2">
+                    <div class="question">
+                        <span>Który z&nbsp;podanych kodów to poprawny zapis znaku specjalnego?</span>
+                        <input type="radio" name="specjalny" id="specjalnyCorrect">
+                        <label for="specjalnyCorrect">&amp;nbsp;</label>
+                        <input type="radio" name="specjalny" id="specjalny">
+                        <label for="specjalny">&amp;nbsp</label>
+                        <input type="radio" name="specjalny" id="specjalny2">
+                        <label for="specjalny2">&amp;nbsp&amp;</label>
+                    </div>
+                    <div class="question">
+                        <span>Czy dzięki znakom specjalnym możemy wprowadzić znaki, które znajdują się na klawiaturze?</span>
+                        <input type="radio" name="specjalny3" id="specjalny3Correct">
+                        <label for="specjalny3Correct">Tak</label>
+                        <input type="radio" name="specjalny3" id="specjalny3">
+                        <label for="specjalny3">Nie</label>
+                    </div>
+                </div>
+            </section>
+            <section id="level6" class="hide">
+                <p>W tej części kursu będzie mowa o&nbsp;listach (list) zwanych też wykazami, które należą do jednych z&nbsp;najpowszechniej używanych elementów na stronach WWW. Występują one praktycznie na każdej stronie, choć nie koniecznie są ona widoczne na pierwszy rzut oka. Bardzo często z&nbsp;ich pomocą tworzone jest menu nawigacyjne. Oczywiście są one wtedy odpowiednio zmodyfikowane i&nbsp;nie przypominają zwykłej listy.</p>
+
+                <h3>Listy uporządkowane</h3>
+                <p>Listy uporządkowane w&nbsp;języku html to takie, których elementy posiadają pewną numerację, stąd też zwyczajowa nazwa lista numerowana. Numeracje w&nbsp;tych listach możemy uzyskać poprzez cyfry, bądź litery. Listy uporządkowane tworzymy przy pomocy elementu <code>&lt;ol&gt;</code> (ang. ordered list – lista uporządkowana). Jednak sam zapis znacznikowy listy uporządkowanej <code>&lt;ol&gt;</code> nie wystarczy, do tej listy musimy jeszcze dodać tzw. elementy listy.</p>
+
+                <h3>Elementy listy</h3>
+                <p>Elementy listy to po prostu kolejne jej podpunkty. Tworzymy je przy pomocy elementu <code>&lt;li&gt;</code> (ang. list item – element listy). Pomiędzy znacznikami <code>&lt;li&gt;</code> oraz<code>&lt;/li&gt;</code> dodajemy kolejne elementy listy.</p>
+
+                <div class="codeWrapper">
+                    <div class="code">
+                        <span contenteditable>
+                            &lt;!DOCTYPE html&gt;<br>
+                            &lt;html lang="pl"&gt;<br>
+                            &lt;head&gt;<br>
+                            &lt;meta charset="UTF-8"&gt;<br>
+                            &lt;title&gt;Wpisz tytuł&lt;/title&gt;<br>
+                            &lt;/head&gt;<br>
+                            &lt;body&gt;<br>
+                            &lt;ol&gt;<br>
+                            &lt;li&gt;Punkt pierwszy&lt;/li&gt;<br>
+                            &lt;li&gt;Punkt drugi&lt;/li&gt;<br>
+                            &lt;li&gt;Punkt trzeci&lt;/li&gt;<br>
+                            &lt;/ol&gt;<br>
+                            &lt;/body&gt;<br>
+                            &lt;/html&gt;
+                        </span>
+                    </div>
+                </div>
+
+                <p>Element <code>&lt;ol&gt;</code> wskazuje jedynie na rodzaj listy. Wszystkie elementy listy muszą się znaleźć pomiędzy znacznikami <code>&lt;li&gt;</code> oraz <code>&lt;/li&gt;</code>.</p>
+                
+                <h3>Zmiana numerowania</h3>
+                <p>Możemy rozpocząć numerowanie od dowolnej litery lub liczby. By to zrobić musimy dodać atrybut start, a&nbsp;jako wartość ustawić numer pierwszego podpunku (gdy np. ustawimy start="3" lista rozpocznie się od liczby  3 lub litery C).</p>
+
+                <div class="codeWrapper">
+                    <div class="code">
+                        <span contenteditable>
+                            &lt;!DOCTYPE html&gt;<br>
+                            &lt;html lang="pl"&gt;<br>
+                            &lt;head&gt;<br>
+                            &lt;meta charset="UTF-8"&gt;<br>
+                            &lt;title&gt;Wpisz tytuł&lt;/title&gt;<br>
+                            &lt;/head&gt;<br>
+                            &lt;body&gt;<br>
+                            &lt;ol start="3"&gt;<br>
+                            &lt;li&gt;Punkt trzeci&lt;/li&gt;<br>
+                            &lt;li&gt;Punkt czwarty&lt;/li&gt;<br>
+                            &lt;li&gt;Punkt piąty&lt;/li&gt;<br>
+                            &lt;/ol&gt;<br>
+                            &lt;/body&gt;<br>
+                            &lt;/html&gt;
+                        </span>
+                    </div>
+                </div>
+
+                <h3>Listy nieuporządkowane</h3>
+                <p>Drugim rodzajem listy w&nbsp;języku html, jest lista nieuporządkowana, zwana też listą wypunktowaną. Elementy tej listy nie są numerowane, a&nbsp;luźno wymienione po tzw. myślnikach. Domyślnie rolę tych myślników przejmują kropki. Listę nieuporządkowaną tworzymy za pomocą elementu <code>&lt;ul&gt;</code> (ang. unordered list – lista nieuporządkowana). Tak jak w&nbsp;liście uporządkowanej elementy listy również tworzymy poprzez element <code>&lt;li&gt;</code>.</p>
+
+                <div class="codeWrapper">
+                    <div class="code">
+                        <span contenteditable>
+                            &lt;!DOCTYPE html&gt;<br>
+                            &lt;html lang="pl"&gt;<br>
+                            &lt;head&gt;<br>
+                            &lt;meta charset="UTF-8"&gt;<br>
+                            &lt;title&gt;Wpisz tytuł&lt;/title&gt;<br>
+                            &lt;/head&gt;<br>
+                            &lt;body&gt;<br>
+                            &lt;ul&gt;<br>
+                            &lt;li&gt;Punkt pierwszy&lt;/li&gt;<br>
+                            &lt;li&gt;Punkt drugi&lt;/li&gt;<br>
+                            &lt;li&gt;Punkt trzeci&lt;/li&gt;<br>
+                            &lt;/ul&gt;<br>
+                            &lt;/body&gt;<br>
+                            &lt;/html&gt;
+                        </span>
+                    </div>
+                </div>
+
+                <h3>Zmiana wyglądu listy</h3>
+                <p>Możemy zmienić typ listy, aby korzystała ona z&nbsp;innego sposobu numerowania. By to zrobić musimy dodać atrybut type, a&nbsp;jako wartość może wynosić: </p>
+                <ol>
+                    <li>
+                        Dla list uporządkowanych:
+                        <ul>
+                            <li>"A" – podpunkty listy będą numerowane wielkimi literami alfabetu (A, B, C, D, E, F...)</li>
+                            <li>"a" – podpunkty listy będą numerowane małymi literami alfabetu (a, b, c, d, e, f...)</li>
+                            <li>"I" – podpunkty listy będą numerowane wielkimi cyframi rzymskimi (I, II, III, IV, V, VI...)</li>
+                            <li>"i" – podpunkty listy będą numerowane małymi cyframi rzymskimi (i, ii, iii, iv, v, vi...)</li>
+                        </ul>
+                    </li>
+                    <li>
+                        Dla list nieuporządkowanych:
+                        <ul>
+                            <li>"disc" – podpunkty listy będą oznaczone znaczkiem ● (wartość domyślna)</li>
+                            <li>"circle" – podpunkty listy będą oznaczone znaczkiem ○</li>
+                            <li>"square" – podpunkty listy będą oznaczone znaczkiem ■</li>
+                        </ul>
+                    </li>
+                </ol>
+
+                <div class="codeWrapper">
+                    <div class="code">
+                        <span contenteditable>
+                            &lt;!DOCTYPE html&gt;<br>
+                            &lt;html lang="pl"&gt;<br>
+                            &lt;head&gt;<br>
+                            &lt;meta charset="UTF-8"&gt;<br>
+                            &lt;title&gt;Wpisz tytuł&lt;/title&gt;<br>
+                            &lt;/head&gt;<br>
+                            &lt;body&gt;<br>
+                            &lt;ol start="2" type="A"&gt;<br>
+                            &lt;li&gt;Punkt drugi&lt;/li&gt;<br>
+                            &lt;li&gt;Punkt trzeci&lt;/li&gt;<br>
+                            &lt;li&gt;Punkt czwarty&lt;/li&gt;<br>
+                            &lt;li&gt;Punkt piąty&lt;/li&gt;<br>
+                            &lt;/ol&gt;<br>
+                            &lt;hr&gt;<br>
+                            &lt;ul type="square"&gt;<br>
+                            &lt;li&gt;Punkt pierwszy&lt;/li&gt;<br>
+                            &lt;li&gt;Punkt drugi&lt;/li&gt;<br>
+                            &lt;li&gt;Punkt trzeci&lt;/li&gt;<br>
+                            &lt;li&gt;Punkt czwarty&lt;/li&gt;<br>
+                            &lt;/ul&gt;<br>
+                            &lt;hr&gt;<br>
+                            &lt;ul type="disc"&gt;<br>
+                            &lt;li&gt;Punkt pierwszy&lt;/li&gt;<br>
+                            &lt;li&gt;Punkt drugi&lt;/li&gt;<br>
+                            &lt;li&gt;Punkt trzeci&lt;/li&gt;<br>
+                            &lt;li&gt;Punkt czwarty&lt;/li&gt;<br>
+                            &lt;/ul&gt;<br>
+                            &lt;hr&gt;<br>
+                            &lt;ul type="circle"&gt;<br>
+                            &lt;li&gt;Punkt pierwszy&lt;/li&gt;<br>
+                            &lt;li&gt;Punkt drugi&lt;/li&gt;<br>
+                            &lt;li&gt;Punkt trzeci&lt;/li&gt;<br>
+                            &lt;li&gt;Punkt czwarty&lt;/li&gt;<br>
+                            &lt;/ul&gt;<br>
+                            &lt;hr&gt;<br>
+                            &lt;ol type="a"&gt;<br>
+                            &lt;li&gt;Punkt pierwszy&lt;/li&gt;<br>
+                            &lt;li&gt;Punkt drugi&lt;/li&gt;<br>
+                            &lt;li&gt;Punkt trzeci&lt;/li&gt;<br>
+                            &lt;li&gt;Punkt czwarty&lt;/li&gt;<br>
+                            &lt;/ol&gt;<br>
+                            &lt;hr&gt;<br>
+                            &lt;ol type="I" start="6"&gt;<br>
+                            &lt;li&gt;Punkt szósty&lt;/li&gt;<br>
+                            &lt;li&gt;Punkt siódmy&lt;/li&gt;<br>
+                            &lt;li&gt;Punkt ósmy&lt;/li&gt;<br>
+                            &lt;li&gt;Punkt dziewiąty&lt;/li&gt;<br>
+                            &lt;/ol&gt;<br>
+                            &lt;/body&gt;<br>
+                            &lt;/html&gt;
+                        </span>
+                    </div>
+                </div>
+
+                <h3>Nadawanie tytułów listom</h3>
+                <p>Dla list (i nie tylko) możemy nadać tytuł. Aby to uczynić, przed znacznikiem otwierającym listę, używamy znacznika nagłówkowego. w&nbsp;celu dobrania odpowiedniego nagłówka, będziemy musieli się zastanowić, jak istotna jest nasza lista dla całości artykułu. Pamiętajmy też, że nagłówek <code>&lt;h1&gt;</code> jest zarezerwowany dla tytułu całego artykułu, także starajmy się raczej korzystać z&nbsp;nagłówków niższego rzędu.</p>
+
+                <div class="codeWrapper">
+                    <div class="code">
+                        <span contenteditable>
+                            &lt;!DOCTYPE html&gt;<br>
+                            &lt;html lang="pl"&gt;<br>
+                            &lt;head&gt;<br>
+                            &lt;meta charset="UTF-8"&gt;<br>
+                            &lt;title&gt;Wpisz tytuł strony&lt;/title&gt;<br>
+                            &lt;/head&gt;<br>
+                            &lt;body&gt;<br>
+                            &lt;h2&gt;Wpisz tytył listy&lt;/h2&gt;<br>
+                            &lt;ol&gt;<br>
+                            &lt;li&gt;Punkt pierwszy&lt;/li&gt;<br>
+                            &lt;li&gt;Punkt drugi&lt;/li&gt;<br>
+                            &lt;li&gt;Punkt trzeci&lt;/li&gt;<br>
+                            &lt;/ol&gt;<br>
+                            &lt;/body&gt;<br>
+                            &lt;/html&gt;
+                        </span>
+                    </div>
+                </div>
+
+                <h3>Listy zagnieżdżone</h3>
+                <p>Listy zagnieżdżone to w&nbsp;najprostszy sposób mówiąc, listy będące cześcią innej listy. Stosujemy je, gdy chcemy rozwinąć dany podpunkt naszej listy o&nbsp;inne pomniejsze podpunkty.</p>
+
+                <div class="codeWrapper">
+                    <div class="code">
+                        <span contenteditable>
+                            &lt;!DOCTYPE html&gt;<br>
+                            &lt;html lang="pl"&gt;<br>
+                            &lt;head&gt;<br>
+                            &lt;meta charset="UTF-8"&gt;<br>
+                            &lt;title&gt;Wpisz tytuł strony&lt;/title&gt;<br>
+                            &lt;/head&gt;<br>
+                            &lt;body&gt;<br>
+                            &lt;h2&gt;Lista zagnieżdżona&lt;/h2&gt;<br>
+                            &lt;ol&gt;<br>
+                            &lt;li&gt;Punkt 1&lt;/li&gt;<br>
+                            &lt;li&gt;Punkt 2&lt;/li&gt;<br>
+                            &lt;ol type="a"&gt;<br>
+                            &lt;li&gt;Punkt 2.1&lt;/li&gt;<br>
+                            &lt;li&gt;Punkt 2.2&lt;/li&gt;<br>
+                            &lt;ol type="i"&gt;<br>
+                            &lt;li&gt;Punkt 2.2.1&lt;/li&gt;<br>
+                            &lt;li&gt;Punkt 2.2.2&lt;/li&gt;<br>
+                            &lt;ul type="disc"&gt;<br>
+                            &lt;li&gt;Punkt 2.2.2.1&lt;/li&gt;<br>
+                            &lt;li&gt;Punkt 2.2.2.2&lt;/li&gt;<br>
+                            &lt;li&gt;Punkt 2.2.2.3&lt;/li&gt;<br>
+                            &lt;li&gt;Punkt 2.2.2.4&lt;/li&gt;<br>
+                            &lt;/ul&gt;<br>
+                            &lt;li&gt;Punkt 2.2.3&lt;/li&gt;<br>
+                            &lt;/ol&gt;<br>
+                            &lt;li&gt;Punkt 2.3&lt;/li&gt;<br>
+                            &lt;li&gt;Punkt 2.4&lt;/li&gt;<br>
+                            &lt;ol type="i"&gt;<br>
+                            &lt;li&gt;Punkt 2.4.1&lt;/li&gt;<br>
+                            &lt;li&gt;Punkt 2.4.2&lt;/li&gt;<br>
+                            &lt;li&gt;Punkt 2.4.3&lt;/li&gt;<br>
+                            &lt;/ol&gt;<br>
+                            &lt;/ol&gt;<br>
+                            &lt;li&gt;Punkt 3&lt;/li&gt;<br>
+                            &lt;ol type="a"&gt;<br>
+                            &lt;li&gt;Punkt 3.1&lt;/li&gt;<br>
+                            &lt;ol type="i"&gt;<br>
+                            &lt;li&gt;Punkt 3.1.1&lt;/li&gt;<br>
+                            &lt;li&gt;Punkt 3.1.2&lt;/li&gt;<br>
+                            &lt;li&gt;Punkt 3.1.3&lt;/li&gt;<br>
+                            &lt;/ol&gt;<br>
+                            &lt;li&gt;Punkt 3.2&lt;/li&gt;<br>
+                            &lt;li&gt;Punkt 3.3&lt;/li&gt;<br>
+                            &lt;/ol&gt;<br>
+                            &lt;li&gt;Punkt 4&lt;/li&gt;<br>
+                            &lt;/ol&gt;<br>
+                            &lt;/body&gt;<br>
+                            &lt;/html&gt;
+                        </span>
+                    </div>
+                </div>
+
+                <div class="quizVisible flex align-center justify-center">
+                    <h3>Quiz</h3>
+                    <div class="completed flex align-center justify-center">
+                        <span class="congrats"><i class="fa-regular fa-circle-check"></i> Brawo!</span>
+                        <button type="button">
+                            <span class="circle" aria-hidden="true">
+                            <span class="icon arrow"></span>
+                            </span>
+                            <span class="button-text">Przejdź dalej</span>
+                        </button>
+                    </div>
+                    <div class="buttons flex visible">
+                        <button type="reset"><i class="fa-solid fa-trash"></i> Wyczyść</button>
+                        <button type="submit">Sprawdź <i class="fa-solid fa-arrow-right-long"></i></button>
+                    </div>
+                </div>
+
+                <div class="quiz hide" questions="2">
+                    <div class="question">
+                        <span>Który znacznik oznacza listę uporządkowaną?</span>
+                        <input type="radio" name="uporzadkowana" id="uporzadkowanaCorrect">
+                        <label for="uporzadkowanaCorrect"><code>&lt;ol&gt;</code></label>
+                        <input type="radio" name="uporzadkowana" id="uporzadkowana">
+                        <label for="uporzadkowana"><code>&lt;ul&gt;</code></label>
+                        <input type="radio" name="uporzadkowana" id="uporzadkowana2">
+                        <label for="uporzadkowana2"><code>&lt;hr&gt;</code></label>
+                    </div>
+                    <div class="question">
+                        <span>Który znacznik oznacza listę nieuporządkowaną?</span>
+                        <input type="radio" name="nieuporzadkowana" id="nieuporzadkowanaCorrect">
+                        <label for="nieuporzadkowanaCorrect"><code>&lt;ul&gt;</code></label>
+                        <input type="radio" name="nieuporzadkowana" id="nieuporzadkowana">
+                        <label for="nieuporzadkowana"><code>&lt;ol&gt;</code></label>
+                        <input type="radio" name="nieuporzadkowana" id="nieuporzadkowana2">
+                        <label for="nieuporzadkowana2"><code>&lt;hr&gt;</code></label>
+                    </div>
+                </div>
+
+            </section>
+            <section id="level7" class="hide">
+                <p>W języku HTML tabele tworzymy przy użyciu znacznika <code>&lt;table&gt;</code>.</p> 
+                <div class="codeWrapper">
+                    <div class="code">
+                        <span contenteditable>
+                            &lt;!DOCTYPE html&gt;<br>
+                            &lt;html lang="pl"&gt;<br>
+                            &lt;head&gt;<br>
+                            &lt;meta charset="UTF-8"&gt;<br>
+                            &lt;title&gt;Wpisz tytuł&lt;/title&gt;<br>
+                            &lt;/head&gt;<br>
+                            &lt;body&gt;<br>
+                            &lt;table&gt;<br><br>
+                            &lt;/table&gt;<br>
+                            &lt;/body&gt;<br>
+                            &lt;/html&gt;
+                        </span>
+                    </div>
+                </div>
+
+                <p>Aby zobaczyć utworzoną przez nas tabelę, musimy dodać jej oramowanie za pomocą argumentu <code>border</code>. Będzie ona wtedy przypominała wyglądem tę z&nbsp;innych programów (np. Microsoft Word). Oprócz tego możemy nadać jej rozmiar: szerokość – <code>width</code> oraz wysokość – <code>height</code>. Uwaga! Argument border jest przestarzały, w&nbsp;związku z&nbsp;czym jego użycie nie jest zalecane. Więcej o&nbsp;obramowaniach dowiesz się z&nbsp;kursu CSS. Następnym krokiem jest utworzenie wierszy w&nbsp;tabeli za pomocą znacznika <code>&lt;tr&gt;</code>.</p>
+                <div class="codeWrapper">
+                    <div class="code">
+                        <span contenteditable>
+                            &lt;!DOCTYPE html&gt;<br>
+                            &lt;html lang="pl"&gt;<br>
+                            &lt;head&gt;<br>
+                            &lt;meta charset="UTF-8"&gt;<br>
+                            &lt;title&gt;Wpisz tytuł&lt;/title&gt;<br>
+                            &lt;/head&gt;<br>
+                            &lt;body&gt;<br>
+                            &lt;table border="1" height="200px" width="200px"&gt;<br>
+                            &lt;tr&gt;&lt;/tr&gt;<br>
+                            &lt;/table&gt;<br>
+                            &lt;/body&gt;<br>
+                            &lt;/html&gt;
+                        </span>
+                    </div>
+                </div>
+                
+                <p>Pojedyncze komórki dodajemy za pomocą tagu <code>&lt;th&gt;</code> dla nagłówka tabeli lub <code>&lt;td&gt;</code> dla zwykłych komórek.</p>
+
+                <div class="codeWrapper">
+                    <div class="code">
+                        <span contenteditable>
+                            &lt;!DOCTYPE html&gt;<br>
+                            &lt;html lang="pl"&gt;<br>
+                            &lt;head&gt;<br>
+                            &lt;meta charset="UTF-8"&gt;<br>
+                            &lt;title&gt;Wpisz tytuł&lt;/title&gt;<br>
+                            &lt;/head&gt;<br>
+                            &lt;body&gt;<br>
+                            &lt;table border="1" height="200px" width="200px"&gt;<br>
+                            &lt;tr&gt;<br>
+                            &lt;th&gt;&lt;/th&gt;<br>
+                            &lt;th&gt;&lt;/th&gt;<br>
+                            &lt;th&gt;&lt;/th&gt;<br>
+                            &lt;/tr&gt;<br>
+                            &lt;tr&gt;<br>
+                            &lt;td&gt;&lt;/td&gt;<br>
+                            &lt;td&gt;&lt;/td&gt;<br>
+                            &lt;td&gt;&lt;/td&gt;<br>
+                            &lt;/tr&gt;<br>
+                            &lt;tr&gt;<br>
+                            &lt;td&gt;&lt;/td&gt;<br>
+                            &lt;td&gt;&lt;/td&gt;<br>
+                            &lt;td&gt;&lt;/td&gt;<br>
+                            &lt;/tr&gt;<br>
+                            &lt;/table&gt;<br>
+                            &lt;/body&gt;<br>
+                            &lt;/html&gt;
+                        </span>
+                    </div>
+                </div>
+
+                <p>W środku każdej z&nbsp;komórek możemy wpisać dowolną zawartość.</p>
+
+                <div class="codeWrapper">
+                    <div class="code">
+                        <span contenteditable>
+                            &lt;!DOCTYPE html&gt;<br>
+                            &lt;html lang="pl"&gt;<br>
+                            &lt;head&gt;<br>
+                            &lt;meta charset="UTF-8"&gt;<br>
+                            &lt;title&gt;Wpisz tytuł&lt;/title&gt;<br>
+                            &lt;/head&gt;<br>
+                            &lt;body&gt;<br>
+                            &lt;table border="1" height="200px" width="200px"&gt;<br>
+                            &lt;tr&gt;<br>
+                            &lt;th&gt;1&lt;/th&gt;<br>
+                            &lt;th&gt;2&lt;/th&gt;<br>
+                            &lt;th&gt;3&lt;/th&gt;<br>
+                            &lt;/tr&gt;<br>
+                            &lt;tr&gt;<br>
+                            &lt;td&gt;4&lt;/td&gt;<br>
+                            &lt;td&gt;5&lt;/td&gt;<br>
+                            &lt;td&gt;6&lt;/td&gt;<br>
+                            &lt;/tr&gt;<br>
+                            &lt;tr&gt;<br>
+                            &lt;td&gt;7&lt;/td&gt;<br>
+                            &lt;td&gt;8&lt;/td&gt;<br>
+                            &lt;td&gt;9&lt;/td&gt;<br>
+                            &lt;/tr&gt;<br>
+                            &lt;/table&gt;<br>
+                            &lt;/body&gt;<br>
+                            &lt;/html&gt;
+                        </span>
+                    </div>
+                </div>
+
+                <h3>Scalanie komórek</h3>
+                <p>Aby scalić komórki (połączyć je w&nbsp;jedną, dużą komórkę) możemy użyć atrybutów colspan (dla scalania w&nbsp;poziomie) i&nbsp;rowspan (dla scalania w&nbsp;pionie). Po podaniu nazwy atrybutu trzeba wpisać ilość komórek, które mają zostać scalone, a&nbsp;następnie usunąć je z&nbsp;tabeli, aby nie było za dużo komórek.</p>
+
+                <div class="codeWrapper">
+                    <div class="code">
+                        <span contenteditable>
+                            &lt;!DOCTYPE html&gt;<br>
+                            &lt;html lang="pl"&gt;<br>
+                            &lt;head&gt;<br>
+                            &lt;meta charset="UTF-8"&gt;<br>
+                            &lt;title&gt;Wpisz tytuł&lt;/title&gt;<br>
+                            &lt;/head&gt;<br>
+                            &lt;body&gt;<br>
+                            &lt;table border="1" height="200px" width="200px"&gt;<br>
+                            &lt;tr&gt;<br>
+                            &lt;th&gt;1&lt;/th&gt;<br>
+                            &lt;th&gt;2&lt;/th&gt;<br>
+                            &lt;th&gt;3&lt;/th&gt;<br>
+                            &lt;/tr&gt;<br>
+                            &lt;tr&gt;<br>
+                            &lt;td rowspan="2"&gt;4&lt;/td&gt;<br>
+                            &lt;td colspan="2"&gt;5&lt;/td&gt;<br>
+                            &lt;/tr&gt;<br>
+                            &lt;tr&gt;<br>
+                            &lt;td&gt;6&lt;/td&gt;<br>
+                            &lt;td&gt;7&lt;/td&gt;<br>
+                            &lt;/tr&gt;<br>
+                            &lt;/table&gt;<br>
+                            &lt;/body&gt;<br>
+                            &lt;/html&gt;
+                        </span>
+                    </div>
+                </div>
+
+                <div class="quizVisible flex align-center justify-center">
+                    <h3>Quiz</h3>
+                    <div class="completed flex align-center justify-center">
+                        <span class="congrats"><i class="fa-regular fa-circle-check"></i> Brawo!</span>
+                        <button type="button">
+                            <span class="circle" aria-hidden="true">
+                            <span class="icon arrow"></span>
+                            </span>
+                            <span class="button-text">Przejdź dalej</span>
+                        </button>
+                    </div>
+                    <div class="buttons flex visible">
+                        <button type="reset"><i class="fa-solid fa-trash"></i> Wyczyść</button>
+                        <button type="submit">Sprawdź <i class="fa-solid fa-arrow-right-long"></i></button>
+                    </div>
+                </div>
+
+                <div class="quiz hide" questions="2">
+                    <div class="question">
+                        <span>Który znacznik służy do utworzenia wiersza tabeli?</span>
+                        <input type="radio" name="tabela" id="tabelaCorrect">
+                        <label for="tabelaCorrect"><code>&lt;tr&gt;</code></label>
+                        <input type="radio" name="tabela" id="tabela">
+                        <label for="tabela"><code>&lt;td&gt;</code></label>
+                        <input type="radio" name="tabela" id="tabela2">
+                        <label for="tabela2"><code>&lt;table&gt;</code></label>
+                    </div>
+                    <div class="question">
+                        <span>Który znacznik służy do scalania w&nbsp;pionie?</span>
+                        <input type="radio" name="scalanie" id="scalanieCorrect">
+                        <label for="scalanieCorrect">rowspan</label>
+                        <input type="radio" name="scalanie" id="scalanie">
+                        <label for="scalanie">colspan</label>
+                    </div>
+                </div>
+            </section>
+            <section id="level8" class="hide">
+                <p>Hiperłącza czyli odnośniki służą do wewnętrznego poruszania się po witrynie internetowej, ale także po całym internecie. Do przemieszczania się po podstronach jednej witryny wykorzystujemy hiperłącza wewnętrzne, natomiast do przemieszczania się pomiędzy róznimi witrynami używamy hiperłączy zewnętrznych. Do stworzenia hiperłącza używamy znacznika <code>&lt;a&gt;</code>.</p>
+
+                <h3>Dlaczego akurat litera a?</h3>
+                <p>Dlaczego znacznik definiujący link na stronie to właśnie <a>? Prawdopodobnie wzięło się to od angielskiego słowa anchor, które oznacza kotwicę (hiperłącza są – jak to mówimy – zakotwiczone w&nbsp;dokumencie). Element <code>&lt;a&gt;</code> jest złożony z&nbsp;dwóch znaczników – posiada zatem tag otwierający oraz zamykający: <code>&lt;a&gt;&lt;/a&gt;</code>. Jest to logiczne, gdyż musimy zdefiniować obszar, który stanowi rzeczywistą kotwicę linku, namacalne obiekty możliwe do kliknięcia. Przykładowe hiperłącze prowadzące do Wikipedii:</p>
+
+                <div class="codeWrapper">
+                    <div class="code">
+                        <span contenteditable>
+                            &lt;!DOCTYPE html&gt;<br>
+                            &lt;html lang="pl"&gt;<br>
+                            &lt;head&gt;<br>
+                            &lt;meta charset="UTF-8"&gt;<br>
+                            &lt;title&gt;Wpisz tytuł&lt;/title&gt;<br>
+                            &lt;/head&gt;<br>
+                            &lt;body&gt;<br>
+                            &lt;a href="https://pl.wikipedia.org"&gt;Wikipedia&lt;/a&gt;<br>
+                            &lt;/body&gt;<br>
+                            &lt;/html&gt;
+                        </span>
+                    </div>
+                </div>
+
+                <h3>Atrybut href</h3>
+                <p>Atrybut href to skrót od ang. hypertext reference – określamy tutaj adres dokumentu HTML, do którego hiperłącze ma prowadzić. Reference oznacza z&nbsp;ang. odniesienie – i&nbsp;rzeczywiście czasami tak określamy linki – mówimy, że to odnośniki do innych dokumentów. Co ważne – atrybut href nie jest wcale wymagany. Mogą istnieć znaczniki <code>&lt;a&gt;</code>, bez podania adresu linka – np. w&nbsp;menu głównym strony (w górnej belce witryny). Dochodzimy tutaj do wniosku, iż tak naprawdę hiperłączem możemy nazwać jedynie element <code>&lt;a&gt;</code>, który posiada określony wartością atrybut href – sam element <code>&lt;a&gt;</code> odnośnika jeszcze nie ustanawia.</p>
+                    
+                <h3>Atrybut target</h3>
+                <p>Hiperłącze może także posiadać atrybut target (ang. cel), który określa gdzie docelowo w&nbsp;przeglądarce ma trafić podlinkowany dokument. Możliwe wartości atrybutu target są następujące:</p>
+                <ul>
+                    <li><code>target="_self"</code> – otwórz stronę w&nbsp;tej samej karcie/ramce , w&nbsp;której znajduje się link (ponieważ jest to zachowanie domyślne, można ten atrybut pominąć),</li>
+                    <li><code>target="_blank"</code> – otwórz witrynę w&nbsp;nowej, nieużywanej karcie przeglądarki (uwaga: nie należy nadużywać tego mechanizmu! Kieruj się empatią wobec internauty i&nbsp;otwieraj nowe karty tylko tam, gdzie rzeczywiście wydaje się to pożądane – w&nbsp;przeciwnym wypadku gość odwiedzający naszą stronę zirytuje się i&nbsp;natychmiast ją opuści),</li>
+                    <li><code>target="_parent"</code>, <code>target="_top"</code> – otworzy adres hiperłącza w&nbsp;odpowiedniej ramce – jest to związane z&nbsp;tzw. framesetem (ang. zestaw ramek). Wartość _parent otworzy witrynę w&nbsp;ramce o&nbsp;jeden poziom wyższej we framesetowej hierarchii, a&nbsp;_top w&nbsp;nadrzędnej ramce. Jednak budowanie witryny na ramkach to relikt przeszłości. Są one fatalne zwłaszcza w&nbsp;kontekście SEO (ang. Search Engine Optimization), jak również niewygodne dla internauty. w&nbsp;praktyce więc raczej nie zdarzy Ci się używać tych wartości atrybutu target.</li>
+                </ul>
+
+                <div class="codeWrapper">
+                    <div class="code">
+                        <span contenteditable>
+                            &lt;!DOCTYPE html&gt;<br>
+                            &lt;html lang="pl"&gt;<br>
+                            &lt;head&gt;<br>
+                            &lt;meta charset="UTF-8"&gt;<br>
+                            &lt;title&gt;Wpisz tytuł&lt;/title&gt;<br>
+                            &lt;/head&gt;<br>
+                            &lt;body&gt;<br>
+                            &lt;a href="https://pl.wikipedia.org" target="_blank"&gt;Wikipedia w&nbsp;nowej karcie&lt;/a&gt;&lt;br /&gt;<br>
+                            &lt;a href="../Formularze 2/index.html" target="_top"&gt;Wewnętrzne hiperłącza do generatora memów&lt;/a&gt;&lt;br /&gt;<br>
+                            &lt;/body&gt;<br>
+                            &lt;/html&gt;
+                        </span>
+                    </div>
+                </div>
+
+                <div class="quizVisible flex align-center justify-center">
+                    <h3>Quiz</h3>
+                    <div class="completed flex align-center justify-center">
+                        <span class="congrats"><i class="fa-regular fa-circle-check"></i> Brawo!</span>
+                        <button type="button">
+                            <span class="circle" aria-hidden="true">
+                            <span class="icon arrow"></span>
+                            </span>
+                            <span class="button-text">Przejdź dalej</span>
+                        </button>
+                    </div>
+                    <div class="buttons flex visible">
+                        <button type="reset"><i class="fa-solid fa-trash"></i> Wyczyść</button>
+                        <button type="submit">Sprawdź <i class="fa-solid fa-arrow-right-long"></i></button>
+                    </div>
+                </div>
+
+                <div class="quiz hide" questions="2">
+                    <div class="question">
+                        <span>Która wartość atrybutu target otwiera stronę w&nbsp;nowej karcie?</span>
+                        <input type="radio" name="target" id="targetCorrect">
+                        <label for="targetCorrect">_blank</label>
+                        <input type="radio" name="target" id="target">
+                        <label for="target">_self</label>
+                        <input type="radio" name="target" id="target2">
+                        <label for="target2">_parent</label>
+                        <input type="radio" name="target" id="target3">
+                        <label for="target3">_top</label>
+                    </div>
+                    <div class="question">
+                        <span>Jaki jest poprawny znacznik do utworzenia hiperłącza?</span>
+                        <input type="radio" name="hiperlacze" id="hiperlaczeCorrect">
+                        <label for="hiperlaczeCorrect">&lt;a&gt;</label>
+                        <input type="radio" name="hiperlacze" id="hiperlacze">
+                        <label for="hiperlacze">&lt;href&gt;</label>
+                        <input type="radio" name="hiperlacze" id="hiperlacze2">
+                        <label for="hiperlacze2">&lt;link&gt;</label>
+                    </div>
+                </div>
+
+            </section>
+            <section id="level9" class="hide">
+                <p>Grafika i&nbsp;inne elementy multimedialne są jednymi z&nbsp;najbardziej charakterystycznych elementów World Wide Web, ubarwiając i&nbsp;uprzyjemniając pracę w&nbsp;Sieci, ale także dostarczając sporej dawki informacji. Zręczne wykorzystywanie grafiki czy dźwięku podczas tworzenia dokumentu internetowego jest umiejętnością niezmiernie przydatną, choć należy pamiętać, że to właśnie te elementy są główną przyczyną ogromnego wzrostu ruchu w&nbsp;sieci i&nbsp;zatykania się łącz. Konieczne jest zatem wybranie złotego środka między estetyką i&nbsp;nośnością informacyjną grafiki z&nbsp;jednej, a&nbsp;twardymi realiami technicznymi z&nbsp;drugiej strony. Pamiętajmy też, że trzeba zachować należny umiar ze względu na estetykę strony - nadmiar multimediów po prostu razi. Autorzy regularnie odwiedzanych stron (zawierających stałe aktualizacje) mogą jednak liczyć na fakt, że dobrze skonstruowane przeglądarki pozwalają wykorzystywać cache, który gromadzi (jednorazowo) elementy graficzne i&nbsp;dźwiękowe, pozwalając przeglądarce sięgać do zasobów na dysku lokalnym, a&nbsp;nie do Sieci, co wydatnie zmniejsza ruch na łączach. z&nbsp;tego też powodu w&nbsp;Internecie zostały przyjęte dwa podstawowe standardy graficzne - GIF i&nbsp;JPG - które charakteryzują się znaczną kompresją, a&nbsp;tym samym relatywnie niewielkimi rozmiarami plików graficznych. Nie przyjął się jeszcze dostatecznie powszechnie chwalony przez specjalistów format PNG (Portable Network Graphics).</p>
+
+                <h3>Jak wstawić obrazek?</h3>
+                <p>Obraz definiujemy tagiem <code>&lt;img&gt;</code> (ang. image = obrazek). Znacznik <code>&lt;img&gt;</code> jest pojedynczy, a&nbsp;nie podwójny, gdyż obraz jest obiektem – nie trzeba określać gdzie się zaczyna, a&nbsp;gdzie kończy, ponieważ o&nbsp;tym decyduje rozmiar źródłowej grafiki lub ewentualnie określone przez nas właściwości CSS.</p>
+
+                <div class="codeWrapper">
+                    <div class="code">
+                        <span contenteditable>
+                            &lt;!DOCTYPE html&gt;<br>
+                            &lt;html lang="pl"&gt;<br>
+                            &lt;head&gt;<br>
+                            &lt;meta charset="UTF-8"&gt;<br>
+                            &lt;title&gt;Wpisz tytuł&lt;/title&gt;<br>
+                            &lt;/head&gt;<br>
+                            &lt;body&gt;<br>
+                            &lt;img src="img/html.jpg" alt="HTML to choroba"&gt;<br>
+                            &lt;/body&gt;<br>
+                            &lt;/html&gt;
+                        </span>
+                    </div>
+                </div>
+
+                <h3>Atrybut src</h3>
+                <p>Ścieżka dostępu do źródłowej grafiki (z ang. source = źródło). Atrybut src jest wymagany (ang. required), co wydaje się logiczne, gdyż bez źródłowego pliku graficznego src="logo.jpg" ciężko mówić o&nbsp;istnieniu obrazu w&nbsp;dokumencie.</p>
+
+                <h3>Atrybut alt</h3>
+                <p>Alternatywny, tekstowy opis, który dobrze oddaje czym dana grafika jest, w&nbsp;sensie: co na niej się znajduje (z ang. alternative = alternatywny). Jest to również atrybut wymagany! Dlaczego atrybut alt jest według standardu koniecznie potrzebny? Otóż jeśli grafika załaduje się nam prawidłowo, to w&nbsp;zasadzie można uznać taki opis za zbędny i&nbsp;tylko niepotrzebnie zajmujący miejsce w&nbsp;kodzie. Natomiast pamiętajmy – na naszą stronę trafią także użytkownicy, którzy wyłączyli w&nbsp;swojej przeglądarce ładowanie obrazów, bądź są osobami słabowidzącymi, korzystającymi z&nbsp;czytników witryn. Wówczas taki alternatywny opis, zapewniający słowną reprezentację zawartości obrazka, pomaga im bardziej komfortowo naszą witrynę przeglądać.</p>
+
+                <div class="codeWrapper">
+                    <div class="code">
+                        <span contenteditable>
+                            &lt;!DOCTYPE html&gt;<br>
+                            &lt;html lang="pl"&gt;<br>
+                            &lt;head&gt;<br>
+                            &lt;meta charset="UTF-8"&gt;<br>
+                            &lt;title&gt;Wpisz tytuł&lt;/title&gt;<br>
+                            &lt;/head&gt;<br>
+                            &lt;body&gt;<br>
+                            &lt;img src="img/bledny-adres.jpg" height="150px" width="100%" alt="HTML to choroba"&gt;<br>
+                            &lt;/body&gt;<br>
+                            &lt;/html&gt;
+                        </span>
+                    </div>
+                </div>
+
+                <h3>Zmiana rozmiaru obrazka</h3>
+                <p>W znaczniku <code>&lt;img&gt;</code> możemy także zdefiniować atrybuty określające na sztywno rozmiar obrazu - width i&nbsp;height, czyli odpowiednio szerokość i&nbsp;wysokość.</p>
+
+                <div class="codeWrapper">
+                    <div class="code image">
+                        <span contenteditable>
+                            &lt;!DOCTYPE html&gt;<br>
+                            &lt;html lang="pl"&gt;<br>
+                            &lt;head&gt;<br>
+                            &lt;meta charset="UTF-8"&gt;<br>
+                            &lt;title&gt;Wpisz tytuł&lt;/title&gt;<br>
+                            &lt;/head&gt;<br>
+                            &lt;body&gt;<br>
+                            &lt;img src="img/html.jpg" width="100%" alt="HTML to choroba"&gt;<br>
+                            &lt;/body&gt;<br>
+                            &lt;/html&gt;
+                        </span>
+                    </div>
+                </div>
+
+                <p>Możemy także sami ustawić zarówno szerokość, jak i&nbsp;wysokość, lecz łatwo wtedy jest zmienić proporcje obrazka, przez co go zniekształcić.</p>
+
+                <div class="codeWrapper">
+                    <div class="code">
+                        <span contenteditable>
+                            &lt;!DOCTYPE html&gt;<br>
+                            &lt;html lang="pl"&gt;<br>
+                            &lt;head&gt;<br>
+                            &lt;meta charset="UTF-8"&gt;<br>
+                            &lt;title&gt;Wpisz tytuł&lt;/title&gt;<br>
+                            &lt;/head&gt;<br>
+                            &lt;body&gt;<br>
+                            &lt;img src="img/html.jpg" height="150px" width="100%" alt="HTML to choroba"&gt;<br>
+                            &lt;/body&gt;<br>
+                            &lt;/html&gt;
+                        </span>
+                    </div>
+                </div>
+
+                <p>Warto do naszej grafiki dodać atrybuj <code>title</code>. Nada on tytuł naszemu obrazkowi, który będzie widoczny po najechaniu kursorem na obrazek.</p>
+
+                <p>Obraz niekoniecznie musi być zapisany na naszym dysku. Atrybut <code>src</code> jako wartość może przyjąć link do obrazka na serwerze.</p>
+
+                <div class="codeWrapper">
+                    <div class="code">
+                        <span contenteditable>
+                            &lt;!DOCTYPE html&gt;<br>
+                            &lt;html lang="pl"&gt;<br>
+                            &lt;head&gt;<br>
+                            &lt;meta charset="UTF-8"&gt;<br>
+                            &lt;title&gt;Wpisz tytuł&lt;/title&gt;<br>
+                            &lt;/head&gt;<br>
+                            &lt;body&gt;<br>
+                            &lt;img src="https://c.tenor.com/oVFB1xXQ4FkAAAAC/monke-gorilla.gif" height="200px" alt="Monke Gorilla" title="Monke 🐒"&gt;<br>
+                            &lt;/body&gt;<br>
+                            &lt;/html&gt;
+                        </span>
+                    </div>
+                </div>
+
+                <div class="quizVisible flex align-center justify-center">
+                    <h3>Quiz</h3>
+                    <div class="completed flex align-center justify-center">
+                        <span class="congrats"><i class="fa-regular fa-circle-check"></i> Brawo!</span>
+                        <button type="button">
+                            <span class="circle" aria-hidden="true">
+                            <span class="icon arrow"></span>
+                            </span>
+                            <span class="button-text">Przejdź dalej</span>
+                        </button>
+                    </div>
+                    <div class="buttons flex visible">
+                        <button type="reset"><i class="fa-solid fa-trash"></i> Wyczyść</button>
+                        <button type="submit">Sprawdź <i class="fa-solid fa-arrow-right-long"></i></button>
+                    </div>
+                </div>
+
+                <div class="quiz hide" questions="2">
+                    <div class="question">
+                        <span>Do czego służy atrybut <code>alt</code>?</span>
+                        <input type="radio" name="alt" id="altCorrect">
+                        <label for="altCorrect">Do ustawienia tekstu alternatywnego</label>
+                        <input type="radio" name="alt" id="alt">
+                        <label for="alt">Do ustawienia rozmiaru obrazka</label>
+                        <input type="radio" name="alt" id="alt2">
+                        <label for="alt2">Do ustawienia tytułu obrazka</label>
+                    </div>
+                    <div class="question">
+                        <span>Czy grafika może być zapisana w&nbsp;formacie .png?</span>
+                        <input type="radio" name="format" id="formatCorrect">
+                        <label for="formatCorrect">Tak</label>
+                        <input type="radio" name="format" id="format">
+                        <label for="format">Nie</label>
+                    </div>
+                </div>
+
+            </section>
+            <section id="level10" class="hide">
+                <p>W celu uatrakcyjnienia wyglądu naszej witryny możemy wstawić na nią pliki multimedialne takie jak video lub audio. w&nbsp;tym celu możemy postąpić podobnie, jak z&nbsp;grafiką, wstawiając pliki znajdujące się na naszym serwerze/komputerze lub poprzez link zewnętrzny.</p>
+
+                <h3>Lokalne pliki wideo</h3>
+                <p>By wstawić plik video znajdujący się na naszym dysku używamy dwóch znaczników. Są to: <code>&lt;video&gt;</code> oraz <code>&lt;source&gt;</code>. Pierwszy z&nbsp;nich jest odpowiedzialny za stworzenie odtwarzacza dla naszego filmu, natomiast drugi wskazuje jaki plik ma zostać odtworzony. Istnieje możliwość użycia kilku znaczników <code>&lt;source&gt;</code>. Dzięki temu, jeżeli pierwszy film z&nbsp;jakiegoś powodu nie zostanie załadowany, uruchomi się następny.</p>
+
+                <div class="codeWrapper">
+                    <div class="code">
+                        <span contenteditable>
+                            &lt;!DOCTYPE html&gt;<br>
+                            &lt;html lang="pl"&gt;<br>
+                            &lt;head&gt;<br>
+                            &lt;meta charset="UTF-8"&gt;<br>
+                            &lt;title&gt;Wpisz tytuł&lt;/title&gt;<br>
+                            &lt;/head&gt;<br>
+                            &lt;body&gt;<br>
+                            &lt;video width="300px" controls&gt;<br>
+                            &lt;source src="../Multimedia/multimedia/film.mp4"&gt;<br>
+                            &lt;/video&gt;<br>
+                            &lt;/body&gt;<br>
+                            &lt;/html&gt;
+                        </span>
+                    </div>
+                </div>
+
+                <h3>Pliki wideo z&nbsp;serwisu YouTube</h3>
+                <p>Aby najprościej wstawić film z&nbsp;serwisu YouTube, należy:</p>
+                <ol>
+                    <li>Na komputerze otworzyć film lub playlistę, którą chcesz umieścić.</li>
+                    <li>Kliknąć <img src="https://storage.googleapis.com/support-kms-prod/dJviTGFzvddvW4FXLvi4NS4ZrkJKjtwkqxyn" alt="YouTube ikona udostępnij" style="vertical-align: middle;">Uostępnij</li>
+                    <li>Z listy opcji udostępniania wybrać Umieść.</li>
+                    <li>Skopiować kod HTML z&nbsp;pola, które się pojawi.</li>
+                    <li>Wkleić go do kodu HTML swojej strony internetowej.</li>
+                </ol>
+
+                <div class="codeWrapper">
+                    <div class="code">
+                        <span contenteditable>
+                            &lt;!DOCTYPE html&gt;<br>
+                            &lt;html lang="pl"&gt;<br>
+                            &lt;head&gt;<br>
+                            &lt;meta charset="UTF-8"&gt;<br>
+                            &lt;title&gt;Wpisz tytuł&lt;/title&gt;<br>
+                            &lt;/head&gt;<br>
+                            &lt;body&gt;<br>
+                            &lt;iframe width="300" height="169" src="https://www.youtube.com/embed/GN8EA9mpkdY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;<br>
+                            &lt;/body&gt;<br>
+                            &lt;/html&gt;
+                        </span>
+                    </div>
+                </div>
+
+                <h3>Lokalne pliki audio</h3>
+                <p>Aby wstawić plik audio z&nbsp;dysku postępujemy podobnie jak przy filmach – używamy znaczników <code>&lt;audio&gt;</code> i&nbsp;<code>&lt;source&gt;</code>. Pierwszy z&nbsp;nich jest odpowiedzialny za stworzenie odtwarzacza dla naszego pliku audio, natomiast drugi wskazuje jaki plik ma zostać odtworzony. Tutaj też można wskazać kilka plików znacznikami <code>&lt;source&gt;</code></p>
+
+                <div class="codeWrapper">
+                    <div class="code">
+                        <span contenteditable>
+                            &lt;!DOCTYPE html&gt;<br>
+                            &lt;html lang="pl"&gt;<br>
+                            &lt;head&gt;<br>
+                            &lt;meta charset="UTF-8"&gt;<br>
+                            &lt;title&gt;Wpisz tytuł&lt;/title&gt;<br>
+                            &lt;/head&gt;<br>
+                            &lt;body&gt;<br>
+                            &lt;audio width="300px" controls&gt;<br>
+                            &lt;source src="../Multimedia/multimedia/audio.mp3"&gt;<br>
+                            &lt;/audio&gt;<br>
+                            &lt;/body&gt;<br>
+                            &lt;/html&gt;
+                        </span>
+                    </div>
+                </div>
+                
+                <h3>Zewnętrzne pliki audio</h3>
+                <p>Jeżeli chcemy wstawić plik audio z&nbsp;zewnętrznego serwera, postępujemy podobnie jak w&nbsp;lokalnym pliku audio, z&nbsp;tym że w&nbsp;znaczniku <code>&lt;source&gt;</code> jako ścieżkę podajemy link do pliku na serwerze.</p>
+
+                <div class="codeWrapper">
+                    <div class="code">
+                        <span contenteditable>
+                            &lt;!DOCTYPE html&gt;<br>
+                            &lt;html lang="pl"&gt;<br>
+                            &lt;head&gt;<br>
+                            &lt;meta charset="UTF-8"&gt;<br>
+                            &lt;title&gt;Wpisz tytuł&lt;/title&gt;<br>
+                            &lt;/head&gt;<br>
+                            &lt;body&gt;<br>
+                            &lt;audio width="300px" controls&gt;<br>
+                            &lt;source src="http://wosp.msw-pttk.org.pl/download/wyluzuj_czapke.mp3"&gt;<br>
+                            &lt;source src="http://wosp.msw-pttk.org.pl/download/pozytywne_myslenie.mp3"&gt;<br>
+                            &lt;/audio&gt;<br>
+                            &lt;/body&gt;<br>
+                            &lt;/html&gt;
+                        </span>
+                    </div>
+                </div>
+                
+                <p>Więcej przykładów jak używać multimediów znajdziesz <a href="../Multimedia/index.html">tutaj</a>.</p>
+
+                <div class="quizVisible flex align-center justify-center">
+                    <h3>Quiz</h3>
+                    <div class="completed flex align-center justify-center">
+                        <span class="congrats"><i class="fa-regular fa-circle-check"></i> Brawo!</span>
+                        <button type="button">
+                            <span class="circle" aria-hidden="true">
+                            <span class="icon arrow"></span>
+                            </span>
+                            <span class="button-text">Przejdź dalej</span>
+                        </button>
+                    </div>
+                    <div class="buttons flex visible">
+                        <button type="reset"><i class="fa-solid fa-trash"></i> Wyczyść</button>
+                        <button type="submit">Sprawdź <i class="fa-solid fa-arrow-right-long"></i></button>
+                    </div>
+                </div>
+
+                <div class="quiz hide" questions="3">
+                    <div class="question">
+                        <span>Którym znacznikiem określimy ścieżki do pliku?</span>
+                        <input type="radio" name="source" id="sourceCorrect">
+                        <label for="sourceCorrect"><code>&lt;source&gt;</code></label>
+                        <input type="radio" name="source" id="source">
+                        <label for="source"><code>&lt;video&gt;</code></label>
+                        <input type="radio" name="source" id="source2">
+                        <label for="source2"><code>&lt;audio&gt;</code></label>
+                    </div>
+                    <div class="question">
+                        <span>Którym znacznikiem wyświetlimy film?</span>
+                        <input type="radio" name="video" id="videoCorrect">
+                        <label for="videoCorrect"><code>&lt;video&gt;</code></label>
+                        <input type="radio" name="video" id="video">
+                        <label for="video"><code>&lt;source&gt;</code></label>
+                        <input type="radio" name="video" id="video2">
+                        <label for="video2"><code>&lt;audio&gt;</code></label>
+                    </div>
+                    <div class="question">
+                        <span>Którym znacznikiem odtworzymy plik audio?</span>
+                        <input type="radio" name="audio" id="audioCorrect">
+                        <label for="audioCorrect"><code>&lt;audio&gt;</code></label>
+                        <input type="radio" name="audio" id="audio">
+                        <label for="audio"><code>&lt;source&gt;</code></label>
+                        <input type="radio" name="audio" id="audio2">
+                        <label for="audio2"><code>&lt;video&gt;</code></label>
+                    </div>
+                </div>
+
+            </section>
+            <section id="level11" class="hide">
+                <p>W celu uatrakcyjnienia naszej strony, by była interaktywna, musimy do niej dodać elementy, w&nbsp;których to użytkownik będzie mógł wprowadzić dane. Najbardziej popularnym elementem html pozwalającym na wprowadzanie danych przez użytkownika jest element <code>&lt;input&gt;</code> (ang. wejście). Element <code>&lt;input&gt;</code> jest samozamykającym się elementem. Jednak prawidłowy jego zapis wymaga jeszcze deklaracji typu. Typu deklaracji dokonujemy poprzez atrybut type.</p>
+
+                <h3>Lista inputów:</h3>
+                <ol>
+                    <li><a href="#typeemail">email</a> – pozwala na wprowadzenie email (odróżnia się od "text", tym że automatycznie sprawdza składnie)</li>
+                    <li><a href="#typenumber">number</a> – pozwala na wpisanie liczby</li>
+                    <li><a href="#typepassword">password</a> – pozwala na wpisaniu hasła (odróżnia się od "text", tym że automatycznie ukrywa wprowadzone znaki)</li>
+                    <li><a href="#typetel">tel</a> – pozwala na wprowadzenie nr. telefonu według ustalonego wzoru</li>
+                    <li><a href="#typetext">text</a> – pozwala na wprowadzenie tekstu</li>
+                    <li><a href="#typeurl">url</a> – pozwala na wprowadzenie linku (odróżnia się od "text", tym że automatycznie sprawdza składnie)</li>
+                    <br>
+                    <li><a href="#typebutton">button</a> – przycisk pozwala na wysłanie w&nbsp;formularzu</li>
+                    <li><a href="#typereset">reset</a> – pozwala na zresetowanie wszystkich inputów w&nbsp;formularzu</li>
+                    <li><a href="#typesubmit">submit</a> – przycisk pozwala na wysłanie w&nbsp;formularzu</li>
+                    <br>
+                    <li><a href="#typecheckbox">checkbox</a> – używane są one zazwyczaj do potwierdzania, można wybrać wiele</li>
+                    <li><a href="#typeradio">radio</a> – pozwala na wybranie jednej z&nbsp;podanych opcji</li>
+                    <br>
+                    <li><a href="#typedate">date</a> – pozwala na wybranie daty</li>
+                    <li><a href="#typedatetimeLocal">datetime–local</a> – pozwala na wprowadzenie daty i&nbsp;godziny</li>
+                    <li><a href="#typemonth">month</a> – pozwala na wybranie misiąca</li>
+                    <li><a href="#typetime">time</a> – pozwala na wprowadzenie czasu</li>
+                    <li><a href="#typeweek">week</a> – pozwala na wprowadzenie dnia tygodnia</li>
+                    <br>
+                    <li><a href="#typefile">file</a> – pozwala na przesłanie pliku</li>
+                    <li><a href="#typeimage">image</a> – pozwala na przesłanie pliku jedynie z&nbsp;rozszerzeniem wskazującym na zdjęcie</li>
+                    <li><a href="#typerange">range</a> – pozwala na wybranie wartości poprzez przmieszczenie suwaka</li>
+                    <br>
+                    <li><a href="#select"><code>&lt;select&gt;</code></a> – lista rozwijana</li>
+                    <li><a href="#selectMultiple"><code>&lt;select multiple&gt;</code></a> – lista wielokrotnego wyboru</li>
+                    <li><a href="#textarea">textarea</a> – obszar tekstowy</li>
+                </ol>
+
+                <h3 id="typeemail">Typ: email</h3>
+                <p>By nadać inputowi typ „email” musimy dodać atrybut type wraz z&nbsp;wartością email.</p>
+                <div class="codeWrapper">
+                    <div class="code">
+                        <span contenteditable>
+                            &lt;!DOCTYPE html&gt;<br>
+                            &lt;html lang="pl"&gt;<br>
+                            &lt;head&gt;<br>
+                            &lt;meta charset="UTF-8"&gt;<br>
+                            &lt;title&gt;Wpisz tytuł&lt;/title&gt;<br>
+                            &lt;/head&gt;<br>
+                            &lt;body&gt;<br>
+                            &lt;input type="email" placeholder="Adres email"&gt;<br>
+                            &lt;/body&gt;<br>
+                            &lt;/html&gt;
+                        </span>
+                    </div>
+                </div>
+
+                <h3 id="typenumber">Typ: number</h3>
+                <p>By nadać inputowi typ „number” musimy dodać atrybut type wraz z&nbsp;wartością number.</p>
+                <div class="codeWrapper">
+                    <div class="code">
+                        <span contenteditable>
+                            &lt;!DOCTYPE html&gt;<br>
+                            &lt;html lang="pl"&gt;<br>
+                            &lt;head&gt;<br>
+                            &lt;meta charset="UTF-8"&gt;<br>
+                            &lt;title&gt;Wpisz tytuł&lt;/title&gt;<br>
+                            &lt;/head&gt;<br>
+                            &lt;body&gt;<br>
+                            &lt;input type="number" placeholder="Liczba"&gt;<br>
+                            &lt;/body&gt;<br>
+                            &lt;/html&gt;
+                        </span>
+                    </div>
+                </div>
+
+                <h3 id="typepassword">Typ: password</h3>
+                <p>By nadać inputowi typ „password” musimy dodać atrybut type wraz z&nbsp;wartością password.</p>
+                <div class="codeWrapper">
+                    <div class="code">
+                        <span contenteditable>
+                            &lt;!DOCTYPE html&gt;<br>
+                            &lt;html lang="pl"&gt;<br>
+                            &lt;head&gt;<br>
+                            &lt;meta charset="UTF-8"&gt;<br>
+                            &lt;title&gt;Wpisz tytuł&lt;/title&gt;<br>
+                            &lt;/head&gt;<br>
+                            &lt;body&gt;<br>
+                            &lt;input type="password" placeholder="Hasło"&gt;<br>
+                            &lt;/body&gt;<br>
+                            &lt;/html&gt;
+                        </span>
+                    </div>
+                </div>
+
+                <h3 id="typetel">Typ: tel</h3>
+                <p>By nadać inputowi typ „tel” musimy dodać atrybut type wraz z&nbsp;wartością tel.</p>
+                <div class="codeWrapper">
+                    <div class="code">
+                        <span contenteditable>
+                            &lt;!DOCTYPE html&gt;<br>
+                            &lt;html lang="pl"&gt;<br>
+                            &lt;head&gt;<br>
+                            &lt;meta charset="UTF-8"&gt;<br>
+                            &lt;title&gt;Wpisz tytuł&lt;/title&gt;<br>
+                            &lt;/head&gt;<br>
+                            &lt;body&gt;<br>
+                            &lt;input type="tel" placeholder="Numer telefonu"&gt;<br>
+                            &lt;/body&gt;<br>
+                            &lt;/html&gt;
+                        </span>
+                    </div>
+                </div>
+
+                <h3 id="typetext">Typ: text</h3>
+                <p>By nadać inputowi typ „tel” musimy dodać atrybut type wraz z&nbsp;wartością tel.</p>
+                <div class="codeWrapper">
+                    <div class="code">
+                        <span contenteditable>
+                            &lt;!DOCTYPE html&gt;<br>
+                            &lt;html lang="pl"&gt;<br>
+                            &lt;head&gt;<br>
+                            &lt;meta charset="UTF-8"&gt;<br>
+                            &lt;title&gt;Wpisz tytuł&lt;/title&gt;<br>
+                            &lt;/head&gt;<br>
+                            &lt;body&gt;<br>
+                            &lt;input type="text" placeholder="Tekst"&gt;<br>
+                            &lt;/body&gt;<br>
+                            &lt;/html&gt;
+                        </span>
+                    </div>
+                </div>
+
+                <h3 id="typeurl">Typ: url</h3>
+                <p>By nadać inputowi typ „url” musimy dodać atrybut type wraz z&nbsp;wartością url.</p>
+                <div class="codeWrapper">
+                    <div class="code">
+                        <span contenteditable>
+                            &lt;!DOCTYPE html&gt;<br>
+                            &lt;html lang="pl"&gt;<br>
+                            &lt;head&gt;<br>
+                            &lt;meta charset="UTF-8"&gt;<br>
+                            &lt;title&gt;Wpisz tytuł&lt;/title&gt;<br>
+                            &lt;/head&gt;<br>
+                            &lt;body&gt;<br>
+                            &lt;input type="url" placeholder="Link"&gt;<br>
+                            &lt;/body&gt;<br>
+                            &lt;/html&gt;
+                        </span>
+                    </div>
+                </div>
+
+                <h3 id="typebutton">Typ: button</h3>
+                <p>By nadać inputowi typ „button” musimy dodać atrybut type wraz z&nbsp;wartością button.</p>
+                <div class="codeWrapper">
+                    <div class="code">
+                        <span contenteditable>
+                            &lt;!DOCTYPE html&gt;<br>
+                            &lt;html lang="pl"&gt;<br>
+                            &lt;head&gt;<br>
+                            &lt;meta charset="UTF-8"&gt;<br>
+                            &lt;title&gt;Wpisz tytuł&lt;/title&gt;<br>
+                            &lt;/head&gt;<br>
+                            &lt;body&gt;<br>
+                            &lt;input type="button" value="Kliknij mnie!"&gt;<br>
+                            &lt;/body&gt;<br>
+                            &lt;/html&gt;
+                        </span>
+                    </div>
+                </div>
+
+                <h3 id="typereset">Typ: reset</h3>
+                <p>By nadać inputowi typ „reset” musimy dodać atrybut type wraz z&nbsp;wartością reset.</p>
+                <div class="codeWrapper">
+                    <div class="code">
+                        <span contenteditable>
+                            &lt;!DOCTYPE html&gt;<br>
+                            &lt;html lang="pl"&gt;<br>
+                            &lt;head&gt;<br>
+                            &lt;meta charset="UTF-8"&gt;<br>
+                            &lt;title&gt;Wpisz tytuł&lt;/title&gt;<br>
+                            &lt;/head&gt;<br>
+                            &lt;body&gt;<br>
+                            &lt;input type="reset" placeholder="Zresetuj"&gt;<br>
+                            &lt;/body&gt;<br>
+                            &lt;/html&gt;
+                        </span>
+                    </div>
+                </div>
+
+                <h3 id="typesubmit">Typ: submit</h3>
+                <p>By nadać inputowi typ „submit” musimy dodać atrybut type wraz z&nbsp;wartością submit.</p>
+                <div class="codeWrapper">
+                    <div class="code">
+                        <span contenteditable>
+                            &lt;!DOCTYPE html&gt;<br>
+                            &lt;html lang="pl"&gt;<br>
+                            &lt;head&gt;<br>
+                            &lt;meta charset="UTF-8"&gt;<br>
+                            &lt;title&gt;Wpisz tytuł&lt;/title&gt;<br>
+                            &lt;/head&gt;<br>
+                            &lt;body&gt;<br>
+                            &lt;input type="submit" placeholder="Wyślij"&gt;<br>
+                            &lt;/body&gt;<br>
+                            &lt;/html&gt;
+                        </span>
+                    </div>
+                </div>
+
+                <h3 id="typecheckbox">Typ: checkbox</h3>
+                <p>By nadać inputowi typ „checkbox” musimy dodać atrybut type wraz z&nbsp;wartością checkbox.</p>
+                <div class="codeWrapper">
+                    <div class="code">
+                        <span contenteditable>
+                            &lt;!DOCTYPE html&gt;<br>
+                            &lt;html lang="pl"&gt;<br>
+                            &lt;head&gt;<br>
+                            &lt;meta charset="UTF-8"&gt;<br>
+                            &lt;title&gt;Wpisz tytuł&lt;/title&gt;<br>
+                            &lt;/head&gt;<br>
+                            &lt;body&gt;<br>
+                            &lt;input type="checkbox" id="opcja1"&gt;<br>
+                            &lt;label for="opcja1"&gt;Opcja 1&lt;/label&gt;&lt;br /&gt;<br>
+                            &lt;input type="checkbox" id="opcja2"&gt;<br>
+                            &lt;label for="opcja2"&gt;Opcja 2&lt;/label&gt;<br>
+                            &lt;/body&gt;<br>
+                            &lt;/html&gt;
+                        </span>
+                    </div>
+                </div>
+
+                <h3 id="typeradio">Typ: radio</h3>
+                <p>By nadać inputowi typ „radio” musimy dodać atrybut type wraz z&nbsp;wartością radio.</p>
+                <div class="codeWrapper">
+                    <div class="code">
+                        <span contenteditable>
+                            &lt;!DOCTYPE html&gt;<br>
+                            &lt;html lang="pl"&gt;<br>
+                            &lt;head&gt;<br>
+                            &lt;meta charset="UTF-8"&gt;<br>
+                            &lt;title&gt;Wpisz tytuł&lt;/title&gt;<br>
+                            &lt;/head&gt;<br>
+                            &lt;body&gt;<br>
+                            &lt;input type="radio" name="opcje" id="opcja1"&gt;<br>
+                            &lt;label for="opcja1"&gt;Opcja 1&lt;/label&gt;&lt;br /&gt;<br>
+                            &lt;input type="radio" name="opcje" id="opcja2"&gt;<br>
+                            &lt;label for="opcja2"&gt;Opcja 2&lt;/label&gt;<br>
+                            &lt;/body&gt;<br>
+                            &lt;/html&gt;
+                        </span>
+                    </div>
+                </div>
+
+                <h3 id="typedate">Typ: date</h3>
+                <p>By nadać inputowi typ „date” musimy dodać atrybut type wraz z&nbsp;wartością date.</p>
+                <div class="codeWrapper">
+                    <div class="code">
+                        <span contenteditable>
+                            &lt;!DOCTYPE html&gt;<br>
+                            &lt;html lang="pl"&gt;<br>
+                            &lt;head&gt;<br>
+                            &lt;meta charset="UTF-8"&gt;<br>
+                            &lt;title&gt;Wpisz tytuł&lt;/title&gt;<br>
+                            &lt;/head&gt;<br>
+                            &lt;body&gt;<br>
+                            &lt;input type="date"&gt;<br>
+                            &lt;/body&gt;<br>
+                            &lt;/html&gt;
+                        </span>
+                    </div>
+                </div>
+
+                <h3 id="typedatetimeLocal">Typ: datetime–local</h3>
+                <p>By nadać inputowi typ „datetime-local” musimy dodać atrybut type wraz z&nbsp;wartością datetime–local.</p>
+                <div class="codeWrapper">
+                    <div class="code">
+                        <span contenteditable>
+                            &lt;!DOCTYPE html&gt;<br>
+                            &lt;html lang="pl"&gt;<br>
+                            &lt;head&gt;<br>
+                            &lt;meta charset="UTF-8"&gt;<br>
+                            &lt;title&gt;Wpisz tytuł&lt;/title&gt;<br>
+                            &lt;/head&gt;<br>
+                            &lt;body&gt;<br>
+                            &lt;input type="datetime-local"&gt;<br>
+                            &lt;/body&gt;<br>
+                            &lt;/html&gt;
+                        </span>
+                    </div>
+                </div>
+
+                <h3 id="typemonth">Typ: month</h3>
+                <p>By nadać inputowi typ „month” musimy dodać atrybut type wraz z&nbsp;wartością month.</p>
+                <div class="codeWrapper">
+                    <div class="code">
+                        <span contenteditable>
+                            &lt;!DOCTYPE html&gt;<br>
+                            &lt;html lang="pl"&gt;<br>
+                            &lt;head&gt;<br>
+                            &lt;meta charset="UTF-8"&gt;<br>
+                            &lt;title&gt;Wpisz tytuł&lt;/title&gt;<br>
+                            &lt;/head&gt;<br>
+                            &lt;body&gt;<br>
+                            &lt;input type="month"&gt;<br>
+                            &lt;/body&gt;<br>
+                            &lt;/html&gt;
+                        </span>
+                    </div>
+                </div>
+
+                <h3 id="typetime">Typ: time</h3>
+                <p>By nadać inputowi typ „time” musimy dodać atrybut type wraz z&nbsp;wartością time.</p>
+                <div class="codeWrapper">
+                    <div class="code">
+                        <span contenteditable>
+                            &lt;!DOCTYPE html&gt;<br>
+                            &lt;html lang="pl"&gt;<br>
+                            &lt;head&gt;<br>
+                            &lt;meta charset="UTF-8"&gt;<br>
+                            &lt;title&gt;Wpisz tytuł&lt;/title&gt;<br>
+                            &lt;/head&gt;<br>
+                            &lt;body&gt;<br>
+                            &lt;input type="time"&gt;<br>
+                            &lt;/body&gt;<br>
+                            &lt;/html&gt;
+                        </span>
+                    </div>
+                </div>
+
+                <h3 id="typeweek">Typ: week</h3>
+                <p>By nadać inputowi typ „week” musimy dodać atrybut type wraz z&nbsp;wartością week.</p>
+                <div class="codeWrapper">
+                    <div class="code">
+                        <span contenteditable>
+                            &lt;!DOCTYPE html&gt;<br>
+                            &lt;html lang="pl"&gt;<br>
+                            &lt;head&gt;<br>
+                            &lt;meta charset="UTF-8"&gt;<br>
+                            &lt;title&gt;Wpisz tytuł&lt;/title&gt;<br>
+                            &lt;/head&gt;<br>
+                            &lt;body&gt;<br>
+                            &lt;input type="week"&gt;<br>
+                            &lt;/body&gt;<br>
+                            &lt;/html&gt;
+                        </span>
+                    </div>
+                </div>
+
+                <h3 id="typefile">Typ: file</h3>
+                <p>By nadać inputowi typ „file” musimy dodać atrybut type wraz z&nbsp;wartością file.</p>
+                <div class="codeWrapper">
+                    <div class="code">
+                        <span contenteditable>
+                            &lt;!DOCTYPE html&gt;<br>
+                            &lt;html lang="pl"&gt;<br>
+                            &lt;head&gt;<br>
+                            &lt;meta charset="UTF-8"&gt;<br>
+                            &lt;title&gt;Wpisz tytuł&lt;/title&gt;<br>
+                            &lt;/head&gt;<br>
+                            &lt;body&gt;<br>
+                            &lt;input type="file"&gt;<br>
+                            &lt;/body&gt;<br>
+                            &lt;/html&gt;
+                        </span>
+                    </div>
+                </div>
+
+                <h3 id="typeimage">Typ: image</h3>
+                <p>By nadać inputowi typ „image” musimy dodać atrybut type wraz z&nbsp;wartością image.</p>
+                <div class="codeWrapper">
+                    <div class="code">
+                        <span contenteditable>
+                            &lt;!DOCTYPE html&gt;<br>
+                            &lt;html lang="pl"&gt;<br>
+                            &lt;head&gt;<br>
+                            &lt;meta charset="UTF-8"&gt;<br>
+                            &lt;title&gt;Wpisz tytuł&lt;/title&gt;<br>
+                            &lt;/head&gt;<br>
+                            &lt;body&gt;<br>
+                            &lt;input type="image" src="https://interactive-examples.mdn.mozilla.net/media/examples/login-button.png"&gt;<br>
+                            &lt;/body&gt;<br>
+                            &lt;/html&gt;
+                        </span>
+                    </div>
+                </div>
+
+                <h3 id="typerange">Typ: range</h3>
+                <p>By nadać inputowi typ „range” musimy dodać atrybut type wraz z&nbsp;wartością range.</p>
+                <div class="codeWrapper">
+                    <div class="code">
+                        <span contenteditable>
+                            &lt;!DOCTYPE html&gt;<br>
+                            &lt;html lang="pl"&gt;<br>
+                            &lt;head&gt;<br>
+                            &lt;meta charset="UTF-8"&gt;<br>
+                            &lt;title&gt;Wpisz tytuł&lt;/title&gt;<br>
+                            &lt;/head&gt;<br>
+                            &lt;body&gt;<br>
+                            &lt;input type="range"&gt;<br>
+                            &lt;/body&gt;<br>
+                            &lt;/html&gt;
+                        </span>
+                    </div>
+                </div>
+
+                <h3 id="select">Lista rozwijana</h3>
+                <p>Znacznik <code>&lt;select&gt;</code> służy do stworzenia listy rozwijanej. Znacznik <code>&lt;option&gt;</code> służy do stworzenia opcji w&nbsp;liście rozwijanej. Muszą się one znajować między znacznikami <code>&lt;select&gt;</code> i&nbsp;<code>&lt;/select&gt;</code></p>
+                <div class="codeWrapper">
+                    <div class="code">
+                        <span contenteditable>
+                            &lt;!DOCTYPE html&gt;<br>
+                            &lt;html lang="pl"&gt;<br>
+                            &lt;head&gt;<br>
+                            &lt;meta charset="UTF-8"&gt;<br>
+                            &lt;title&gt;Wpisz tytuł&lt;/title&gt;<br>
+                            &lt;/head&gt;<br>
+                            &lt;body&gt;<br>
+                            &lt;select&gt;<br>
+                            &lt;option&gt;Opcja 1&lt;/option&gt;<br>
+                            &lt;option&gt;Opcja 2&lt;/option&gt;<br>
+                            &lt;option&gt;Opcja 3&lt;/option&gt;<br>
+                            &lt;/select&gt;<br>
+                            &lt;/body&gt;<br>
+                            &lt;/html&gt;
+                        </span>
+                    </div>
+                </div>
+
+                <h3 id="selectMultiple">Lista wielokrotnego wyboru</h3>
+                <p>Znacznik <code>&lt;select&gt;</code> może przyjąć atrybut <code>multiple</code>. Dzięki temu, będzie można zaznaczyć wiele opcji trzymając klawisz Ctrl lub Command.</p>
+                <div class="codeWrapper">
+                    <div class="code">
+                        <span contenteditable>
+                            &lt;!DOCTYPE html&gt;<br>
+                            &lt;html lang="pl"&gt;<br>
+                            &lt;head&gt;<br>
+                            &lt;meta charset="UTF-8"&gt;<br>
+                            &lt;title&gt;Wpisz tytuł&lt;/title&gt;<br>
+                            &lt;/head&gt;<br>
+                            &lt;body&gt;<br>
+                            &lt;select multiple&gt;<br>
+                            &lt;option&gt;Opcja 1&lt;/option&gt;<br>
+                            &lt;option&gt;Opcja 2&lt;/option&gt;<br>
+                            &lt;option&gt;Opcja 3&lt;/option&gt;<br>
+                            &lt;option&gt;Opcja 4&lt;/option&gt;<br>
+                            &lt;option&gt;Opcja 5&lt;/option&gt;<br>
+                            &lt;/select&gt;&lt;br /&gt;<br>
+                            &lt;span&gt;Aby zaznaczyć kilka opcji przytrzymaj "Ctrl" na systemach Windows lub "Command" na systemach Mac&lt;/span&gt;<br>
+                            &lt;/body&gt;<br>
+                            &lt;/html&gt;
+                        </span>
+                    </div>
+                </div>
+
+                <h3 id="textarea">Textarea</h3>
+                <p>Znacznik <code>&lt;textarea&gt;</code> służy do wielowierszowego wprawdzania tekstu przez użytkownika.</p>
+                <div class="codeWrapper">
+                    <div class="code">
+                        <span contenteditable>
+                            &lt;!DOCTYPE html&gt;<br>
+                            &lt;html lang="pl"&gt;<br>
+                            &lt;head&gt;<br>
+                            &lt;meta charset="UTF-8"&gt;<br>
+                            &lt;title&gt;Wpisz tytuł&lt;/title&gt;<br>
+                            &lt;/head&gt;<br>
+                            &lt;body&gt;<br>
+                            &lt;textarea&gt;Tekst&lt;/textarea&gt;<br>
+                            &lt;/body&gt;<br>
+                            &lt;/html&gt;
+                        </span>
+                    </div>
+                </div>
+
+                <div class="quizVisible flex align-center justify-center">
+                    <h3>Quiz</h3>
+                    <div class="completed flex align-center justify-center">
+                        <span class="congrats"><i class="fa-regular fa-circle-check"></i> Brawo!</span>
+                        <button type="button">
+                            <span class="circle" aria-hidden="true">
+                            <span class="icon arrow"></span>
+                            </span>
+                            <span class="button-text">Przejdź dalej</span>
+                        </button>
+                    </div>
+                    <div class="buttons flex visible">
+                        <button type="reset"><i class="fa-solid fa-trash"></i> Wyczyść</button>
+                        <button type="submit">Sprawdź <i class="fa-solid fa-arrow-right-long"></i></button>
+                    </div>
+                </div>
+
+                <div class="quiz hide" questions="3">
+                    <div class="question">
+                        <span>Co oznacza słowo input?</span>
+                        <input type="radio" name="inputMean" id="inputMeanCorrect">
+                        <label for="inputMeanCorrect">wejście</label>
+                        <input type="radio" name="inputMean" id="inputMean">
+                        <label for="inputMean">wyjście</label>
+                        <input type="radio" name="inputMean" id="inputMean2">
+                        <label for="inputMean2">włożenie</label>
+                    </div>
+                    <div class="question">
+                        <span>Czy <code>&lt;input type="text"&gt;</code> i&nbsp;<code>&lt;textarea&gt;</code> dadzą ten sam efekt?</span>
+                        <input type="radio" name="textarea" id="textareaCorrect">
+                        <label for="textareaCorrect">Nie</label>
+                        <input type="radio" name="textarea" id="textarea">
+                        <label for="textarea">Tak</label>
+                    </div>
+                    <div class="question">
+                        <span>Który znacznik stworzy listę wielokrotnego wyboru?</span>
+                        <input type="radio" name="multiple" id="multipleCorrect">
+                        <label for="multipleCorrect"><code>&lt;select multiple&gt;</code></label>
+                        <input type="radio" name="multiple" id="multiple">
+                        <label for="multiple"><code>&lt;multipleselect&gt;</code></label>
+                        <input type="radio" name="multiple" id="multiple2">
+                        <label for="multiple2"><code>&lt;multiple&gt;</code></label>
+                        <input type="radio" name="multiple" id="multiple3">
+                        <label for="multiple3"><code>&lt;input type="multiple"&gt;</code></label>
+                    </div>
+                </div>
+            </section>
+            <section id="level12" class="hide">
+                <p>Formularze służą do uporządkowania oraz przesyłania danych z&nbsp;inputów. Formularz HTML tworzymy poprzez zastosowanie elementu <code>&lt;form&gt;</code>.</p>
+
+                <h3>Przykładowy formularz rejestracyjny</h3>
+                <div class="codeWrapper">
+                    <div class="code">
+                        <span contenteditable>
+                            &lt;!DOCTYPE html&gt;<br>
+                            &lt;html lang="pl"&gt;<br>
+                            &lt;head&gt;<br>
+                            &lt;meta charset="UTF-8"&gt;<br>
+                            &lt;title&gt;Wpisz tytuł&lt;/title&gt;<br>
+                            &lt;/head&gt;<br>
+                            &lt;body&gt;<br>
+                            &lt;form&gt;<br>
+                            &lt;label&gt;Login &lt;input type="text"&gt;&lt;/label&gt;&lt;br /&gt;&lt;br /&gt;<br>
+                            &lt;label&gt;Email &lt;input type="email"&gt;&lt;/label&gt;&lt;br /&gt;&lt;br /&gt;<br>
+                            &lt;label&gt;Hasło &lt;input type="password"&gt;&lt;/label&gt;&lt;br /&gt;&lt;br /&gt;<br>
+                            &lt;/form&gt;<br>
+                            &lt;/body&gt;<br>
+                            &lt;/html&gt;
+                        </span>
+                    </div>
+                </div>
+
+                <h3>Przesyłanie formularza</h3>
+                <p>Aby móc przesłać dane z&nbsp;formularza, musimy dodać jeszcze jeden rodzaj elementu <code>&lt;input&gt;</code>, a&nbsp;mianowicie <code>submit</code> (ang. załącz, wyślij, albo prześlij).</p>
+                <div class="codeWrapper">
+                    <div class="code">
+                        <span contenteditable>
+                            &lt;!DOCTYPE html&gt;<br>
+                            &lt;html lang="pl"&gt;<br>
+                            &lt;head&gt;<br>
+                            &lt;meta charset="UTF-8"&gt;<br>
+                            &lt;title&gt;Wpisz tytuł&lt;/title&gt;<br>
+                            &lt;/head&gt;<br>
+                            &lt;body&gt;<br>
+                            &lt;form&gt;<br>
+                            &lt;label&gt;Login &lt;input type="text"&gt;&lt;/label&gt;&lt;br /&gt;&lt;br /&gt;<br>
+                            &lt;label&gt;Email &lt;input type="email"&gt;&lt;/label&gt;&lt;br /&gt;&lt;br /&gt;<br>
+                            &lt;label&gt;Hasło &lt;input type="password"&gt;&lt;/label&gt;&lt;br /&gt;&lt;br /&gt;<br>
+                            &lt;input type="submit" value="Prześlij"&gt;<br>
+                            &lt;/form&gt;<br>
+                            &lt;/body&gt;<br>
+                            &lt;/html&gt;
+                        </span>
+                    </div>
+                </div>
+                
+                <h3>Odbieranie danych</h3>
+                <p>W celu wysłania danych naszym formularzem html, musielibyśmy stworzyć plik z&nbsp;instrukcjami np. w&nbsp;języku PHP i&nbsp;zapisać go w&nbsp;folderze z&nbsp;naszą stroną internetową np. pod nazwą form.php. Do elementu <code>&lt;form&gt;</code> dodalibyśmy następnie atrybut action, który wskazywałby ścieżkę dostępu do naszego pliku form.php. Po naciśnięciu klawisza submit akcja z&nbsp;pliku form.php zostałaby wykonana.</p>
+                <div class="codeWrapper">
+                    <div class="code">
+                        <span contenteditable>
+                            &lt;!DOCTYPE html&gt;<br>
+                            &lt;html lang="pl"&gt;<br>
+                            &lt;head&gt;<br>
+                            &lt;meta charset="UTF-8"&gt;<br>
+                            &lt;title&gt;Wpisz tytuł&lt;/title&gt;<br>
+                            &lt;/head&gt;<br>
+                            &lt;body&gt;<br>
+                            &lt;form action="form.php"&gt;<br>
+                            &lt;label&gt;Login &lt;input type="text"&gt;&lt;/label&gt;&lt;br /&gt;&lt;br /&gt;<br>
+                            &lt;label&gt;Email &lt;input type="email"&gt;&lt;/label&gt;&lt;br /&gt;&lt;br /&gt;<br>
+                            &lt;label&gt;Hasło &lt;input type="password"&gt;&lt;/label&gt;&lt;br /&gt;&lt;br /&gt;<br>
+                            &lt;input type="submit" value="Prześlij"&gt;<br>
+                            &lt;/form&gt;<br>
+                            &lt;/body&gt;<br>
+                            &lt;/html&gt;
+                        </span>
+                    </div>
+                </div>
+
+                <h3>Rozróżnianie danych</h3>
+                <p>Dane w&nbsp;obecnej formie nie zostaną właściwie rozpoznane przez serwer, muszą one się od siebie jakoś wyróżniać, tzn. musimy przekazać serwerowi, że ten element musi być zapisany w&nbsp;tym miejscu. Atrybut, który pozwala rozróżnić przesyłane dane to atrybut name. Każde pole musi mieć unikalną wartość atrybutu name. Ze względu na to, że plik form.php nie istnieje, strona po przesłaniu wyrzuci błąd.</p>
+                <div class="codeWrapper">
+                    <div class="code">
+                        <span contenteditable>
+                            &lt;!DOCTYPE html&gt;<br>
+                            &lt;html lang="pl"&gt;<br>
+                            &lt;head&gt;<br>
+                            &lt;meta charset="UTF-8"&gt;<br>
+                            &lt;title&gt;Wpisz tytuł&lt;/title&gt;<br>
+                            &lt;/head&gt;<br>
+                            &lt;body&gt;<br>
+                            &lt;form action="form.php"&gt;<br>
+                            &lt;label&gt;Login &lt;input type="text" name="login"&gt;&lt;/label&gt;&lt;br /&gt;&lt;br /&gt;<br>
+                            &lt;label&gt;Email &lt;input type="email" name="email"&gt;&lt;/label&gt;&lt;br /&gt;&lt;br /&gt;<br>
+                            &lt;label&gt;Hasło &lt;input type="password" name="haslo"&gt;&lt;/label&gt;&lt;br /&gt;&lt;br /&gt;<br>
+                            &lt;input type="submit" value="Prześlij"&gt;<br>
+                            &lt;/form&gt;<br>
+                            &lt;/body&gt;<br>
+                            &lt;/html&gt;
+                        </span>
+                    </div>
+                </div>
+
+                <h3>Grupowanie inputów</h3>
+                <p>Podobne elementy służące do wprowadzania danych można pogrupować za pomocą elementu <code>&lt;fieldset&gt;</code> (ang. field set – zbiór pól). Element ten, nie tylko semantycznie pogrupuje te pola, ale również doda ramkę dookoła. Grupę tą można opisać za pomocą legendy, dosłownie za pomocą elementu <code>&lt;legend&gt;</code>.</p>
+                <div class="codeWrapper">
+                    <div class="code">
+                        <span contenteditable>
+                            &lt;!DOCTYPE html&gt;<br>
+                            &lt;html lang="pl"&gt;<br>
+                            &lt;head&gt;<br>
+                            &lt;meta charset="UTF-8"&gt;<br>
+                            &lt;title&gt;Wpisz tytuł&lt;/title&gt;<br>
+                            &lt;/head&gt;<br>
+                            &lt;body&gt;<br>
+                            &lt;form action="form.php"&gt;<br>
+                            &lt;fieldset&gt;<br>
+                            &lt;legend&gt;Rejestracja&lt;/legend&gt;<br>
+                            &lt;label&gt;Login &lt;input type="text" name="login"&gt;&lt;/label&gt;&lt;br /&gt;&lt;br /&gt;<br>
+                            &lt;label&gt;Email &lt;input type="email" name="email"&gt;&lt;/label&gt;&lt;br /&gt;&lt;br /&gt;<br>
+                            &lt;label&gt;Hasło &lt;input type="password" name="haslo"&gt;&lt;/label&gt;&lt;br /&gt;&lt;br /&gt;<br>
+                            &lt;/fieldset&gt;&lt;br /&gt;<br>
+                            &lt;input type="submit" value="Prześlij"&gt;<br>
+                            &lt;/form&gt;<br>
+                            &lt;/body&gt;<br>
+                            &lt;/html&gt;
+                        </span>
+                    </div>
+                </div>
+
+                <p>Przykładowy, bardziej rozbudowany formularz znajdziesz <a href="../Formularze/index.html">tutaj</a>.</p>
+
+                <div class="quizVisible flex align-center justify-center">
+                    <h3>Quiz</h3>
+                    <div class="completed flex align-center justify-center">
+                        <span class="congrats completed"><i class="fa-regular fa-circle-check"></i> Brawo! Udało Ci się ukończyć Mini Kurs HTML5!</span>
+                    </div>
+                    <div class="buttons flex visible">
+                        <button type="reset"><i class="fa-solid fa-trash"></i> Wyczyść</button>
+                        <button type="submit">Sprawdź <i class="fa-solid fa-arrow-right-long"></i></button>
+                    </div>
+                </div>
+
+                <div class="quiz hide" questions="2">
+                    <div class="question">
+                        <span>Do czego służą formularze?</span>
+                        <input type="radio" name="forms" id="formsCorrect">
+                        <label for="formsCorrect">Do wysyłania danych</label>
+                        <input type="radio" name="forms" id="forms">
+                        <label for="forms">Do odbierania danych</label>
+                        <input type="radio" name="forms" id="forms2">
+                        <label for="forms2">Do grupowania inputów</label>
+                    </div>
+                    <div class="question">
+                        <span>Jaki znacznik służy do utworzenia formularza?</span>
+                        <input type="radio" name="formsTag" id="formsTagCorrect">
+                        <label for="formsTagCorrect"><code>&lt;form&gt;</code></label>
+                        <input type="radio" name="formsTag" id="formsTag">
+                        <label for="formsTag"><code>&lt;legend&gt;</code></label>
+                        <input type="radio" name="formsTag" id="formsTag2">
+                        <label for="formsTag2"><code>&lt;fieldset&gt;</code></label>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script src="../js/theme.js"></script>
+    <script src="../js/kurs.js"></script>
+</body>
+</html>

@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+
+* {
+    font-family: 'Nunito', sans-serif;
+}
+
+body {
+    margin: 0;
+    background: linear-gradient(-135deg, rgb(200, 80, 192), rgb(65, 88, 208));
+    min-width: 100vw;
+    min-height: 100vh;
+}
+
+form {
+    background-color: white;
+    width: 30vw;
+    height: 70vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    box-shadow: rgba(99, 99, 99, .2) 0px 2px 8px 0px;
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr;
+    min-width: 500px;
+}
+
+h1 {
+    font-size: 2.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+input[type=text], input[type=password] {
+    width: 63%;
+    padding: 0 0 0 7%;
+    height: 50px;
+    border: none;
+    background-color: #e6e6e6;
+    color: #666666;
+    outline: none;
+    border-radius: 3px;
+    font-size: 1.1rem;
+}
+
+div.username, div.password {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 1vh;
+    margin-bottom: 2vh;
+}
+
+.fa-user, .fa-lock {
+    position: absolute;
+    top: 50%;
+    left: calc(15% + 10px);
+    transform: translateY(-50%);
+}
+
+input[type=submit] {
+    cursor: pointer;
+    margin-top: 2vh;
+    width: 70%;
+    height: 50px;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    font-size: 1.1rem;
+    background-color: #57b846;
+    transition: all .4s;
+    color: white;
+}
+
+input[type=submit]:hover {
+    background-color: #333;
+}
+
+.remember {
+    width: 70%;
+    display: flex;
+    align-items: center;
+}
+
+label[for=remember] {
+    cursor: pointer;
+    padding-left: 7px;
+}
+
+#remember {
+    cursor: pointer;
+    height: 17px;
+    width: 17px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    position: absolute;
+    bottom: 3vh;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+span {
+    transition: all .3s;
+}
+
+a:hover span {
+    color: #57b846;
+}
+
+div.lightning {
+    position: absolute;
+    background-color: #00A885;
+    width: 0;
+    height: 2px;
+    left: 15%;
+    bottom: 0;
+    transition: all 0.7s;
+}
+
+input:focus + div.lightning {
+    width: 70%;
+}
+
+div.wrong {
+    background-color: red;
+    width: 70%;
+    transition: none;
+}

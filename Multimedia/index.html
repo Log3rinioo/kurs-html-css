@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedia - Piotr Winiarczyk 3K</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/icon.webp">
+</head>
+
+<body>
+    <nav class="inactive">
+        <div class="tab">
+            <span>Wideo wewnętrzne</span>
+        </div>
+        <div class="tab" style="transition-delay: 0.1s;">
+            <span>Audio wewnętrzne</span>
+        </div>
+        <div class="tab" style="transition-delay: 0.2s;">
+            <span>Grafika</span>
+        </div>
+        <div class="tab" style="transition-delay: 0.3s;">
+            <span>Wideo zewnętrzne</span>
+        </div>
+        <div class="tab" style="transition-delay: 0.4s;">
+            <span>Audio zewnętrzne</span>
+        </div>
+        <div class="tab" style="transition-delay: 0.5s;">
+            <span>Mapy Google</span>
+        </div>
+    </nav>
+
+    <main>
+        <section id="header">
+            <h1>Multimedia</h1>
+            <h2>Piotr Winiarczyk 3K</h2>
+        </section>
+
+        <section id="cards">
+            <div class="card" style="background-image: url(img/local-video.jpg);">
+                <span>Wideo wewnętrzne</span>
+            </div>
+            <div class="card" style="background-image: url(img/local-audio.jpg);">
+                <span>Audio wewnętrzne</span>
+            </div>
+            <div class="card" style="background-image: url(img/graphics.jpg); ">
+                <span>Grafika</span>
+            </div>
+            <div class="card" style="background-image: url(img/stream-video.jpg);">
+                <span>Wideo zewnętrzne</span>
+            </div>
+            <div class="card" style="background-image: url(img/stream-audio.jpg); background-position-y: 20%;">
+                <span>Audio zewnętrzne</span>
+            </div>
+            <div class="card" style="background-image: url(img/maps.jpg);">
+                <span>Mapy Google</span>
+            </div>
+
+        </section>
+
+    </main>
+
+    <div id="backdrop"></div>
+
+    <div id="content" class="inactive">
+        <button type="button" id="close">&#10060;</button>
+        <section id="locVid" class="inactive">
+            <div class="scroll">
+                <div class="video">
+                    <div>
+                        <h2>Film z dysku – krótka animacja</h2>
+                        <video width="800" height="450" controls>
+                            <source src="multimedia/film.mp4" type="video/mp4">
+                            Twoja przeglądarka nie obsługuje znacznika video.
+                        </video>
+                        <br><br>
+                        <span>Jeżeli nie możesz odtworzyć pliku wideo, kliknij na niego prawym przyciskiem myszy i zaznacz opcję "Pokaż elementy sterujące" lub "Pokaż wszystkie kontrolki".</span>
+                        <br><br>
+                        <button type="button" class="code">Pokaż kod</button>
+                        <div class="code">
+                            <span></span>
+                            <button type="button">Skopiuj kod</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="errors">
+                    <hr>
+                    <h2>Możliwe błędy przy dodawaniu filmów</h2>
+                    <div>
+                        <video width="800" height="450" controls>
+                            <source srcset="multimedia/film.mp3">
+                        </video>
+                        <h3>Błędna nazwa pliku lub nieobsługiwany format</h3>
+                        <button type="button" class="code">Pokaż kod</button>
+                        <div class="code-error">
+                            <div class="left">
+                                <h3>Błędny kod</h3>
+                                <span>&lt;video width="800" height="450" controls&gt;</span><br>
+                                <span>&lt;source</span>
+                                <span class="error">srcset="multimedia/film.mp3"</span>
+                                <span>&gt;</span><br>
+                                <span>&lt;/video&gt;&lt;/span&gt;</span>
+                            </div>
+                            <div class="right">
+                                <h3>Poprawny kod</h3>
+                                <span>&lt;video width="800" height="450" controls&gt;</span><br>
+                                <span>&lt;source</span>
+                                <span class="correct">srcset="multimedia/film.mp4"</span>
+                                <span>&gt;</span><br>
+                                <span>&lt;/video&gt;&lt;/span&gt;</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section id="locAud" class="inactive">
+            <div class="scroll">
+                <div class="audio">
+                    <div>
+                        <h2>Plik audio z dysku</h2>
+                        <div>
+                            <audio src="multimedia/audio.mp3" width="300px" controls>Twoja przeglądarka nie obsługuje znacznika audio.</audio>
+                        </div>
+                        <br>
+                        <span>Jeżeli nie możesz odtworzyć pliku audio, kliknij na niego prawym przyciskiem myszy i zaznacz opcję "Pokaż elementy sterujące" lub "Pokaż wszystkie kontrolki".</span>
+                        <br><br>
+                        <button type="button" class="code">Pokaż kod</button>
+                        <div class="code">
+                            <span></span>
+                            <button type="button">Skopiuj kod</button>
+                        </div>
+                    </div>
+
+
+                    <div>
+                        <h2>Plik audio z dysku</h2>
+                        <div>
+                            <audio src="multimedia/audio2.mp3" width="300px" controls>Twoja przeglądarka nie obsługuje znacznika
+                                audio.</audio>
+                        </div>
+                        <br>
+                        <span>Jeżeli nie możesz odtworzyć pliku audio, kliknij na niego prawym przyciskiem myszy i zaznacz opcję "Pokaż elementy sterujące" lub "Pokaż wszystkie kontrolki".</span>
+                        <br><br>
+                        <button type="button" class="code">Pokaż kod</button>
+                        <div class="code">
+                            <span></span>
+                            <button type="button">Skopiuj kod</button>
+                        </div>
+                    </div>
+
+                    <div class="errors">
+                        <hr>
+                        <h2>Możliwe błędy przy wstawianiu plików audio</h2>
+                        <div>
+                            <iframe src="multimedia/empty.mp3" width="200px" height="54px" loading="lazy" controls>Twoja przeglądarka nie obsługuje znacznika iframe.</iframe>
+                        </div>
+                        <h3>Zbyt mały rozmiar elementu</h3>
+                        <button type="button" class="code">Pokaż kod</button>
+                        <div class="code-error">
+                            <div class="left" style="display: initial;">
+                                <h3>Błędny kod</h3>
+                                <span>&lt;iframe src="multimedia/audio.mp3" <span class="error">width="200px"<br>height="54px"</span> controls&gt;Twoja przeglądarka<br>nie obsługuje znacznika iframe.&lt;/iframe&gt;</span>
+                            </div>
+                            <div class="right">
+                                <h3>Poprawny kod</h3>
+                                <span>&lt;iframe src="multimedia/audio.mp3" <span class="correct">width="300px"<br>height="150px"</span> controls&gt;Twoja przeglądarka<br>nie obsługuje znacznika iframe.&lt;/iframe&gt;</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section id="graphics" class="inactive">
+            <div class="scroll">
+                <div>
+                    <h2>Plik graficzny w formacie *.jpg z serwera</h2>
+                    <span><b>JPEG</b> to format plików graficznych i algorytm stratnej kompresji rastrowej. Powstał w 1991 roku i jest najczęściej stosowanym formatem grafiki na stronach WWW.</span>
+                    <img src="https://i.redd.it/1kt7mnaytiv81.jpg" loading="lazy" alt="Trinapka" width="558px" height="500px" title="Bon appetit">
+                    <button type="button" class="code">Pokaż kod</button>
+                    <div class="code">
+                        <span></span>
+                        <button type="button">Skopiuj kod</button>
+                    </div>
+                </div>
+                <div>
+                    <hr>
+                    <h2>Plik graficzny w formacie *.png z dysku</h2>
+                    <span><b>PNG</b> to rastrowy format plików graficznych oraz system bezstratnej kompresji danych graficznych. W odróżnieniu od poprzedniego formatu, png obsługuje kanał alfa dający transparentność (przezroczystość). Został opracowany jako następca GIF w 1995 roku i jest jednym z najczęściej używanych formatów grafiki.</span>
+                    <img src="multimedia/png.png" loading="lazy" alt="Obrazek jpg" width="400px" height="400px" title="Grafika abstrakcyjna z zastosowaną przezroczystością.">
+                    <button type="button" class="code">Pokaż kod</button>
+                    <div class="code">
+                        <span></span>
+                        <button type="button">Skopiuj kod</button>
+                    </div>
+                </div>
+                <div>
+                    <hr>
+                    <h2>Plik graficzny w formacie *.gif z dysku</h2>
+                    <span><b>GIF</b> to format pliku graficznego z kompresją bezstratną, stworzony w 1987 roku przez firmę CompuServe. Pliki tego typu są powszechnie używane na stronach WWW, gdyż pozwalają na tworzenie prostych animacji ze zdefiniowanym kolorem tła jako przezroczystym i określonym opóźnieniem przy odtwarzaniu poszczególnych klatek animacji.</span>
+                    <img src="multimedia/gif.gif" width="600px" height="339px" loading="lazy" alt="Killer Bean GIF" title="Taniec z początku filmu Killer Bean Forever.">
+                    <button type="button" class="code">Pokaż kod</button>
+                    <div class="code">
+                        <span></span>
+                        <button type="button">Skopiuj kod</button>
+                    </div>
+                </div>
+                <div>
+                    <hr>
+                    <h2>Plik graficzny w formacie *.gif z serwera</h2>
+                    <span><b>GIF</b> to format pliku graficznego z kompresją bezstratną, stworzony w 1987 roku przez firmę CompuServe. Pliki tego typu są powszechnie używane na stronach WWW, gdyż pozwalają na tworzenie prostych animacji ze zdefiniowanym kolorem tła jako przezroczystym i określonym opóźnieniem przy odtwarzaniu poszczególnych klatek animacji.</span>
+                    <img src="https://i.imgflip.com/52up6h.gif" width="600px" height="337px" loading="lazy" alt="Amogus GIF" title="&#128563; &#xd9e;">
+                    <button type="button" class="code">Pokaż kod</button>
+                    <div class="code">
+                        <span></span>
+                        <button type="button">Skopiuj kod</button>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        <section id="outVid" class="inactive">
+            <div class="scroll">
+                <div class="youtube">
+                    <img class="youtube" src="img/youtube.svg" loading="lazy" alt="Logo YouTube">
+                    <span><b>YouTube</b> to serwis internetowy umożliwiający bezpłatne umieszczanie, nadawanie na żywo,
+                        ocenianie i komentowanie filmów. Został założony w 2005 r.</span>
+                </div>
+                <div>
+                    <hr>
+                    <h2>Krótka animacja</h2>
+                    <iframe width="800" height="450" src="https://www.youtube-nocookie.com/embed/c9DrryMw248" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+                    <button type="button" class="code">Pokaż kod</button>
+                    <div class="code">
+                        <span></span>
+                        <button type="button">Skopiuj kod</button>
+                    </div>
+                </div>
+                <div>
+                    <hr>
+                    <h2>Film pełnometrażowy</h2>
+                    <iframe width="800" height="450" src="https://www.youtube-nocookie.com/embed/qyYHWkVWQ4o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+                    <button type="button" class="code">Pokaż kod</button>
+                    <div class="code">
+                        <span></span>
+                        <button type="button">Skopiuj kod</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="outAud" class="inactive">
+            <div class="scroll">
+                <div class="extAudio">
+                    <h2>Muzyka z serwera</h2>
+                    <div><audio src="http://wosp.msw-pttk.org.pl/download/wyluzuj_czapke.mp3" style="width: 500px" controls loading="lazy"></audio></div><br>
+                    <br>
+                    <span>Jeżeli nie możesz odtworzyć pliku audio, kliknij na niego prawym przyciskiem myszy i zaznacz opcję "Pokaż elementy sterujące" lub "Pokaż wszystkie kontrolki".</span>
+                    <br><br>
+                    <button type="button" class="code">Pokaż kod</button>
+                    <div class="code">
+                        <span></span>
+                        <button type="button">Skopiuj kod</button>
+                    </div>
+                    <hr>
+                </div>
+
+                <div class="spotify">
+                    <img class="spotify" src="img/spotify.svg" alt="Logo Spotify">
+                    <span><b>Spotify</b> to szwedzki serwis strumieniowy oferujący dostęp do muzyki oraz podcastów na
+                        licencji freemium. Oznacza to, że dostęp do materiałów jest darmowy, lecz wiąże się z
+                        ograniczeniami (reklamami). Został założony w 2006 r.</span>
+                </div>
+                <div>
+                    <hr>
+                    <h2>Muzyka z serwisu Spotify</h2>
+                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/0dorKIz071s55Jy0zxb4aW?utm_source=generator" width="800" height="507" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                    <button type="button" class="code">Pokaż kod</button>
+                    <div class="code">
+                        <span></span>
+                        <button type="button">Skopiuj kod</button>
+                    </div>
+                    <hr>
+                </div>
+
+                <div class="soundcloud">
+                    <img src="img/soundcloud.svg" alt="Logo SoundCloud" class="soundcloud">
+                    <span><b>SoundCloud</b> to szwedzki, darmowy serwis strumieniowy oferujący darmowy dostęp do muzyki.
+                        Portal ma na celu możliwość prezentacji własnych utworów przez artystów oraz umożliwia dyskusję
+                        na ich temat. Powstał w 2007 r.</span>
+                </div>
+
+                <div>
+                    <hr>
+                    <h2>Muzyka z serwisu SoundCloud</h2>
+                    <iframe width="800" height="166" style="margin-bottom: 0;" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1129754590&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true" loading="lazy"></iframe>
+                    <div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
+                        <a href="https://soundcloud.com/user-648284738" title="IKSZ" target="_blank" style="color: #cccccc; text-decoration: none;">IKSZ</a> · <a href="https://soundcloud.com/user-648284738/mgng-belweder-omamale" title="MGNG - BELWEDER (omamale)" target="_blank" style="color: #cccccc; text-decoration: none;">MGNG - BELWEDER (omamale)</a>
+                    </div>
+                    <button type="button" class="code">Pokaż kod</button>
+                    <div class="code scroll-code">
+                        <span>&lt;div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"&gt;&lt;a href="https://soundcloud.com/user-648284738" title="IKSZ" target="_blank" style="color: #cccccc; text-decoration: none;"&gt;IKSZ&lt;/a&gt; · &lt;a href="https://soundcloud.com/user-648284738/mgng-belweder-omamale" title="MGNG - BELWEDER (omamale)" target="_blank" style="color: #cccccc; text-decoration: none;"&gt;MGNG - BELWEDER (omamale)&lt;/a&gt;&lt;/div&gt;</span>
+                        <button type="button">Skopiuj kod</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="maps" class="inactive">
+            <div class="scroll">
+
+                <div class="maps">
+                    <img src="img/google-maps.svg" alt="Logo Google Maps" class="maps">
+                    <span><b>Mapy Google</b> to serwis internetowy umożliwiający m.in.: wyszukiwanie obiektów, oglądanie map, wyznaczania trasy do miejsc oraz przeglądania wizytówek firm, atrakcji i miejsc, które zostały dodane przez użytkowników. Został stworzony w 2005 r.</span>
+                </div>
+
+                <div>
+                    <hr>
+                    <h2>Parafie rzymskokatolickie w Polsce</h2>
+                    <h3>Autor: Małgorzata Lissowska</h3>
+                    <iframe src="https://www.google.com/maps/d/embed?mid=1zwYwcXHsVgUW5cDUiPBnALYGkvE&ehbc=2E312F" width="800" height="600" loading="lazy"></iframe>
+                    <button type="button" class="code">Pokaż kod</button>
+                    <div class="code">
+                        <span></span>
+                        <button type="button">Skopiuj kod</button>
+                    </div>
+                </div>
+
+                <div>
+                    <hr>
+                    <h2>Trasa piesza z Pałacu Kultury i Nauki do Pałacu Prezydenckiego w Warszawie</h2>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m27!1m12!1m3!1d9773.251967987746!2d21.000344691594318!3d52.23769836662845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m12!3e2!4m4!1s0x0%3A0xc2e97ae5311f2dc2!3m2!1d52.231837999999996!2d21.005995!4m5!1s0x471ecc6744146b3f%3A0x29d4dd8ead0dc6f6!2sPa%C5%82ac%20Prezydencki%2C%20Krakowskie%20Przedmie%C5%9Bcie%2048%2F50%2C%2000-071%20Warszawa!3m2!1d52.243168!2d21.0166125!5e0!3m2!1spl!2spl!4v1650612999811!5m2!1spl!2spl" width="800" height="600" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <button type="button" class="code">Pokaż kod</button>
+                    <div class="code">
+                        <span></span>
+                        <button type="button">Skopiuj kod</button>
+                    </div>
+                </div>
+
+                <div>
+                    <hr>
+                    <h2>Trasa rowerowa między moim miejscem zamieszkania a Kasprzakiem</h2>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m24!1m8!1m3!1d78187.60558839273!2d20.91008807754266!3d52.23679587531301!3m2!1i1024!2i768!4f13.1!4m13!3e1!4m5!1s0x471eca9e1adcf261%3A0x6255169bde0611a3!2sBabice%2C%2005-082!3m2!1d52.25!2d20.849999999999998!4m5!1s0x471ecb61f83e4b81%3A0x326f47958eb8ca46!2sTechnikum%20Elektroniczne%20nr%201%2C%20Marcina%20Kasprzaka%2019%2F21%2C%2001-211%20Warszawa!3m2!1d52.2284753!2d20.9706396!5e0!3m2!1spl!2spl!4v1650615213947!5m2!1spl!2spl" width="800" height="600" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <button type="button" class="code" b>Pokaż kod</button>
+                    <div class="code">
+                        <span class="map">Aby uzyskać identyczny efekt należy utworzyć trasę zgodnie ze wskazówkami na stronie <a href="https://google.com/maps/" target="_blank">https://www.google.com/maps/</a>, po  czym w lewym górnym rogu w menu (ikonka &#9776;) wybrać <i>Udostępnij lub umieść mapę</i>, później <i>Umieszczanie mapy</i> i na koniec <i>KOPIUJ HTML</i>. Możemy zmienić rozmiar mapy, aby dopasować ją do reszty strony. W tym celu zmieniamy wartości: width="rozmiar w px" oraz height="rozmiar w px", które oznaczają odpowiednio szerokość i wysokość.</span>
+                        <button type="button">Skopiuj kod</button>
+                    </div>
+                </div>
+
+                <div>
+                    <hr>
+                    <h2>Lokalizacja London Eye</h2>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4967.040991466516!2d-0.12263556015078401!3d51.503666258322454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604b900d26973%3A0x4291f3172409ea92!2sOko%20Londynu!5e0!3m2!1spl!2spl!4v1652537990748!5m2!1spl!2spl" width="800" height="600" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <button type="button" class="code" b>Pokaż kod</button>
+                    <div class="code">
+                        <span class="map">Aby uzyskać identyczny efekt należy utworzyć trasę zgodnie ze wskazówkami na stronie <a href="https://google.com/maps/" target="_blank">https://www.google.com/maps/</a>, po  czym w lewym górnym rogu w menu (ikonka &#9776;) wybrać <i>Udostępnij lub umieść mapę</i>, później <i>Umieszczanie mapy</i> i na koniec <i>KOPIUJ HTML</i>. Możemy zmienić rozmiar mapy, aby dopasować ją do reszty strony. W tym celu zmieniamy wartości: width="rozmiar w px" oraz height="rozmiar w px", które oznaczają odpowiednio szerokość i wysokość.</span>
+                        <button type="button">Skopiuj kod</button>
+                    </div>
+                </div>
+
+                <div>
+                    <hr>
+                    <h2>Lokalizacja krzywego boiska w Starym Wołowie</h2>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d810.6417098679186!2d16.629813954224858!3d51.36149391220711!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xaccd4aa932c57a71!2sKrzywe%20boisko%20do%20pi%C5%82ki%20no%C5%BCnej!5e1!3m2!1spl!2spl!4v1651611883063!5m2!1spl!2spl" width="800" height="600" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <button type="button" class="code" b>Pokaż kod</button>
+                    <div class="code">
+                        <span class="map">Aby uzyskać identyczny efekt należy utworzyć trasę zgodnie ze wskazówkami na stronie <a href="https://google.com/maps/" target="_blank">https://www.google.com/maps/</a>, po  czym w lewym górnym rogu w menu (ikonka &#9776;) wybrać <i>Udostępnij lub umieść mapę</i>, później <i>Umieszczanie mapy</i> i na koniec <i>KOPIUJ HTML</i>. Możemy zmienić rozmiar mapy, aby dopasować ją do reszty strony. W tym celu zmieniamy wartości: width="rozmiar w px" oraz height="rozmiar w px", które oznaczają odpowiednio szerokość i wysokość.</span>
+                        <button type="button">Skopiuj kod</button>
+                    </div>
+                </div>
+                
+                <div class="kasprzak">
+                    <hr>
+                    <h2>Lokalizacja szkoły</h2>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19550.75017555928!2d20.956471011501957!3d52.22805611341953!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ecb61f83e4b81%3A0x326f47958eb8ca46!2sTechnikum%20Elektroniczne%20nr%201!5e0!3m2!1spl!2spl!4v1650608632659!5m2!1spl!2spl" width="800" height="600" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <button type="button" class="code">Pokaż kod</button>
+                    <div class="code">
+                        <span class="map">Aby uzyskać identyczny efekt należy utworzyć trasę zgodnie ze wskazówkami na stronie <a href="https://google.com/maps/" target="_blank">https://www.google.com/maps/</a>, po  czym w lewym górnym rogu w menu (ikonka &#9776;) wybrać <i>Udostępnij lub umieść mapę</i>, później <i>Umieszczanie mapy</i> i na koniec <i>KOPIUJ HTML</i>. Możemy zmienić rozmiar mapy, aby dopasować ją do reszty strony. W tym celu zmieniamy wartości: width="rozmiar w px" oraz height="rozmiar w px", które oznaczają odpowiednio szerokość i wysokość.</span>
+                        <button type="button">Skopiuj kod</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

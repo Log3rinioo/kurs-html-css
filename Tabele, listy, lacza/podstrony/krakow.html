@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kraków - Piotr Winiarczyk 3K</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" type="image/x-icon" href="../Foto/favicon.jpg">
+    <script src="../script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="parallax">
+        <h1>Kraków</h1>
+    </div>
+    
+    <main>
+        <h2 style="font-weight: normal;"><b>Kraków</b> — miasto na prawach powiatu położone w południowej Polsce nad Wisłą, do 1592 r. stolica Polski. Mimo że Kraków jest drugim największym miastem w Polsce, krajobraz dawnej stolicy jest zgoła odmienny od tego, jaki prezentuje nam Warszawa. Ze względu na zabytkową zabudowę, w centrum miasta nie uświadczymy wysokościowców. Wznoszenie wysokich obiektów podlega także ograniczeniom w innych dzielnicach. Tych, podobnie jak w Warszawie, w Krakowie jest 18. Najwyższy budynek w Krakowie to biurowiec K1, zwany popularnie Błękitkiem. Jego wysokość do dachu wynosi 88 m, jednak z iglicą mierzy 105&nbsp;m.</h2>
+
+        <table class="podstrony-tabela">
+            <tr>
+                <th colspan="2">Kraków</th>
+            </tr>
+            <tr>
+                <td>Województwo</td>
+                <td>małopolskie</td>
+            </tr>
+            <tr>
+                <td>Data założenia</td>
+                <td>przed 965 r.</td>
+            </tr>
+            <tr>
+                <td>Prawa miejsce</td>
+                <td>przed 1228 r.</td>
+            </tr>
+            <tr>
+                <td>Prezydent</td>
+                <td>Jacek Majchrowski</td>
+            </tr>
+            <tr>
+                <td>Liczba mieszkańców (01.01.2021 r.)</td>
+                <td>779.966</td>
+            </tr>
+            <tr>
+                <td>Gęstość zaludnienia</td>
+                <td>2386,3 os./km²</td>
+            </tr>
+            <tr>
+                <td>Powierzchnia</td>
+                <td>326,85 km²</td>
+            </tr>
+            <tr>
+                <td>Strefa numeracyjna</td>
+                <td>12</td>
+            </tr>
+        </table>
+
+        <div class="gallery">
+            <div class="gallery-one" style="background-image: url('../Foto/podstrony/krakow.jpg')"><div class="overlay"><span>Stare Miasto z lotu ptaka</span></div></div>
+            <div class="gallery-two" style="background-image: url('../Foto/miasta/krakow.jpg');"><div class="overlay"><span>Bazylika Wniebowzięcia Najświętszej Marii Panny</span></div></div>
+            <div class="gallery-three"style="background-image: url('../Foto/podstrony/krakow2.jpg');"><div class="overlay"><span>Zamek Królewski na Wawelu</span></div></div>
+        </div>
+        
+        <div class="sources">
+            <hr><h3>Źródła</h3>
+            <ul>
+                <li><a href="https://pl.wikipedia.org/wiki/Krak%C3%B3w" target="_blank">Wikipedia</a></li>
+                <li><a href="https://inzynieria.com/budownictwo/rankingi/57433,najwieksze-miasta-w-polsce-ranking" target="_blank">Inżynieria.com</a></li>
+                <li><a href="https://www.national-geographic.pl/artykul/najwieksze-miasta-w-polsce-gdzie-mieszka-najwiecej-ludzi" target="_blank">National Geographic</a></li>
+            </ul>
+        </div>
+    </main>
+
+    <footer>
+        <span style="text-align: left;">&copy; 2021 Piotr Winiarczyk 3K</span>
+    </footer>
+
+    <button onclick="topFunction()" id="top">^</button>
+
+    <div class="loader-wrapper center">
+        <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+    
+    <script>
+        history.scrollRestoration = "manual";
+    
+        $(window).on('beforeunload', function(){
+            $(window).scrollTop(0);
+        });
+    
+        $(window).on("load",function(){
+            $(".loader-wrapper").fadeOut("slow");
+        });
+    
+    
+    //Skrypt pochodzi ze strony https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
+    //Get the button:
+    mybutton = document.getElementById("top");
+    
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+        if (document.body.scrollTop > 250 || document.documentElement.scrollTop > 250) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+    }
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: 'smooth'
+        });
+    }
+    </script>
+</body>
+</html>

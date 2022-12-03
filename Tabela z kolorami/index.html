@@ -1,0 +1,146 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+	<meta charset="utf-8">
+	<title>Tabela z kolorami Piotr Winiarczyk 3K</title>
+</head>
+<body>
+	<div align="center">
+	<h1 style="display: inline;">Tabela z </h1><h1 class="rainbow" style="display: inline;">kolorami</h1>
+	<table cellspacing="1" cellpadding="1" style="margin-top: 20px;">
+		<tr>
+			<td width="120" height="120" rowspan="3" colspan="2" style="background: red;" id="white"><span><a href="https://en.wikipedia.org/wiki/Red" target="_blank">Red</a><br><a href="https://pl.wikipedia.org/wiki/Barwa_czerwona" target="_blank">[czerwony]</a><br>#FF0000<br>RGB(255,0,0)</span></td>
+			<td width="120" height="120" style="background:yellow;"><span><a href="https://en.wikipedia.org/wiki/Yellow" target="_blank" >Yellow</a><br><a href="https://pl.wikipedia.org/wiki/Barwa_%C5%BC%C3%B3%C5%82ta" target="_blank">[żółty]</a><br>#FFFF00<br>RGB(255,255,0)</span></td>
+			<td width="120" height="120" style="background:blue;" id="white"><span><a href="https://en.wikipedia.org/wiki/Blue" target="_blank">Blue</a><br><a href="https://pl.wikipedia.org/wiki/Barwa_niebieska" target="_blank">[niebieski]</a><br>#0000FF<br>RGB(0,0,255)</span></td>
+			<td width="120" height="120" style="background:green;" id="white"><span><a href="https://en.wikipedia.org/wiki/Green" target="_blank">Green</a><br><a href="https://pl.wikipedia.org/wiki/Barwa_zielona" target="_blank">[zielony]</a><br>#008000<br>RGB(0,128,0)</span></td>
+			<td width="120" height="120" rowspan="2" style="background:gold;"><span><a href="https://en.wikipedia.org/wiki/Gold_(color)" target="_blank">Gold</a><br><a href="https://pl.wikipedia.org/wiki/Barwa_z%C5%82ota" target="_blank">[złoty]</a><br>#FFD700<br>RGB(255,215,0)</span></td>
+		</tr>
+
+		<tr>
+			<td width="120" height="120" colspan="2" style="background:silver;"><span><a href="https://en.wikipedia.org/wiki/Silver_(color)" target="_blank">Silver</a><br><a href="https://pl.wikipedia.org/wiki/Barwa_srebrna" target="_blank">[srebrny]</a><br>#C0C0C0<br>RGB(192,192,192)</span></td>
+			<td width="120" height="120" style="background:grey;" id="white"><span><a href="https://en.wikipedia.org/wiki/Grey">Grey</a><br><a href="https://pl.wikipedia.org/wiki/Barwa_szara" target="_blank">[szary]</a><br>#808080<br>RGB(128,128,128)</span></td>
+		</tr>
+
+		<tr>
+			<td width="120" height="120" style="background: maroon;" id="white"><span><a href="https://en.wikipedia.org/wiki/Maroon" target="_blank">Maroon</a><br><a href="https://pl.wikipedia.org/wiki/Barwa_kasztanowa" target="_blank">[kasztanowy]</a><br>#800000<br>RGB(128,0,0)</span></td>
+			<td width="120" height="120" colspan="3" rowspan="2" style="background:#7F00FF;" id="white"><span><a href="https://en.wikipedia.org/wiki/Violet_(color)">Violet</a><br><a href="https://pl.wikipedia.org/wiki/Barwa_fioletowa" target="_blank">[fioletowy]</a><br>#7F00FF<br>RGB(127, 0, 255)</span></td>
+		</tr>
+
+		<tr>
+			<td width="120" height="120" style="background:fuchsia;" id="white"><span><a href="https://en.wikipedia.org/wiki/Fuchsia_(color)" target="_blank">Fuchsia</a><br><a href="https://pl.wikipedia.org/wiki/Fuksja_(kolor)" target="_blank">[fuksjowy]</a><br>#FF00FF<br>RGB(255,0,255)</span></td>
+			<td width="120" height="120" style="background:lime;"><span><a href="https://en.wikipedia.org/wiki/Lime_(color)">Lime</a><br><a href="https://pl.wikipedia.org/wiki/Barwa_limonkowa" target="_blank">[limonkowy]</a><br>#00FF00<br>RGB(0,255,0)</span></td>
+			<td width="120" height="120" style="background:cyan;"><span><a href="https://en.wikipedia.org/wiki/Cyan">Cyan</a><br><a href="https://pl.wikipedia.org/wiki/Cyjan_(kolor)" target="_blank">[cyjanowy]</a><br>#00FFFF<br>RGB(0,255,255)</span></td>
+		</tr>
+
+		<tr>
+			<td width="120" height="120" colspan="6" style="background:teal;" id="white"><span><a href="https://en.wikipedia.org/wiki/Teal">Teal</a><br><a href="https://pl.wikipedia.org/wiki/Barwa_morska" target="_blank">[morski]</a><br>#008080<br>RGB(0,128,128)</span></td>
+		</tr>
+	</table>
+	<a href="https://pl.wikipedia.org/wiki/Lista_kolor%C3%B3w#Lista_kolor.C3.B3w_alfabetycznie" target="_blank"><h1>Źródło</h1></span></a>
+	<h2>Autor: &copy; Piotr Winiarczyk 3K</h2>
+	</div>
+	
+	<style>
+		* {
+			font-family: Arial, Helvetica, sans-serif;
+		}
+		
+		table a, span{
+			text-decoration: none;
+			color: black;
+			font-size: 17px;
+			font-weight: bold;
+		}
+
+		td:hover span, td:hover a {
+			line-height: 23px;
+		}
+
+		#white span, #white a {
+			color: white;
+		}
+
+		td {
+			text-align: center
+		}
+
+		table, td, tr {
+			border: 4px solid black;
+			border-collapse: collapse;
+		}
+
+		.tytul {
+			margin: 21px 0 21px 0;
+		}
+
+		.tytul span {
+			font-size: 2em;
+			font-weight: bold;
+		}
+
+		.rainbow {
+			animation: rainbow 15s linear;
+			animation-iteration-count: infinite;
+		}
+
+		body {
+			height: 100vh;
+			overflow: hidden auto;
+			background: linear-gradient(100deg, #2ddfff, #0c6dff, #ef44ff);
+			background-size: 180% 180%;
+			animation: background-movement 10s ease infinite;
+		}
+
+		@keyframes background-movement {
+			0% {
+    			background-position: 0% 50%;
+  			}
+  			50% {
+    			background-position: 100% 50%;
+  			}
+  			100% {
+    			background-position: 0% 50%;
+  			}
+		}
+
+		@keyframes rainbow {
+			100%, 0% {
+				color: rgb(255,0,0);
+			}
+			8% {
+				color: rgb(255,127,0);
+			}
+			16% {
+				color: rgb(255,255,0);
+			}
+			25% {
+				color: rgb(127,255,0);
+			}
+			33% {
+				color: rgb(0,255,0);
+			}
+			41% {
+				color: rgb(0,255,127);
+			}
+			50%	{
+				color: rgb(0,255,255);
+			}
+			58%	{
+				color: rgb(0,127,255);
+			}
+			66%	{
+				color: rgb(0,0,255);
+			}
+			75%	{
+				color: rgb(127,0,255);
+			}
+			83%	{
+				color: rgb(255,0,255);
+			}
+			91%	{
+				color: rgb(255,0,127);
+			}
+		}
+	</style>
+</body>
+</html>

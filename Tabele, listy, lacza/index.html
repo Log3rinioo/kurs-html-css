@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabele, listy, łącza - Piotr Winiarczyk 3K</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+<div class="parallax">
+    <h1>Największe miasta w Polsce</h1>
+</div>
+
+<main>
+    <h2>Każdy w pewnym momencie zastanawia się, które z polskich miast jest największe pod względem liczby ludności czy też powierzchni. Największe miasta w Polsce nie imponują tak bardzo, jak metropolie amerykańskie, azjatyckie czy zachodnioeuropejskie. W naszych granicach jest tylko jedno miasto, którego liczba mieszkańców przekracza milion. Raczej wszyscy wiedzą, że mowa tu o Warszawie. Tylko cztery miasta przekraczają 500 tysięcy mieszkańców, a sześć przekracza 250 tysięcy. Przedstawiam listę 32 największych miast na podstawie danych z <a href="https://en.wikipedia.org/wiki/List_of_cities_and_towns_in_Poland" target="_blank">Wikipedii</a> oraz <a href="https://stat.gov.pl/obszary-tematyczne/ludnosc/ludnosc/powierzchnia-i-ludnosc-w-przekroju-terytorialnym-w-2021-roku,7,18.html" target="_blank">Głównego Urzędu Statystycznego</a>.</h2>
+
+    <hr style="margin-top: 75px; margin-bottom: 25px;">
+    <!-- Pierwsza tabela ze zdjęciami -->
+    <table class="first">
+        <tr>
+            <th onclick="window.open('podstrony/warszawa.html')" style="background-image: url(Foto/miasta/warszawa.jpg);"></th>
+            <th onclick="window.open('podstrony/krakow.html')" style="background-image: url(Foto/miasta/krakow.jpg);"></th>
+            <th onclick="window.open('podstrony/lodz.html')" style="background-image: url(Foto/miasta/lodz.jpg);"></th>
+            <th onclick="window.open('podstrony/wroclaw.html')" style="background-image: url(Foto/miasta/wroclaw.jpg);"></th>
+        </tr>
+        <tr>
+            <td onclick="window.open('podstrony/warszawa.html')">Warszawa</td>
+            <td onclick="window.open('podstrony/krakow.html')">Kraków</td>
+            <td onclick="window.open('podstrony/lodz.html')"class="test">Łódź</td>
+            <td onclick="window.open('podstrony/wroclaw.html')">Wrocław</td>
+        </tr>
+        <tr>
+            <th onclick="window.open('podstrony/poznan.html')" style="background-image: url(Foto/miasta/poznan.jpg);"></th>
+            <th onclick="window.open('podstrony/gdansk.html')" style="background-image: url(Foto/miasta/gdansk.jpg);"></th>
+            <th onclick="window.open('podstrony/szczecin.html')" style="background-image: url(Foto/miasta/szczecin.jpg);"></th>
+            <th onclick="window.open('podstrony/bydgoszcz.html')" style="background-image: url(Foto/miasta/bydgoszcz.jpg);"></th>
+        </tr>
+        <tr>
+            <td onclick="window.open('podstrony/poznan.html')">Poznań</td>
+            <td onclick="window.open('podstrony/gdansk.html')">Gdańsk</td>
+            <td onclick="window.open('podstrony/szczecin.html')">Szczecin</td>
+            <td onclick="window.open('podstrony/bydgoszcz.html')">Bydgoszcz</td>
+        </tr>
+        <tr>
+            <th onclick="window.open('https://pl.wikipedia.org/wiki/Lublin')" style="background-image: url(Foto/miasta/lublin.jpg);"></th>
+            <th onclick="window.open('https://pl.wikipedia.org/wiki/Bia%C5%82ystok')" style="background-image: url(Foto/miasta/bialystok.jpg);"></th>
+            <th onclick="window.open('https://pl.wikipedia.org/wiki/Katowice')" style="background-image: url(Foto/miasta/katowice.jpg);"></th>
+            <th onclick="window.open('https://pl.wikipedia.org/wiki/Gdynia')" style="background-image: url(Foto/miasta/gdynia.jpg);"></th>
+        </tr>
+        <tr>
+            <td onclick="window.open('https://pl.wikipedia.org/wiki/Lublin')">Lublin</td>
+            <td onclick="window.open('https://pl.wikipedia.org/wiki/Bia%C5%82ystok')">Białystok</td>
+            <td onclick="window.open('https://pl.wikipedia.org/wiki/Katowice')">Katowice</td>
+            <td onclick="window.open('https://pl.wikipedia.org/wiki/Gdynia')">Gdynia</td>
+        </tr>
+        <tr>
+            <th onclick="window.open('https://pl.wikipedia.org/wiki/Cz%C4%99stochowa')" style="background-image: url(Foto/miasta/czestochowa.jpg);"></th>
+            <th onclick="window.open('https://pl.wikipedia.org/wiki/Radom')" style="background-image: url(Foto/miasta/radom.jpg);"></th>
+            <th onclick="window.open('https://pl.wikipedia.org/wiki/Toru%C5%84')" style="background-image: url(Foto/miasta/torun.jpg);"></th>
+            <th onclick="window.open('https://pl.wikipedia.org/wiki/Rzesz%C3%B3w')" style="background-image: url(Foto/miasta/rzeszow.jpg);"></th>
+        </tr>
+        <tr>
+            <td onclick="window.open('https://pl.wikipedia.org/wiki/Cz%C4%99stochowa')">Częstochowa</td>
+            <td onclick="window.open('https://pl.wikipedia.org/wiki/Radom')">Radom</td>
+            <td onclick="window.open('https://pl.wikipedia.org/wiki/Toru%C5%84')">Toruń</td>
+            <td onclick="window.open('https://pl.wikipedia.org/wiki/Rzesz%C3%B3w')">Rzeszów</td>
+        </tr>
+        <tr>
+            <th onclick="window.open('https://pl.wikipedia.org/wiki/Sosnowiec')" style="background-image: url(Foto/miasta/sosnowiec.jpg);"></th>
+            <th onclick="window.open('https://pl.wikipedia.org/wiki/Kielce')" style="background-image: url(Foto/miasta/kielce.jpg);"></th>
+            <th onclick="window.open('https://pl.wikipedia.org/wiki/Gliwice')" style="background-image: url(Foto/miasta/gliwice.jpg);"></th>
+            <th onclick="window.open('https://pl.wikipedia.org/wiki/Olsztyn')" style="background-image: url(Foto/miasta/olsztyn.jpg);"></th>
+        </tr>
+        <tr>
+            <td onclick="window.open('https://pl.wikipedia.org/wiki/Sosnowiec')">Sosnowiec</td>
+            <td onclick="window.open('https://pl.wikipedia.org/wiki/Kielce')">Kielce</td>
+            <td onclick="window.open('https://pl.wikipedia.org/wiki/Gliwice')">Gliwice</td>
+            <td onclick="window.open('https://pl.wikipedia.org/wiki/Olsztyn')">Olsztyn</td>
+        </tr>
+        <tr>
+            <th onclick="window.open('https://pl.wikipedia.org/wiki/Zabrze')" style="background-image: url(Foto/miasta/zabrze.jpg);"></th>
+            <th onclick="window.open('https://pl.wikipedia.org/wiki/Bielsko-Bia%C5%82a')" style="background-image: url(Foto/miasta/bielsko-biala.jpg);"></th>
+            <th onclick="window.open('https://pl.wikipedia.org/wiki/Bytom')" style="background-image: url(Foto/miasta/bytom.jpg);"></th>
+            <th onclick="window.open('https://pl.wikipedia.org/wiki/Zielona_G%C3%B3ra')" style="background-image: url(Foto/miasta/zielona-gora.jpg);"></th>
+        </tr>
+        <tr>
+            <td onclick="window.open('https://pl.wikipedia.org/wiki/Zabrze')">Zabrze</td>
+            <td onclick="window.open('https://pl.wikipedia.org/wiki/Bielsko-Bia%C5%82a')">Bielsko-Biała</td>
+            <td onclick="window.open('https://pl.wikipedia.org/wiki/Bytom')">Bytom</td>
+            <td onclick="window.open('https://pl.wikipedia.org/wiki/Zielona_G%C3%B3ra')">Zielona Góra</td>
+        </tr>
+        <tr>
+            <th onclick="window.open('https://pl.wikipedia.org/wiki/Rybnik')" style="background-image: url(Foto/miasta/rybnik.jpg);"></th>
+            <th onclick="window.open('https://pl.wikipedia.org/wiki/Ruda_%C5%9Al%C4%85ska')" style="background-image: url(Foto/miasta/ruda-slaska.jpg);"></th>
+            <th onclick="window.open('https://pl.wikipedia.org/wiki/Opole')" style="background-image: url(Foto/miasta/opole.jpg);"></th>
+            <th onclick="window.open('https://pl.wikipedia.org/wiki/Tychy')" style="background-image: url(Foto/miasta/tychy.jpg);"></th>
+        </tr>
+        <tr>
+            <td onclick="window.open('https://pl.wikipedia.org/wiki/Rybnik')">Rybnik</td>
+            <td onclick="window.open('https://pl.wikipedia.org/wiki/Ruda_%C5%9Al%C4%85ska')">Ruda Śląska</td>
+            <td onclick="window.open('https://pl.wikipedia.org/wiki/Opole')">Opole</td>
+            <td onclick="window.open('https://pl.wikipedia.org/wiki/Tychy')">Tychy</td>
+        </tr>
+        <tr>
+            <th onclick="window.open('https://pl.wikipedia.org/wiki/Gorz%C3%B3w_Wielkopolski')" style="background-image: url(Foto/miasta/gorzow-wielkopolski.jpg);"></th>
+            <th onclick="window.open('https://pl.wikipedia.org/wiki/Elbl%C4%85g')" style="background-image: url(Foto/miasta/elblag.jpg);"></th>
+            <th onclick="window.open('https://pl.wikipedia.org/wiki/D%C4%85browa_G%C3%B3rnicza')" style="background-image: url(Foto/miasta/dabrowa-gornicza.jpg);"></th>
+            <th onclick="window.open('https://pl.wikipedia.org/wiki/P%C5%82ock')" style="background-image: url(Foto/miasta/plock.jpg);"></th>
+        </tr>
+        <tr>
+            <td onclick="window.open('https://pl.wikipedia.org/wiki/Gorz%C3%B3w_Wielkopolski')">Gorzów Wielkopolski</td>
+            <td onclick="window.open('https://pl.wikipedia.org/wiki/Elbl%C4%85g')">Elbląg</td>
+            <td onclick="window.open('https://pl.wikipedia.org/wiki/D%C4%85browa_G%C3%B3rnicza')">Dąbrowa Górnicza</td>
+            <td onclick="window.open('https://pl.wikipedia.org/wiki/P%C5%82ock')">Płock</td>
+        </tr>
+    </table>
+
+
+    <!-- Lista z guziczkiem -->
+    <section class="selectable-list">
+    <select name="rozwijana" id="select-id2" title="Wybierz miasto">
+        <option value="" disabled selected>Wybierz miasto</option>
+        <optgroup label="dolnośląskie">
+            <option value="podstrony/wroclaw.html">Wrocław</option>
+        </optgroup>
+        <optgroup label="kujawsko-pomorskie">
+            <option value="https://pl.wikipedia.org/wiki/Bydgoszcz">Bydgoszcz</option>
+            <option value="https://pl.wikipedia.org/wiki/Toru%C5%84">Toruń</option>
+        </optgroup>
+        <optgroup label="lubelskie">
+            <option value="https://pl.wikipedia.org/wiki/Lublin">Lublin</option>
+        </optgroup>
+        <optgroup label="lubuskie">
+            <option value="https://pl.wikipedia.org/wiki/Gorz%C3%B3w_Wielkopolski">Gorzów Wielkopolski</option>
+            <option value="https://pl.wikipedia.org/wiki/Zielona_G%C3%B3ra">Zielona Góra</option>
+        </optgroup>
+        <optgroup label="łódzkie">
+            <option value="podstrony/lodz.html">Łódź</option>
+        </optgroup>
+        <optgroup label="małopolskie">
+            <option value="podstrony/krakow.html">Kraków</option>
+        </optgroup>
+        <optgroup label="mazowieckie">
+            <option value="https://pl.wikipedia.org/wiki/P%C5%82ock">Płock</option>
+            <option value="https://pl.wikipedia.org/wiki/Radom">Radom</option>
+            <option value="podstrony/warszawa.html">Warszawa</option>
+        </optgroup>
+        <optgroup label="opolskie">
+            <option value="https://pl.wikipedia.org/wiki/Opole">Opole</option>
+        </optgroup>
+        <optgroup label="podkarpackie">
+            <option value="https://pl.wikipedia.org/wiki/Rzesz%C3%B3w">Rzeszów</option>
+        </optgroup>
+        <optgroup label="podlaskie">
+            <option value="https://pl.wikipedia.org/wiki/Bia%C5%82ystok">Białystok</option>
+        </optgroup>
+        <optgroup label="pomorskie">
+            <option value="podstrony/gdansk.html">Gdańsk</option>
+            <option value="https://pl.wikipedia.org/wiki/Gdynia">Gdynia</option>
+        </optgroup>
+        <optgroup label="śląskie">
+            <option value="https://pl.wikipedia.org/wiki/Bielsko-Bia%C5%82a">Bielsko-Biała</option>
+            <option value="https://pl.wikipedia.org/wiki/Bytom">Bytom</option>
+            <option value="https://pl.wikipedia.org/wiki/Cz%C4%99stochowa">Częstochowa</option>
+            <option value="https://pl.wikipedia.org/wiki/D%C4%85browa_G%C3%B3rnicza">Dąbrowa Górnicza</option>
+            <option value="https://pl.wikipedia.org/wiki/Gliwice">Gliwice</option>
+            <option value="https://pl.wikipedia.org/wiki/Katowice">Katowice</option>
+            <option value="https://pl.wikipedia.org/wiki/Ruda_%C5%9Al%C4%85ska">Ruda Śląska</option>
+            <option value="https://pl.wikipedia.org/wiki/Rybnik">Rybnik</option>
+            <option value="https://pl.wikipedia.org/wiki/Sosnowiec">Sosnowiec</option>
+            <option value="https://pl.wikipedia.org/wiki/Tychy">Tychy</option>
+            <option value="https://pl.wikipedia.org/wiki/Zabrze">Zabrze</option>
+        </optgroup>
+        <optgroup label="świętokrzyskie">
+            <option value="https://pl.wikipedia.org/wiki/Kielce">Kielce</option>
+        </optgroup>
+        <optgroup label="warmińsko-mazurskie">
+            <option value="https://pl.wikipedia.org/wiki/Elbl%C4%85g">Elbląg</option>
+            <option value="https://pl.wikipedia.org/wiki/Olsztyn">Olsztyn</option>
+        </optgroup>
+        <optgroup label="wielkopolskie">
+            <option value="podstrony/poznan.html">Poznań</option>
+        </optgroup>
+        <optgroup label="zachodniopomorskie">
+            <option value="podstrony/szczecin.html">Szczecin</option>
+        </optgroup>
+    </select>
+    <button onclick="redirect()">Wybierz</button>
+    </section>
+
+    <hr>
+    <h3>Statystyki</h3>
+    <hr style="margin-bottom: 25px;">
+
+    <!-- Druga tabela -->
+    <table class="second-table">
+    <thead>
+        <tr> 
+            <th rowspan="2">Lp.</th>
+            <th colspan="3">Miasto</th>
+            <th rowspan="2">Województwo</th>
+            <th rowspan="2">Liczba mieszkańców</th>
+            <th colspan="2">Zmiana liczby ludności</th>
+            <th rowspan="2">Gęstość zaludnienia</th>
+            <th rowspan="2">Powierzchnia</th>
+        </tr>
+        <tr>
+            <th>Nazwa</th>
+            <th>Herb</th>
+            <th>Flaga</th>
+            <th>2007 r. – 2021 r.</th>
+            <th>1999 r. – 2007 r.</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1.</td>
+            <td class="link" onclick="window.open('podstrony/warszawa.html')">Warszawa</td>
+            <td class="herb link" onclick="window.open('https://pl.wikipedia.org/wiki/Warszawa')"><img src="Foto/herby/warszawa.jpg" alt="Herb Warszawy"></td>
+            <td class="flaga link" onclick="window.open('https://pl.wikipedia.org/wiki/Warszawa')"><img src="Foto/flagi/warszawa.jpg" alt="Flaga Warszawy"></td>
+            <td class="link" onclick="window.open('https://pl.wikipedia.org/wiki/Wojew%C3%B3dztwo_mazowieckie')">mazowieckie</td>
+            <td><ul><li>2021 r. – 1.794.166</li><li>2007 r. – 1.706.624</li><li>1999 r. – 1.618.468</li></ul></td>
+            <td class="przyrost">5,13%</td>
+            <td class="przyrost">5,45%</td>
+            <td>3469 os./km²</td>
+            <td>517,24 km²</td>
+        </tr>
+        <tr>
+            <td>2.</td>
+            <td class="link" onclick="window.open('podstrony/krakow.html')">Kraków</td>
+            <td class="herb link" onclick="window.open('https://pl.wikipedia.org/wiki/Krak%C3%B3w')"><img src="Foto/herby/krakow.png" alt="Herb Krakowa"></td>
+            <td class="flaga link" onclick="window.open('https://pl.wikipedia.org/wiki/Krak%C3%B3w')"><img src="Foto/flagi/krakow.jpg" alt="Flaga Krakowa"></td>
+            <td class="link" onclick="window.open('https://pl.wikipedia.org/wiki/Wojew%C3%B3dztwo_ma%C5%82opolskie')">małopolskie</td>
+            <td><ul><li> 2021 r. – 779.966</li><li>2007 r. – 766.583</li><li>1999 r. – 740.666</li></ul></td>
+            <td class="przyrost">1,75%</td>
+            <td class="przyrost">3,50%</td>
+            <td>2386,3 os./km²</td>
+            <td>326,85 km²</td>
+        </tr>
+        <tr>
+            <td>3.</td>
+            <td class="link" onclick="window.open('podstrony/lodz.html')">Łódź</td>
+            <td class="herb link" onclick="window.open('https://pl.wikipedia.org/wiki/%C5%81%C3%B3d%C5%BA')"><img src="Foto/herby/lodz.jpg" alt="Herb Łodzi"></td>
+            <td class="flaga link" onclick="window.open('https://pl.wikipedia.org/wiki/%C5%81%C3%B3d%C5%BA')"><img src="Foto/flagi/lodz.jpg" alt="Flaga Łodzi"></td>
+            <td class="link" onclick="window.open('https://pl.wikipedia.org/wiki/Wojew%C3%B3dztwo_%C5%82%C3%B3dzkie')">łódzkie</td>
+            <td><ul><li>2021 r. – 672.185</li><li>2007 r. – 753.192</li><li>1999 r. – 806.728</li></ul></td>
+            <td class="spadek">-10,76%</td>
+            <td class="spadek">-6,64%</td>
+            <td>2278 os./km²</td>
+            <td>293,25 km²</td>
+        </tr>
+        <tr>
+            <td>4.</td>
+            <td class="link" onclick="window.open('podstrony/wroclaw.html')">Wrocław</td>
+            <td class="herb link" onclick="window.open('https://pl.wikipedia.org/wiki/Wroc%C5%82aw')"><img src="Foto/herby/wroclaw.png" alt="Herb Wrocławia"></td>
+            <td class="flaga link" onclick="window.open('https://pl.wikipedia.org/wiki/Wroc%C5%82aw')"><img src="Foto/flagi/wroclaw.jpg" alt="Flaga Wrocławia"></td>
+            <td class="link" onclick="window.open('https://pl.wikipedia.org/wiki/Wojew%C3%B3dztwo_dolno%C5%9Bl%C4%85skie')">dolnośląskie</td>
+            <td><ul><li>2021 r. – 641.928</li><li>2007 r. – 632.930</li><li>1999 r. – 643.877</li></ul></td>
+            <td class="przyrost">1,42%</td>
+            <td class="spadek">-1,70%</td>
+            <td>2192,23 os./km²</td>
+            <td>292,82 km²</td>
+        </tr>
+        <tr>
+            <td>5.</td>
+            <td class="link" onclick="window.open('podstrony/poznan.html')">Poznań</td>
+            <td class="herb link" onclick="window.open('https://pl.wikipedia.org/wiki/Pozna%C5%84')"><img src="Foto/herby/poznan.jpg" alt="Herb Poznania"></td>
+            <td class="flaga link" onclick="window.open('https://pl.wikipedia.org/wiki/Pozna%C5%84')"><img src="Foto/flagi/poznan.jpg" alt="Flaga Poznania"></td>
+            <td class="link" onclick="window.open('https://pl.wikipedia.org/wiki/Wojew%C3%B3dztwo_wielkopolskie')">wielkopolskie</td>
+            <td><ul><li>2021 r. – 532.048</li><li>2007 r. – 567.932</li><li>1999 r. – 578.235</li></ul></td>
+            <td class="spadek">-6,32%</td>
+            <td class="spadek">-1,78%</td>
+            <td>2031,4 os./km²</td>
+            <td>261,91 km²</td>
+        </tr>
+        <tr>
+            <td>6.</td>
+            <td class="link" onclick="window.open('podstrony/gdansk.html')">Gdańsk</td>
+            <td class="herb link" onclick="window.open('https://pl.wikipedia.org/wiki/Gda%C5%84sk')"><img src="Foto/herby/gdansk.png" alt="Herb Gdańska"></td>
+            <td class="flaga link" onclick="window.open('https://pl.wikipedia.org/wiki/Gda%C5%84sk')"><img src="Foto/flagi/gdansk.jpg" alt="Flaga Gdańska"></td>
+            <td class="link" onclick="window.open('https://pl.wikipedia.org/wiki/Wojew%C3%B3dztwo_pomorskie')">pomorskie</td>
+            <td><ul><li>2021 r. – 470.805</li><li>2007 r. – 458.717</li><li>1999 r. – 458.988</li></ul></td>
+            <td class="przyrost">2,64%</td>
+            <td class="spadek">-0,01%</td>
+            <td>1787,1 os./km²</td>
+            <td>263,44 km²</td>
+        </tr>
+        <tr>
+            <td>7.</td>
+            <td class="link" onclick="window.open('podstrony/szczecin.html')">Szczecin</td>
+            <td class="herb link" onclick="window.open('https://pl.wikipedia.org/wiki/Szczecin')"><img src="Foto/herby/szczecin.jpg" alt="Herb Szczecina"></td>
+            <td class="flaga link" onclick="window.open('https://pl.wikipedia.org/wiki/Szczecin')"><img src="Foto/flagi/szczecin.jpg" alt="Flaga Szczecina"></td>
+            <td class="link" onclick="window.open('https://pl.wikipedia.org/wiki/Wojew%C3%B3dztwo_zachodniopomorskie')">zachodniopomorskie</td>
+            <td><ul><li>2021 r. – 398.255</li><li>2007 r. – 410.811</li><li>1999 r. – 416.988</li></ul></td>
+            <td class="spadek">-3,06%</td>
+            <td class="spadek">-1,48%</td>
+            <td>1319,2 ok./km²</td>
+            <td>300,55 km²</td>
+        </tr>
+        <tr>
+            <td>8.</td>
+            <td class="link" onclick="window.open('podstrony/bydgoszcz.html')">Bydgoszcz</td>
+            <td class="herb link" onclick="window.open('https://pl.wikipedia.org/wiki/Bydgoszcz')"><img src="Foto/herby/bydgoszcz.png" alt="Herb Bydgoszczy"></td>
+            <td class="flaga link" onclick="window.open('https://pl.wikipedia.org/wiki/Bydgoszcz')"><img src="Foto/flagi/bydgoszcz.jpg" alt="Flaga Bydgoszczy"></td>
+            <td class="link" onclick="window.open('https://pl.wikipedia.org/wiki/Kujawsko-pomorskie')">kujawsko-pomorskie</td>
+            <td><ul><li>2021 r. – 344.091</li><li>2007 r. – 361.222</li><li>1999 r. – 386.855</li></ul></td>
+            <td class="spadek">-4,74%</td>
+            <td class="spadek">-6,63%</td>
+            <td>1955,3 os./km²</td>
+            <td>175,98 km²</td>
+        </tr>
+        <tr>
+            <td>9.</td>
+            <td class="link" onclick="window.open('https://pl.wikipedia.org/wiki/Lublin')">Lublin</td>
+            <td class="herb link" onclick="window.open('https://pl.wikipedia.org/wiki/Lublin')"><img src="Foto/herby/lublin.jpg" alt="Herb Lublina"></td>
+            <td class="flaga link" onclick="window.open('https://pl.wikipedia.org/wiki/Lublin')"><img src="Foto/flagi/lublin.jpg" alt="Flaga Lublina"></td>
+            <td class="link" onclick="window.open('https://pl.wikipedia.org/wiki/Wojew%C3%B3dztwo_lubelskie')">lubelskie</td>
+            <td><ul><li>2021 r. – 338.586</li><li>2007 r. – 351.806</li><li>1999 r. – 356.251</li></ul></td>
+            <td class="spadek">-3,76%</td>
+            <td class="spadek">-1,24%</td>
+            <td>2296,3 os./km²</td>
+            <td>147,45 km²</td>
+        </tr>
+        <tr>
+            <td>10.</td>
+            <td class="link" onclick="window.open('https://pl.wikipedia.org/wiki/Bia%C5%82ystok')">Białystok</td>
+            <td class="herb link" onclick="window.open('https://pl.wikipedia.org/wiki/Bia%C5%82ystok')"><img src="Foto/herby/bialystok.png" alt="Herb Białegostoku">
+            </td>
+            <td class="flaga link" onclick="window.open('https://pl.wikipedia.org/wiki/Bia%C5%82ystok')"><img src="Foto/flagi/bialystok.jpg" alt="Flaga Białegostoku"></td>
+            <td class="link" onclick="window.open('https://pl.wikipedia.org/wiki/Wojew%C3%B3dztwo_podlaskie')">podlaskie</td>
+            <td><ul><li>2021 r. – 296.958</li><li>2007 r. – 294.143</li><li>1999 r. – 285.000</li></ul></td>
+            <td class="przyrost">0,96%</td>
+            <td class="przyrost">3,21%</td>
+            <td>2902,2 os./km²</td>
+            <td>102,13 km²</td>
+        </tr>
+        <tr>
+            <td>11.</td>
+            <td class="link" onclick="window.open('https://pl.wikipedia.org/wiki/Katowice')">Katowice</td>
+            <td class="herb link" onclick="window.open('https://pl.wikipedia.org/wiki/Katowice')"><img src="Foto/herby/katowice.jpg" alt="Herb Katowic"></td>
+            <td class="flaga link" onclick="window.open('https://pl.wikipedia.org/wiki/Katowice')"><img src="Foto/flagi/katowice.jpg" alt="Flaga Katowic"></td>
+            <td class="link" onclick="window.open('https://pl.wikipedia.org/wiki/Wojew%C3%B3dztwo_%C5%9Bl%C4%85skie')">śląskie</td>
+            <td><ul><li>2021 r. – 290.553</li><li>2007 r. – 317.220</li><li>1999 r. – 345.934</li></ul></td>
+            <td class="spadek">-8,41%</td>
+            <td class="spadek">-8,30%</td>
+            <td>1764,7 os./km²</td>
+            <td>164,64 km²</td>
+        </tr>
+        <tr>
+            <td>12.</td>
+            <td class="link" onclick="window.open('https://pl.wikipedia.org/wiki/Gdynia')">Gdynia</td>
+            <td class="herb link" onclick="window.open('https://pl.wikipedia.org/wiki/Gdynia')"><img src="Foto/herby/gdynia.png" alt="Herb Gdyni"></td>
+            <td class="flaga link" onclick="window.open('https://pl.wikipedia.org/wiki/Gdynia')"><img src="Foto/flagi/gdynia.jpg" alt="Flaga Gdyni"></td>
+            <td class="link" onclick="window.open('https://pl.wikipedia.org/wiki/Wojew%C3%B3dztwo_pomorskie')">pomorskie</td>
+            <td><ul><li>2021 r. – 244.969</li><li>2007 r. – 250.242</li><li>1999 r. – 253.521</li></ul></td>
+            <td class="spadek">-2,11%</td>
+            <td class="spadek">-1,29%</td>
+            <td>1806,3 os./km²</td>
+            <td>135,14 km²</td>
+        </tr>
+        <tr>
+            <td>13.</td>
+            <td class="link" onclick="window.open('https://pl.wikipedia.org/wiki/Cz%C4%99stochowa')">Częstochowa</td>
+            <td class="herb link" onclick="window.open('https://pl.wikipedia.org/wiki/Cz%C4%99stochowa')"><img src="Foto/herby/czestochowa.jpg" alt="Herb Częstochowy"></td>
+            <td class="flaga link" onclick="window.open('https://pl.wikipedia.org/wiki/Cz%C4%99stochowa')"><img src="Foto/flagi/czestochowa.jpg" alt="Flaga Częstochowy"></td>
+            <td class="link" onclick="window.open('https://pl.wikipedia.org/wiki/Wojew%C3%B3dztwo_%C5%9Bl%C4%85skie')">śląskie</td>
+            <td><ul><li>2021 r. – 217.530</li><li>2007 r. – 242.300</li><li>1999 r. – 257.812</li></ul></td>
+            <td class="spadek">-10,22%</td>
+            <td class="spadek">-6,02%</td>
+            <td>1362 os./km²</td>
+            <td>159,71 km²</td>
+        </tr>
+        <tr>
+            <td>14.</td>
+            <td class="link" onclick="window.open('https://pl.wikipedia.org/wiki/Radom')">Radom</td>
+            <td class="herb link" onclick="window.open('https://pl.wikipedia.org/wiki/Radom')"><img src="Foto/herby/radom.png" alt="Herb Radomia"></td>
+            <td class="flaga link" onclick="window.open('https://pl.wikipedia.org/wiki/Radom')"><img src="Foto/flagi/radom.jpg" alt="Flaga Radomia"></td>
+            <td class="link" onclick="window.open('https://pl.wikipedia.org/wiki/Wojew%C3%B3dztwo_mazowieckie')">mazowieckie</td>
+            <td><ul><li>2021 r. – 209.296</li><li>2007 r. – 224.857</li><li>1999 r. – 232.262</li></ul></td>
+            <td class="spadek">-6,92%</td>
+            <td class="spadek">-3,19%</td>
+            <td>1872,1 os./km²</td>
+            <td>111,8 km²</td>
+        </tr>
+        <tr>
+            <td>15.</td>
+            <td class="link" onclick="window.open('https://pl.wikipedia.org/wiki/Toru%C5%84')">Toruń</td>
+            <td class="herb link" onclick="window.open('https://pl.wikipedia.org/wiki/Toru%C5%84')"><img src="Foto/herby/torun.jpg" alt="Herb Torunia"></td>
+            <td class="flaga link" onclick="window.open('https://pl.wikipedia.org/wiki/Toru%C5%84')"><img src="Foto/flagi/torun.jpg" alt="Flaga Torunia"></td>
+            <td class="link" onclick="window.open('https://pl.wikipedia.org/wiki/Kujawsko-pomorskie')">kujawsko-pomorskie</td>
+            <td><ul><li>2021 r. – 198.613</li><li>2007 r. – 206.619</li><li>1999 r. – 211.955</li></ul></td>
+            <td class="spadek">-3,87%</td>
+            <td class="spadek">-2,52%</td>
+            <td>1709,4 os./km²</td>
+            <td>115,72 km²</td>
+        </tr>
+        <tr>
+            <td>16.</td>
+            <td class="link" onclick="window.open('https://pl.wikipedia.org/wiki/Rzesz%C3%B3w')">Rzeszów</td>
+            <td class="herb link" onclick="window.open('https://pl.wikipedia.org/wiki/Rzesz%C3%B3w')"><img src="Foto/herby/rzeszow.png" alt="Herb Rzeszowa"></td>
+            <td class="flaga link" onclick="window.open('https://pl.wikipedia.org/wiki/Rzesz%C3%B3w')"><img src="Foto/flagi/rzeszow.jpg" alt="Flaga Rzeszowa"></td>
+            <td class="link" onclick="window.open('https://pl.wikipedia.org/wiki/Wojew%C3%B3dztwo_podkarpackie')">podkarpackie</td>
+            <td><ul><li>2021 r. – 197.863</li><li>2007 r. – 166.454</li><li>1999 r. – 162.049</li></ul></td>
+            <td class="przyrost">18,87%</td>
+            <td class="przyrost">2,74%</td>
+            <td>1538 os./km²</td>
+            <td>129,01 km²</td>
+        </tr>
+        <tr>
+            <td>17.</td>
+            <td class="link" onclick="window.open('https://pl.wikipedia.org/wiki/Sosnowiec')">Sosnowiec</td>
+            <td class="herb link" onclick="window.open('https://pl.wikipedia.org/wiki/Sosnowiec')"><img src="Foto/herby/sosnowiec.jpg" alt="Herb Sosnowca"></td>
+            <td class="flaga link" onclick="window.open('https://pl.wikipedia.org/wiki/Sosnowiec')"><img src="Foto/flagi/sosnowiec.jpg" alt="Flaga Sosnowca"></td>
+            <td class="link" onclick="window.open('https://pl.wikipedia.org/wiki/Wojew%C3%B3dztwo_%C5%9Bl%C4%85skie')">śląskie</td>
+            <td><ul><li>2021 r. – 197.586</li><li>2007 r. – 222.586</li><li>1999 r. – 244.102</li></ul></td>
+            <td class="spadek">-11,23%</td>
+            <td class="spadek">-8,81%</td>
+            <td>2169,8 os./km²</td>
+            <td>91,06 km²</td>
+        </tr>
+        <tr>
+            <td>18.</td>
+            <td class="link" onclick="window.open('https://pl.wikipedia.org/wiki/Kielce')">Kielce</td>
+            <td class="herb link" onclick="window.open('https://pl.wikipedia.org/wiki/Kielce')"><img src="Foto/herby/kielce.png" alt="Herb Kielc"></td>
+            <td class="flaga link" onclick="window.open('https://pl.wikipedia.org/wiki/Kielce')"><img src="Foto/flagi/kielce.jpg" alt="Flaga Kielc"></td>
+            <td class="link" onclick="window.open('https://pl.wikipedia.org/wiki/Wojew%C3%B3dztwo_%C5%9Bwi%C4%99tokrzyskie')">świętokrzyskie</td>
+            <td><ul><li>2021 r. – 193.415</li><li>2007 r. – 205.902</li><li>1999 r. – 212.383</li></ul></td>
+            <td class="spadek">-6,06%</td>
+            <td class="spadek">-3,05%</td>
+            <td>1763,9 os./km²</td>
+            <td>109,65 km²</td>
+        </tr>
+        <tr>
+            <td>19.</td>
+            <td class="link" onclick="window.open('https://pl.wikipedia.org/wiki/Gliwice')">Gliwice</td>
+            <td class="herb link" onclick="window.open('https://pl.wikipedia.org/wiki/Gliwice')"><img src="Foto/herby/gliwice.jpg" alt="Herb Gliwic"></td>
+            <td class="flaga link" onclick="window.open('https://pl.wikipedia.org/wiki/Gliwice')"><img src="Foto/flagi/gliwice.jpg" alt="Flaga Gliwic"></td>
+            <td class="link" onclick="window.open('https://pl.wikipedia.org/wiki/Wojew%C3%B3dztwo_%C5%9Bl%C4%85skie')">śląskie</td>
+            <td><ul><li>2021 r. – 177.049</li><li>2007 r. – 197.393</li><li>1999 r. – 212.164</li></ul></td>
+            <td class="spadek">-10,31%</td>
+            <td class="spadek">-6,96%</td>
+            <td>1322,4 os./km²</td>
+            <td>133,88 km²</td>
+        </tr>
+        <tr>
+            <td>20.</td>
+            <td class="link" onclick="window.open('https://pl.wikipedia.org/wiki/Olsztyn')">Olsztyn</td>
+            <td class="herb link" onclick="window.open('https://pl.wikipedia.org/wiki/Olsztyn')"><img src="Foto/herby/olsztyn.png" alt="Herb Olsztyna"></td>
+            <td class="flaga link" onclick="window.open('https://pl.wikipedia.org/wiki/Olsztyn')"><img src="Foto/flagi/olsztyn.jpg" alt="Flaga Olsztyna"></td>
+            <td class="link" onclick="window.open('https://pl.wikipedia.org/wiki/Wojew%C3%B3dztwo_warmi%C5%84sko-mazurskie')">warmińsko-mazurskie</td>
+            <td><ul><li>2021 r. – 171.249</li><li>2007 r. – 175.710</li><li>1999 r. – 171.131</li></ul></td>
+            <td class="spadek">-2,54%</td>
+            <td class="przyrost">2,67%</td>
+            <td>1938,7 os./km²</td>
+            <td>88,33 km²</td>
+        </tr>
+        <tr>
+            <td>21.</td>
+            <td class="link" onclick="window.open('https://pl.wikipedia.org/wiki/Zabrze')">Zabrze</td>
+            <td class="herb link" onclick="window.open('https://pl.wikipedia.org/wiki/Zabrze')"><img src="Foto/herby/zabrze.jpg" alt="Herb Zabrza"></td>
+            <td class="flaga link" onclick="window.open('https://pl.wikipedia.org/wiki/Zabrze')"><img src="Foto/flagi/zabrze.jpg" alt="Flaga Zabrza"></td>
+            <td class="link" rowspan="3" onclick="window.open('https://pl.wikipedia.org/wiki/Wojew%C3%B3dztwo_%C5%9Bl%C4%85skie')">śląskie</td>
+            <td><ul><li>2021 r. – 170.924</li><li>2007 r. – 189.062</li><li>1999 r. – 200.177</li></ul></td>
+            <td class="spadek">-9,59%</td>
+            <td class="spadek">-5,55%</td>
+            <td>2125,9 os./km²</td>
+            <td>80,4 km²</td>
+        </tr>
+        <tr>
+            <td>22.</td>
+            <td class="link" onclick="window.open('https://pl.wikipedia.org/wiki/Bielsko-Bia%C5%82a')">Bielsko-Biała</td>
+            <td class="herb link" onclick="window.open('https://pl.wikipedia.org/wiki/Bielsko-Bia%C5%82a')"><img src="Foto/herby/bielsko-biala.png" alt="Herb Bielska-Białej"></td>
+            <td class="flaga link" onclick="window.open('https://pl.wikipedia.org/wiki/Bielsko-Bia%C5%82a')"><img src="Foto/flagi/bielsko-biala.jpg" alt="Flaga Bielska-Białej"></td>
+            <td><ul><li>2021 r. – 169.756</li><li>2007 r. – 175.690</li><li>1999 r. – 178.963</li></ul></td>
+            <td class="spadek">-3,38%</td>
+            <td class="spadek">-1,83%</td>
+            <td>1363 os./km²</td>
+            <td>124,51 km²</td>
+        </tr>
+        <tr>
+            <td>23.</td>
+            <td class="link" onclick="window.open('https://pl.wikipedia.org/wiki/Bytom')">Bytom</td>
+            <td class="herb link" onclick="window.open('https://pl.wikipedia.org/wiki/Bytom')"><img src="Foto/herby/bytom.jpg" alt="Herb Bytomia"></td>
+            <td class="flaga link" onclick="window.open('https://pl.wikipedia.org/wiki/Bytom')"><img src="Foto/flagi/bytom.jpg" alt="Flaga Bytomia"></td>
+            <td><ul><li>2021 r. – 163.255</li><li>2007 r. – 184.765</li><li>1999 r. – 205.560</li></ul></td>
+            <td class="spadek">-11,64%</td>
+            <td class="spadek">-10,12%</td>
+            <td>2350 os./km²</td>
+            <td>69,44 km²</td>
+        </tr>
+        <tr>
+            <td>24.</td>
+            <td class="link" onclick="window.open('https://pl.wikipedia.org/wiki/Zielona_G%C3%B3ra')">Zielona Góra</td>
+            <td class="herb link" onclick="window.open('https://pl.wikipedia.org/wiki/Zielona_G%C3%B3ra')"><img src="Foto/herby/zielona-gora.png" alt="Herb Zielonej Góry"></td>
+            <td class="flaga link" onclick="window.open('https://pl.wikipedia.org/wiki/Zielona_G%C3%B3ra')"><img src="Foto/flagi/zielona-gora.jpg" alt="Flaga Zielonej Góry"></td>
+            <td class="link" onclick="window.open('https://pl.wikipedia.org/wiki/Wojew%C3%B3dztwo_lubuskie')">lubuskie</td>
+            <td><ul><li>2021 r. – 140.892</li><li>2007 r. – 117.523</li><li>1999 r. – 118.182</li></ul></td>
+            <td class="przyrost">19,88%</td>
+            <td class="spadek">-0,56%</td>
+            <td>506,2 os./km²</td>
+            <td>278,32 km²</td>
+        </tr>
+        <tr>
+            <td>25.</td>
+            <td class="link" onclick="window.open('https://pl.wikipedia.org/wiki/Rybnik')">Rybnik</td>
+            <td class="herb link" onclick="window.open('https://pl.wikipedia.org/wiki/Rybnik')"><img src="Foto/herby/rybnik.jpg" alt="Herb Rybnika"></td>
+            <td class="flaga link" onclick="window.open('https://pl.wikipedia.org/wiki/Rybnik')"><img src="Foto/flagi/rybnik.jpg" alt="Flaga Rybnika"></td>
+            <td class="link" rowspan="2" onclick="window.open('https://pl.wikipedia.org/wiki/Wojew%C3%B3dztwo_%C5%9Bl%C4%85skie')">śląskie</td>
+            <td><ul><li>2021 r. – 137.128</li><li>2007 r. – 141.080</li><li>1999 r. – 144.582</li></ul></td>
+            <td class="spadek">-2,80%</td>
+            <td class="spadek">-2,42%</td>
+            <td>924,3 os./km²</td>
+            <td>148,36 km²</td>
+        </tr>
+        <tr>
+            <td>26.</td>
+            <td class="link" onclick="window.open('https://pl.wikipedia.org/wiki/Ruda_%C5%9Al%C4%85ska')">Ruda Śląska</td>
+            <td class="herb link" onclick="window.open('https://pl.wikipedia.org/wiki/Ruda_%C5%9Al%C4%85ska')"><img src="Foto/herby/ruda-slaska.png" alt="Herb Rudy Śląskiej"></td>
+            <td class="flaga link" onclick="window.open('https://pl.wikipedia.org/wiki/Ruda_%C5%9Al%C4%85ska')"><img src="Foto/flagi/ruda-slaska.jpg" alt="Flaga Rudy Śląskiej"></td>
+            <td><ul><li>2021 r. – 136.423</li><li>2007 r. – 144.584</li><li>1999 r. – 159.665</li></ul></td>
+            <td class="spadek">-5,64%</td>
+            <td class="spadek">-9,45%</td>
+            <td>1755,1 os./km²</td>
+            <td>77,73 km²</td>
+        </tr>
+        <tr>
+            <td>27.</td>
+            <td class="link" onclick="window.open('https://pl.wikipedia.org/wiki/Opole')">Opole</td>
+            <td class="herb link" onclick="window.open('https://pl.wikipedia.org/wiki/Opole')"><img src="Foto/herby/opole.jpg" alt="Herb Opola"></td>
+            <td class="flaga link" onclick="window.open('https://pl.wikipedia.org/wiki/Opole')"><img src="Foto/flagi/opole.jpg" alt="Flaga Opola"></td>
+            <td class="link" onclick="window.open('https://pl.wikipedia.org/wiki/Wojew%C3%B3dztwo_opolskie')">opolskie</td>
+            <td><ul><li>2021 r. – 127.839</li><li>2007 r. – 126.748</li><li>1999 r. – 129.553</li></ul></td>
+            <td class="przyrost">0,86%</td>
+            <td class="spadek">-2,17%</td>
+            <td>858 os./km²</td>
+            <td>148,99 km²</td>
+        </tr>
+        <tr>
+            <td>28.</td>
+            <td class="link" onclick="window.open('https://pl.wikipedia.org/wiki/Tychy')">Tychy</td>
+            <td class="herb link" onclick="window.open('https://pl.wikipedia.org/wiki/Tychy')"><img src="Foto/herby/tychy.png" alt="Herb Tych"></td>
+            <td class="flaga link" onclick="window.open('https://pl.wikipedia.org/wiki/Tychy')"><img src="Foto/flagi/tychy.jpg" alt="Flaga Tych"></td>
+            <td class="link" onclick="window.open('https://pl.wikipedia.org/wiki/Wojew%C3%B3dztwo_%C5%9Bl%C4%85skie')">śląskie</td>
+            <td><ul><li>2021 r. – 126.871</li><li>2007 r. – 129.776</li><li>1999 r. – 133.178</li></ul></td>
+            <td class="spadek">-2,24%</td>
+            <td class="spadek">-2,55%</td>
+            <td>1550,8 os./km²</td>
+            <td>81,81 km²</td>
+        </tr>
+        <tr>
+            <td>29.</td>
+            <td class="link" onclick="window.open('https://pl.wikipedia.org/wiki/Gorz%C3%B3w_Wielkopolski')">Gorzów Wielkopolski</td>
+            <td class="herb link" onclick="window.open('https://pl.wikipedia.org/wiki/Gorz%C3%B3w_Wielkopolski')"><img src="Foto/herby/gorzow-wielkopolski.jpg" alt="Herb Gorzowa Wielkopolskiego"></td>
+            <td class="flaga link" onclick="window.open('https://pl.wikipedia.org/wiki/Gorz%C3%B3w_Wielkopolski')"><img src="Foto/flagi/gorzow-wielkopolski.jpg" alt="Flaga Gorzowa Wielkopolskiego"></td>
+            <td class="link" onclick="window.open('https://pl.wikipedia.org/wiki/Wojew%C3%B3dztwo_lubuskie')">lubuskie</td>
+            <td><ul><li>2021 r. – 122.589</li><li>2007 r. – 125.411</li><li>1999 r. – 126.019</li></ul></td>
+            <td class="spadek">-2,25%</td>
+            <td class="spadek">-0,48%</td>
+            <td>1430,1 os./km²</td>
+            <td>85,72 km²</td>
+        </tr>
+        <tr>
+            <td>30.</td>
+            <td class="link" onclick="window.open('https://pl.wikipedia.org/wiki/Elbl%C4%85g')">Elbląg</td>
+            <td class="herb link" onclick="window.open('https://pl.wikipedia.org/wiki/Elbl%C4%85g')"><img src="Foto/herby/elblag.png" alt="Herb Elbląga"></td>
+            <td class="flaga link" onclick="window.open('https://pl.wikipedia.org/wiki/Elbl%C4%85g')"><img src="Foto/flagi/elblag.jpg" alt="Flaga Elbląga"></td>
+            <td class="link" onclick="window.open('https://pl.wikipedia.org/wiki/Wojew%C3%B3dztwo_warmi%C5%84sko-mazurskie')">warmińsko-mazurskie</td>
+            <td><ul><li>2021 r. – 118.582</li><li>2007 r. – 126.710</li><li>1999 r. – 129.782</li></ul></td>
+            <td class="spadek">-6,41%</td>
+            <td class="spadek">-2,37%</td>
+            <td>1477,7 os./km²</td>
+            <td>79,82 km²</td>
+        </tr>
+        <tr>
+            <td>31.</td>
+            <td class="link" onclick="window.open('https://pl.wikipedia.org/wiki/D%C4%85browa_G%C3%B3rnicza')">Dąbrowa Górnicza</td>
+            <td class="herb link" onclick="window.open('https://pl.wikipedia.org/wiki/D%C4%85browa_G%C3%B3rnicza')"><img src="Foto/herby/dabrowa-gornicza.jpg" alt="Herb Dąbrowy Górniczej"></td>
+            <td class="flaga link" onclick="window.open('https://pl.wikipedia.org/wiki/D%C4%85browa_G%C3%B3rnicza')"><img src="Foto/flagi/dabrowa-gornicza.jpg" alt="Flaga Dąbrowy Górniczej"></td>
+            <td class="link" onclick="window.open('https://pl.wikipedia.org/wiki/Wojew%C3%B3dztwo_%C5%9Bl%C4%85skie')">śląskie</td>
+            <td><ul><li>2021 r. – 118.285</li><li>2007 r. – 128.795</li><li>1999 r. – 131.037</li></ul></td>
+            <td class="spadek">-8,16%</td>
+            <td class="spadek">-1,71%</td>
+            <td>626,7 os./km²</td>
+            <td>188,73 km²</td>
+        </tr>
+        <tr>
+            <td>32.</td>
+            <td class="link" onclick="window.open('https://pl.wikipedia.org/wiki/P%C5%82ock')">Płock</td>
+            <td class="herb link" onclick="window.open('https://pl.wikipedia.org/wiki/P%C5%82ock')"><img src="Foto/herby/plock.png" alt="Herb Płocka"></td>
+            <td class="flaga link" onclick="window.open('https://pl.wikipedia.org/wiki/P%C5%82ock')"><img src="Foto/flagi/plock.jpg" alt="Flaga Płocka"></td>
+            <td class="link" onclick="window.open('https://pl.wikipedia.org/wiki/Wojew%C3%B3dztwo_mazowieckie')">mazowieckie</td>
+            <td><ul><li>2021 r. – 118.268</li><li>2007 r. – 126.968</li><li>1999 r. – 131.011</li></ul></td>
+            <td class="spadek">-6,85%</td>
+            <td class="spadek">-3,09%</td>
+            <td>1343,3 os./km²</td>
+            <td>88,04 km²</td>
+        </tr>
+    </tbody>
+    </table>
+
+
+</main>
+<footer>
+    <span style="text-align: left;">&copy; 2021 Piotr Winiarczyk 3K</span>
+</footer>
+
+<button onclick="topFunction()" id="top">^</button>
+
+<div class="loader-wrapper center">
+    <span class="loader"><span class="loader-inner"></span></span>
+</div>
+
+<script>
+    history.scrollRestoration = "manual";
+
+    $(window).on('beforeunload', function(){
+        $(window).scrollTop(0);
+    });
+
+    $(window).on("load",function(){
+        $(".loader-wrapper").fadeOut("slow");
+    });
+
+
+    //Skrypt pochodzi ze strony https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
+    //Get the button:
+    mybutton = document.getElementById("top");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 250 || document.documentElement.scrollTop > 250) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }}
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: 'smooth'
+        });}
+</script>
+<script src="script.js"></script>
+
+</body>
+</html>

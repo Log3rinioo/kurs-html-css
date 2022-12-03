@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+
+* {
+    font-family: 'Nunito', sans-serif;
+}
+
+body {
+    margin: 0;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    /* background: linear-gradient(135deg, #5C258D, #4389A2); */
+    background: linear-gradient(133deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    min-height: 100vh;
+}
+
+.hide {
+    display: none !important;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    width: 80vw;
+    height: 85vh;
+    margin: auto;
+    grid-gap: 10px;
+    position: relative;
+}
+
+
+
+
+
+div.left {
+    border: 1px solid #ccc;
+    max-height: 90vh;
+    overflow-y: auto;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+form textarea {
+    width: calc(100% - 16px);
+    margin: 0 5px;
+    resize: vertical;
+    max-height: 150px;
+    min-height: 20px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.buttonEffects {
+    border: 0;
+    width: 200px;
+    height: 40px;
+    background: transparent;
+    margin: 5px 0 5px;
+    position: relative;
+    padding: 0;
+    cursor: pointer;
+}
+
+.buttonEffects span {
+    height: 100%;
+    width: 100%;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.buttonEffects::before, .buttonEffects::after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #000;
+    transition: all 0.3s;
+}
+
+.buttonEffects span::after, .buttonEffects span::before {
+    content: " ";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    transition: all 0.3s;
+}
+
+.buttonEffects::before, .buttonEffects span::before {
+    height: 2px;
+    width: 0;
+}
+
+.buttonEffects::after, .buttonEffects span::after {
+    height: 0;
+    width: 2px;
+}
+
+.buttonEffects:hover::before, .buttonEffects span:hover::before {
+    width: 100%;
+}
+
+.buttonEffects:hover::after, .buttonEffects span:hover::after {
+    height: 100%;
+}
+
+div.effectsArea {
+    width: 95%;
+    height: 0;
+    margin-bottom: 10px;
+    transition: all 0.3s;
+    overflow: hidden auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.effectsAreaShow {
+    padding: 5px;
+    height: 150px;
+    border: 1px solid #ccc;
+}
+
+div.effectsArea div {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.effectsArea div input[type=text], .effectsArea div input[type=number], input[type=color], .effectsArea div select {
+    width: 20%;
+    padding: 1px 2px;
+    min-width: 100px;
+    margin-bottom: 3px;
+}
+
+.effectsArea div select, input[type=color] {
+    min-width: 108px;
+}
+
+.login {
+    justify-content: center !important;
+}
+
+.login a {
+    color: #000;
+    text-decoration: underline;
+}
+
+hr {
+    width: 90%;
+    height: 1px;
+    border: none;
+    border-top: 1px solid #5e5e5e;
+}
+
+input[type=submit] {
+    margin-bottom: 20px;
+}
+
+
+
+div.right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+div.right div.meme {
+    max-width: 100%;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+div.right img {
+    width: 100%;
+    display: block;
+    max-height: 88vh;
+}
+
+span.memeText {
+    position: absolute;
+    display: flex;
+}
+
+span.memeTextHover {
+    box-shadow: inset -2px 0 0 #000, inset 0 -2px 0 #000, inset 2px 0 0 #000, inset 0 2px 0 #000;
+}
+
+dialog:not([open]) {
+    display: none;
+}
+
+
+.modal {
+    position: relative;
+    overflow: visible;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.modal::backdrop {
+    background-color: #00000028;
+}
+
+.closeModal {
+    position: absolute; 
+    top: -20px;
+    right: -20px;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    color: red;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.modal h4 {
+    margin: 0;
+    text-align: center;
+    word-break: normal;
+}
+
+canvas {
+    border: 1px solid #ccc;
+}
+
+
+
+
+
+
+/* Czcionki na szablon */
+.Arial {
+    font-family: Arial, sans-serif;
+}
+
+.ComicSansMS {
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+}
+
+.CourierNew {
+    font-family: 'Courier New', monospace;
+}
+
+.Georgia {
+    font-family: Georgia, serif;
+}
+
+.Halvetica {
+    font-family: Helvetica, sans-serif;
+}
+
+.Impact {
+    font-family: Impact, fantasy;
+}
+
+.TimesNewRoman {
+    font-family: Times, 'Times New Roman', serif;
+}
+
+.TrebuchetMS {
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+.Verdana {
+    font-family: Verdana, sans-serif;
+}

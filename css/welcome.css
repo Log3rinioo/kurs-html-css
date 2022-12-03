@@ -1,0 +1,250 @@
+:root[color-mode="light"] {
+    --header-background: #5f4ded;
+    --text: #000;
+    --header-text: whitesmoke;
+    --header-waves: url('../Strona\ glowna/img/light-waves.svg');
+    --hr: #dde1e7;
+    --card-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+:root[color-mode="dark"] {
+    --text: whitesmoke;
+    --header-text: whitesmoke;
+    --header-waves: url('../Strona\ glowna/img/dark-waves.svg');
+    --hr: #202020;
+}
+
+body {
+    overflow: hidden auto;
+    background-color: var(--background);
+}
+
+body.dark img {
+    filter: brightness(.8) contrast(1.2);
+}
+
+header {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: var(--header-waves);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+    margin-bottom: 5vh;
+}
+
+#left {
+    margin-left: 5vw;
+    flex-direction: column;
+    height: 80%;
+}
+
+header h1 {
+    color: var(--header-text);
+    margin: 0;
+    font-weight: normal;
+    font-size: max(3vw, 4vh);
+    max-width: 40vw;
+}
+
+header h2 {
+    color: var(--header-text);
+    font-size: max(1.3vw, 2.5vh);
+}
+
+header img {
+    width: 40vw;
+}
+
+h2 {
+    color: var(--text);
+    font-weight: normal;
+}
+
+header h2 b {
+    font-size: max(1.8vw, 3vh);
+}
+
+div#html, div#css {
+    flex-direction: column;
+    width: 100%;
+}
+
+div#html div.grid, div#css div.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-inline: 10vw;
+}
+
+div.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+div.text h2 {
+    font-size: 2rem;
+    margin-block: 16px;
+}
+
+div.grid img {
+    height: 40vh;
+    margin: 0 auto;
+}
+
+span {
+    color: var(--text);
+}
+
+div.text span, div.text span {
+    font-size: 1.15rem;
+}
+
+div#html span a, div#css span a {
+    color: var(--text);
+}
+
+div.grid + video + span {
+    margin-top: 2vh;
+    width: 50vw;
+    text-align: center;
+    font-size: 1rem;
+}
+
+video {
+    margin-top: 5vh;
+    width: 50vw;
+    opacity: 0;
+    transition: all .5s;
+}
+
+div#html video {
+    transform: translateX(50px);
+}
+
+div#css video {
+    transform: translateX(-50px);
+}
+
+div#html video.visible, div#css video.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+video + span {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all .5s;
+}
+
+video + span.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+div.grid div.text {
+    opacity: 0;
+    transition: all .5s;
+    transform: translateY(50px);
+}
+
+div.grid img {
+    opacity: 0;
+    transition: all .5s;
+    transform: translateY(-50px);
+}
+
+div.grid div.text.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+div.grid img.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+hr {
+    width: 80vw;
+    height: 1px;
+    margin: 8vh auto;
+    border: 0;
+    background-color: var(--hr);
+}
+
+#gridWrapper {
+    flex-direction: column;
+    margin-bottom: 5vh;
+}
+
+#gridWrapper h2 {
+    font-size: 2rem;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(425px, 1fr));
+    width: 80vw;
+    grid-gap: 40px;
+}
+
+div.card {
+    width: 100%;
+    aspect-ratio: 16/9;
+    background-color: white;
+    position: relative;
+    cursor: pointer;
+    box-shadow: var(--card-shadow);
+    opacity: 0;
+    transition: all .5s;
+    transform: translateX(-50px);
+}
+
+div.card.visible {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+div.card img {
+    width: 100%;
+    display: block;
+    filter: none;
+}
+
+div.card div.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 0;
+    width: 100%;
+    overflow: hidden;
+    background: #0008;
+    transition: height .4s ease;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+div.card:hover div.overlay {
+    height: 100%;
+}
+
+div.overlay h3 {
+    text-align: center;
+    color: whitesmoke;
+    font-size: 1.75rem;
+    margin: 0;
+}
+
+div.overlay span {
+    color: whitesmoke;
+    position: relative;
+    font-size: 1rem;
+    margin: 0 20px;
+    width: auto;
+    text-shadow: 4px 4px 6px rgba(66, 68, 90, 1);
+}

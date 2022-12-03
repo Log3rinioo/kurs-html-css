@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularze - Piotr Winiarczyk 3K</title>
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div id="hero">
+        <nav>
+            <a href="index.html"><h1>Generator memów</h1></a>
+            <ul>
+                <a href="index.html"><li>Strona główna</li></a>
+                <a href="#templates"><li>Szablony</li></a>
+                <a href="kontakt.html"><li>Kontakt</li></a>
+                <a href="login.html" class="login"><li>Zaloguj się</li></a>
+                <a class="logged">
+                    <li></li>
+                    <div class="dropdown">
+                        <span>Wyloguj się <i class="fa-solid fa-arrow-right-from-bracket"></i></span>
+                    </div>
+                </a>
+            </ul>
+        </nav>
+
+        <div class="welcome">
+            <div class="left">
+                <h3>Witaj na</h3>
+                <h2>generatorze</h2>
+                <h2>memów</h2>
+                <h3>Twórz memy z obrazków</h3>
+                <h3>kilkoma kliknięciami</h3>
+            </div>
+        </div>
+
+        <div class="arrow">
+            <i class="fa-solid fa-arrow-down-long fa-3x"></i>
+        </div>
+    </div>
+
+    <main>
+        <section id="templates">
+            <h4>Dostępne szablony</h4>
+            <div id='search'>
+                <input type="text" name="searchBar" id="searchBar" placeholder="Wpisz tekst, aby wyszukać szablon.">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="templates">
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <h1>&copy; Piotr Winiarczyk 3K</h1>
+    </footer>
+
+    <div class="loader-wrapper">
+        <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+
+    <script>
+        history.scrollRestoration = "manual"
+    </script>
+    
+    <script src="js/templates.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

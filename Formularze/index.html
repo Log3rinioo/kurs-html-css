@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset='utf-8'>
+    <title>Formularz Piotr Winiarczyk 3K</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' href='main.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <form action="formularze.html" method="post" onsubmit="return checkPassword(this)" autocomplete="on">
+        <div class="changeColor">
+            <fieldset class="changeColor">
+                <legend>Zmiana motywu strony</legend>
+                <label for="backgroundColor">Wybierz kolor tła i tekstu</label>
+                <input type="color" name="backgroundColor" id="backgroundColor">
+            </fieldset>
+        </div>
+        
+        <fieldset id="login"class="parent" style="grid-template-areas: 'a b' 'forgot forgot';">
+            <legend class="parent">Logowanie</legend>
+            <fieldset>
+                <legend>Dane do logowania</legend>
+                <label for="username">Nazwa użytkownika</label>
+                <div class="icon">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" name="loginUsername" id="loginUsername" size="25" required><sup> *</sup><br>
+                </div>
+                <label for="current-password">Hasło</label>
+                <div class="icon">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" name="current-password" id="password" maxlength="256" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Hasło musi składać się z co najmniej 8 znaków, w tym jednej cyfry i jednej wielkiej litery." required><sup> *</sup><br>
+                </div>
+                <input type="checkbox" name="remember" id="remember">
+                <label for="remember">Zapamiętaj mnie</label><br>
+                <span>Nie masz konta? <span>Zarejestruj się</span></span>
+                <p class="forgot">Nie pamiętasz hasła?</p>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Potwierdź, że nie jesteś robotem</legend>
+                <div class="captcha">
+                    <div class="captchaInput">
+                        <input type="checkbox" name="captcha" id="captchaLogin" required>
+                        <label for="captchaLogin">Nie jestem robotem</label>
+                    </div>
+                    <img src="img/recaptcha.png" alt="Logo reCAPTCHA">
+                </div>
+                <div class="captcha2 hide">
+                    <img src="img/captcha.jpg" alt=""><br>
+                    <input type="text" name="one-time-code" id="loginCaptcha" placeholder="Wprowadź tekst z obrazka" size="22"><sup> *</sup><br>
+                </div>
+            </fieldset>
+
+            <fieldset class="forgot">
+                <legend>Zmiana hasła</legend>
+                <span>Jeśli zapomniałeś hasła, odpowiedz na 2 pytania.</span>
+                
+                <div class="forgotCenter">
+                    <select name="pytanie1">
+                        <option value="" disabled selected>Pytanie zabezpieczeń 1</option>
+                        <option value="zwierze">Jak wabiło się Twoje pierwsze zwierzę domowe?</option>
+                        <option value="miasto">Jak nazywa się miasto Twojego urodzenia?</option>
+                        <option value="przezwisko">Jakie było Twoje przezwisko w dzieciństwie?</option>
+                        <option value="rodzice">Jak nazywa się miasto, w którym spotkali się Twoi rodzice?</option>
+                        <option value="kuzyn">Jak nazywa się Twój najstarszy kuzyn?</option>
+                        <option value="szkola">Jak nazywa się Twoja pierwsza szkoła?</option>
+                    </select>
+    
+                    <select name="pytanie2">
+                        <option value="" disabled selected>Pytanie zabezpieczeń 2</option>
+                        <option value="zwierze">Jak wabiło się Twoje pierwsze zwierzę domowe?</option>
+                        <option value="miasto">Jak nazywa się miasto Twojego urodzenia?</option>
+                        <option value="przezwisko">Jakie było Twoje przezwisko w dzieciństwie?</option>
+                        <option value="rodzice">Jak nazywa się miasto, w którym spotkali się Twoi rodzice?</option>
+                        <option value="kuzyn">Jak nazywa się Twój najstarszy kuzyn?</option>
+                        <option value="szkola">Jak nazywa się Twoja pierwsza szkoła?</option>
+                    </select>
+    
+                    <label for="odpowiedz1">Odpowiedz na pierwsze pytanie</label>
+                    <label for="odpowiedz2">Odpowiedz na drugie pytanie</label>
+    
+                    <input type="text" name="odpowiedz1" placeholder="Odpowiedź na pytanie zabezpieczeń 1">
+                    <input type="text" name="odpowiedz2"  placeholder="Odpowiedź na pytanie zabezpieczeń 2">
+                </div>
+            </fieldset>
+        </fieldset>
+
+        <fieldset id="signup" class="parent">
+            <legend class="parent">Rejestracja</legend>
+            <fieldset>
+                <legend>Dane do rejestracji</legend>
+                <label for="email">Adres e-mail</label>
+                <div class="icon">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="email" name="email" id="email" required><sup> *</sup><br>
+                </div>
+                <label for="signupUsername">Nazwa użytkownika</label>
+                <div class="icon">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" name="signupUsername" id="signupUsername" required><sup> *</sup><br>
+                </div>
+                <label for="password1">Hasło</label>
+                <div class="icon">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" name="new-password" id="password1" maxlength="256" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Hasło musi składać się z conajmniej 8 znaków, w tym jednej cyfry i jednej wielkiej litery." required><sup> *</sup><br>
+                </div>
+                <label for="password2">Powtórz hasło</label>
+                <div class="icon">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" name="new-password" id="password2" maxlength="256" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Hasło musi składać się z co najmniej 8 znaków, w tym jednej cyfry i jednej wielkiej litery." required><sup> *</sup><br>
+                </div>
+                <input type="checkbox" name="regulamin" id="regulamin" required>
+                <label for="regulamin">Zapoznałem się z regulaminem serwisu oraz akceptuję jego warunki</label><sup> *</sup><br>
+                <input type="checkbox" name="newsletter" id="newsletter">
+                <label for="newsletter">Wyrażam zgodę na otrzymywanie newslettera</label><br>
+                <span>Masz już konto? <span>Zaloguj się</span></span>
+            </fieldset>
+
+            <fieldset>
+                <legend>Potwierdź, że nie jesteś robotem</legend>
+                <div class="captcha">
+                    <div class="captchaInput">
+                        <input type="checkbox" name="captcha" id="captcha" required>
+                        <label for="captcha">Nie jestem robotem</label>
+                    </div>
+                    <img src="img/recaptcha.png" alt="Logo reCAPTCHA">
+                </div>
+                <div class="captcha2 hide">
+                    <img src="img/captcha.jpg" alt=""><br>
+                    <input type="text" name="one-time-code" id="signupCaptcha" placeholder="Wprowadź tekst z obrazka" size="22"><sup> *</sup><br>
+                </div>
+            </fieldset>
+        </fieldset>
+
+        <fieldset class="parent grid">
+            <legend class="parent">Profil</legend>
+            <fieldset>
+                <legend>Dane osobowe</legend>
+                <label for="fname">Imię</label>
+                <input type="text" name="fname" id="fname" placeholder="Jan" required><sup> *</sup><br>
+                <label for="lname">Nazwisko</label>
+                <input type="text" name="lname" id="lname" placeholder="Kowalski" required><sup> *</sup><br>
+                <label for="pesel">PESEL</label>
+                <!-- <input type="range" name="pesel" id="pesel" max="99999999999" step="1"style="width: 100%;" onchange="rangevalue.value=value"><output id="rangevalue"></output><br> -->
+                <input type="number" id="pesel" name="pesel" max="99999999999" placeholder="22222222222" required><sup> *</sup><br>
+                <label for="bday">Data urodzenia</label><br>
+                <input type="date" name="bday" id="dataUrodzenia" min="1900-01-01" required><sup> *</sup><br>
+                <label for="plec">Płeć</label><br>
+                <select name="plec" id="plec" required>
+                    <option value="" disabled selected>Wybierz</option>
+                    <option value="mezczyzna">Mężczyzna</option>
+                    <option value="kobieta">Kobieta</option>
+                    <option value="inne">Wolę nie podawać</option>
+                </select><sup> *</sup><br>
+
+                <span>Wybierz swoją grupę wiekową</span><sup> *</sup><br>
+                <input type="radio" name="wiek" id="17" required>
+                <label for="17">0-17</label><br>
+                <input type="radio" name="wiek" id="29">
+                <label for="29">18-29</label><br>
+                <input type="radio" name="wiek" id="39">
+                <label for="39">30-39</label><br>
+                <input type="radio" name="wiek" id="49">
+                <label for="49">40-49</label><br>
+                <input type="radio" name="wiek" id="59">
+                <label for="59">50-60</label><br>
+                <input type="radio" name="wiek" id="60">
+                <label for="60">60+</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Dane teleadresowe</legend>
+                <label for="wojewodztwo">Województwo</label><br>
+                <select name="wojewodztwo" id="wojewodztwo" required>
+                    <option value="" disabled selected>Wybierz</option>
+                    <option value="dolnoslaskie">dolnośląskie</option>
+                    <option value="kujawsko-pomorskie">kujawsko-pomorskie</option>
+                    <option value="lubelskie">lubelskie</option>
+                    <option value="lubuskie">lubuskie</option>
+                    <option value="lodzkie">łódzkie</option>
+                    <option value="malopolskie">małopolskie</option>
+                    <option value="mazowieckie">mazowieckie</option>
+                    <option value="opolskie">opolskie</option>
+                    <option value="podkarpackie">podkarpackie</option>
+                    <option value="podlaskie">podlaskie</option>
+                    <option value="pomorskie">pomorskie</option>
+                    <option value="slaskie">śląskie</option>
+                    <option value="swietokrzyskie">świętokrzyskie</option>
+                    <option value="warminsko-mazurskie">warmińsko-mazurskie</option>
+                    <option value="wielkopolskie">wielkopolskie</option>
+                    <option value="zachodniopomorskie">zachodniopomorskie</option>
+                </select><sup> *</sup><br>
+
+                <label for="ulica">Ulica</label>
+                <input type="text" name="ulica" id="ulica" placeholder="Lipowa" required><sup> *</sup><br>
+                <label for="numerdomu">Numer domu</label>
+                <input type="number" name="numerdomu" id="numerdomu" placeholder="37" required><sup> *</sup><br>
+                <label for="numerlokalu">Numer lokalu</label>
+                <input type="number" name="numerlokalu" placeholder="4" id="numerlokalu"><br>
+                <label for="kod">Kod pocztowy</label>
+                <input id="kod" name="kod" type="text" inputmode="numeric" pattern="[0-9]{2}[-]{1}[0-9]{3}" title="Kod pocztowy powinien być w formacie 00-000" placeholder="16-128" required><sup> *</sup><br>
+                <label for="miasto">Miejscowość</label>
+                <input type="text" name="miasto" id="miasto" placeholder="Warszawa" required><sup> *</sup><br>
+                <label for="tel">Numer telefonu</label>
+                <input type="tel" name="tel" id="telefonn" maxlength="15" size="22" placeholder="+48 123 456 789" required><sup> *</sup><br>
+                <label for="email2">Adres e-mail</label>
+                <input type="email" name="email2" id="email2" placeholder="jan.kowalski@gmail.com" required><sup> *</sup><br>
+                <br><sup> * </sup><span>Pola oznaczone gwiazdką są obowiązkowe.</span>
+            </fieldset>
+
+            <fieldset class="profile" style="grid-area: profilowe;">
+                <legend>Zdjęcie profilowe</legend>
+                <p>Wybierz awatar</p>
+                <div class="profile">
+                    <input type="radio" name="profilowe" id="zdjecie1">
+                    <label for="zdjecie1">
+                        <img src="img/avatars/1.jpg" alt="Zdjęcie profilowe">
+                    </label>
+                    <input type="radio" name="profilowe" id="zdjecie2">
+                    <label for="zdjecie2">
+                        <img src="img/avatars/2.jpg" alt="Zdjęcie profilowe">
+                    </label>
+                    <input type="radio" name="profilowe" id="zdjecie3">
+                    <label for="zdjecie3">
+                        <img src="img/avatars/3.jpg" alt="Zdjęcie profilowe">
+                    </label>
+                    <input type="radio" name="profilowe" id="zdjecie4">
+                    <label for="zdjecie4">
+                        <img src="img/avatars/4.jpg" alt="Zdjęcie profilowe">
+                    </label>
+                    <input type="radio" name="profilowe" id="zdjecie5">
+                    <label for="zdjecie5">
+                        <img src="img/avatars/5.jpg" alt="Zdjęcie profilowe">
+                    </label>
+                    <input type="radio" name="profilowe" id="zdjecie6">
+                    <label for="zdjecie6">
+                        <img src="img/avatars/6.jpg" alt="Zdjęcie profilowe">
+                    </label>
+                    <input type="radio" name="profilowe" id="zdjecie7">
+                    <label for="zdjecie7">
+                        <img src="img/avatars/7.jpg" alt="Zdjęcie profilowe">
+                    </label>
+                    <input type="radio" name="profilowe" id="zdjecie8">
+                    <label for="zdjecie8">
+                        <img src="img/avatars/8.jpg" alt="Zdjęcie profilowe">
+                    </label>
+                    <input type="radio" name="profilowe" id="zdjecie9">
+                    <label for="zdjecie9">
+                        <img src="img/avatars/9.jpg" alt="Zdjęcie profilowe">
+                    </label>
+                    <input type="radio" name="profilowe" id="zdjecie10">
+                    <label for="zdjecie10">
+                        <img src="img/avatars/10.jpg" alt="Zdjęcie profilowe">
+                    </label>
+                    <input type="radio" name="profilowe" id="zdjecie11">
+                    <label for="zdjecie11">
+                        <img src="img/avatars/11.jpg" alt="Zdjęcie profilowe">
+                    </label>
+                    <input type="radio" name="profilowe" id="zdjecie12">
+                    <label for="zdjecie12">
+                        <img src="img/avatars/12.jpg" alt="Zdjęcie profilowe">
+                    </label>
+                    <div class="drop-zone">
+                        <span style="font-size: 1.25rem;">Upuść tutaj plik lub kliknij, aby przesłać awatar</span>
+                        <input type="file" name="uploaded">
+                    </div>
+                </div>
+                
+                <p class="load">Wyświetl więcej</p>
+                <p class="unload hide">Wyświetl mniej</p>
+
+            </fieldset>
+        </fieldset>
+
+        <fieldset class="parent">
+            <legend class="parent">Ankieta</legend>
+            <fieldset>
+                <legend>Urządzenia</legend>
+
+                <label for="urzadzenia">Z jakich urządzeń korzystasz?<br>(aby zaznaczyć kilka opcji przytrzymaj "Ctrl" na systemach Windows lub "Command" na systemach Mac)</label><br>
+                <select name="urzadzenia" id="urzadzenia" multiple>
+                    <option value="pc">Komputer stacjonarny</option>
+                    <option value="konsola">Konsola do gier</option>
+                    <option value="laptop">Laptop</option>
+                    <option value="smarttv">Smart TV</option>
+                    <option value="telefon">Telefon</option>
+                    <option value="tablet">Tablet</option>
+                </select><br>
+
+                <br><label for="device">Z jakiego urządzenia obecnie korzystasz?</label><br>
+                <input type="radio" name="device" id="pc">
+                <label for="pc"><i class="fas fa-desktop"></i> Komputer stacjonarny</label><br>
+                <input type="radio" name="device" id="laptop">
+                <label for="laptop"><i class="fas fa-laptop"></i> Laptop</label><br>
+                <input type="radio" name="device" id="tablet">
+                <label for="tablet"><i class="fas fa-tablet"></i> Tablet</label><br>
+                <input type="radio" name="device" id="telefon">
+                <label for="telefon"><i class="fas fa-mobile"></i> Telefon</label><br>
+
+                <br><label for="wieku">Jak długo korzystasz ze swojego obecnego urządzenia?</label><br>
+                <input type="radio" name="wieku" id="wieku1">
+                <label for="wieku1">Mniej niż 3 miesiące</label><br>
+                <input type="radio" name="wieku" id="wieku2">
+                <label for="wieku2">3-6 miesięcy</label><br>
+                <input type="radio" name="wieku" id="wieku3">
+                <label for="wieku3">7-12 miesięcy</label><br>
+                <input type="radio" name="wieku" id="wieku4">
+                <label for="wieku4">13-18 miesięcy</label><br>
+                <input type="radio" name="wieku" id="wieku5">
+                <label for="wieku5">19-24 miesięcy</label><br>
+                <input type="radio" name="wieku" id="wieku6">
+                <label for="wieku6">2-3 lata</label><br>
+                <input type="radio" name="wieku" id="wieku7">
+                <label for="wieku7">4-5 lat</label><br>
+                <input type="radio" name="wieku" id="wieku8">
+                <label for="wieku8">Ponad 6 lat</label>
+
+            </fieldset>
+            <fieldset>
+                <legend>Podzespoły komputera</legend>
+                <label for="sklepy">W jakim sklepie kupujesz podzespoły komputerowe?<br>(aby zaznaczyć kilka opcji przytrzymaj "Ctrl" na systemach Windows lub "Command" na systemach Mac)</label><br>
+                <select name="sklepy" id="sklepy" multiple>
+                    <option value="Allegro">Allegro</option>
+                    <option value="Amazon">Amazon</option>
+                    <option value="hard-pc.pl">hard-pc.pl</option>
+                    <option value="Komputronik">Komputronik</option>
+                    <option value="MediaExpert">Media Expert</option>
+                    <option value="morele.net">morele.net</option>
+                    <option value="NET-S.pl">NET-S.pl</option>
+                    <option value="proline.pl">proline.pl</option>
+                    <option value="RTVeuroAGD">RTV Euro AGD</option>
+                    <option value="Sferis">Sferis</option>
+                    <option value="x-kom.pl">x-kom.pl</option>
+                </select><br>
+
+                <br><label for="gpu">Z jakiej karty graficznej korzystasz?</label><br>
+                <input type="radio" name="gpu" id="amdg">
+                <label for="amdg">AMD</label>
+                <input type="radio" name="gpu" id="intelg">
+                <label for="intelg">Intel</label>
+                <input type="radio" name="gpu" id="nvidia">
+                <label for="nvidia">Nvidia</label>
+                <input type="radio" name="gpu" id="otherg">
+                <label for="otherg">Inne</label><br>
+
+                <br><label for="procesory">Z procesora jakiego producenta korzystasz?</label><br>
+                <input type="radio" name="procesory" id="amdp">
+                <label for="amdp">AMD</label>
+                <input type="radio" name="procesory" id="intelp">
+                <label for="intelp">Intel</label>
+                <input type="radio" name="procesory" id="otherp">
+                <label for="otherp">Inne</label><br>
+
+                <br><label for="cores">Ile rdzeni ma twój procesor?</label><br>
+                <input type="radio" name="cores" id="1c">
+                <label for="1c">1 rdzeń</label><br>
+                <input type="radio" name="cores" id="2c">
+                <label for="2c">2 rdzenie</label><br>
+                <input type="radio" name="cores" id="4c">
+                <label for="4c">4 rdzenie</label><br>
+                <input type="radio" name="cores" id="6c">
+                <label for="6c">6 rdzeni</label><br>
+                <input type="radio" name="cores" id="8c">
+                <label for="8c">8 rdzeni</label><br>
+                <input type="radio" name="cores" id="10c">
+                <label for="10c">10 rdzeni</label><br>
+                <input type="radio" name="cores" id="12c">
+                <label for="12c">12 rdzeni</label><br>
+                <input type="radio" name="cores" id="16c">
+                <label for="16c">16 rdzeni</label><br>
+                <input type="radio" name="cores" id="otherc">
+                <label for="otherc">Inne</label><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Gry komputerowe</legend>
+
+                <label for="devices">Na jakich urządzeniach grasz?</label><br>
+                <input type="checkbox" name="devices" id="console">
+                <label for="console">Konsola</label><br>
+                <input type="checkbox" name="devices" id="laptop2">
+                <label for="laptop2">Laptop</label><br>
+                <input type="checkbox" name="devices" id="pc2">
+                <label for="pc2">PC</label><br>
+                <input type="checkbox" name="devices" id="tablet2">
+                <label for="tablet2">Tablet</label><br>
+                <input type="checkbox" name="devices" id="phone">
+                <label for="phone">Telefon</label><br><br>
+
+                <label for="gryPlatformy">Z jakich platform cyfrowej dystrybucji gier korzystasz?</label><br>
+                <input type="checkbox" name="gryPlatformy" id="battle.net">
+                <label for="battle.net">Battle.net</label><br>
+                <input type="checkbox" name="gryPlatformy" id="epic">
+                <label for="epic">Epic Games</label><br>
+                <input type="checkbox" name="gryPlatformy" id="gog">
+                <label for="gog">GOG</label><br>
+                <input type="checkbox" name="gryPlatformy" id="microsoft">
+                <label for="microsoft">Microsoft Store</label><br>
+                <input type="checkbox" name="gryPlatformy" id="nintendo">
+                <label for="nintendo">Nintendo eShop</label><br>
+                <input type="checkbox" name="gryPlatformy" id="origin">
+                <label for="origin">Origin</label><br>
+                <input type="checkbox" name="gryPlatformy" id="ps">
+                <label for="ps">PlayStation Store</label><br>
+                <input type="checkbox" name="gryPlatformy" id="rockstar">
+                <label for="rockstar">Rockstar Games Launcher</label><br>
+                <input type="checkbox" name="gryPlatformy" id="steam">
+                <label for="steam">Steam</label><br>
+                <input type="checkbox" name="gryPlatformy" id="ubisoft">
+                <label for="ubisoft">Ubisoft Connect</label><br>
+                <input type="checkbox" name="gryPlatformy" id="otherPlatforms">
+                <label for="otherPlatforms">Inne <input type="text" name="gryPlatformy" id="otherPlatformsText" size="25"></label><br><br>
+
+                <label for="genres">Jakie są Twoje ulubione gatunki gier komputerowych?<br>(aby zaznaczyć kilka opcji przytrzymaj "Ctrl" na systemach Windows lub "Command" na systemach Mac)</label><br>
+                <select name="genres" id="gemres" multiple>
+                    <option value="action">Akcji</option>
+                    <option value="battle-royale">Battle Royale</option>
+                    <option value="fighting">Bijatyki</option>
+                    <option value="hack-and-slash">Hack'n'slash</option>
+                    <option value="coop">Kooperacyjne</option>
+                    <option value="logic">Logiczne</option>
+                    <option value="mmo">MMO</option>
+                    <option value="indie">Niezależne</option>
+                    <option value="adventure">Przygodowe</option>
+                    <option value="roguelike">Roguelike</option>
+                    <option value="rpg">RPG</option>
+                    <option value="sandbox">Sandbox</option>
+                    <option value="sports">Sportowe</option>
+                    <option value="strategy">Strategiczne</option>
+                    <option value="shooter">Strzelanki</option>
+                    <option value="survival">Survival</option>
+                    <option value="simulation">Symulatory</option>
+                    <option value="tower-defence">Tower Defence</option>
+                    <option value="vr">VR</option>
+                    <option value="race">Wyścigowe</option>
+                    <option value="arcade">Zręcznościowe</option>
+                    <option value="other">Inne</option>
+                </select><br><br>
+
+                <label for="game">Jaka jest Twoja ulubiona gra komputerowa i dlaczego akurat ta?</label>
+                <textarea name="game" id="game" rows="5" placeholder="Opisz swoją ulubioną grę komputerową."></textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend>Filmy/seriale</legend>
+                <label for="vod">Gdzie oglądasz filmy i seriale?<br>(aby zaznaczyć kilka opcji przytrzymaj "Ctrl" na systemach Windows lub "Command" na systemach Mac)</label><br>
+                <select name="vod" id="vod" multiple>
+                    <option value="apple">Apple TV</option>
+                    <option value="canal">Canal+</option>
+                    <option value="cda">CDA</option>
+                    <option value="curiosity">Curiosity Stream</option>
+                    <option value="disney">Disney+</option>
+                    <option value="hbo">HBO Max</option>
+                    <option value="hulu">Hulu</option>
+                    <option value="cinema">Kino</option>
+                    <option value="netflix">Netflix</option>
+                    <option value="none">Nie oglądam</option>
+                    <option value="tvn">Player</option>
+                    <option value="polsat">Polsat Box</option>
+                    <option value="prime">Prime Video</option>
+                    <option value="rakuten">Rakuten TV</option>
+                    <option value="viaplay">Viaplay</option>
+                    <option value="youtube">YouTube</option>
+                    <option value="other">Inne</option>
+                </select><br><br>
+
+                <label for="movieGenre">Jakie są Twoje ulubione gatunki filmowe?</label><br>
+                <input type="checkbox" name="movieGenre" id="action">
+                <label for="action">Akcji</label><br>
+                <input type="checkbox" name="movieGenre" id="cartoon">
+                <label for="cartoon">Animowany</label><br>
+                <input type="checkbox" name="movieGenre" id="drama">
+                <label for="drama">Dramat</label><br>
+                <input type="checkbox" name="movieGenre" id="family">
+                <label for="family">Familijny</label><br>
+                <input type="checkbox" name="movieGenre" id="fantasy">
+                <label for="fantasy">Fantasy</label><br>
+                <input type="checkbox" name="movieGenre" id="horror">
+                <label for="horror">Horror</label><br>
+                <input type="checkbox" name="movieGenre" id="comedy">
+                <label for="comedy">Komedia</label><br>
+                <input type="checkbox" name="movieGenre" id="criminal">
+                <label for="criminal">Kryminał</label><br>
+                <input type="checkbox" name="movieGenre" id="musical">
+                <label for="musical">Musical</label><br>
+                <input type="checkbox" name="movieGenre" id="romantic">
+                <label for="romantic">Romans</label><br>
+                <input type="checkbox" name="movieGenre" id="scifi">
+                <label for="scifi">Science-fiction</label><br>
+                <input type="checkbox" name="movieGenre" id="thriller">
+                <label for="thriller">Thriller</label><br>
+                <input type="checkbox" name="movieGenre" id="western">
+                <label for="western">Western</label><br>
+                <input type="checkbox" name="movieGenre" id="war">
+                <label for="war">Wojenny</label><br>
+                <input type="checkbox" name="movieGenre" id="otherMovie">
+                <label for="otherMovie">Inne <input type="text" name="movieGenre" id="otherMovieText" size="25"></label><br>
+                
+                <!-- Czym sugerujesz się przy wyborze filmu/serialu? -->
+                <br><label for="wyborFilmu">Czym najbardziej sugerujesz się przy wyborze filmu lub serialu?</label><br>
+                <select name="wyborFilmu" id="wyborFilmu">
+                    <option value="none" disabled selected>Wybierz</option>
+                    <option value="gatunek">Gatunkiem</option>
+                    <option value="kraj">Krajem pochodzenia</option>
+                    <option value="aktorzy">Obsadą aktorską</option>
+                    <option value="popularnosc">Popularnością</option>
+                    <option value="recenzje">Recenzjami</option>
+                    <option value="rezyser">Reżyserem</option>
+                    <option value="scenarzysta">Scenarzystą</option>
+                </select><br><br>
+
+                <label for="film">Jaki jest Twój ulubiony film lub serial i dlaczego akurat ten?</label><br>
+                <textarea name="film" id="film" rows="5" placeholder="Opisz swój ulubiony film lub serial."></textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend>Oprogramowanie</legend>
+                <label for="os">Z jakich systemów operacyjnych korzystasz?</label><br>
+                <input type="checkbox" name="os" id="android">
+                <label for="android"><i class="fab fa-android"></i> Android</label><br>
+                <input type="checkbox" name="os" id="ios">
+                <label for="ios"><i class="fab fa-app-store-ios"></i> iOS</label><br>
+                <input type="checkbox" name="os" id="linux">
+                <label for="linux"><i class="fab fa-linux"></i> Linux</label><br>
+                <input type="checkbox" name="os" id="macos">
+                <label for="macos"><i class="fab fa-apple"></i> MacOS</label><br>
+                <input type="checkbox" name="os" id="windows">
+                <label for="windows"><i class="fab fa-windows"></i> Windows</label><br>
+                <br><label for="webpc">Z jakiej przeglądarki internetowej korzystasz na komputerze?</label><br>
+                <select name="webpc" id="webpc">
+                    <option value="none" disabled selected>Wybierz</option>
+                    <option value="brave">Brave</option>
+                    <option value="chrome"><i class="fab fa-chrome"></i> Chrome</option>
+                    <option value="edge">Edge</option>
+                    <option value="firefox">Firefox</option>
+                    <option value="ultron">Google Ultron</option>
+                    <option value="ie">Internet Explorer</option>
+                    <option value="opera">Opera</option>
+                    <option value="safari">Safari</option>
+                    <option value="other">Inne</option>
+                </select><br>
+
+                <br><label for="webpc">Z jakiej przeglądarki internetowej korzystasz na urządzeniach mobilnych?</label><br>
+                <select name="webmobile" id="webmobile">
+                    <option value="none" disabled selected>Wybierz</option>
+                    <option value="brave">Brave</option>
+                    <option value="chrome">Chrome</option>
+                    <option value="edge">Edge</option>
+                    <option value="firefox">Firefox</option>
+                    <option value="opera">Opera</option>
+                    <option value="safari">Safari</option>
+                    <option value="ie">Samsung Internet</option>
+                    <option value="other">Inne</option>
+                </select>
+            </fieldset>
+
+            <fieldset class="ocena">
+                <legend>Ocena</legend>
+
+                <span>Czy podoba Ci się ankieta?</span><br>
+                <div class="stars">
+                    <input type="radio" name="rating" value="1" />
+                    <input type="radio" name="rating" value="2" />
+                    <input type="radio" name="rating" value="3" />
+                    <input type="radio" name="rating" value="4" />
+                    <input type="radio" name="rating" value="5" />
+                    <i></i>
+                </div>
+                
+                <label for="sugestie">Czy masz jakieś sugestie do rozwinięcia strony?</label>
+                <textarea name="sugestie" id="sugestie" placeholder="Podziel się swoimi uwagami dotyczącymi tej strony!"></textarea>
+            </fieldset>
+        </fieldset>
+
+        <fieldset class="buttons-wrapper">
+            <legend>Wykonaj akcję</legend>
+            <input type="reset" value="Wyczyść">
+            <input type="submit" value="Wyślij">
+            <button>Sprawdź</button>
+        </fieldset>
+    </form>
+
+    <footer>
+        <p>&copy; Piotr Winiarczyk 3K</p>
+    </footer>
+
+    <script src='main.js'></script>
+</body>
+</html>
